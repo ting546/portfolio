@@ -1,0 +1,1071 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eventplace</title>
+  <link rel="shortcut icon" href="../img/user.jpg" type="image/x-icon">
+  <link rel="stylesheet" href="../css/vendor.min.css">
+  <link rel="stylesheet" href="../css/style.min.css">
+  <!--  <<<<<<<<<<<<<<<< scripts >>>>>>>>>>>>>>>>>>>> -->
+  <script src="../js/bootstrap.bundle.min.js" defer></script>
+  <script src="../js/script.js" defer></script>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="container">
+        <nav class="header__nav row gy-4">
+          <a href="../index.html" class="header__logo col-auto"><img src="../img/logo.svg" alt="logo"></a>
+          <div class="choice header-choice header__choice col-md-8 order-last order-md-0">
+            <form class="choice__form header-choice__form d-none d-md-flex">
+              <div class="choice__item">
+                <input class="choice__input header-choice__input" type="text" id="event1" placeholder="Тип мероприятия">
+              </div>
+              <div class="choice__item">
+                <input class="choice__input header-choice__input" type="text" id="event2" placeholder="Дата">
+              </div>
+              <div class="choice__item">
+                <input class="choice__input header-choice__input" type="text" id="event4" placeholder="Кто приедет?">
+              </div>
+              <button class="choice__button header-choice__button" type="submit"><img src="../img/find.svg" alt="find"></button>
+            </form>
+            <form class="choice__form d-md-none d-flex">
+              <input class="choice__input" type="text" name="event" id="event" placeholder="Поиск">
+              <button class="choice__button" type="submit"><img src="../img/find.svg" alt="find"></button>
+            </form>
+          </div>
+          <div class="header__menu col-auto">
+            <a class="header__lang" href="#"><img src="../img/land.png" alt="land"></a>
+            <div class="header__user">
+              <div class="dropdown">
+                <!-- dropdown btn -->
+                <button class="burger header__burger dropdown btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </button>
+                <!-- dropdown-menu -->
+                <ul class="header__drop-menu dropdown-menu dropdown-menu-end">
+                  <li>
+                    <button class="btn header__drop-menu-link dropdown-item" type="button" data-bs-toggle="modal" data-bs-target="#login">Войти</button>
+                  </li>
+                  <li>
+                    <button type="button" class="btn header__drop-menu-link dropdown-item" data-bs-toggle="modal" data-bs-target="#registration">Зарегистрироваться</button>
+                  </li>
+                  <li>
+                    <a class="header__drop-menu-link dropdown-item header__drop-menu-link--fw" href="#">Добавить
+                      площадку</a>
+                  </li>
+                </ul>
+              </div>
+              <a href="../private-office.html"><img class="header__user-img" src="../img/user.jpg" alt="user"></a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main class="main">
+      <section class="article">
+        <div class="container">
+          <article class="article__content">
+            <ul class="d-flex gap-3 flex-wrap">
+              <li class="article__item dropdown-center" id="dropdown1">
+                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                  <span>Тип площадки</span>
+                  <svg width="9" height="5" viewBox="0 0 9 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 4.25L4.5 0.75L8 4.25" stroke="white" stroke-linecap="round" />
+                  </svg>
+                </button>
+                <div class="dropdown-menu article__dropdown">
+                  <div class="dropdown-content article__dropdown-content">
+                    <ul class="dropdown-content__list">
+                      <li class="d-flex justify-content-between checkbox-item">
+                        <button class="checkbox-item__dropdown-btn" type="button">
+                          <input type="checkbox" id="ch1">
+                          <label class="checkbox-item__dropdown-checkbox" for="ch1"><img src="../img/checkbox-arrow.svg" alt=""></label>
+                          <label class="checkbox-item__dropdown-name" for="ch1">Лофт</label>
+                        </button>
+                        <span class="checkbox-item__dropdown-num">(13)</span>
+                      </li>
+                      <li class="d-flex justify-content-between checkbox-item">
+                        <button class="checkbox-item__dropdown-btn" type="button">
+                          <input type="checkbox" id="ch2">
+                          <label class="checkbox-item__dropdown-checkbox" for="ch2"><img src="../img/checkbox-arrow.svg" alt=""></label>
+                          <label class="checkbox-item__dropdown-name" for="ch2">Бар</label>
+                        </button>
+                        <span class="checkbox-item__dropdown-num">(13)</span>
+                      </li>
+                      <li class="d-flex justify-content-between checkbox-item">
+                        <button class="checkbox-item__dropdown-btn" type="button">
+                          <input type="checkbox" id="ch3">
+                          <label class="checkbox-item__dropdown-checkbox" for="ch3"><img src="../img/checkbox-arrow.svg" alt=""></label>
+                          <label class="checkbox-item__dropdown-name" for="ch3">Беседки</label>
+                        </button>
+                        <span class="checkbox-item__dropdown-num">(13)</span>
+                      </li>
+                      <li class="d-flex justify-content-between checkbox-item">
+                        <button class="checkbox-item__dropdown-btn" type="button">
+                          <input type="checkbox" id="ch4">
+                          <label class="checkbox-item__dropdown-checkbox" for="ch4"><img src="../img/checkbox-arrow.svg" alt=""></label>
+                          <label class="checkbox-item__dropdown-name" for="ch4">Бани и сауны</label>
+                        </button>
+                        <span class="checkbox-item__dropdown-num">(13)</span>
+                      </li>
+                      <li class="d-flex justify-content-between checkbox-item">
+                        <button class="checkbox-item__dropdown-btn" type="button">
+                          <input type="checkbox" id="ch5">
+                          <label class="checkbox-item__dropdown-checkbox" for="ch5"><img src="../img/checkbox-arrow.svg" alt=""></label>
+                          <label class="checkbox-item__dropdown-name" for="ch5">Коттеджи</label>
+                        </button>
+                        <span class="checkbox-item__dropdown-num">(13)</span>
+                      </li>
+                      <li class="d-flex justify-content-between checkbox-item">
+                        <button class="checkbox-item__dropdown-btn" type="button">
+                          <input type="checkbox" id="ch6">
+                          <label class="checkbox-item__dropdown-checkbox" for="ch6"><img src="../img/checkbox-arrow.svg" alt=""></label>
+                          <label class="checkbox-item__dropdown-name" for="ch6">Боулинг</label>
+                        </button>
+                        <span class="checkbox-item__dropdown-num">(13)</span>
+                      </li>
+                      <li class="d-flex justify-content-between checkbox-item">
+                        <button class="checkbox-item__dropdown-btn" type="button">
+                          <input type="checkbox" id="ch7">
+                          <label class="checkbox-item__dropdown-checkbox" for="ch7"><img src="../img/checkbox-arrow.svg" alt=""></label>
+                          <label class="checkbox-item__dropdown-name" for="ch7">Квесты</label>
+                        </button>
+                        <span class="checkbox-item__dropdown-num">(13)</span>
+                      </li>
+                      <li class="d-flex justify-content-between checkbox-item">
+                        <button class="checkbox-item__dropdown-btn" type="button">
+                          <input type="checkbox" id="ch8">
+                          <label class="checkbox-item__dropdown-checkbox" for="ch8"><img src="../img/checkbox-arrow.svg" alt=""></label>
+                          <label class="checkbox-item__dropdown-name" for="ch8">Боулинг</label>
+                        </button>
+                        <span class="checkbox-item__dropdown-num">(13)</span>
+                      </li>
+                      <li class="d-flex justify-content-between checkbox-item">
+                        <button class="checkbox-item__dropdown-btn" type="button">
+                          <input type="checkbox" id="ch9">
+                          <label class="checkbox-item__dropdown-checkbox" for="ch9"><img src="../img/checkbox-arrow.svg" alt=""></label>
+                          <label class="checkbox-item__dropdown-name" for="ch9">Коттеджи</label>
+                        </button>
+                        <span class="checkbox-item__dropdown-num">(13)</span>
+                      </li>
+                      <li class="d-flex justify-content-between checkbox-item">
+                        <button class="checkbox-item__dropdown-btn" type="button">
+                          <input type="checkbox" id="ch10">
+                          <label class="checkbox-item__dropdown-checkbox" for="ch10"><img src="../img/checkbox-arrow.svg" alt=""></label>
+                          <label class="checkbox-item__dropdown-name" for="ch10">Беседки</label>
+                        </button>
+                        <span class="checkbox-item__dropdown-num">(13)</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="article__dropdown-btns checkbox-btns d-flex justify-content-between">
+                    <button class="checkbox-btns__dropdown-btn1" type="button" id="clear-btn1">Очистить</button>
+                    <button class="button checkbox-btns__dropdown-btn2" type="button">Сохранить</button>
+                  </div>
+                </div>
+              </li>
+              <li class="article__item"><button type="button">Стоимость</button></li>
+              <li class="article__item dropdown-center position-static" id="dropdown2">
+                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                  <span>Фильтры</span>
+                  <svg width="9" height="5" viewBox="0 0 9 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 4.25L4.5 0.75L8 4.25" stroke="white" stroke-linecap="round" />
+                  </svg>
+                </button>
+                <div class="dropdown-menu article__dropdown article__dropdown2">
+                  <div class="dropdown-content article__dropdown-content2">
+                    <div class="dropdown-content__wrapper">
+                      <div class="dropdown-head dropdown-content__dropdown-head d-sm-flex align-items-end justify-content-between gap-3">
+                        <div class="dropdown-head__left mb-3">
+                          <span class="dropdown-head__title dropdown-content-title">Площадь (м²)</span>
+                          <div class="dropdown-head__inputs">
+                            <div class="dropdown-head__inputs-item flex-fill">
+                              <label class="dropdown-head__text" for="dropdown-head1">От</label>
+                              <input class="input dropdown-head__input" type="text" name="from" id="dropdown-head1">
+                            </div>
+                            <div class="dropdown-head__inputs-item flex-fill">
+                              <label class="dropdown-head__text" for="dropdown-head2">До</label>
+                              <input class="input dropdown-head__input" type="text" name="from" id="dropdown-head2">
+                            </div>
+                          </div>
+                          <div class="dropdown-head__select">
+                            <span class="dropdown-head__title dropdown-content-title">Локация</span>
+                            <select class="dropdown-head__select-input input" aria-label="Пример выбора по умолчанию">
+                              <option selected class="d-none">Выберете округ</option>
+                              <option value="1">Центральный </option>
+                              <option value="2">Прикубанский </option>
+                              <option value="3">Западный</option>
+                              <option value="4">Карасунский</option>
+                            </select>
+                          </div>
+                        </div>
+                        <ul class="dropdown-head__right">
+                          <li class="d-flex justify-content-between checkbox-item">
+                            <button class="checkbox-item__dropdown-btn" type="button">
+                              <input type="checkbox" id="check1">
+                              <label class="checkbox-item__dropdown-checkbox" for="check1"><img src="../img/checkbox-arrow.svg" alt=""></label>
+                              <label class="checkbox-item__dropdown-name" for="check1">Доступная среда</label>
+                            </button>
+                          </li>
+                          <li class="d-flex justify-content-between checkbox-item">
+                            <button class="checkbox-item__dropdown-btn" type="button">
+                              <input type="checkbox" id="check2">
+                              <label class="checkbox-item__dropdown-checkbox" for="check2"><img src="../img/checkbox-arrow.svg" alt=""></label>
+                              <label class="checkbox-item__dropdown-name" for="check2">Есть схема места</label>
+                            </button>
+                          </li>
+                          <li class="d-flex justify-content-between checkbox-item">
+                            <button class="checkbox-item__dropdown-btn" type="button">
+                              <input type="checkbox" id="check3">
+                              <label class="checkbox-item__dropdown-checkbox" for="check3"><img src="../img/checkbox-arrow.svg" alt=""></label>
+                              <label class="checkbox-item__dropdown-name" for="check3">Мгновенное бронирование</label>
+                            </button>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="dropdown-head__footer">
+                        <span class="dropdown-head__footer-title dropdown-content-title">Правила</span>
+                        <div class="dropdown-head__footer-content d-sm-flex justify-content-between gap-2">
+                          <ul class="dropdown-head__footer-list">
+                            <li class="d-flex justify-content-between checkbox-item">
+                              <button class="checkbox-item__dropdown-btn" type="button">
+                                <input type="checkbox" id="f-check1">
+                                <label class="checkbox-item__dropdown-checkbox" for="f-check1"><img src="../img/checkbox-arrow.svg" alt=""></label>
+                                <label class="checkbox-item__dropdown-name" for="f-check1">Разрешено с животными</label>
+                              </button>
+                            </li>
+                            <li class="d-flex justify-content-between checkbox-item">
+                              <button class="checkbox-item__dropdown-btn" type="button">
+                                <input type="checkbox" id="f-check2">
+                                <label class="checkbox-item__dropdown-checkbox" for="f-check2"><img src="../img/checkbox-arrow.svg" alt=""></label>
+                                <label class="checkbox-item__dropdown-name" for="f-check2">Можно курить на
+                                  территории</label>
+                              </button>
+                            </li>
+                            <li class="d-flex justify-content-between checkbox-item">
+                              <button class="checkbox-item__dropdown-btn" type="button">
+                                <input type="checkbox" id="f-check3">
+                                <label class="checkbox-item__dropdown-checkbox" for="f-check3"><img src="../img/checkbox-arrow.svg" alt=""></label>
+                                <label class="checkbox-item__dropdown-name" for="f-check3">Мгновенное
+                                  бронирование</label>
+                              </button>
+                            </li>
+                            <li class="d-flex justify-content-between checkbox-item">
+                              <button class="checkbox-item__dropdown-btn" type="button">
+                                <input type="checkbox" id="f-check4">
+                                <label class="checkbox-item__dropdown-checkbox" for="f-check4"><img src="../img/checkbox-arrow.svg" alt=""></label>
+                                <label class="checkbox-item__dropdown-name" for="f-check4">Можно свой алкоголь</label>
+                              </button>
+                            </li>
+                            <li class="d-flex justify-content-between checkbox-item">
+                              <button class="checkbox-item__dropdown-btn" type="button">
+                                <input type="checkbox" id="f-check5">
+                                <label class="checkbox-item__dropdown-checkbox" for="f-check5"><img src="../img/checkbox-arrow.svg" alt=""></label>
+                                <label class="checkbox-item__dropdown-name" for="f-check5">Можно шуметь после
+                                  23:00</label>
+                              </button>
+                            </li>
+                            <li class="d-flex justify-content-between checkbox-item">
+                              <button class="checkbox-item__dropdown-btn" type="button">
+                                <input type="checkbox" id="f-check6">
+                                <label class="checkbox-item__dropdown-checkbox" for="f-check6"><img src="../img/checkbox-arrow.svg" alt=""></label>
+                                <label class="checkbox-item__dropdown-name" for="f-check6">Мгновенное
+                                  бронирование</label>
+                              </button>
+                            </li>
+                            <li class="d-flex justify-content-between checkbox-item">
+                              <button class="checkbox-item__dropdown-btn" type="button">
+                                <input type="checkbox" id="f-check7">
+                                <label class="checkbox-item__dropdown-checkbox" for="f-check7"><img src="../img/checkbox-arrow.svg" alt=""></label>
+                                <label class="checkbox-item__dropdown-name" for="f-check7">Мгновенное
+                                  бронирование</label>
+                              </button>
+                            </li>
+                            <li class="d-flex justify-content-between checkbox-item">
+                              <button class="checkbox-item__dropdown-btn" type="button">
+                                <input type="checkbox" id="f-check8">
+                                <label class="checkbox-item__dropdown-checkbox" for="f-check8"><img src="../img/checkbox-arrow.svg" alt=""></label>
+                                <label class="checkbox-item__dropdown-name" for="f-check8">Мгновенное
+                                  бронирование</label>
+                              </button>
+                            </li>
+                            <li class="d-flex justify-content-between checkbox-item">
+                              <button class="checkbox-item__dropdown-btn" type="button">
+                                <input type="checkbox" id="f-check9">
+                                <label class="checkbox-item__dropdown-checkbox" for="f-check9"><img src="../img/checkbox-arrow.svg" alt=""></label>
+                                <label class="checkbox-item__dropdown-name" for="f-check9">Мгновенное
+                                  бронирование</label>
+                              </button>
+                            </li>
+                          </ul>
+                          <ul class="dropdown-head__footer-list">
+                            <li class="d-flex justify-content-between checkbox-item">
+                              <button class="checkbox-item__dropdown-btn" type="button">
+                                <input type="checkbox" id="f-check10">
+                                <label class="checkbox-item__dropdown-checkbox" for="f-check10"><img src="../img/checkbox-arrow.svg" alt=""></label>
+                                <label class="checkbox-item__dropdown-name" for="f-check10">Можно с детьми</label>
+                              </button>
+                            </li>
+                            <li class="d-flex justify-content-between checkbox-item">
+                              <button class="checkbox-item__dropdown-btn" type="button">
+                                <input type="checkbox" id="f-check11">
+                                <label class="checkbox-item__dropdown-checkbox" for="f-check11"><img src="../img/checkbox-arrow.svg" alt=""></label>
+                                <label class="checkbox-item__dropdown-name" for="f-check11">Без залога</label>
+                              </button>
+                            </li>
+                            <li class="d-flex justify-content-between checkbox-item">
+                              <button class="checkbox-item__dropdown-btn" type="button">
+                                <input type="checkbox" id="f-check12">
+                                <label class="checkbox-item__dropdown-checkbox" for="f-check12"><img src="../img/checkbox-arrow.svg" alt=""></label>
+                                <label class="checkbox-item__dropdown-name" for="f-check12">Еда и напитки с
+                                  собой</label>
+                              </button>
+                            </li>
+                            <li class="d-flex justify-content-between checkbox-item">
+                              <button class="checkbox-item__dropdown-btn" type="button">
+                                <input type="checkbox" id="f-check13">
+                                <label class="checkbox-item__dropdown-checkbox" for="f-check13"><img src="../img/checkbox-arrow.svg" alt=""></label>
+                                <label class="checkbox-item__dropdown-name" for="f-check13">Без депозита</label>
+                              </button>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion" id="accordionExample">
+                      <div class="accordion-item border-0">
+                        <h2 class="accordion-header" id="headingOne">
+                          <button class="accordion-button collapsed dropdown-content__accordion-button dropdown-content-title d-inline-flex" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            Удобства
+                          </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                          <div class="accordion-body p-0">
+                            <div class="dropdown-content__body d-sm-flex justify-content-between gap-2">
+                              <ul class="dropdown-content__list">
+                                <li class="d-flex justify-content-between checkbox-item">
+                                  <button class="checkbox-item__dropdown-btn" type="button">
+                                    <input type="checkbox" id="b-ch1">
+                                    <label class="checkbox-item__dropdown-checkbox" for="b-ch1"><img src="../img/checkbox-arrow.svg" alt=""></label>
+                                    <label class="checkbox-item__dropdown-name" for="b-ch1">Быстрый интернет</label>
+                                  </button>
+                                </li>
+                                <li class="d-flex justify-content-between checkbox-item">
+                                  <button class="checkbox-item__dropdown-btn" type="button">
+                                    <input type="checkbox" id="b-ch2">
+                                    <label class="checkbox-item__dropdown-checkbox" for="b-ch2"><img src="../img/checkbox-arrow.svg" alt=""></label>
+                                    <label class="checkbox-item__dropdown-name" for="b-ch2">Кондиционер</label>
+                                  </button>
+                                </li>
+                                <li class="d-flex justify-content-between checkbox-item">
+                                  <button class="checkbox-item__dropdown-btn" type="button">
+                                    <input type="checkbox" id="b-ch3">
+                                    <label class="checkbox-item__dropdown-checkbox" for="b-ch3"><img src="../img/checkbox-arrow.svg" alt=""></label>
+                                    <label class="checkbox-item__dropdown-name" for="b-ch3">Самостоятельное
+                                      прибытие</label>
+                                  </button>
+                                </li>
+                                <li class="d-flex justify-content-between checkbox-item">
+                                  <button class="checkbox-item__dropdown-btn" type="button">
+                                    <input type="checkbox" id="b-ch4">
+                                    <label class="checkbox-item__dropdown-checkbox" for="b-ch4"><img src="../img/checkbox-arrow.svg" alt=""></label>
+                                    <label class="checkbox-item__dropdown-name" for="b-ch4">Барбекю-гриль</label>
+                                  </button>
+                                </li>
+                                <li class="d-flex justify-content-between checkbox-item">
+                                  <button class="checkbox-item__dropdown-btn" type="button">
+                                    <input type="checkbox" id="b-ch5">
+                                    <label class="checkbox-item__dropdown-checkbox" for="b-ch5"><img src="../img/checkbox-arrow.svg" alt=""></label>
+                                    <label class="checkbox-item__dropdown-name" for="b-ch5">Детская зона</label>
+                                  </button>
+                                </li>
+                                <li class="d-flex justify-content-between checkbox-item">
+                                  <button class="checkbox-item__dropdown-btn" type="button">
+                                    <input type="checkbox" id="b-ch6">
+                                    <label class="checkbox-item__dropdown-checkbox" for="b-ch6"><img src="../img/checkbox-arrow.svg" alt=""></label>
+                                    <label class="checkbox-item__dropdown-name" for="b-ch6">Защита от комаров</label>
+                                  </button>
+                                </li>
+                                <li class="d-flex justify-content-between checkbox-item">
+                                  <button class="checkbox-item__dropdown-btn" type="button">
+                                    <input type="checkbox" id="b-ch7">
+                                    <label class="checkbox-item__dropdown-checkbox" for="b-ch7"><img src="../img/checkbox-arrow.svg" alt=""></label>
+                                    <label class="checkbox-item__dropdown-name" for="b-ch7">Зона lounge</label>
+                                  </button>
+                                </li>
+                                <li class="d-flex justify-content-between checkbox-item">
+                                  <button class="checkbox-item__dropdown-btn" type="button">
+                                    <input type="checkbox" id="b-ch8">
+                                    <label class="checkbox-item__dropdown-checkbox" for="b-ch8"><img src="../img/checkbox-arrow.svg" alt=""></label>
+                                    <label class="checkbox-item__dropdown-name" for="b-ch8">Зона VIP</label>
+                                  </button>
+                                </li>
+                                <li class="d-flex justify-content-between checkbox-item">
+                                  <button class="checkbox-item__dropdown-btn" type="button">
+                                    <input type="checkbox" id="b-ch9">
+                                    <label class="checkbox-item__dropdown-checkbox" for="b-ch9"><img src="../img/checkbox-arrow.svg" alt=""></label>
+                                    <label class="checkbox-item__dropdown-name" for="b-ch9">Зона для детей</label>
+                                  </button>
+                                </li>
+                                <li class="d-flex justify-content-between checkbox-item">
+                                  <button class="checkbox-item__dropdown-btn" type="button">
+                                    <input type="checkbox" id="b-ch10">
+                                    <label class="checkbox-item__dropdown-checkbox" for="b-ch10"><img src="../img/checkbox-arrow.svg" alt=""></label>
+                                    <label class="checkbox-item__dropdown-name" for="b-ch10">Зона для курения</label>
+                                  </button>
+                                </li>
+                                <li class="d-flex justify-content-between checkbox-item">
+                                  <button class="checkbox-item__dropdown-btn" type="button">
+                                    <input type="checkbox" id="b-ch11">
+                                    <label class="checkbox-item__dropdown-checkbox" for="b-ch11"><img src="../img/checkbox-arrow.svg" alt=""></label>
+                                    <label class="checkbox-item__dropdown-name" for="b-ch11">Зона для работы</label>
+                                  </button>
+                                </li>
+                                <li class="d-flex justify-content-between checkbox-item">
+                                  <button class="checkbox-item__dropdown-btn" type="button">
+                                    <input type="checkbox" id="b-ch12">
+                                    <label class="checkbox-item__dropdown-checkbox" for="b-ch12"><img src="../img/checkbox-arrow.svg" alt=""></label>
+                                    <label class="checkbox-item__dropdown-name" for="b-ch12">Кафе (рядом/внутри
+                                      здания)</label>
+                                  </button>
+                                </li>
+                              </ul>
+                              <ul class="dropdown-content__list">
+                                <li class="d-flex justify-content-between checkbox-item">
+                                  <button class="checkbox-item__dropdown-btn" type="button">
+                                    <input type="checkbox" id="b-ch13">
+                                    <label class="checkbox-item__dropdown-checkbox" for="b-ch13"><img src="../img/checkbox-arrow.svg" alt=""></label>
+                                    <label class="checkbox-item__dropdown-name" for="b-ch13">Парковка</label>
+                                  </button>
+                                </li>
+                                <li class="d-flex justify-content-between checkbox-item">
+                                  <button class="checkbox-item__dropdown-btn" type="button">
+                                    <input type="checkbox" id="b-ch14">
+                                    <label class="checkbox-item__dropdown-checkbox" for="b-ch14"><img src="../img/checkbox-arrow.svg" alt=""></label>
+                                    <label class="checkbox-item__dropdown-name" for="b-ch14">Отопление</label>
+                                  </button>
+                                </li>
+                                <li class="d-flex justify-content-between checkbox-item">
+                                  <button class="checkbox-item__dropdown-btn" type="button">
+                                    <input type="checkbox" id="b-ch15">
+                                    <label class="checkbox-item__dropdown-checkbox" for="b-ch15"><img src="../img/checkbox-arrow.svg" alt=""></label>
+                                    <label class="checkbox-item__dropdown-name" for="b-ch15">Выход к воде</label>
+                                  </button>
+                                </li>
+                                <li class="d-flex justify-content-between checkbox-item">
+                                  <button class="checkbox-item__dropdown-btn" type="button">
+                                    <input type="checkbox" id="b-ch16">
+                                    <label class="checkbox-item__dropdown-checkbox" for="b-ch16"><img src="../img/checkbox-arrow.svg" alt=""></label>
+                                    <label class="checkbox-item__dropdown-name" for="b-ch16">Wi-Fi</label>
+                                  </button>
+                                </li>
+                                <li class="d-flex justify-content-between checkbox-item">
+                                  <button class="checkbox-item__dropdown-btn" type="button">
+                                    <input type="checkbox" id="b-ch17">
+                                    <label class="checkbox-item__dropdown-checkbox" for="b-ch17"><img src="../img/checkbox-arrow.svg" alt=""></label>
+                                    <label class="checkbox-item__dropdown-name" for="b-ch17">Барная стойка</label>
+                                  </button>
+                                </li>
+                                <li class="d-flex justify-content-between checkbox-item">
+                                  <button class="checkbox-item__dropdown-btn" type="button">
+                                    <input type="checkbox" id="b-ch18">
+                                    <label class="checkbox-item__dropdown-checkbox" for="b-ch18"><img src="../img/checkbox-arrow.svg" alt=""></label>
+                                    <label class="checkbox-item__dropdown-name" for="b-ch18">Бассейн</label>
+                                  </button>
+                                </li>
+                                <li class="d-flex justify-content-between checkbox-item">
+                                  <button class="checkbox-item__dropdown-btn" type="button">
+                                    <input type="checkbox" id="b-ch19">
+                                    <label class="checkbox-item__dropdown-checkbox" for="b-ch19"><img src="../img/checkbox-arrow.svg" alt=""></label>
+                                    <label class="checkbox-item__dropdown-name" for="b-ch19">Веранда</label>
+                                  </button>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="article__dropdown-btns checkbox-btns d-flex justify-content-between">
+                    <button class="checkbox-btns__dropdown-btn1" type="button" id="clear-btn2">Очистить</button>
+                    <button class="button checkbox-btns__dropdown-btn2" type="button">Применить фильтры</button>
+                  </div>
+                </div>
+              </li>
+              <li class="article__item"><button type="button">Рейтинг</button></li>
+              <li class="article__item"><button type="button">Количество отзывов</button></li>
+              <li class="article__item"><button type="button">Дополнительно</button></li>
+            </ul>
+          </article>
+        </div>
+      </section>
+      <section class="catalog">
+        <div class="container">
+          <h2 class="catalog__title title">Все площадки Краснодара</h2>
+          <div class="catalog__content">
+            <div class="catalog__card card">
+              <div class="card__top">
+                <div id="carouselExampleControls" class="carousel slide card__slide" data-bs-ride="carousel" data-interval="100000">
+                  <a href="#" class="carousel-inner card__inner">
+                    <div class="carousel-item active card__item">
+                      <img src="../img/catalog/1.jpg" class="" alt="...">
+                    </div>
+                    <div class="carousel-item card__item">
+                      <img src="../img/catalog/1.jpg" class="" alt="...">
+                    </div>
+                    <div class="carousel-item card__item">
+                      <img src="../img/catalog/1.jpg" class="" alt="...">
+                    </div>
+                  </a>
+                  <button class="carousel-control-prev slider-arrow slider-prev-arrow card__arrow" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <img src="../img/slider-arrow.svg" alt="slider-arrow-arrow">
+                    <span class="visually-hidden">Предыдущий</span>
+                  </button>
+                  <button class="carousel-control-next slider-arrow slider-next-arrow card__arrow" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <img src="../img/slider-arrow.svg" alt="slider-arrow-arrow">
+                    <span class="visually-hidden">Следующий</span>
+                  </button>
+                  <button type="button" class="card__favorit"><img src="../img/favorit.svg" alt="favorit"></button>
+                  <div class="card__price">
+                    <div class="card__price-time">За 1 час</div>
+                    <div class="card__price-num">₽ 1 200 - ₽ 3 500</div>
+                  </div>
+                </div>
+              </div>
+              <div class="card__body card-body">
+                <div class="card-body__top">
+                  <div class="card-body__left-title">
+                    <a href="#">Луна</a>
+                    <span>#1234</span>
+                  </div>
+                  <div class="card-body__right">
+                    <span class="card-body__rating">4,8 (45)</span>
+                    <span class="card-body__name">Беседка</span>
+                  </div>
+                </div>
+                <div class="card-body__footer">
+                  <div class="card-body__item card-body__item--location">ул. Минская, 64</div>
+                  <div class="card-body__item card-body__item--size">320 м²</div>
+                  <div class="card-body__item card-body__item--person">до 12</div>
+                </div>
+              </div>
+            </div>
+            <div class="catalog__card card">
+              <div class="card__top">
+                <div id="carouselExampleControls" class="carousel slide card__slide" data-bs-ride="carousel">
+                  <a href="#" class="carousel-inner card__inner">
+                    <div class="carousel-item active card__item">
+                      <img src="../img/catalog/2.jpg" class="" alt="...">
+                    </div>
+                    <div class="carousel-item card__item">
+                      <img src="../img/catalog/2.jpg" class="" alt="...">
+                    </div>
+                    <div class="carousel-item card__item">
+                      <img src="../img/catalog/2.jpg" class="" alt="...">
+                    </div>
+                  </a>
+                  <button class="carousel-control-prev slider-arrow slider-prev-arrow card__arrow" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <img src="../img/slider-arrow.svg" alt="slider-arrow-arrow">
+                    <span class="visually-hidden">Предыдущий</span>
+                  </button>
+                  <button class="carousel-control-next slider-arrow slider-next-arrow card__arrow" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <img src="../img/slider-arrow.svg" alt="slider-arrow-arrow">
+                    <span class="visually-hidden">Следующий</span>
+                  </button>
+                  <button type="button" class="card__favorit"><img src="../img/favorit.svg" alt="favorit"></button>
+                  <div class="card__price">
+                    <div class="card__price-time">За 1 час</div>
+                    <div class="card__price-num">₽ 1 200 - ₽ 3 500</div>
+                  </div>
+                </div>
+              </div>
+              <div class="card__body card-body">
+                <div class="card-body__top">
+                  <div class="card-body__left-title">
+                    <a href="#">Луна</a>
+                    <span>#1234</span>
+                  </div>
+                  <div class="card-body__right">
+                    <span class="card-body__rating">4,8 (45)</span>
+                    <span class="card-body__name">Беседка</span>
+                  </div>
+                </div>
+                <div class="card-body__footer">
+                  <div class="card-body__item card-body__item--location">ул. Минская, 64</div>
+                  <div class="card-body__item card-body__item--size">320 м²</div>
+                  <div class="card-body__item card-body__item--person">до 12</div>
+                </div>
+              </div>
+            </div>
+            <div class="catalog__card card">
+              <div class="card__top">
+                <div id="carouselExampleControls" id="slider" class="carousel slide card__slide" data-bs-ride="carousel">
+                  <a href="#" class="carousel-inner card__inner">
+                    <div class="carousel-item active card__item">
+                      <img src="../img/catalog/3.jpg" class="" alt="...">
+                    </div>
+                    <div class="carousel-item card__item">
+                      <img src="../img/catalog/3.jpg" class="" alt="...">
+                    </div>
+                    <div class="carousel-item card__item">
+                      <img src="../img/catalog/3.jpg" class="" alt="...">
+                    </div>
+                  </a>
+                  <button class="carousel-control-prev slider-arrow slider-prev-arrow card__arrow" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <img src="../img/slider-arrow.svg" alt="slider-arrow-arrow">
+                    <span class="visually-hidden">Предыдущий</span>
+                  </button>
+                  <button class="carousel-control-next slider-arrow slider-next-arrow card__arrow" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <img src="../img/slider-arrow.svg" alt="slider-arrow-arrow">
+                    <span class="visually-hidden">Следующий</span>
+                  </button>
+                  <button type="button" class="card__favorit"><img src="../img/favorit.svg" alt="favorit"></button>
+                  <div class="card__price">
+                    <div class="card__price-time">За 1 час</div>
+                    <div class="card__price-num">₽ 1 200 - ₽ 3 500</div>
+                  </div>
+                </div>
+              </div>
+              <div class="card__body card-body">
+                <div class="card-body__top">
+                  <div class="card-body__left-title">
+                    <a href="#">Луна</a>
+                    <span>#1234</span>
+                  </div>
+                  <div class="card-body__right">
+                    <span class="card-body__rating">4,8 (45)</span>
+                    <span class="card-body__name">Беседка</span>
+                  </div>
+                </div>
+                <div class="card-body__footer">
+                  <div class="card-body__item card-body__item--location">ул. Минская, 64</div>
+                  <div class="card-body__item card-body__item--size">320 м²</div>
+                  <div class="card-body__item card-body__item--person">до 12</div>
+                </div>
+              </div>
+            </div>
+            <div class="catalog__card card">
+              <div class="card__top">
+                <div id="carouselExampleControls" class="carousel slide card__slide" data-bs-ride="carousel">
+                  <a href="#" class="carousel-inner card__inner">
+                    <div class="carousel-item active card__item">
+                      <img src="../img/catalog/1.jpg" class="" alt="...">
+                    </div>
+                    <div class="carousel-item card__item">
+                      <img src="../img/catalog/1.jpg" class="" alt="...">
+                    </div>
+                    <div class="carousel-item card__item">
+                      <img src="../img/catalog/1.jpg" class="" alt="...">
+                    </div>
+                  </a>
+                  <button class="carousel-control-prev slider-arrow slider-prev-arrow card__arrow" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <img src="../img/slider-arrow.svg" alt="slider-arrow-arrow">
+                    <span class="visually-hidden">Предыдущий</span>
+                  </button>
+                  <button class="carousel-control-next slider-arrow slider-next-arrow card__arrow" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <img src="../img/slider-arrow.svg" alt="slider-arrow-arrow">
+                    <span class="visually-hidden">Следующий</span>
+                  </button>
+                  <button type="button" class="card__favorit"><img src="../img/favorit.svg" alt="favorit"></button>
+                  <div class="card__price">
+                    <div class="card__price-time">За 1 час</div>
+                    <div class="card__price-num">₽ 1 200 - ₽ 3 500</div>
+                  </div>
+                </div>
+              </div>
+              <div class="card__body card-body">
+                <div class="card-body__top">
+                  <div class="card-body__left-title">
+                    <a href="#">Луна</a>
+                    <span>#1234</span>
+                  </div>
+                  <div class="card-body__right">
+                    <span class="card-body__rating">4,8 (45)</span>
+                    <span class="card-body__name">Беседка</span>
+                  </div>
+                </div>
+                <div class="card-body__footer">
+                  <div class="card-body__item card-body__item--location">ул. Минская, 64</div>
+                  <div class="card-body__item card-body__item--size">320 м²</div>
+                  <div class="card-body__item card-body__item--person">до 12</div>
+                </div>
+              </div>
+            </div>
+            <div class="catalog__card card">
+              <div class="card__top">
+                <div id="carouselExampleControls" class="carousel slide card__slide" data-bs-ride="carousel">
+                  <a href="#" class="carousel-inner card__inner">
+                    <div class="carousel-item active card__item">
+                      <img src="../img/catalog/2.jpg" class="" alt="...">
+                    </div>
+                    <div class="carousel-item card__item">
+                      <img src="../img/catalog/2.jpg" class="" alt="...">
+                    </div>
+                    <div class="carousel-item card__item">
+                      <img src="../img/catalog/2.jpg" class="" alt="...">
+                    </div>
+                  </a>
+                  <button class="carousel-control-prev slider-arrow slider-prev-arrow card__arrow" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <img src="../img/slider-arrow.svg" alt="slider-arrow-arrow">
+                    <span class="visually-hidden">Предыдущий</span>
+                  </button>
+                  <button class="carousel-control-next slider-arrow slider-next-arrow card__arrow" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <img src="../img/slider-arrow.svg" alt="slider-arrow-arrow">
+                    <span class="visually-hidden">Следующий</span>
+                  </button>
+                  <button type="button" class="card__favorit"><img src="../img/favorit.svg" alt="favorit"></button>
+                  <div class="card__price">
+                    <div class="card__price-time">За 1 час</div>
+                    <div class="card__price-num">₽ 1 200 - ₽ 3 500</div>
+                  </div>
+                </div>
+              </div>
+              <div class="card__body card-body">
+                <div class="card-body__top">
+                  <div class="card-body__left-title">
+                    <a href="#">Луна</a>
+                    <span>#1234</span>
+                  </div>
+                  <div class="card-body__right">
+                    <span class="card-body__rating">4,8 (45)</span>
+                    <span class="card-body__name">Беседка</span>
+                  </div>
+                </div>
+                <div class="card-body__footer">
+                  <div class="card-body__item card-body__item--location">ул. Минская, 64</div>
+                  <div class="card-body__item card-body__item--size">320 м²</div>
+                  <div class="card-body__item card-body__item--person">до 12</div>
+                </div>
+              </div>
+            </div>
+            <div class="catalog__card card">
+              <div class="card__top">
+                <div id="carouselExampleControls" id="slider" class="carousel slide card__slide" data-bs-ride="carousel">
+                  <a href="#" class="carousel-inner card__inner">
+                    <div class="carousel-item active card__item">
+                      <img src="../img/catalog/3.jpg" class="" alt="...">
+                    </div>
+                    <div class="carousel-item card__item">
+                      <img src="../img/catalog/3.jpg" class="" alt="...">
+                    </div>
+                    <div class="carousel-item card__item">
+                      <img src="../img/catalog/3.jpg" class="" alt="...">
+                    </div>
+                  </a>
+                  <button class="carousel-control-prev slider-arrow slider-prev-arrow card__arrow" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <img src="../img/slider-arrow.svg" alt="slider-arrow-arrow">
+                    <span class="visually-hidden">Предыдущий</span>
+                  </button>
+                  <button class="carousel-control-next slider-arrow slider-next-arrow card__arrow" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <img src="../img/slider-arrow.svg" alt="slider-arrow-arrow">
+                    <span class="visually-hidden">Следующий</span>
+                  </button>
+                  <button type="button" class="card__favorit"><img src="../img/favorit.svg" alt="favorit"></button>
+                  <div class="card__price">
+                    <div class="card__price-time">За 1 час</div>
+                    <div class="card__price-num">₽ 1 200 - ₽ 3 500</div>
+                  </div>
+                </div>
+              </div>
+              <div class="card__body card-body">
+                <div class="card-body__top">
+                  <div class="card-body__left-title">
+                    <a href="#">Луна</a>
+                    <span>#1234</span>
+                  </div>
+                  <div class="card-body__right">
+                    <span class="card-body__rating">4,8 (45)</span>
+                    <span class="card-body__name">Беседка</span>
+                  </div>
+                </div>
+                <div class="card-body__footer">
+                  <div class="card-body__item card-body__item--location">ул. Минская, 64</div>
+                  <div class="card-body__item card-body__item--size">320 м²</div>
+                  <div class="card-body__item card-body__item--person">до 12</div>
+                </div>
+              </div>
+            </div>
+            <div class="catalog__card card">
+              <div class="card__top">
+                <div id="carouselExampleControls" class="carousel slide card__slide" data-bs-ride="carousel">
+                  <a href="#" class="carousel-inner card__inner">
+                    <div class="carousel-item active card__item">
+                      <img src="../img/catalog/1.jpg" class="" alt="...">
+                    </div>
+                    <div class="carousel-item card__item">
+                      <img src="../img/catalog/1.jpg" class="" alt="...">
+                    </div>
+                    <div class="carousel-item card__item">
+                      <img src="../img/catalog/1.jpg" class="" alt="...">
+                    </div>
+                  </a>
+                  <button class="carousel-control-prev slider-arrow slider-prev-arrow card__arrow" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <img src="../img/slider-arrow.svg" alt="slider-arrow-arrow">
+                    <span class="visually-hidden">Предыдущий</span>
+                  </button>
+                  <button class="carousel-control-next slider-arrow slider-next-arrow card__arrow" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <img src="../img/slider-arrow.svg" alt="slider-arrow-arrow">
+                    <span class="visually-hidden">Следующий</span>
+                  </button>
+                  <button type="button" class="card__favorit"><img src="../img/favorit.svg" alt="favorit"></button>
+                  <div class="card__price">
+                    <div class="card__price-time">За 1 час</div>
+                    <div class="card__price-num">₽ 1 200 - ₽ 3 500</div>
+                  </div>
+                </div>
+              </div>
+              <div class="card__body card-body">
+                <div class="card-body__top">
+                  <div class="card-body__left-title">
+                    <a href="#">Луна</a>
+                    <span>#1234</span>
+                  </div>
+                  <div class="card-body__right">
+                    <span class="card-body__rating">4,8 (45)</span>
+                    <span class="card-body__name">Беседка</span>
+                  </div>
+                </div>
+                <div class="card-body__footer">
+                  <div class="card-body__item card-body__item--location">ул. Минская, 64</div>
+                  <div class="card-body__item card-body__item--size">320 м²</div>
+                  <div class="card-body__item card-body__item--person">до 12</div>
+                </div>
+              </div>
+            </div>
+            <div class="catalog__card card">
+              <div class="card__top">
+                <div id="carouselExampleControls" class="carousel slide card__slide" data-bs-ride="carousel">
+                  <a href="#" class="carousel-inner card__inner">
+                    <div class="carousel-item active card__item">
+                      <img src="../img/catalog/2.jpg" class="" alt="...">
+                    </div>
+                    <div class="carousel-item card__item">
+                      <img src="../img/catalog/2.jpg" class="" alt="...">
+                    </div>
+                    <div class="carousel-item card__item">
+                      <img src="../img/catalog/2.jpg" class="" alt="...">
+                    </div>
+                  </a>
+                  <button class="carousel-control-prev slider-arrow slider-prev-arrow card__arrow" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <img src="../img/slider-arrow.svg" alt="slider-arrow-arrow">
+                    <span class="visually-hidden">Предыдущий</span>
+                  </button>
+                  <button class="carousel-control-next slider-arrow slider-next-arrow card__arrow" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <img src="../img/slider-arrow.svg" alt="slider-arrow-arrow">
+                    <span class="visually-hidden">Следующий</span>
+                  </button>
+                  <button type="button" class="card__favorit"><img src="../img/favorit.svg" alt="favorit"></button>
+                  <div class="card__price">
+                    <div class="card__price-time">За 1 час</div>
+                    <div class="card__price-num">₽ 1 200 - ₽ 3 500</div>
+                  </div>
+                </div>
+              </div>
+              <div class="card__body card-body">
+                <div class="card-body__top">
+                  <div class="card-body__left-title">
+                    <a href="#">Луна</a>
+                    <span>#1234</span>
+                  </div>
+                  <div class="card-body__right">
+                    <span class="card-body__rating">4,8 (45)</span>
+                    <span class="card-body__name">Беседка</span>
+                  </div>
+                </div>
+                <div class="card-body__footer">
+                  <div class="card-body__item card-body__item--location">ул. Минская, 64</div>
+                  <div class="card-body__item card-body__item--size">320 м²</div>
+                  <div class="card-body__item card-body__item--person">до 12</div>
+                </div>
+              </div>
+            </div>
+            <div class="catalog__card card">
+              <div class="card__top">
+                <div id="carouselExampleControls" id="slider" class="carousel slide card__slide" data-bs-ride="carousel">
+                  <a href="#" class="carousel-inner card__inner">
+                    <div class="carousel-item active card__item">
+                      <img src="../img/catalog/3.jpg" class="" alt="...">
+                    </div>
+                    <div class="carousel-item card__item">
+                      <img src="../img/catalog/3.jpg" class="" alt="...">
+                    </div>
+                    <div class="carousel-item card__item">
+                      <img src="../img/catalog/3.jpg" class="" alt="...">
+                    </div>
+                  </a>
+                  <button class="carousel-control-prev slider-arrow slider-prev-arrow card__arrow" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <img src="../img/slider-arrow.svg" alt="slider-arrow-arrow">
+                    <span class="visually-hidden">Предыдущий</span>
+                  </button>
+                  <button class="carousel-control-next slider-arrow slider-next-arrow card__arrow" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <img src="../img/slider-arrow.svg" alt="slider-arrow-arrow">
+                    <span class="visually-hidden">Следующий</span>
+                  </button>
+                  <button type="button" class="card__favorit"><img src="../img/favorit.svg" alt="favorit"></button>
+                  <div class="card__price">
+                    <div class="card__price-time">За 1 час</div>
+                    <div class="card__price-num">₽ 1 200 - ₽ 3 500</div>
+                  </div>
+                </div>
+              </div>
+              <div class="card__body card-body">
+                <div class="card-body__top">
+                  <div class="card-body__left-title">
+                    <a href="#">Луна</a>
+                    <span>#1234</span>
+                  </div>
+                  <div class="card-body__right">
+                    <span class="card-body__rating">4,8 (45)</span>
+                    <span class="card-body__name">Беседка</span>
+                  </div>
+                </div>
+                <div class="card-body__footer">
+                  <div class="card-body__item card-body__item--location">ул. Минская, 64</div>
+                  <div class="card-body__item card-body__item--size">320 м²</div>
+                  <div class="card-body__item card-body__item--person">до 12</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="paginations">
+        <div class="container">
+          <nav aria-label="навигация по страницам">
+            <ul class="pagination justify-content-center align-items-center gap-2">
+              <li class="page-item flex-shrink-0"><a class="page-link disabled rounded-5" href="#"><img src="../img/pagination-arrow-disabled.png" alt=""></a></li>
+              <li class="page-item"><a class="page-link rounded-5 active" href="#">1</a></li>
+              <li class="page-item"><a class="page-link rounded-5" href="2.html">2</a></li>
+              <li class="page-item"><a class="page-link rounded-5" href="3.html">3</a></li>
+              <li class="page-item flex-shrink-0"><a class="page-link rounded-5" href="2.html"><img src="../img/pagination-arrow.png" alt=""></a></li>
+            </ul>
+          </nav>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="row justify-content-center pb-3">
+          <ul class="footer__item col-12 col-sm-4">
+            <li><a href="#">Наши преимущества</a></li>
+            <li><a href="#">Как работает сервис?</a></li>
+            <li><a href="#">Подключится к Eventplace</a></li>
+            <li><a href="#">Гарантии и безопастность </a></li>
+          </ul>
+          <ul class="footer__item col-12 col-sm-4">
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Документы</a></li>
+            <li><a href="#">Инвесторам</a></li>
+            <li><a href="#">СМИ о нас</a></li>
+          </ul>
+          <div class="footer__item col-12 col-sm-4">
+            <ul class="d-flex gap-4 mb-3">
+              <li><a href="#"><img src="../img/facebook.svg" alt="facebook"></a></li>
+              <li><a href="#"><img src="../img/telegram.svg" alt="telegram"></a></li>
+              <li><a href="#"><img src="../img/instagram.svg" alt="instagram"></a></li>
+              <li><a href="#"><img src="../img/vk.svg" alt="vk"></a></li>
+            </ul>
+            <span class="fw-light">OOO “Eventpacle”</span>
+          </div>
+        </div>
+        <div class="row gy-2 pt-2 footer__bottom">
+          <span class="col-12 col-sm-6 fw-light">© 2021 All rights reserved</span>
+          <div class="col-12 col-sm-3 text-sm-end "><a class="fw-light" href="#">Конфиденциальность</a></div>
+          <div class="col-12 col-sm-3 text-sm-end"><a class="fw-light" href="#">Условия</a></div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <div class="modal fade" id="registration" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><img src="../img/close.png" alt=""></button>
+          <h1 class="modal-title" id="exampleModalLabel">Регистрация</h1>
+        </div>
+        <div class="modal-body">
+          <h3 class="modal-body__title">Добро пожаловать в Eventplace </h3>
+          <form action="#" class="modal-form modal-body__form">
+            <input type="tel" class="modal-form__input input" placeholder="Номер телефона" required>
+            <input type="email" class="modal-form__input input" placeholder="Электронная почта" required>
+            <div class="modal-form__pass">
+              <input type="password" class="modal-form__input input" placeholder="Пароль" id="pass" required>
+              <a class="modal-form__eyes" href="#"><img src="../img/eyes.png" alt=""></a>
+            </div>
+            <p class="modal-form__confirm">Мы отправим писмьо, чтобы подтвердить почту. </p>
+            <div class="modal-form__checkbox">
+              <input type="checkbox" id="chek1">
+              <label for="chek1">
+                Я хочу получать e-mail и sмs-рассылку с рекомендациями интересных событий, анонсами,
+                новостями, а также информационные сообщения
+              </label>
+            </div>
+            <div class="modal-form__checkbox">
+              <input type="checkbox" id="chek2">
+              <label for="chek2">
+                Я ознакомлен и принимаю условия <a class="modal-form__checkbox-link" href="#">пользовательского
+                  соглашения</a> и <a class="modal-form__checkbox-link" href="#">политики конфидециальности</a>
+              </label>
+            </div>
+            <button class="modal-form__btn button">Зарегистрироваться</button>
+          </form>
+          <p class="modal-body__entry">Уже есть аккаунт? <button class="modal-body__entry-link" type="button" data-bs-toggle="modal" data-bs-target="#login">Войти</button></p>
+        </div>
+        <div class="modal-footer">
+          <a class="modal-footer__item" href="#">
+            <img class="modal-footer__img" src="../img/google.png" alt="google">
+            <p class="modal-footer__text">С помощью Google</p>
+          </a>
+          <a class="modal-footer__item" href="#">
+            <img class="modal-footer__img" src="../img/facebook.png" alt="google">
+            <p class="modal-footer__text">С помощью Facebook</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="login" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><img src="../img/close.png" alt=""></button>
+          <h1 class="modal-title" id="exampleModalLabel">Вход</h1>
+        </div>
+        <div class="modal-body">
+          <h3 class="modal-body__title">Добро пожаловать в Eventplace </h3>
+          <form action="#" class="modal-form modal-body__form">
+            <input type="email" class="modal-form__input input" placeholder="Электронная почта" required>
+            <div class="modal-form__pass">
+              <input type="password" class="modal-form__input input" placeholder="Пароль" id="pass" required>
+              <a class="modal-form__eyes" href="#"><img src="../img/eyes.png" alt=""></a>
+            </div>
+            <div class="modal-form__lost-pass">
+              <a href="#">Забыли пароль?</a>
+            </div>
+            <button class="modal-form__btn button">Войти</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <a class="modal-footer__item" href="#">
+            <img class="modal-footer__img" src="../img/google.png" alt="google">
+            <p class="modal-footer__text">С помощью Google</p>
+          </a>
+          <a class="modal-footer__item" href="#">
+            <img class="modal-footer__img" src="../img/facebook.png" alt="google">
+            <p class="modal-footer__text">С помощью Facebook</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eventplace</title>
+  <link rel="shortcut icon" href="img/user.jpg" type="image/x-icon">
+  <link rel="stylesheet" href="css/vendor.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="apple-touch-icon" href="img/logo.svg">
+  <!--  <<<<<<<<<<<<<<<< scripts >>>>>>>>>>>>>>>>>>>> -->
+  <script src="js/bootstrap.bundle.min.js" defer></script>
+  <script src="js/script.js" defer></script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <nav class="header__nav row">
+        <a href="#" class="header__logo col-auto"><img src="img/logo.svg" alt="logo"></a>
+        <ul class="header__list list col-7">
+          <li><a class="list__link list__link--color" href="catalog/1.html">Все площадки Краснодара</a></li>
+          <li><a class="list__link" href="#">+ Добавить площадку</a></li>
+        </ul>
+        <div class="header__menu col-auto">
+          <a class="header__lang" href="#"><img src="img/land.png" alt="land"></a>
+          <div class="header__user">
+            <div class="dropdown">
+              <!-- dropdown btn -->
+              <button class="burger header__burger dropdown btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
+              <!-- dropdown-menu -->
+              <ul class="header__drop-menu dropdown-menu dropdown-menu-end">
+                <li>
+                  <button class="btn header__drop-menu-link dropdown-item" type="button" data-bs-toggle="modal" data-bs-target="#login">Войти</button>
+                </li>
+                <li>
+                  <button type="button" class="btn header__drop-menu-link dropdown-item" data-bs-toggle="modal" data-bs-target="#registration">Зарегистрироваться</button>
+                </li>
+                <li>
+                  <a class="header__drop-menu-link dropdown-item header__drop-menu-link--fw" href="#">Добавить
+                    площадку</a>
+                </li>
+              </ul>
+            </div>
+            <a href="private-office.html"><img class="header__user-img" src="img/user.jpg" alt="user"></a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main class="main">
+    <section class="hero">
+      <div class="container">
+        <div class="choice hero__choice">
+          <form class="choice__form">
+            <div class="choice__item">
+              <label class="choice__label" for="event1">Тип события</label>
+              <input class="choice__input" type="text" id="event1" placeholder="Выберете своё мероприятие">
+            </div>
+            <div class="choice__item">
+              <label class="choice__label" for="event2">Начало</label>
+              <input class="choice__input" type="text" id="event2" placeholder="Когда?">
+            </div>
+            <div class="choice__item">
+              <label class="choice__label" for="event3">Конец</label>
+              <input class="choice__input" type="text" id="event3" placeholder="Когда?">
+            </div>
+            <div class="choice__item">
+              <label class="choice__label" for="event4">Количество гостей</label>
+              <input class="choice__input" type="text" id="event4" placeholder="Кто приедет?">
+            </div>
+            <button class="choice__button" type="submit"><img src="img/find.svg" alt="find"></button>
+          </form>
+        </div>
+        <div class="hero__trigger">
+          <h1 class="hero__title">Eventplace - <span>с нами весело!</span></h1>
+          <a href="catalog/1.html" class="hero__btn">Найти место</a>
+        </div>
+      </div>
+    </section>
+    <section class="header-item">
+      <div class="container">
+        <div class="choice">
+          <form class="choice__form">
+            <input class="choice__input" type="text" name="event" id="event" placeholder="Поиск">
+            <button class="choice__button" type="submit"><img src="img/find.svg" alt=find"></button>
+          </form>
+        </div>
+        <ul class="header-item__list list">
+          <li><a class="list__link list__link--color" href="catalog/1.html">Все площадки Краснодара</a></li>
+          <li><a class="list__link" href="#">+ Добавить площадку</a></li>
+        </ul>
+      </div>
+    </section>
+    <section class="type">
+      <div class="container">
+        <h2 class="title type__title">Любой тип площадки</h2>
+        <div class="type__content">
+          <a class="type__item" href="#">
+            <div class="type__shell" style="background-image:url(img/type/1.jpg);">
+              <span class="type__text">Лофт</span>
+            </div>
+          </a>
+          <a class="type__item" href="#">
+            <div class="type__shell" style="background-image:url(img/type/2.jpg);">
+              <span class="type__text">Бар</span>
+            </div>
+          </a>
+          <a class="type__item" href="#">
+            <div class="type__shell" style="background-image:url(img/type/3.jpg);">
+              <span class="type__text">Беседки</span>
+            </div>
+          </a>
+          <a class="type__item" href="#">
+            <div class="type__shell" style="background-image:url(img/type/4.jpg);">
+              <span class="type__text">Бани и сауны</span>
+            </div>
+          </a>
+          <a class="type__item type__item--p" href="#">
+            <div class="type__shell" style="background-image:url(img/type/5.jpg);">
+              <span class="type__text">Коттетджи</span>
+            </div>
+          </a>
+          <a class="type__item" href="#">
+            <div class="type__shell" style="background-image:url(img/type/6.jpg);">
+              <span class="type__text">Боулинг</span>
+            </div>
+          </a>
+          <a class="type__item" href="#">
+            <div class="type__shell" style="background-image:url(img/type/7.jpg);">
+              <span class="type__text type__text--green">Квесты</span>
+            </div>
+          </a>
+          <a class="type__item" href="#">
+            <div class="type__shell" style="background-image:url(img/type/8.jpg);">
+              <span class="type__text">Рестораны</span>
+            </div>
+          </a>
+          <a class="type__item" href="#">
+            <div class="type__shell" style="background-image:url(img/type/9.jpg);">
+              <span class="type__text">Антикафе</span>
+            </div>
+          </a>
+          <a class="type__item" href="#">
+            <div class="type__shell" style="background-image:url(img/type/10.jpg);">
+              <span class="type__text">Батуты</span>
+            </div>
+          </a>
+          <a class="type__item" href="#">
+            <div class="type__shell" style="background-image:url(img/type/11.jpg);">
+              <span class="type__text">Караоке</span>
+            </div>
+          </a>
+          <a class="type__item" href="#">
+            <div class="type__shell" style="background-image:url(img/type/12.jpg);">
+              <span class="type__text">Конференц-залы</span>
+            </div>
+          </a>
+          <a class="type__item" href="#">
+            <div class="type__shell" style="background-image:url(img/type/13.jpg);">
+              <span class="type__text type__text--green">Студии (фото/видео)</span>
+            </div>
+          </a>
+          <a class="type__item type__item--p" href="#">
+            <div class="type__shell" style="background-image:url(img/type/14.jpg);">
+              <span class="type__text">Клуб</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="slider">
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-inner slider__items">
+          <div class="carousel-item active">
+            <div class="slider__item">
+              <img class="slider__img" src="img/slider/1.jpg" alt="images">
+              <div class="slider__texts">
+                <h3 class="slider__title">Эксклюзивные события</h3>
+                <p class="slider__text">
+                  Подберем самые интересные события на основе ваших предпочтений. Найдем эксклюзивные мероприятия,
+                  которых
+                  больше ни у кого нет.
+                </p>
+                <p class="slider__text">
+                  Подберем самые интересные события на основе ваших предпочтений.
+                  Найдем эксклюзивные мероприятия, которых больше ни у кого нет
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="slider__item">
+              <div class="slider__texts">
+                <h3 class="slider__title">Эксклюзивные события</h3>
+                <p class="slider__text">
+                  Подберем самые интересные события на основе ваших предпочтений. Найдем эксклюзивные мероприятия,
+                  которых
+                  больше ни у кого нет.
+                </p>
+                <p class="slider__text">
+                  Подберем самые интересные события на основе ваших предпочтений.
+                  Найдем эксклюзивные мероприятия, которых больше ни у кого нет
+                </p>
+              </div>
+              <img class="slider__img" src="img/slider/1.jpg" alt="images">
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="slider__item">
+              <img class="slider__img" src="img/slider/1.jpg" alt="images">
+              <div class="slider__texts">
+                <h3 class="slider__title">Эксклюзивные события</h3>
+                <p class="slider__text">
+                  Подберем самые интересные события на основе ваших предпочтений. Найдем эксклюзивные мероприятия,
+                  которых
+                  больше ни у кого нет.
+                </p>
+                <p class="slider__text">
+                  Подберем самые интересные события на основе ваших предпочтений.
+                  Найдем эксклюзивные мероприятия, которых больше ни у кого нет
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slider__nav">
+          <button class="carousel-control-prev slider-prev-arrow slider-arrow slider__arrow" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="hidden">Предыдущий</span>
+            <img src="img/slider-arrow.svg" alt="slider-arrow-arrow">
+          </button>
+          <div class="carousel-indicators slider__dots">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <button class="carousel-control-next slider-next-arrow slider-arrow slider__arrow" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="hidden">Следующий</span>
+            <img src="img/slider-arrow.svg" alt="slider-arrow-arrow">
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="event">
+      <div class="container">
+        <h2 class="title event__title">Любой тип события</h2>
+        <div class="event__content">
+          <div class="event__item">
+            <img class="event__img" src="img/event/1.jpg" alt="event type">
+            <div class="event__texts">
+              <span class="event__type">Тип</span>
+              <span class="event__event-text">Мероприятия</span>
+            </div>
+          </div>
+          <div class="event__item">
+            <img src="img/event/1.jpg" alt="event type">
+            <div class="event__texts">
+              <span class="event__type">Тип</span>
+              <span class="event__event-text">Мероприятия</span>
+            </div>
+          </div>
+          <div class="event__item">
+            <img src="img/event/1.jpg" alt="event type">
+            <div class="event__texts">
+              <span class="event__type">Тип</span>
+              <span class="event__event-text">Мероприятия</span>
+            </div>
+          </div>
+          <div class="event__item">
+            <img src="img/event/1.jpg" alt="event type">
+            <div class="event__texts">
+              <span class="event__type">Тип</span>
+              <span class="event__event-text">Мероприятия</span>
+            </div>
+          </div>
+          <div class="event__item">
+            <img src="img/event/1.jpg" alt="event type">
+            <div class="event__texts">
+              <span class="event__type">Тип</span>
+              <span class="event__event-text">Мероприятия</span>
+            </div>
+          </div>
+          <div class="event__item">
+            <img src="img/event/1.jpg" alt="event type">
+            <div class="event__texts">
+              <span class="event__type">Тип</span>
+              <span class="event__event-text">Мероприятия</span>
+            </div>
+          </div>
+          <div class="event__item">
+            <img src="img/event/1.jpg" alt="event type">
+            <div class="event__texts">
+              <span class="event__type">Тип</span>
+              <span class="event__event-text">Мероприятия</span>
+            </div>
+          </div>
+          <div class="event__item">
+            <img src="img/event/1.jpg" alt="event type">
+            <div class="event__texts">
+              <span class="event__type">Тип</span>
+              <span class="event__event-text">Мероприятия</span>
+            </div>
+          </div>
+          <div class="event__item">
+            <img src="img/event/1.jpg" alt="event type">
+            <div class="event__texts">
+              <span class="event__type">Тип</span>
+              <span class="event__event-text">Мероприятия</span>
+            </div>
+          </div>
+          <div class="event__item">
+            <img src="img/event/1.jpg" alt="event type">
+            <div class="event__texts">
+              <span class="event__type">Тип</span>
+              <span class="event__event-text">Мероприятия</span>
+            </div>
+          </div>
+          <div class="event__item">
+            <img src="img/event/1.jpg" alt="event type">
+            <div class="event__texts">
+              <span class="event__type">Тип</span>
+              <span class="event__event-text">Мероприятия</span>
+            </div>
+          </div>
+          <div class="event__item">
+            <img src="img/event/1.jpg" alt="event type">
+            <div class="event__texts">
+              <span class="event__type">Тип</span>
+              <span class="event__event-text">Мероприятия</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="row justify-content-center pb-3">
+        <ul class="footer__item col-12 col-sm-4">
+          <li><a href="#">Наши преимущества</a></li>
+          <li><a href="#">Как работает сервис?</a></li>
+          <li><a href="#">Подключится к Eventplace</a></li>
+          <li><a href="#">Гарантии и безопастность </a></li>
+        </ul>
+        <ul class="footer__item col-12 col-sm-4">
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Документы</a></li>
+          <li><a href="#">Инвесторам</a></li>
+          <li><a href="#">СМИ о нас</a></li>
+        </ul>
+        <div class="footer__item col-12 col-sm-4">
+          <ul class="d-flex gap-4 mb-3">
+            <li><a href="#"><img src="img/facebook.svg" alt="facebook"></a></li>
+            <li><a href="#"><img src="img/telegram.svg" alt="telegram"></a></li>
+            <li><a href="#"><img src="img/instagram.svg" alt="instagram"></a></li>
+            <li><a href="#"><img src="img/vk.svg" alt="vk"></a></li>
+          </ul>
+          <span class="fw-light">OOO “Eventpacle”</span>
+        </div>
+      </div>
+      <div class="row gy-2 pt-2 footer__bottom">
+        <span class="col-12 col-sm-6 fw-light">© 2021 All rights reserved</span>
+        <div class="col-12 col-sm-3 text-sm-end "><a class="fw-light" href="#">Конфиденциальность</a></div>
+        <div class="col-12 col-sm-3 text-sm-end"><a class="fw-light" href="#">Условия</a></div>
+      </div>
+    </div>
+  </footer>
+  <div class="modal fade" id="registration" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><img src="img/close.png" alt=""></button>
+          <h1 class="modal-title" id="exampleModalLabel">Регистрация</h1>
+        </div>
+        <div class="modal-body">
+          <h3 class="modal-body__title">Добро пожаловать в Eventplace </h3>
+          <form action="#" class="modal-form modal-body__form">
+            <input type="tel" class="modal-form__input input" placeholder="Номер телефона" required>
+            <input type="email" class="modal-form__input input" placeholder="Электронная почта" required>
+            <div class="modal-form__pass">
+              <input type="password" class="modal-form__input input" placeholder="Пароль" id="pass" required>
+              <a class="modal-form__eyes" href="#"><img src="img/eyes.png" alt=""></a>
+            </div>
+            <p class="modal-form__confirm">Мы отправим писмьо, чтобы подтвердить почту. </p>
+            <div class="modal-form__checkbox">
+              <input type="checkbox" id="chek1">
+              <label for="chek1">
+                Я хочу получать e-mail и sмs-рассылку с рекомендациями интересных событий, анонсами,
+                новостями, а также информационные сообщения
+              </label>
+            </div>
+            <div class="modal-form__checkbox">
+              <input type="checkbox" id="chek2">
+              <label for="chek2">
+                Я ознакомлен и принимаю условия <a class="modal-form__checkbox-link" href="#">пользовательского
+                  соглашения</a> и <a class="modal-form__checkbox-link" href="#">политики конфидециальности</a>
+              </label>
+            </div>
+            <button class="modal-form__btn button">Зарегистрироваться</button>
+          </form>
+          <p class="modal-body__entry">Уже есть аккаунт? <button class="modal-body__entry-link" type="button" data-bs-toggle="modal" data-bs-target="#login">Войти</button></p>
+        </div>
+        <div class="modal-footer">
+          <a class="modal-footer__item" href="#">
+            <img class="modal-footer__img" src="img/google.png" alt="google">
+            <p class="modal-footer__text">С помощью Google</p>
+          </a>
+          <a class="modal-footer__item" href="#">
+            <img class="modal-footer__img" src="img/facebook.png" alt="google">
+            <p class="modal-footer__text">С помощью Facebook</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="login" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><img src="img/close.png" alt=""></button>
+          <h1 class="modal-title" id="exampleModalLabel">Вход</h1>
+        </div>
+        <div class="modal-body">
+          <h3 class="modal-body__title">Добро пожаловать в Eventplace </h3>
+          <form action="#" class="modal-form modal-body__form">
+            <input type="email" class="modal-form__input input" placeholder="Электронная почта" required>
+            <div class="modal-form__pass">
+              <input type="password" class="modal-form__input input" placeholder="Пароль" id="pass" required>
+              <a class="modal-form__eyes" href="#"><img src="img/eyes.png" alt=""></a>
+            </div>
+            <div class="modal-form__lost-pass">
+              <a href="#">Забыли пароль?</a>
+            </div>
+            <button class="modal-form__btn button">Войти</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <a class="modal-footer__item" href="#">
+            <img class="modal-footer__img" src="img/google.png" alt="google">
+            <p class="modal-footer__text">С помощью Google</p>
+          </a>
+          <a class="modal-footer__item" href="#">
+            <img class="modal-footer__img" src="img/facebook.png" alt="google">
+            <p class="modal-footer__text">С помощью Facebook</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
