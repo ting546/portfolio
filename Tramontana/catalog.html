@@ -1,0 +1,2574 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tramontana</title>
+  <link rel="stylesheet" href="css/libs.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+
+</head>
+<body>
+  <noscript>Ваш браузер не поддерживает JavaScript!</noscript>
+  <div class="wrapper">
+    <header class="header">
+      <div class="header-top">
+        <div class="container">
+          <div class="row">
+            <nav class="header-top__nav col-lg-8 col-sm-7">
+              <ul class="header-top__list">
+                <li class="header-top__item"><a class="header-top__link" href="#">Доставка</a></li>
+                <li class="header-top__item"><a class="header-top__link" href="#">Возврат</a></li>
+                <li class="header-top__item"><a class="header-top__link" href="#">Оплата</a></li>
+                <li class="header-top__item"><a class="header-top__link" href="#">Опт</a></li>
+                <li class="header-top__item"><a class="header-top__link" href="#">Контакты</a></li>
+              </ul>
+              <div class="header-top__links">
+                <a class="header-top__link" href="#">Outdoor-центр</a>
+                <a class="header-top__link" href="#">Скалодром</a>
+              </div>
+            </nav>
+            <ul class="header-top__socials socials col-lg-2 col-sm-auto">
+              <li class="socials__item">
+                <a href="#" target="_blank">
+                  <svg width="17" height="17">
+                    <use href="img/svg/vk.svg#vk" />
+                  </svg>
+                </a>
+              </li>
+              <li class="socials__item">
+                <a href="#" target="_blank">
+                  <svg width="19" height="17">
+                    <use href="img/svg/twitter.svg#twitter" />
+                  </svg>
+                </a>
+              </li>
+              <li class="socials__item">
+                <a href="#" target="_blank">
+                  <svg width="21" height="21">
+                    <use href="img/svg/telegram.svg#telegram" />
+                  </svg>
+                </a>
+              </li>
+              <li class="socials__item">
+                <a href="#" target="_blank">
+                  <svg width="21" height="21">
+                    <use href="img/svg/youtube.svg#youtube" />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+            <div class="col-sm-2 header-top__number">
+              <a class="header-top__number-link" href="tel:88005006208">8 800 500-62-08</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header-body">
+        <div class="container">
+          <div class="row">
+            <div class="col-3 header-body__left">
+              <a class="header-body__logo" href="index.html">
+                <img src="img/logo.svg" alt="логотип Tramontana">
+              </a>
+              <button class="header-body__burger burger-menu btn">
+                <div class="burger-menu__line">
+                  <span></span>
+                </div>
+                <span class="burger-menu__text">Каталог</span>
+              </button>
+              <form class="header-body__search search">
+                <input class="search__input" type="text" placeholder="Поиск по каталогу">
+                <button class="search__btn btn" aria-label="поиск" type="button">
+                  <svg>
+                    <use href="img/svg/search.svg#search" />
+                  </svg>
+                </button>
+              </form>
+            </div>
+            <div class="col-auto col-sm-3 header-body__right">
+              <a href="#" class="header-body__item">
+                <svg width="24" height="24">
+                  <use href="img/svg/log-in.svg#log-in" />
+                </svg>
+                <span class="header-body__item-text">Вход</span>
+              </a>
+              <a href="#" class="header-body__item">
+                <svg width="24" height="22">
+                  <use href="img/svg/favorit.svg#favorit" />
+                </svg>
+                <span class="header-body__item-text">Избранное</span>
+              </a>
+              <a href="#" class="header-body__item">
+                <svg width="24" height="24">
+                  <use href="img/svg/card-shopping.svg#card-shopping" />
+                </svg>
+                <span class="header-body__item-text">Корзина</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header__bottom header-bottom">
+        <div class="container header-bottom__container">
+          <div class="catalog header-bottom__catalog">
+            <ul class="catalog__nav catalog-nav" id="myTab" role="tablist">
+              <li class="catalog-nav__item active" data-bs-toggle="tab" data-bs-target="#clothing"
+                role="tab" aria-controls="clothing" aria-selected="false">
+                <button class="catalog-nav__btn" type="button">Одежда</button>
+              </li>
+              <li class="catalog-nav__item" data-bs-toggle="tab" data-bs-target="#shoes" role="tab"
+                aria-controls="shoes" aria-selected="false">
+                <button class="catalog-nav__btn" type="button">Обувь</button>
+              </li>
+              <li class="catalog-nav__item" data-bs-toggle="tab" data-bs-target="#camping-equipment"
+                role="tab" aria-controls="camping-equipment" aria-selected="false">
+                <button class="catalog-nav__btn" type="button">Походное снаряжение</button>
+              </li>
+              <li class="catalog-nav__item" data-bs-toggle="tab" data-bs-target="#promalp" role="tab"
+                aria-controls="promalp" aria-selected="false">
+                <button class="catalog-nav__btn" type="button">Промальп</button>
+              </li>
+              <li class="catalog-nav__item" data-bs-toggle="tab" data-bs-target="#mountaineering"
+                role="tab" aria-controls="mountaineering" aria-selected="false">
+                <button class="catalog-nav__btn" type="button">Альпинизм</button>
+              </li>
+              <li class="catalog-nav__item" data-bs-toggle="tab" data-bs-target="#present" role="tab"
+                aria-controls="present" aria-selected="false">
+                <button class="catalog-nav__btn" type="button">Подарки</button>
+              </li>
+              <li class="catalog-nav__item" data-bs-toggle="tab" data-bs-target="#brands" role="tab"
+                aria-controls="brands" aria-selected="false">
+                <button class="catalog-nav__btn" type="button">Бренды</button>
+              </li>
+              <li class="catalog-nav__item" data-bs-toggle="tab" data-bs-target="#new" role="tab"
+                aria-controls="new" aria-selected="false">
+                <button class="catalog-nav__btn" type="button">Новинки</button>
+              </li>
+              <li class="catalog-nav__item" data-bs-toggle="tab" data-bs-target="#sale" role="tab"
+                aria-controls="sale" aria-selected="false">
+                <button class="catalog-nav__btn" type="button">Скидки</button>
+              </li>
+            </ul>
+            <div class="catalog__items tab-content" id="myTabContent">
+              <div class="catalog__menu catalog-menu active" id="clothing" role="tabpanel" tabindex="0">
+                <ul class="catalog-menu__list">
+                  <li class="catalog-menu__title">Рюкзаки</li>
+                  <li class="catalog-menu__item"><a href="#">Все рюкзаки</a></li>
+                  <li class="catalog-menu__item"><a href="#">Детские и для переноски детей</a></li>
+                  <li class="catalog-menu__item"><a href="#">До 20 литров</a></li>
+                  <li class="catalog-menu__item"><a href="#">20-30 литров</a></li>
+                  <li class="catalog-menu__item"><a href="#">30-50 литров</a></li>
+                  <li class="catalog-menu__item"><a href="#">50-60 литров</a></li>
+                  <li class="catalog-menu__item"><a href="#">60-80 литров</a></li>
+                  <li class="catalog-menu__item"><a href="#">80-100 литров</a></li>
+                  <li class="catalog-menu__item"><a href="#">Сумки</a></li>
+                  <li class="catalog-menu__item"><a href="#">Баулы</a></li>
+                  <li class="catalog-menu__item"><a href="#">Поясные сумки</a></li>
+                  <li class="catalog-menu__item"><a href="#">Чехлы для телефонов и камер</a></li>
+                  <li class="catalog-menu__item"><a href="#">Кошельки. Косметички.</a></li>
+                  <li class="catalog-menu__item"><a href="#">Специальные</a></li>
+                  <li class="catalog-menu__item"><a href="#">Гермомешки</a></li>
+                  <li class="catalog-menu__item"><a href="#">Аксессуары</a></li>
+                  <li class="catalog-menu__item"><a href="#">Мешки для вещей</a></li>
+                  <li class="catalog-menu__item"><a href="#">Чехлы на рюкзаки</a></li>
+                  <li class="catalog-menu__item"><a href="#">Питьевые системы</a></li>
+                </ul>
+                <div class="catalog-menu__center">
+                  <div>
+                    <ul class="catalog-menu__list">
+                      <li class="catalog-menu__title">Палатки</li>
+                      <li class="catalog-menu__item"><a href="#">Все палатки</a></li>
+                      <li class="catalog-menu__item"><a href="#">Одноместные и бивакзаки</a></li>
+                      <li class="catalog-menu__item"><a href="#">Двухместные</a></li>
+                      <li class="catalog-menu__item"><a href="#">Трехместные</a></li>
+                      <li class="catalog-menu__item"><a href="#">Четырехместные и кемпинговые</a></li>
+                      <li class="catalog-menu__item"><a href="#">Аксессуары</a></li>
+                    </ul>
+                    <ul class="catalog-menu__list">
+                      <li class="catalog-menu__title">Газовое оборудование</li>
+                      <li class="catalog-menu__item"><a href="#">Все газовое оборудование</a></li>
+                      <li class="catalog-menu__item"><a href="#">Баллоны газовые и жидкое топливо</a></li>
+                      <li class="catalog-menu__item"><a href="#">Жидкотопливные горелки</a></li>
+                      <li class="catalog-menu__item"><a href="#">Газовые горелки и плиты</a></li>
+                      <li class="catalog-menu__item"><a href="#">Лампы . Паяльные лампы</a></li>
+                      <li class="catalog-menu__item"><a href="#">Аксессуары</a></li>
+                    </ul>
+                    <ul class="catalog-menu__list">
+                      <li class="catalog-menu__title">Инструмент</li>
+                      <li class="catalog-menu__item"><a href="#">Все инструменты</a></li>
+                      <li class="catalog-menu__item"><a href="#">Пилы</a></li>
+                      <li class="catalog-menu__item"><a href="#">Топоры</a></li>
+                      <li class="catalog-menu__item"><a href="#">Компасы</a></li>
+                      <li class="catalog-menu__item"><a href="#">Мультиинструменты. Ножи</a></li>
+                      <li class="catalog-menu__item"><a href="#">Прочее</a></li>
+                    </ul>
+                  </div>
+                  <div>
+                    <ul class="catalog-menu__list">
+                      <li class="catalog-menu__title">Коврики. Подушки. Полотенца</li>
+                      <li class="catalog-menu__item"><a href="#">Все коврики, подушки, полотенца</a></li>
+                      <li class="catalog-menu__item"><a href="#">Аэроматы (Надувной коврик)</a></li>
+                      <li class="catalog-menu__item"><a href="#">Пенополиуретановые коврики (Туристический коврик)</a>
+                      </li>
+                      <li class="catalog-menu__item"><a href="#">Сидушки</a></li>
+                      <li class="catalog-menu__item"><a href="#">Подушки. Полотенца</a></li>
+                      <li class="catalog-menu__item"><a href="#">Аксессуары</a></li>
+                    </ul>
+                    <ul class="catalog-menu__list">
+                      <li class="catalog-menu__title">Спальные мешки</li>
+                      <li class="catalog-menu__item"><a href="#">Все спальные мешки</a></li>
+                      <li class="catalog-menu__item"><a href="#">Аксессуары</a></li>
+                      <li class="catalog-menu__item"><a href="#">Пуховые</a></li>
+                      <li class="catalog-menu__item"><a href="#">Синтетические</a></li>
+                    </ul>
+                    <ul class="catalog-menu__list">
+                      <li class="catalog-menu__title">Посуда</li>
+                      <li class="catalog-menu__item"><a href="#">Вся посуда</a></li>
+                      <li class="catalog-menu__item"><a href="#">Котлы. Кастрюли. Сковороды.</a></li>
+                      <li class="catalog-menu__item"><a href="#">Кружки</a></li>
+                      <li class="catalog-menu__item"><a href="#">Ложки. Вилки</a></li>
+                      <li class="catalog-menu__item"><a href="#">Миски</a></li>
+                      <li class="catalog-menu__item"><a href="#">Наборы посуды</a></li>
+                      <li class="catalog-menu__item"><a href="#">Термосы</a></li>
+                      <li class="catalog-menu__item"><a href="#">Фляжки. Бутылки. Канистры</a></li>
+                      <li class="catalog-menu__item"><a href="#">Чайники</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div>
+                  <div class="card catalog-menu__card">
+                    <div class="card__top">
+                      <a class="card__img card__img--catalog-menu" href="#">
+                        <img loading="lazy" src="img/products/2.jpg" alt="кроссы">
+                      </a>
+                      <div class="card__new card__new--catalog-menu">new</div>
+                    </div>
+                    <div class="card__body card__body--catalog-menu">
+                      <a class="card__text" href="#">
+                        Палатка TALBERG MAREL 2 PRO
+                      </a>
+                      <div class="card__prices">
+                        <span class="card__price card__prices-item card__price--catalog-menu">21 072 ₽</span>
+                        <span class="card__sale card__prices-item card__sale--catalog-menu">26 320 ₽</span>
+                        <span
+                          class="card__sale-protsent card__prices-item card__sale-protsent--catalog-menu">-20%</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog__menu catalog-menu" id="shoes" role="tabpanel" tabindex="0">
+                <div class="catalog-menu__center">
+                  <div>
+                    <ul class="catalog-menu__list">
+                      <li class="catalog-menu__title">Палатки</li>
+                      <li class="catalog-menu__item"><a href="#">Все палатки</a></li>
+                      <li class="catalog-menu__item"><a href="#">Одноместные и бивакзаки</a></li>
+                      <li class="catalog-menu__item"><a href="#">Двухместные</a></li>
+                      <li class="catalog-menu__item"><a href="#">Трехместные</a></li>
+                      <li class="catalog-menu__item"><a href="#">Четырехместные и кемпинговые</a></li>
+                      <li class="catalog-menu__item"><a href="#">Аксессуары</a></li>
+                    </ul>
+                    <ul class="catalog-menu__list">
+                      <li class="catalog-menu__title">Газовое оборудование</li>
+                      <li class="catalog-menu__item"><a href="#">Все газовое оборудование</a></li>
+                      <li class="catalog-menu__item"><a href="#">Баллоны газовые и жидкое топливо</a></li>
+                      <li class="catalog-menu__item"><a href="#">Жидкотопливные горелки</a></li>
+                      <li class="catalog-menu__item"><a href="#">Газовые горелки и плиты</a></li>
+                      <li class="catalog-menu__item"><a href="#">Лампы . Паяльные лампы</a></li>
+                      <li class="catalog-menu__item"><a href="#">Аксессуары</a></li>
+                    </ul>
+                    <ul class="catalog-menu__list">
+                      <li class="catalog-menu__title">Инструмент</li>
+                      <li class="catalog-menu__item"><a href="#">Все инструменты</a></li>
+                      <li class="catalog-menu__item"><a href="#">Пилы</a></li>
+                      <li class="catalog-menu__item"><a href="#">Топоры</a></li>
+                      <li class="catalog-menu__item"><a href="#">Компасы</a></li>
+                      <li class="catalog-menu__item"><a href="#">Мультиинструменты. Ножи</a></li>
+                      <li class="catalog-menu__item"><a href="#">Прочее</a></li>
+                    </ul>
+                  </div>
+                  <div>
+                    <ul class="catalog-menu__list">
+                      <li class="catalog-menu__title">Коврики. Подушки. Полотенца</li>
+                      <li class="catalog-menu__item"><a href="#">Все коврики, подушки, полотенца</a></li>
+                      <li class="catalog-menu__item"><a href="#">Аэроматы (Надувной коврик)</a></li>
+                      <li class="catalog-menu__item"><a href="#">Пенополиуретановые коврики (Туристический коврик)</a>
+                      </li>
+                      <li class="catalog-menu__item"><a href="#">Сидушки</a></li>
+                      <li class="catalog-menu__item"><a href="#">Подушки. Полотенца</a></li>
+                      <li class="catalog-menu__item"><a href="#">Аксессуары</a></li>
+                    </ul>
+                    <ul class="catalog-menu__list">
+                      <li class="catalog-menu__title">Спальные мешки</li>
+                      <li class="catalog-menu__item"><a href="#">Все спальные мешки</a></li>
+                      <li class="catalog-menu__item"><a href="#">Аксессуары</a></li>
+                      <li class="catalog-menu__item"><a href="#">Пуховые</a></li>
+                      <li class="catalog-menu__item"><a href="#">Синтетические</a></li>
+                    </ul>
+                    <ul class="catalog-menu__list">
+                      <li class="catalog-menu__title">Посуда</li>
+                      <li class="catalog-menu__item"><a href="#">Вся посуда</a></li>
+                      <li class="catalog-menu__item"><a href="#">Котлы. Кастрюли. Сковороды.</a></li>
+                      <li class="catalog-menu__item"><a href="#">Кружки</a></li>
+                      <li class="catalog-menu__item"><a href="#">Ложки. Вилки</a></li>
+                      <li class="catalog-menu__item"><a href="#">Миски</a></li>
+                      <li class="catalog-menu__item"><a href="#">Наборы посуды</a></li>
+                      <li class="catalog-menu__item"><a href="#">Термосы</a></li>
+                      <li class="catalog-menu__item"><a href="#">Фляжки. Бутылки. Канистры</a></li>
+                      <li class="catalog-menu__item"><a href="#">Чайники</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div>
+                  <ul class="catalog-menu__list">
+                    <li class="catalog-menu__item catalog-menu__item--big"><a href="#">Мебель</a></li>
+                    <li class="catalog-menu__item catalog-menu__item--big"><a href="#">Гамаки</a></li>
+                    <li class="catalog-menu__item catalog-menu__item--big"><a href="#">Треккинговые палки</a></li>
+                    <li class="catalog-menu__item catalog-menu__item--big"><a href="#">Фонари</a></li>
+                    <li class="catalog-menu__item catalog-menu__item--big"><a href="#">Фильтры</a></li>
+                    <li class="catalog-menu__item catalog-menu__item--big"><a href="#">Печатная продукция</a></li>
+                    <li class="catalog-menu__item catalog-menu__item--big"><a href="#">Горнолыжное снаряжение</a></li>
+                    <li class="catalog-menu__item catalog-menu__item--big"><a href="#">Nite Ize, Steelie</a></li>
+                    <li class="catalog-menu__item catalog-menu__item--big"><a href="#">Слэклайны</a></li>
+                    <li class="catalog-menu__item catalog-menu__item--big"><a href="#">Очки</a></li>
+                    <li class="catalog-menu__item catalog-menu__item--big"><a href="#">Электроника</a></li>
+                    <li class="catalog-menu__item catalog-menu__item--big"><a href="#">Подарочный сертификат</a></li>
+                    <li class="catalog-menu__item catalog-menu__item--big"><a href="#">Все походные снаряжения</a></li>
+                  </ul>
+                  <div class="card catalog-menu__card">
+                    <div class="card__top">
+                      <a class="card__img card__img--catalog-menu" href="#">
+                        <img loading="lazy" src="img/products/2.jpg" alt="кроссы">
+                      </a>
+                      <div class="card__new card__new--catalog-menu">new</div>
+                    </div>
+                    <div class="card__body card__body--catalog-menu">
+                      <a class="card__text" href="#">
+                        Палатка TALBERG MAREL 2 PRO
+                      </a>
+                      <div class="card__prices">
+                        <span class="card__price card__prices-item card__price--catalog-menu">21 072 ₽</span>
+                        <span class="card__sale card__prices-item card__sale--catalog-menu">26 320 ₽</span>
+                        <span
+                          class="card__sale-protsent card__prices-item card__sale-protsent--catalog-menu">-20%</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog__menu catalog-menu" id="camping-equipment" role="tabpanel" tabindex="0">
+                <ul class="catalog-menu__list">
+                  <li class="catalog-menu__title">Рюкзаки</li>
+                  <li class="catalog-menu__item"><a href="#">Все рюкзаки</a></li>
+                  <li class="catalog-menu__item"><a href="#">Детские и для переноски детей</a></li>
+                  <li class="catalog-menu__item"><a href="#">До 20 литров</a></li>
+                  <li class="catalog-menu__item"><a href="#">20-30 литров</a></li>
+                  <li class="catalog-menu__item"><a href="#">30-50 литров</a></li>
+                  <li class="catalog-menu__item"><a href="#">50-60 литров</a></li>
+                  <li class="catalog-menu__item"><a href="#">60-80 литров</a></li>
+                  <li class="catalog-menu__item"><a href="#">80-100 литров</a></li>
+                  <li class="catalog-menu__item"><a href="#">Сумки</a></li>
+                  <li class="catalog-menu__item"><a href="#">Баулы</a></li>
+                  <li class="catalog-menu__item"><a href="#">Поясные сумки</a></li>
+                  <li class="catalog-menu__item"><a href="#">Чехлы для телефонов и камер</a></li>
+                  <li class="catalog-menu__item"><a href="#">Кошельки. Косметички.</a></li>
+                  <li class="catalog-menu__item"><a href="#">Специальные</a></li>
+                  <li class="catalog-menu__item"><a href="#">Гермомешки</a></li>
+                  <li class="catalog-menu__item"><a href="#">Аксессуары</a></li>
+                  <li class="catalog-menu__item"><a href="#">Мешки для вещей</a></li>
+                  <li class="catalog-menu__item"><a href="#">Чехлы на рюкзаки</a></li>
+                  <li class="catalog-menu__item"><a href="#">Питьевые системы</a></li>
+                </ul>
+                <div class="catalog-menu__center">
+                  <div>
+                    <ul class="catalog-menu__list">
+                      <li class="catalog-menu__title">Палатки</li>
+                      <li class="catalog-menu__item"><a href="#">Все палатки</a></li>
+                      <li class="catalog-menu__item"><a href="#">Одноместные и бивакзаки</a></li>
+                      <li class="catalog-menu__item"><a href="#">Двухместные</a></li>
+                      <li class="catalog-menu__item"><a href="#">Трехместные</a></li>
+                      <li class="catalog-menu__item"><a href="#">Четырехместные и кемпинговые</a></li>
+                      <li class="catalog-menu__item"><a href="#">Аксессуары</a></li>
+                    </ul>
+                    <ul class="catalog-menu__list">
+                      <li class="catalog-menu__title">Газовое оборудование</li>
+                      <li class="catalog-menu__item"><a href="#">Все газовое оборудование</a></li>
+                      <li class="catalog-menu__item"><a href="#">Баллоны газовые и жидкое топливо</a></li>
+                      <li class="catalog-menu__item"><a href="#">Жидкотопливные горелки</a></li>
+                      <li class="catalog-menu__item"><a href="#">Газовые горелки и плиты</a></li>
+                      <li class="catalog-menu__item"><a href="#">Лампы . Паяльные лампы</a></li>
+                      <li class="catalog-menu__item"><a href="#">Аксессуары</a></li>
+                    </ul>
+                    <ul class="catalog-menu__list">
+                      <li class="catalog-menu__title">Инструмент</li>
+                      <li class="catalog-menu__item"><a href="#">Все инструменты</a></li>
+                      <li class="catalog-menu__item"><a href="#">Пилы</a></li>
+                      <li class="catalog-menu__item"><a href="#">Топоры</a></li>
+                      <li class="catalog-menu__item"><a href="#">Компасы</a></li>
+                      <li class="catalog-menu__item"><a href="#">Мультиинструменты. Ножи</a></li>
+                      <li class="catalog-menu__item"><a href="#">Прочее</a></li>
+                    </ul>
+                  </div>
+                  <div>
+                    <ul class="catalog-menu__list">
+                      <li class="catalog-menu__title">Коврики. Подушки. Полотенца</li>
+                      <li class="catalog-menu__item"><a href="#">Все коврики, подушки, полотенца</a></li>
+                      <li class="catalog-menu__item"><a href="#">Аэроматы (Надувной коврик)</a></li>
+                      <li class="catalog-menu__item"><a href="#">Пенополиуретановые коврики (Туристический коврик)</a>
+                      </li>
+                      <li class="catalog-menu__item"><a href="#">Сидушки</a></li>
+                      <li class="catalog-menu__item"><a href="#">Подушки. Полотенца</a></li>
+                      <li class="catalog-menu__item"><a href="#">Аксессуары</a></li>
+                    </ul>
+                    <ul class="catalog-menu__list">
+                      <li class="catalog-menu__title">Спальные мешки</li>
+                      <li class="catalog-menu__item"><a href="#">Все спальные мешки</a></li>
+                      <li class="catalog-menu__item"><a href="#">Аксессуары</a></li>
+                      <li class="catalog-menu__item"><a href="#">Пуховые</a></li>
+                      <li class="catalog-menu__item"><a href="#">Синтетические</a></li>
+                    </ul>
+                    <ul class="catalog-menu__list">
+                      <li class="catalog-menu__title">Посуда</li>
+                      <li class="catalog-menu__item"><a href="#">Вся посуда</a></li>
+                      <li class="catalog-menu__item"><a href="#">Котлы. Кастрюли. Сковороды.</a></li>
+                      <li class="catalog-menu__item"><a href="#">Кружки</a></li>
+                      <li class="catalog-menu__item"><a href="#">Ложки. Вилки</a></li>
+                      <li class="catalog-menu__item"><a href="#">Миски</a></li>
+                      <li class="catalog-menu__item"><a href="#">Наборы посуды</a></li>
+                      <li class="catalog-menu__item"><a href="#">Термосы</a></li>
+                      <li class="catalog-menu__item"><a href="#">Фляжки. Бутылки. Канистры</a></li>
+                      <li class="catalog-menu__item"><a href="#">Чайники</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div>
+                  <ul class="catalog-menu__list">
+                    <li class="catalog-menu__item catalog-menu__item--big"><a href="#">Мебель</a></li>
+                    <li class="catalog-menu__item catalog-menu__item--big"><a href="#">Гамаки</a></li>
+                    <li class="catalog-menu__item catalog-menu__item--big"><a href="#">Треккинговые палки</a></li>
+                    <li class="catalog-menu__item catalog-menu__item--big"><a href="#">Фонари</a></li>
+                    <li class="catalog-menu__item catalog-menu__item--big"><a href="#">Фильтры</a></li>
+                    <li class="catalog-menu__item catalog-menu__item--big"><a href="#">Печатная продукция</a></li>
+                    <li class="catalog-menu__item catalog-menu__item--big"><a href="#">Горнолыжное снаряжение</a></li>
+                    <li class="catalog-menu__item catalog-menu__item--big"><a href="#">Nite Ize, Steelie</a></li>
+                    <li class="catalog-menu__item catalog-menu__item--big"><a href="#">Слэклайны</a></li>
+                    <li class="catalog-menu__item catalog-menu__item--big"><a href="#">Очки</a></li>
+                    <li class="catalog-menu__item catalog-menu__item--big"><a href="#">Электроника</a></li>
+                    <li class="catalog-menu__item catalog-menu__item--big"><a href="#">Подарочный сертификат</a></li>
+                    <li class="catalog-menu__item catalog-menu__item--big"><a href="#">Все походные снаряжения</a></li>
+                  </ul>
+                  <div class="card catalog-menu__card">
+                    <div class="card__top">
+                      <a class="card__img card__img--catalog-menu" href="#">
+                        <img loading="lazy" src="img/products/2.jpg" alt="кроссы">
+                      </a>
+                      <div class="card__new card__new--catalog-menu">new</div>
+                    </div>
+                    <div class="card__body card__body--catalog-menu">
+                      <a class="card__text" href="#">
+                        Палатка TALBERG MAREL 2 PRO
+                      </a>
+                      <div class="card__prices">
+                        <span class="card__price card__prices-item card__price--catalog-menu">21 072 ₽</span>
+                        <span class="card__sale card__prices-item card__sale--catalog-menu">26 320 ₽</span>
+                        <span
+                          class="card__sale-protsent card__prices-item card__sale-protsent--catalog-menu">-20%</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog__menu catalog-menu" id="promalp" role="tabpanel" tabindex="0">
+                <ul class="catalog-menu__list">
+                  <li class="catalog-menu__title">Рюкзаки</li>
+                  <li class="catalog-menu__item"><a href="#">Все рюкзаки</a></li>
+                  <li class="catalog-menu__item"><a href="#">Детские и для переноски детей</a></li>
+                  <li class="catalog-menu__item"><a href="#">До 20 литров</a></li>
+                  <li class="catalog-menu__item"><a href="#">20-30 литров</a></li>
+                  <li class="catalog-menu__item"><a href="#">30-50 литров</a></li>
+                  <li class="catalog-menu__item"><a href="#">50-60 литров</a></li>
+                  <li class="catalog-menu__item"><a href="#">60-80 литров</a></li>
+                  <li class="catalog-menu__item"><a href="#">80-100 литров</a></li>
+                  <li class="catalog-menu__item"><a href="#">Сумки</a></li>
+                  <li class="catalog-menu__item"><a href="#">Баулы</a></li>
+                  <li class="catalog-menu__item"><a href="#">Поясные сумки</a></li>
+                  <li class="catalog-menu__item"><a href="#">Чехлы для телефонов и камер</a></li>
+                  <li class="catalog-menu__item"><a href="#">Кошельки. Косметички.</a></li>
+                  <li class="catalog-menu__item"><a href="#">Специальные</a></li>
+                  <li class="catalog-menu__item"><a href="#">Гермомешки</a></li>
+                  <li class="catalog-menu__item"><a href="#">Аксессуары</a></li>
+                  <li class="catalog-menu__item"><a href="#">Мешки для вещей</a></li>
+                  <li class="catalog-menu__item"><a href="#">Чехлы на рюкзаки</a></li>
+                  <li class="catalog-menu__item"><a href="#">Питьевые системы</a></li>
+                </ul>
+                <div class="catalog-menu__center">
+                  <div>
+                    <ul class="catalog-menu__list">
+                      <li class="catalog-menu__title">Коврики. Подушки. Полотенца</li>
+                      <li class="catalog-menu__item"><a href="#">Все коврики, подушки, полотенца</a></li>
+                      <li class="catalog-menu__item"><a href="#">Аэроматы (Надувной коврик)</a></li>
+                      <li class="catalog-menu__item"><a href="#">Пенополиуретановые коврики (Туристический коврик)</a>
+                      </li>
+                      <li class="catalog-menu__item"><a href="#">Сидушки</a></li>
+                      <li class="catalog-menu__item"><a href="#">Подушки. Полотенца</a></li>
+                      <li class="catalog-menu__item"><a href="#">Аксессуары</a></li>
+                    </ul>
+                    <ul class="catalog-menu__list">
+                      <li class="catalog-menu__title">Спальные мешки</li>
+                      <li class="catalog-menu__item"><a href="#">Все спальные мешки</a></li>
+                      <li class="catalog-menu__item"><a href="#">Аксессуары</a></li>
+                      <li class="catalog-menu__item"><a href="#">Пуховые</a></li>
+                      <li class="catalog-menu__item"><a href="#">Синтетические</a></li>
+                    </ul>
+                    <ul class="catalog-menu__list">
+                      <li class="catalog-menu__title">Посуда</li>
+                      <li class="catalog-menu__item"><a href="#">Вся посуда</a></li>
+                      <li class="catalog-menu__item"><a href="#">Котлы. Кастрюли. Сковороды.</a></li>
+                      <li class="catalog-menu__item"><a href="#">Кружки</a></li>
+                      <li class="catalog-menu__item"><a href="#">Ложки. Вилки</a></li>
+                      <li class="catalog-menu__item"><a href="#">Миски</a></li>
+                      <li class="catalog-menu__item"><a href="#">Наборы посуды</a></li>
+                      <li class="catalog-menu__item"><a href="#">Термосы</a></li>
+                      <li class="catalog-menu__item"><a href="#">Фляжки. Бутылки. Канистры</a></li>
+                      <li class="catalog-menu__item"><a href="#">Чайники</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div>
+                  <ul class="catalog-menu__list">
+                    <li class="catalog-menu__item catalog-menu__item--big"><a href="#">Мебель</a></li>
+                    <li class="catalog-menu__item catalog-menu__item--big"><a href="#">Гамаки</a></li>
+                    <li class="catalog-menu__item catalog-menu__item--big"><a href="#">Треккинговые палки</a></li>
+                    <li class="catalog-menu__item catalog-menu__item--big"><a href="#">Фонари</a></li>
+                    <li class="catalog-menu__item catalog-menu__item--big"><a href="#">Фильтры</a></li>
+                    <li class="catalog-menu__item catalog-menu__item--big"><a href="#">Печатная продукция</a></li>
+                    <li class="catalog-menu__item catalog-menu__item--big"><a href="#">Горнолыжное снаряжение</a></li>
+                    <li class="catalog-menu__item catalog-menu__item--big"><a href="#">Nite Ize, Steelie</a></li>
+                    <li class="catalog-menu__item catalog-menu__item--big"><a href="#">Слэклайны</a></li>
+                    <li class="catalog-menu__item catalog-menu__item--big"><a href="#">Очки</a></li>
+                    <li class="catalog-menu__item catalog-menu__item--big"><a href="#">Электроника</a></li>
+                    <li class="catalog-menu__item catalog-menu__item--big"><a href="#">Подарочный сертификат</a></li>
+                    <li class="catalog-menu__item catalog-menu__item--big"><a href="#">Все походные снаряжения</a></li>
+                  </ul>
+                  <div class="card catalog-menu__card">
+                    <div class="card__top">
+                      <a class="card__img card__img--catalog-menu" href="#">
+                        <img loading="lazy" src="img/products/2.jpg" alt="кроссы">
+                      </a>
+                      <div class="card__new card__new--catalog-menu">new</div>
+                    </div>
+                    <div class="card__body card__body--catalog-menu">
+                      <a class="card__text" href="#">
+                        Палатка TALBERG MAREL 2 PRO
+                      </a>
+                      <div class="card__prices">
+                        <span class="card__price card__prices-item card__price--catalog-menu">21 072 ₽</span>
+                        <span class="card__sale card__prices-item card__sale--catalog-menu">26 320 ₽</span>
+                        <span
+                          class="card__sale-protsent card__prices-item card__sale-protsent--catalog-menu">-20%</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog__menu catalog-menu" id="mountaineering" role="tabpanel" tabindex="0">
+                <ul class="catalog-menu__list">
+                  <li class="catalog-menu__title">Рюкзаки</li>
+                  <li class="catalog-menu__item"><a href="#">Все рюкзаки</a></li>
+                  <li class="catalog-menu__item"><a href="#">Детские и для переноски детей</a></li>
+                  <li class="catalog-menu__item"><a href="#">До 20 литров</a></li>
+                  <li class="catalog-menu__item"><a href="#">20-30 литров</a></li>
+                  <li class="catalog-menu__item"><a href="#">30-50 литров</a></li>
+                  <li class="catalog-menu__item"><a href="#">50-60 литров</a></li>
+                  <li class="catalog-menu__item"><a href="#">60-80 литров</a></li>
+                  <li class="catalog-menu__item"><a href="#">80-100 литров</a></li>
+                  <li class="catalog-menu__item"><a href="#">Сумки</a></li>
+                  <li class="catalog-menu__item"><a href="#">Баулы</a></li>
+                  <li class="catalog-menu__item"><a href="#">Поясные сумки</a></li>
+                  <li class="catalog-menu__item"><a href="#">Чехлы для телефонов и камер</a></li>
+                  <li class="catalog-menu__item"><a href="#">Кошельки. Косметички.</a></li>
+                  <li class="catalog-menu__item"><a href="#">Специальные</a></li>
+                  <li class="catalog-menu__item"><a href="#">Гермомешки</a></li>
+                  <li class="catalog-menu__item"><a href="#">Аксессуары</a></li>
+                  <li class="catalog-menu__item"><a href="#">Мешки для вещей</a></li>
+                  <li class="catalog-menu__item"><a href="#">Чехлы на рюкзаки</a></li>
+                  <li class="catalog-menu__item"><a href="#">Питьевые системы</a></li>
+                </ul>
+                <div class="catalog-menu__center">
+                  <div>
+                    <ul class="catalog-menu__list">
+                      <li class="catalog-menu__title">Палатки</li>
+                      <li class="catalog-menu__item"><a href="#">Все палатки</a></li>
+                      <li class="catalog-menu__item"><a href="#">Одноместные и бивакзаки</a></li>
+                      <li class="catalog-menu__item"><a href="#">Двухместные</a></li>
+                      <li class="catalog-menu__item"><a href="#">Трехместные</a></li>
+                      <li class="catalog-menu__item"><a href="#">Четырехместные и кемпинговые</a></li>
+                      <li class="catalog-menu__item"><a href="#">Аксессуары</a></li>
+                    </ul>
+                    <ul class="catalog-menu__list">
+                      <li class="catalog-menu__title">Газовое оборудование</li>
+                      <li class="catalog-menu__item"><a href="#">Все газовое оборудование</a></li>
+                      <li class="catalog-menu__item"><a href="#">Баллоны газовые и жидкое топливо</a></li>
+                      <li class="catalog-menu__item"><a href="#">Жидкотопливные горелки</a></li>
+                      <li class="catalog-menu__item"><a href="#">Газовые горелки и плиты</a></li>
+                      <li class="catalog-menu__item"><a href="#">Лампы . Паяльные лампы</a></li>
+                      <li class="catalog-menu__item"><a href="#">Аксессуары</a></li>
+                    </ul>
+                    <ul class="catalog-menu__list">
+                      <li class="catalog-menu__title">Инструмент</li>
+                      <li class="catalog-menu__item"><a href="#">Все инструменты</a></li>
+                      <li class="catalog-menu__item"><a href="#">Пилы</a></li>
+                      <li class="catalog-menu__item"><a href="#">Топоры</a></li>
+                      <li class="catalog-menu__item"><a href="#">Компасы</a></li>
+                      <li class="catalog-menu__item"><a href="#">Мультиинструменты. Ножи</a></li>
+                      <li class="catalog-menu__item"><a href="#">Прочее</a></li>
+                    </ul>
+                  </div>
+                  <div>
+                    <ul class="catalog-menu__list">
+                      <li class="catalog-menu__title">Коврики. Подушки. Полотенца</li>
+                      <li class="catalog-menu__item"><a href="#">Все коврики, подушки, полотенца</a></li>
+                      <li class="catalog-menu__item"><a href="#">Аэроматы (Надувной коврик)</a></li>
+                      <li class="catalog-menu__item"><a href="#">Пенополиуретановые коврики (Туристический коврик)</a>
+                      </li>
+                      <li class="catalog-menu__item"><a href="#">Сидушки</a></li>
+                      <li class="catalog-menu__item"><a href="#">Подушки. Полотенца</a></li>
+                      <li class="catalog-menu__item"><a href="#">Аксессуары</a></li>
+                    </ul>
+                    <ul class="catalog-menu__list">
+                      <li class="catalog-menu__title">Спальные мешки</li>
+                      <li class="catalog-menu__item"><a href="#">Все спальные мешки</a></li>
+                      <li class="catalog-menu__item"><a href="#">Аксессуары</a></li>
+                      <li class="catalog-menu__item"><a href="#">Пуховые</a></li>
+                      <li class="catalog-menu__item"><a href="#">Синтетические</a></li>
+                    </ul>
+                    <ul class="catalog-menu__list">
+                      <li class="catalog-menu__title">Посуда</li>
+                      <li class="catalog-menu__item"><a href="#">Вся посуда</a></li>
+                      <li class="catalog-menu__item"><a href="#">Котлы. Кастрюли. Сковороды.</a></li>
+                      <li class="catalog-menu__item"><a href="#">Кружки</a></li>
+                      <li class="catalog-menu__item"><a href="#">Ложки. Вилки</a></li>
+                      <li class="catalog-menu__item"><a href="#">Миски</a></li>
+                      <li class="catalog-menu__item"><a href="#">Наборы посуды</a></li>
+                      <li class="catalog-menu__item"><a href="#">Термосы</a></li>
+                      <li class="catalog-menu__item"><a href="#">Фляжки. Бутылки. Канистры</a></li>
+                      <li class="catalog-menu__item"><a href="#">Чайники</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div>
+                  <ul class="catalog-menu__list">
+                    <li class="catalog-menu__item catalog-menu__item--big"><a href="#">Мебель</a></li>
+                    <li class="catalog-menu__item catalog-menu__item--big"><a href="#">Гамаки</a></li>
+                    <li class="catalog-menu__item catalog-menu__item--big"><a href="#">Треккинговые палки</a></li>
+                    <li class="catalog-menu__item catalog-menu__item--big"><a href="#">Фонари</a></li>
+                    <li class="catalog-menu__item catalog-menu__item--big"><a href="#">Фильтры</a></li>
+                    <li class="catalog-menu__item catalog-menu__item--big"><a href="#">Печатная продукция</a></li>
+                    <li class="catalog-menu__item catalog-menu__item--big"><a href="#">Горнолыжное снаряжение</a></li>
+                    <li class="catalog-menu__item catalog-menu__item--big"><a href="#">Nite Ize, Steelie</a></li>
+                    <li class="catalog-menu__item catalog-menu__item--big"><a href="#">Слэклайны</a></li>
+                    <li class="catalog-menu__item catalog-menu__item--big"><a href="#">Очки</a></li>
+                    <li class="catalog-menu__item catalog-menu__item--big"><a href="#">Электроника</a></li>
+                    <li class="catalog-menu__item catalog-menu__item--big"><a href="#">Подарочный сертификат</a></li>
+                    <li class="catalog-menu__item catalog-menu__item--big"><a href="#">Все походные снаряжения</a></li>
+                  </ul>
+                  <div class="card catalog-menu__card">
+                    <div class="card__top">
+                      <a class="card__img card__img--catalog-menu" href="#">
+                        <img loading="lazy" src="img/products/2.jpg" alt="кроссы">
+                      </a>
+                      <div class="card__new card__new--catalog-menu">new</div>
+                    </div>
+                    <div class="card__body card__body--catalog-menu">
+                      <a class="card__text" href="#">
+                        Палатка TALBERG MAREL 2 PRO
+                      </a>
+                      <div class="card__prices">
+                        <span class="card__price card__prices-item card__price--catalog-menu">21 072 ₽</span>
+                        <span class="card__sale card__prices-item card__sale--catalog-menu">26 320 ₽</span>
+                        <span
+                          class="card__sale-protsent card__prices-item card__sale-protsent--catalog-menu">-20%</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog__menu catalog-menu" id="present" role="tabpanel" tabindex="0">
+                <ul class="catalog-menu__list">
+                  <li class="catalog-menu__title">Рюкзаки</li>
+                  <li class="catalog-menu__item"><a href="#">Все рюкзаки</a></li>
+                  <li class="catalog-menu__item"><a href="#">Детские и для переноски детей</a></li>
+                  <li class="catalog-menu__item"><a href="#">До 20 литров</a></li>
+                  <li class="catalog-menu__item"><a href="#">20-30 литров</a></li>
+                  <li class="catalog-menu__item"><a href="#">30-50 литров</a></li>
+                  <li class="catalog-menu__item"><a href="#">50-60 литров</a></li>
+                  <li class="catalog-menu__item"><a href="#">60-80 литров</a></li>
+                  <li class="catalog-menu__item"><a href="#">80-100 литров</a></li>
+                  <li class="catalog-menu__item"><a href="#">Сумки</a></li>
+                  <li class="catalog-menu__item"><a href="#">Баулы</a></li>
+                  <li class="catalog-menu__item"><a href="#">Поясные сумки</a></li>
+                  <li class="catalog-menu__item"><a href="#">Чехлы для телефонов и камер</a></li>
+                  <li class="catalog-menu__item"><a href="#">Кошельки. Косметички.</a></li>
+                  <li class="catalog-menu__item"><a href="#">Специальные</a></li>
+                  <li class="catalog-menu__item"><a href="#">Гермомешки</a></li>
+                  <li class="catalog-menu__item"><a href="#">Аксессуары</a></li>
+                  <li class="catalog-menu__item"><a href="#">Мешки для вещей</a></li>
+                  <li class="catalog-menu__item"><a href="#">Чехлы на рюкзаки</a></li>
+                  <li class="catalog-menu__item"><a href="#">Питьевые системы</a></li>
+                </ul>
+                <div class="catalog-menu__center">
+                  <div>
+                    <ul class="catalog-menu__list">
+                      <li class="catalog-menu__title">Палатки</li>
+                      <li class="catalog-menu__item"><a href="#">Все палатки</a></li>
+                      <li class="catalog-menu__item"><a href="#">Одноместные и бивакзаки</a></li>
+                      <li class="catalog-menu__item"><a href="#">Двухместные</a></li>
+                      <li class="catalog-menu__item"><a href="#">Трехместные</a></li>
+                      <li class="catalog-menu__item"><a href="#">Четырехместные и кемпинговые</a></li>
+                      <li class="catalog-menu__item"><a href="#">Аксессуары</a></li>
+                    </ul>
+                    <ul class="catalog-menu__list">
+                      <li class="catalog-menu__title">Газовое оборудование</li>
+                      <li class="catalog-menu__item"><a href="#">Все газовое оборудование</a></li>
+                      <li class="catalog-menu__item"><a href="#">Баллоны газовые и жидкое топливо</a></li>
+                      <li class="catalog-menu__item"><a href="#">Жидкотопливные горелки</a></li>
+                      <li class="catalog-menu__item"><a href="#">Газовые горелки и плиты</a></li>
+                      <li class="catalog-menu__item"><a href="#">Лампы . Паяльные лампы</a></li>
+                      <li class="catalog-menu__item"><a href="#">Аксессуары</a></li>
+                    </ul>
+                    <ul class="catalog-menu__list">
+                      <li class="catalog-menu__title">Инструмент</li>
+                      <li class="catalog-menu__item"><a href="#">Все инструменты</a></li>
+                      <li class="catalog-menu__item"><a href="#">Пилы</a></li>
+                      <li class="catalog-menu__item"><a href="#">Топоры</a></li>
+                      <li class="catalog-menu__item"><a href="#">Компасы</a></li>
+                      <li class="catalog-menu__item"><a href="#">Мультиинструменты. Ножи</a></li>
+                      <li class="catalog-menu__item"><a href="#">Прочее</a></li>
+                    </ul>
+                  </div>
+                  <div>
+                    <ul class="catalog-menu__list">
+                      <li class="catalog-menu__title">Коврики. Подушки. Полотенца</li>
+                      <li class="catalog-menu__item"><a href="#">Все коврики, подушки, полотенца</a></li>
+                      <li class="catalog-menu__item"><a href="#">Аэроматы (Надувной коврик)</a></li>
+                      <li class="catalog-menu__item"><a href="#">Пенополиуретановые коврики (Туристический коврик)</a>
+                      </li>
+                      <li class="catalog-menu__item"><a href="#">Сидушки</a></li>
+                      <li class="catalog-menu__item"><a href="#">Подушки. Полотенца</a></li>
+                      <li class="catalog-menu__item"><a href="#">Аксессуары</a></li>
+                    </ul>
+                    <ul class="catalog-menu__list">
+                      <li class="catalog-menu__title">Спальные мешки</li>
+                      <li class="catalog-menu__item"><a href="#">Все спальные мешки</a></li>
+                      <li class="catalog-menu__item"><a href="#">Аксессуары</a></li>
+                      <li class="catalog-menu__item"><a href="#">Пуховые</a></li>
+                      <li class="catalog-menu__item"><a href="#">Синтетические</a></li>
+                    </ul>
+                    <ul class="catalog-menu__list">
+                      <li class="catalog-menu__title">Посуда</li>
+                      <li class="catalog-menu__item"><a href="#">Вся посуда</a></li>
+                      <li class="catalog-menu__item"><a href="#">Котлы. Кастрюли. Сковороды.</a></li>
+                      <li class="catalog-menu__item"><a href="#">Кружки</a></li>
+                      <li class="catalog-menu__item"><a href="#">Ложки. Вилки</a></li>
+                      <li class="catalog-menu__item"><a href="#">Миски</a></li>
+                      <li class="catalog-menu__item"><a href="#">Наборы посуды</a></li>
+                      <li class="catalog-menu__item"><a href="#">Термосы</a></li>
+                      <li class="catalog-menu__item"><a href="#">Фляжки. Бутылки. Канистры</a></li>
+                      <li class="catalog-menu__item"><a href="#">Чайники</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div>
+                  <ul class="catalog-menu__list">
+                    <li class="catalog-menu__item catalog-menu__item--big"><a href="#">Мебель</a></li>
+                    <li class="catalog-menu__item catalog-menu__item--big"><a href="#">Гамаки</a></li>
+                    <li class="catalog-menu__item catalog-menu__item--big"><a href="#">Треккинговые палки</a></li>
+                    <li class="catalog-menu__item catalog-menu__item--big"><a href="#">Фонари</a></li>
+                    <li class="catalog-menu__item catalog-menu__item--big"><a href="#">Фильтры</a></li>
+                    <li class="catalog-menu__item catalog-menu__item--big"><a href="#">Печатная продукция</a></li>
+                    <li class="catalog-menu__item catalog-menu__item--big"><a href="#">Горнолыжное снаряжение</a></li>
+                    <li class="catalog-menu__item catalog-menu__item--big"><a href="#">Nite Ize, Steelie</a></li>
+                    <li class="catalog-menu__item catalog-menu__item--big"><a href="#">Слэклайны</a></li>
+                    <li class="catalog-menu__item catalog-menu__item--big"><a href="#">Очки</a></li>
+                    <li class="catalog-menu__item catalog-menu__item--big"><a href="#">Электроника</a></li>
+                    <li class="catalog-menu__item catalog-menu__item--big"><a href="#">Подарочный сертификат</a></li>
+                    <li class="catalog-menu__item catalog-menu__item--big"><a href="#">Все походные снаряжения</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="catalog__menu catalog-menu" id="brands" role="tabpanel" tabindex="0">
+                <ul class="catalog-menu__list">
+                  <li class="catalog-menu__title">Рюкзаки</li>
+                  <li class="catalog-menu__item"><a href="#">Все рюкзаки</a></li>
+                  <li class="catalog-menu__item"><a href="#">Детские и для переноски детей</a></li>
+                  <li class="catalog-menu__item"><a href="#">До 20 литров</a></li>
+                  <li class="catalog-menu__item"><a href="#">20-30 литров</a></li>
+                  <li class="catalog-menu__item"><a href="#">30-50 литров</a></li>
+                  <li class="catalog-menu__item"><a href="#">50-60 литров</a></li>
+                  <li class="catalog-menu__item"><a href="#">60-80 литров</a></li>
+                  <li class="catalog-menu__item"><a href="#">80-100 литров</a></li>
+                  <li class="catalog-menu__item"><a href="#">Сумки</a></li>
+                  <li class="catalog-menu__item"><a href="#">Баулы</a></li>
+                  <li class="catalog-menu__item"><a href="#">Поясные сумки</a></li>
+                  <li class="catalog-menu__item"><a href="#">Чехлы для телефонов и камер</a></li>
+                  <li class="catalog-menu__item"><a href="#">Кошельки. Косметички.</a></li>
+                  <li class="catalog-menu__item"><a href="#">Специальные</a></li>
+                  <li class="catalog-menu__item"><a href="#">Гермомешки</a></li>
+                  <li class="catalog-menu__item"><a href="#">Аксессуары</a></li>
+                  <li class="catalog-menu__item"><a href="#">Мешки для вещей</a></li>
+                  <li class="catalog-menu__item"><a href="#">Чехлы на рюкзаки</a></li>
+                  <li class="catalog-menu__item"><a href="#">Питьевые системы</a></li>
+                </ul>
+                <div class="catalog-menu__center">
+                  <div>
+                    <ul class="catalog-menu__list">
+                      <li class="catalog-menu__title">Палатки</li>
+                      <li class="catalog-menu__item"><a href="#">Все палатки</a></li>
+                      <li class="catalog-menu__item"><a href="#">Одноместные и бивакзаки</a></li>
+                      <li class="catalog-menu__item"><a href="#">Двухместные</a></li>
+                      <li class="catalog-menu__item"><a href="#">Трехместные</a></li>
+                      <li class="catalog-menu__item"><a href="#">Четырехместные и кемпинговые</a></li>
+                      <li class="catalog-menu__item"><a href="#">Аксессуары</a></li>
+                    </ul>
+                    <ul class="catalog-menu__list">
+                      <li class="catalog-menu__title">Газовое оборудование</li>
+                      <li class="catalog-menu__item"><a href="#">Все газовое оборудование</a></li>
+                      <li class="catalog-menu__item"><a href="#">Баллоны газовые и жидкое топливо</a></li>
+                      <li class="catalog-menu__item"><a href="#">Жидкотопливные горелки</a></li>
+                      <li class="catalog-menu__item"><a href="#">Газовые горелки и плиты</a></li>
+                      <li class="catalog-menu__item"><a href="#">Лампы . Паяльные лампы</a></li>
+                      <li class="catalog-menu__item"><a href="#">Аксессуары</a></li>
+                    </ul>
+                    <ul class="catalog-menu__list">
+                      <li class="catalog-menu__title">Инструмент</li>
+                      <li class="catalog-menu__item"><a href="#">Все инструменты</a></li>
+                      <li class="catalog-menu__item"><a href="#">Пилы</a></li>
+                      <li class="catalog-menu__item"><a href="#">Топоры</a></li>
+                      <li class="catalog-menu__item"><a href="#">Компасы</a></li>
+                      <li class="catalog-menu__item"><a href="#">Мультиинструменты. Ножи</a></li>
+                      <li class="catalog-menu__item"><a href="#">Прочее</a></li>
+                    </ul>
+                  </div>
+                  <div>
+                    <ul class="catalog-menu__list">
+                      <li class="catalog-menu__title">Коврики. Подушки. Полотенца</li>
+                      <li class="catalog-menu__item"><a href="#">Все коврики, подушки, полотенца</a></li>
+                      <li class="catalog-menu__item"><a href="#">Аэроматы (Надувной коврик)</a></li>
+                      <li class="catalog-menu__item"><a href="#">Пенополиуретановые коврики (Туристический коврик)</a>
+                      </li>
+                      <li class="catalog-menu__item"><a href="#">Сидушки</a></li>
+                      <li class="catalog-menu__item"><a href="#">Подушки. Полотенца</a></li>
+                      <li class="catalog-menu__item"><a href="#">Аксессуары</a></li>
+                    </ul>
+                    <ul class="catalog-menu__list">
+                      <li class="catalog-menu__title">Спальные мешки</li>
+                      <li class="catalog-menu__item"><a href="#">Все спальные мешки</a></li>
+                      <li class="catalog-menu__item"><a href="#">Аксессуары</a></li>
+                      <li class="catalog-menu__item"><a href="#">Пуховые</a></li>
+                      <li class="catalog-menu__item"><a href="#">Синтетические</a></li>
+                    </ul>
+                    <ul class="catalog-menu__list">
+                      <li class="catalog-menu__title">Посуда</li>
+                      <li class="catalog-menu__item"><a href="#">Вся посуда</a></li>
+                      <li class="catalog-menu__item"><a href="#">Котлы. Кастрюли. Сковороды.</a></li>
+                      <li class="catalog-menu__item"><a href="#">Кружки</a></li>
+                      <li class="catalog-menu__item"><a href="#">Ложки. Вилки</a></li>
+                      <li class="catalog-menu__item"><a href="#">Миски</a></li>
+                      <li class="catalog-menu__item"><a href="#">Наборы посуды</a></li>
+                      <li class="catalog-menu__item"><a href="#">Термосы</a></li>
+                      <li class="catalog-menu__item"><a href="#">Фляжки. Бутылки. Канистры</a></li>
+                      <li class="catalog-menu__item"><a href="#">Чайники</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div>
+                  <ul class="catalog-menu__list">
+                    <li class="catalog-menu__item catalog-menu__item--big"><a href="#">Мебель</a></li>
+                    <li class="catalog-menu__item catalog-menu__item--big"><a href="#">Гамаки</a></li>
+                    <li class="catalog-menu__item catalog-menu__item--big"><a href="#">Треккинговые палки</a></li>
+                    <li class="catalog-menu__item catalog-menu__item--big"><a href="#">Фонари</a></li>
+                    <li class="catalog-menu__item catalog-menu__item--big"><a href="#">Фильтры</a></li>
+                    <li class="catalog-menu__item catalog-menu__item--big"><a href="#">Печатная продукция</a></li>
+                    <li class="catalog-menu__item catalog-menu__item--big"><a href="#">Горнолыжное снаряжение</a></li>
+                    <li class="catalog-menu__item catalog-menu__item--big"><a href="#">Nite Ize, Steelie</a></li>
+                    <li class="catalog-menu__item catalog-menu__item--big"><a href="#">Слэклайны</a></li>
+                    <li class="catalog-menu__item catalog-menu__item--big"><a href="#">Очки</a></li>
+                    <li class="catalog-menu__item catalog-menu__item--big"><a href="#">Электроника</a></li>
+                    <li class="catalog-menu__item catalog-menu__item--big"><a href="#">Подарочный сертификат</a></li>
+                    <li class="catalog-menu__item catalog-menu__item--big"><a href="#">Все походные снаряжения</a></li>
+                  </ul>
+                  <div class="card catalog-menu__card">
+                    <div class="card__top">
+                      <a class="card__img card__img--catalog-menu" href="#">
+                        <img loading="lazy" src="img/products/2.jpg" alt="кроссы">
+                      </a>
+                      <div class="card__new card__new--catalog-menu">new</div>
+                    </div>
+                    <div class="card__body card__body--catalog-menu">
+                      <a class="card__text" href="#">
+                        Палатка TALBERG MAREL 2 PRO
+                      </a>
+                      <div class="card__prices">
+                        <span class="card__price card__prices-item card__price--catalog-menu">21 072 ₽</span>
+                        <span class="card__sale card__prices-item card__sale--catalog-menu">26 320 ₽</span>
+                        <span
+                          class="card__sale-protsent card__prices-item card__sale-protsent--catalog-menu">-20%</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog__menu catalog-menu" id="new" role="tabpanel" tabindex="0">
+                <ul class="catalog-menu__list">
+                  <li class="catalog-menu__title">Рюкзаки</li>
+                  <li class="catalog-menu__item"><a href="#">Все рюкзаки</a></li>
+                  <li class="catalog-menu__item"><a href="#">Детские и для переноски детей</a></li>
+                  <li class="catalog-menu__item"><a href="#">До 20 литров</a></li>
+                  <li class="catalog-menu__item"><a href="#">20-30 литров</a></li>
+                  <li class="catalog-menu__item"><a href="#">30-50 литров</a></li>
+                  <li class="catalog-menu__item"><a href="#">50-60 литров</a></li>
+                  <li class="catalog-menu__item"><a href="#">60-80 литров</a></li>
+                  <li class="catalog-menu__item"><a href="#">80-100 литров</a></li>
+                  <li class="catalog-menu__item"><a href="#">Сумки</a></li>
+                  <li class="catalog-menu__item"><a href="#">Баулы</a></li>
+                  <li class="catalog-menu__item"><a href="#">Поясные сумки</a></li>
+                  <li class="catalog-menu__item"><a href="#">Чехлы для телефонов и камер</a></li>
+                  <li class="catalog-menu__item"><a href="#">Кошельки. Косметички.</a></li>
+                  <li class="catalog-menu__item"><a href="#">Специальные</a></li>
+                  <li class="catalog-menu__item"><a href="#">Гермомешки</a></li>
+                  <li class="catalog-menu__item"><a href="#">Аксессуары</a></li>
+                  <li class="catalog-menu__item"><a href="#">Мешки для вещей</a></li>
+                  <li class="catalog-menu__item"><a href="#">Чехлы на рюкзаки</a></li>
+                  <li class="catalog-menu__item"><a href="#">Питьевые системы</a></li>
+                </ul>
+                <div class="catalog-menu__center">
+                  <div>
+                    <ul class="catalog-menu__list">
+                      <li class="catalog-menu__title">Палатки</li>
+                      <li class="catalog-menu__item"><a href="#">Все палатки</a></li>
+                      <li class="catalog-menu__item"><a href="#">Одноместные и бивакзаки</a></li>
+                      <li class="catalog-menu__item"><a href="#">Двухместные</a></li>
+                      <li class="catalog-menu__item"><a href="#">Трехместные</a></li>
+                      <li class="catalog-menu__item"><a href="#">Четырехместные и кемпинговые</a></li>
+                      <li class="catalog-menu__item"><a href="#">Аксессуары</a></li>
+                    </ul>
+                    <ul class="catalog-menu__list">
+                      <li class="catalog-menu__title">Газовое оборудование</li>
+                      <li class="catalog-menu__item"><a href="#">Все газовое оборудование</a></li>
+                      <li class="catalog-menu__item"><a href="#">Баллоны газовые и жидкое топливо</a></li>
+                      <li class="catalog-menu__item"><a href="#">Жидкотопливные горелки</a></li>
+                      <li class="catalog-menu__item"><a href="#">Газовые горелки и плиты</a></li>
+                      <li class="catalog-menu__item"><a href="#">Лампы . Паяльные лампы</a></li>
+                      <li class="catalog-menu__item"><a href="#">Аксессуары</a></li>
+                    </ul>
+                    <ul class="catalog-menu__list">
+                      <li class="catalog-menu__title">Инструмент</li>
+                      <li class="catalog-menu__item"><a href="#">Все инструменты</a></li>
+                      <li class="catalog-menu__item"><a href="#">Пилы</a></li>
+                      <li class="catalog-menu__item"><a href="#">Топоры</a></li>
+                      <li class="catalog-menu__item"><a href="#">Компасы</a></li>
+                      <li class="catalog-menu__item"><a href="#">Мультиинструменты. Ножи</a></li>
+                      <li class="catalog-menu__item"><a href="#">Прочее</a></li>
+                    </ul>
+                  </div>
+                  <div>
+                    <ul class="catalog-menu__list">
+                      <li class="catalog-menu__title">Коврики. Подушки. Полотенца</li>
+                      <li class="catalog-menu__item"><a href="#">Все коврики, подушки, полотенца</a></li>
+                      <li class="catalog-menu__item"><a href="#">Аэроматы (Надувной коврик)</a></li>
+                      <li class="catalog-menu__item"><a href="#">Пенополиуретановые коврики (Туристический коврик)</a>
+                      </li>
+                      <li class="catalog-menu__item"><a href="#">Сидушки</a></li>
+                      <li class="catalog-menu__item"><a href="#">Подушки. Полотенца</a></li>
+                      <li class="catalog-menu__item"><a href="#">Аксессуары</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div>
+                  <ul class="catalog-menu__list">
+                    <li class="catalog-menu__item catalog-menu__item--big"><a href="#">Мебель</a></li>
+                    <li class="catalog-menu__item catalog-menu__item--big"><a href="#">Гамаки</a></li>
+                    <li class="catalog-menu__item catalog-menu__item--big"><a href="#">Треккинговые палки</a></li>
+                    <li class="catalog-menu__item catalog-menu__item--big"><a href="#">Фонари</a></li>
+                    <li class="catalog-menu__item catalog-menu__item--big"><a href="#">Фильтры</a></li>
+                    <li class="catalog-menu__item catalog-menu__item--big"><a href="#">Печатная продукция</a></li>
+                    <li class="catalog-menu__item catalog-menu__item--big"><a href="#">Горнолыжное снаряжение</a></li>
+                    <li class="catalog-menu__item catalog-menu__item--big"><a href="#">Nite Ize, Steelie</a></li>
+                    <li class="catalog-menu__item catalog-menu__item--big"><a href="#">Слэклайны</a></li>
+                    <li class="catalog-menu__item catalog-menu__item--big"><a href="#">Очки</a></li>
+                    <li class="catalog-menu__item catalog-menu__item--big"><a href="#">Электроника</a></li>
+                    <li class="catalog-menu__item catalog-menu__item--big"><a href="#">Подарочный сертификат</a></li>
+                    <li class="catalog-menu__item catalog-menu__item--big"><a href="#">Все походные снаряжения</a></li>
+                  </ul>
+                  <div class="card catalog-menu__card">
+                    <div class="card__top">
+                      <a class="card__img card__img--catalog-menu" href="#">
+                        <img loading="lazy" src="img/products/2.jpg" alt="кроссы">
+                      </a>
+                      <div class="card__new card__new--catalog-menu">new</div>
+                    </div>
+                    <div class="card__body card__body--catalog-menu">
+                      <a class="card__text" href="#">
+                        Палатка TALBERG MAREL 2 PRO
+                      </a>
+                      <div class="card__prices">
+                        <span class="card__price card__prices-item card__price--catalog-menu">21 072 ₽</span>
+                        <span class="card__sale card__prices-item card__sale--catalog-menu">26 320 ₽</span>
+                        <span
+                          class="card__sale-protsent card__prices-item card__sale-protsent--catalog-menu">-20%</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog__menu catalog-menu" id="sale" role="tabpanel" tabindex="0">
+                <ul class="catalog-menu__list">
+                  <li class="catalog-menu__title">Рюкзаки</li>
+                  <li class="catalog-menu__item"><a href="#">Все рюкзаки</a></li>
+                  <li class="catalog-menu__item"><a href="#">Детские и для переноски детей</a></li>
+                  <li class="catalog-menu__item"><a href="#">До 20 литров</a></li>
+                  <li class="catalog-menu__item"><a href="#">20-30 литров</a></li>
+                  <li class="catalog-menu__item"><a href="#">30-50 литров</a></li>
+                  <li class="catalog-menu__item"><a href="#">50-60 литров</a></li>
+                  <li class="catalog-menu__item"><a href="#">60-80 литров</a></li>
+                  <li class="catalog-menu__item"><a href="#">80-100 литров</a></li>
+                  <li class="catalog-menu__item"><a href="#">Сумки</a></li>
+                  <li class="catalog-menu__item"><a href="#">Баулы</a></li>
+                  <li class="catalog-menu__item"><a href="#">Поясные сумки</a></li>
+                  <li class="catalog-menu__item"><a href="#">Чехлы для телефонов и камер</a></li>
+                  <li class="catalog-menu__item"><a href="#">Кошельки. Косметички.</a></li>
+                  <li class="catalog-menu__item"><a href="#">Специальные</a></li>
+                  <li class="catalog-menu__item"><a href="#">Гермомешки</a></li>
+                  <li class="catalog-menu__item"><a href="#">Аксессуары</a></li>
+                  <li class="catalog-menu__item"><a href="#">Мешки для вещей</a></li>
+                  <li class="catalog-menu__item"><a href="#">Чехлы на рюкзаки</a></li>
+                  <li class="catalog-menu__item"><a href="#">Питьевые системы</a></li>
+                </ul>
+                <div class="catalog-menu__center">
+                  <div>
+                    <ul class="catalog-menu__list">
+                      <li class="catalog-menu__title">Палатки</li>
+                      <li class="catalog-menu__item"><a href="#">Все палатки</a></li>
+                      <li class="catalog-menu__item"><a href="#">Одноместные и бивакзаки</a></li>
+                      <li class="catalog-menu__item"><a href="#">Двухместные</a></li>
+                      <li class="catalog-menu__item"><a href="#">Трехместные</a></li>
+                      <li class="catalog-menu__item"><a href="#">Четырехместные и кемпинговые</a></li>
+                      <li class="catalog-menu__item"><a href="#">Аксессуары</a></li>
+                    </ul>
+                    <ul class="catalog-menu__list">
+                      <li class="catalog-menu__title">Газовое оборудование</li>
+                      <li class="catalog-menu__item"><a href="#">Все газовое оборудование</a></li>
+                      <li class="catalog-menu__item"><a href="#">Баллоны газовые и жидкое топливо</a></li>
+                      <li class="catalog-menu__item"><a href="#">Жидкотопливные горелки</a></li>
+                      <li class="catalog-menu__item"><a href="#">Газовые горелки и плиты</a></li>
+                      <li class="catalog-menu__item"><a href="#">Лампы . Паяльные лампы</a></li>
+                      <li class="catalog-menu__item"><a href="#">Аксессуары</a></li>
+                    </ul>
+                    <ul class="catalog-menu__list">
+                      <li class="catalog-menu__title">Инструмент</li>
+                      <li class="catalog-menu__item"><a href="#">Все инструменты</a></li>
+                      <li class="catalog-menu__item"><a href="#">Пилы</a></li>
+                      <li class="catalog-menu__item"><a href="#">Топоры</a></li>
+                      <li class="catalog-menu__item"><a href="#">Компасы</a></li>
+                      <li class="catalog-menu__item"><a href="#">Мультиинструменты. Ножи</a></li>
+                      <li class="catalog-menu__item"><a href="#">Прочее</a></li>
+                    </ul>
+                  </div>
+                  <div>
+                    <ul class="catalog-menu__list">
+                      <li class="catalog-menu__title">Коврики. Подушки. Полотенца</li>
+                      <li class="catalog-menu__item"><a href="#">Все коврики, подушки, полотенца</a></li>
+                      <li class="catalog-menu__item"><a href="#">Аэроматы (Надувной коврик)</a></li>
+                      <li class="catalog-menu__item"><a href="#">Пенополиуретановые коврики (Туристический коврик)</a>
+                      </li>
+                      <li class="catalog-menu__item"><a href="#">Сидушки</a></li>
+                      <li class="catalog-menu__item"><a href="#">Подушки. Полотенца</a></li>
+                      <li class="catalog-menu__item"><a href="#">Аксессуары</a></li>
+                    </ul>
+                    <ul class="catalog-menu__list">
+                      <li class="catalog-menu__title">Спальные мешки</li>
+                      <li class="catalog-menu__item"><a href="#">Все спальные мешки</a></li>
+                      <li class="catalog-menu__item"><a href="#">Аксессуары</a></li>
+                      <li class="catalog-menu__item"><a href="#">Пуховые</a></li>
+                      <li class="catalog-menu__item"><a href="#">Синтетические</a></li>
+                    </ul>
+                    <ul class="catalog-menu__list">
+                      <li class="catalog-menu__title">Посуда</li>
+                      <li class="catalog-menu__item"><a href="#">Вся посуда</a></li>
+                      <li class="catalog-menu__item"><a href="#">Котлы. Кастрюли. Сковороды.</a></li>
+                      <li class="catalog-menu__item"><a href="#">Кружки</a></li>
+                      <li class="catalog-menu__item"><a href="#">Ложки. Вилки</a></li>
+                      <li class="catalog-menu__item"><a href="#">Миски</a></li>
+                      <li class="catalog-menu__item"><a href="#">Наборы посуды</a></li>
+                      <li class="catalog-menu__item"><a href="#">Термосы</a></li>
+                      <li class="catalog-menu__item"><a href="#">Фляжки. Бутылки. Канистры</a></li>
+                      <li class="catalog-menu__item"><a href="#">Чайники</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div>
+                  <ul class="catalog-menu__list">
+                    <li class="catalog-menu__item catalog-menu__item--big"><a href="#">Мебель</a></li>
+                    <li class="catalog-menu__item catalog-menu__item--big"><a href="#">Гамаки</a></li>
+                    <li class="catalog-menu__item catalog-menu__item--big"><a href="#">Треккинговые палки</a></li>
+                    <li class="catalog-menu__item catalog-menu__item--big"><a href="#">Фонари</a></li>
+                    <li class="catalog-menu__item catalog-menu__item--big"><a href="#">Фильтры</a></li>
+                    <li class="catalog-menu__item catalog-menu__item--big"><a href="#">Печатная продукция</a></li>
+                    <li class="catalog-menu__item catalog-menu__item--big"><a href="#">Горнолыжное снаряжение</a></li>
+                    <li class="catalog-menu__item catalog-menu__item--big"><a href="#">Nite Ize, Steelie</a></li>
+                    <li class="catalog-menu__item catalog-menu__item--big"><a href="#">Слэклайны</a></li>
+                    <li class="catalog-menu__item catalog-menu__item--big"><a href="#">Очки</a></li>
+                    <li class="catalog-menu__item catalog-menu__item--big"><a href="#">Электроника</a></li>
+                    <li class="catalog-menu__item catalog-menu__item--big"><a href="#">Подарочный сертификат</a></li>
+                    <li class="catalog-menu__item catalog-menu__item--big"><a href="#">Все походные снаряжения</a></li>
+                  </ul>
+                  <div class="card catalog-menu__card">
+                    <div class="card__top">
+                      <a class="card__img card__img--catalog-menu" href="#">
+                        <img loading="lazy" src="img/products/2.jpg" alt="кроссы">
+                      </a>
+                      <div class="card__new card__new--catalog-menu">new</div>
+                    </div>
+                    <div class="card__body card__body--catalog-menu">
+                      <a class="card__text" href="#">
+                        Палатка TALBERG MAREL 2 PRO
+                      </a>
+                      <div class="card__prices">
+                        <span class="card__price card__prices-item card__price--catalog-menu">21 072 ₽</span>
+                        <span class="card__sale card__prices-item card__sale--catalog-menu">26 320 ₽</span>
+                        <span
+                          class="card__sale-protsent card__prices-item card__sale-protsent--catalog-menu">-20%</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="product-catalog">
+        <div class="container product-catalog__container">
+          <div class="row">
+            <div class="col-12 col-md-4 col-lg-3">
+              <div class="filter">
+                <div class="filter__wrapper">
+                  <h3 class="filter__title">Фильтры</h3>
+                  <button class="filter__close" type="button" aria-label="закрыть">
+                    <img src="img/filter-close.svg" alt="" aria-hidden="true">
+                  </button>
+                  <div class="filter__accordion filter-accordion" id="filter">
+                    <div class="filter-1">
+                      <h6 class="filter-accordion__title filter-accordion__title--1">Категории товаров</h6>
+                      <div class="filter-accordion__item">
+                        <span class="filter-accordion__header" id="heading1">
+                          <button class="filter-accordion__btn collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#filter1" aria-expanded="true" aria-controls="filter1">
+                            Брюки
+                          </button>
+                        </span>
+                        <div id="filter1" class="filter-accordion__collapse collapse" data-bs-parent="#filter">
+                          <ul class="filter-accordion__list filter-list">
+                            <li class="filter-list__item">
+                              <a class="filter-list__btn" href="#">Мембранные</a>
+                            </li>
+                            <li class="filter-list__item">
+                              <a class="filter-list__btn" href="#">Треккинговые</a>
+                            </li>
+                            <li class="filter-list__item">
+                              <a class="filter-list__btn" href="#">Скалолазные</a>
+                            </li>
+                            <li class="filter-list__item">
+                              <a class="filter-list__btn" href="#">Флисовые</a>
+                            </li>
+                            <li class="filter-list__item">
+                              <a class="filter-list__btn" href="#">Утепленные</a>
+                            </li>
+                            <li class="filter-list__item">
+                              <a class="filter-list__btn" href="#">Беговые</a>
+                            </li>
+                            <li class="filter-list__item">
+                              <a class="filter-list__btn" href="#">Горнолыжные</a>
+                            </li>
+                            <li class="filter-list__item">
+                              <a class="filter-list__btn" href="#">Шорты и бриджи</a>
+                            </li>
+                            <li class="filter-list__item">
+                              <a class="filter-list__btn" href="#">Городские</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="filter-accordion__item">
+                        <span class="filter-accordion__header" id="heading2">
+                          <button class="filter-accordion__btn collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#filter2" aria-expanded="true" aria-controls="filter2">
+                            Куртки
+                          </button>
+                        </span>
+                        <div id="filter2" class="filter-accordion__collapse collapse" data-bs-parent="#filter">
+                          <ul class="filter-accordion__list filter-list">
+                            <li class="filter-list__item">
+                              <a class="filter-list__btn" href="#">Мембранные</a>
+                            </li>
+                            <li class="filter-list__item">
+                              <a class="filter-list__btn" href="#">Треккинговые</a>
+                            </li>
+                            <li class="filter-list__item">
+                              <a class="filter-list__btn" href="#">Скалолазные</a>
+                            </li>
+                            <li class="filter-list__item">
+                              <a class="filter-list__btn" href="#">Флисовые</a>
+                            </li>
+                            <li class="filter-list__item">
+                              <a class="filter-list__btn" href="#">Утепленные</a>
+                            </li>
+                            <li class="filter-list__item">
+                              <a class="filter-list__btn" href="#">Беговые</a>
+                            </li>
+                            <li class="filter-list__item">
+                              <a class="filter-list__btn" href="#">Горнолыжные</a>
+                            </li>
+                            <li class="filter-list__item">
+                              <a class="filter-list__btn" href="#">Шорты и бриджи</a>
+                            </li>
+                            <li class="filter-list__item">
+                              <a class="filter-list__btn" href="#">Городские</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="filter-accordion__item">
+                        <span class="filter-accordion__header" id="heading3">
+                          <button class="filter-accordion__btn collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#filter3" aria-expanded="true" aria-controls="filter3">
+                            Жилеты
+                          </button>
+                        </span>
+                        <div id="filter3" class="filter-accordion__collapse collapse" data-bs-parent="#filter">
+                          <ul class="filter-accordion__list filter-list">
+                            <li class="filter-list__item">
+                              <a class="filter-list__btn" href="#">Мембранные</a>
+                            </li>
+                            <li class="filter-list__item">
+                              <a class="filter-list__btn" href="#">Треккинговые</a>
+                            </li>
+                            <li class="filter-list__item">
+                              <a class="filter-list__btn" href="#">Скалолазные</a>
+                            </li>
+                            <li class="filter-list__item">
+                              <a class="filter-list__btn" href="#">Флисовые</a>
+                            </li>
+                            <li class="filter-list__item">
+                              <a class="filter-list__btn" href="#">Утепленные</a>
+                            </li>
+                            <li class="filter-list__item">
+                              <a class="filter-list__btn" href="#">Беговые</a>
+                            </li>
+                            <li class="filter-list__item">
+                              <a class="filter-list__btn" href="#">Горнолыжные</a>
+                            </li>
+                            <li class="filter-list__item">
+                              <a class="filter-list__btn" href="#">Шорты и бриджи</a>
+                            </li>
+                            <li class="filter-list__item">
+                              <a class="filter-list__btn" href="#">Городские</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="filter-accordion__item">
+                        <span class="filter-accordion__header" id="heading4">
+                          <button class="filter-accordion__btn collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#filter4" aria-expanded="true" aria-controls="filter4">
+                            Аксессуары
+                          </button>
+                        </span>
+                        <div id="filter4" class="filter-accordion__collapse collapse" data-bs-parent="#filter">
+                          <ul class="filter-accordion__list filter-list">
+                            <li class="filter-list__item">
+                              <a class="filter-list__btn" href="#">Мембранные</a>
+                            </li>
+                            <li class="filter-list__item">
+                              <a class="filter-list__btn" href="#">Треккинговые</a>
+                            </li>
+                            <li class="filter-list__item">
+                              <a class="filter-list__btn" href="#">Скалолазные</a>
+                            </li>
+                            <li class="filter-list__item">
+                              <a class="filter-list__btn" href="#">Флисовые</a>
+                            </li>
+                            <li class="filter-list__item">
+                              <a class="filter-list__btn" href="#">Утепленные</a>
+                            </li>
+                            <li class="filter-list__item">
+                              <a class="filter-list__btn" href="#">Беговые</a>
+                            </li>
+                            <li class="filter-list__item">
+                              <a class="filter-list__btn" href="#">Горнолыжные</a>
+                            </li>
+                            <li class="filter-list__item">
+                              <a class="filter-list__btn" href="#">Шорты и бриджи</a>
+                            </li>
+                            <li class="filter-list__item">
+                              <a class="filter-list__btn" href="#">Городские</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="filter-accordion__item">
+                        <span class="filter-accordion__header" id="heading5">
+                          <button class="filter-accordion__btn collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#filter5" aria-expanded="true" aria-controls="filter5">
+                            Рубашки, толстовки, свитера
+                          </button>
+                        </span>
+                        <div id="filter5" class="filter-accordion__collapse collapse" data-bs-parent="#filter">
+                          <ul class="filter-accordion__list filter-list">
+                            <li class="filter-list__item">
+                              <a class="filter-list__btn" href="#">Мембранные</a>
+                            </li>
+                            <li class="filter-list__item">
+                              <a class="filter-list__btn" href="#">Треккинговые</a>
+                            </li>
+                            <li class="filter-list__item">
+                              <a class="filter-list__btn" href="#">Скалолазные</a>
+                            </li>
+                            <li class="filter-list__item">
+                              <a class="filter-list__btn" href="#">Флисовые</a>
+                            </li>
+                            <li class="filter-list__item">
+                              <a class="filter-list__btn" href="#">Утепленные</a>
+                            </li>
+                            <li class="filter-list__item">
+                              <a class="filter-list__btn" href="#">Беговые</a>
+                            </li>
+                            <li class="filter-list__item">
+                              <a class="filter-list__btn" href="#">Горнолыжные</a>
+                            </li>
+                            <li class="filter-list__item">
+                              <a class="filter-list__btn" href="#">Шорты и бриджи</a>
+                            </li>
+                            <li class="filter-list__item">
+                              <a class="filter-list__btn" href="#">Городские</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="filter-accordion__item">
+                        <span class="filter-accordion__header" id="heading6">
+                          <button class="filter-accordion__btn collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#filter6" aria-expanded="true" aria-controls="filter6">
+                            Термобелье
+                          </button>
+                        </span>
+                        <div id="filter6" class="filter-accordion__collapse collapse" data-bs-parent="#filter">
+                          <ul class="filter-accordion__list filter-list">
+                            <li class="filter-list__item">
+                              <a class="filter-list__btn" href="#">Мембранные</a>
+                            </li>
+                            <li class="filter-list__item">
+                              <a class="filter-list__btn" href="#">Треккинговые</a>
+                            </li>
+                            <li class="filter-list__item">
+                              <a class="filter-list__btn" href="#">Скалолазные</a>
+                            </li>
+                            <li class="filter-list__item">
+                              <a class="filter-list__btn" href="#">Флисовые</a>
+                            </li>
+                            <li class="filter-list__item">
+                              <a class="filter-list__btn" href="#">Утепленные</a>
+                            </li>
+                            <li class="filter-list__item">
+                              <a class="filter-list__btn" href="#">Беговые</a>
+                            </li>
+                            <li class="filter-list__item">
+                              <a class="filter-list__btn" href="#">Горнолыжные</a>
+                            </li>
+                            <li class="filter-list__item">
+                              <a class="filter-list__btn" href="#">Шорты и бриджи</a>
+                            </li>
+                            <li class="filter-list__item">
+                              <a class="filter-list__btn" href="#">Городские</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="filter-accordion__item">
+                        <span class="filter-accordion__header" id="heading7">
+                          <button class="filter-accordion__btn collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#filter7" aria-expanded="true" aria-controls="filter7">
+                            Футболки
+                          </button>
+                        </span>
+                        <div id="filter7" class="filter-accordion__collapse collapse" data-bs-parent="#filter">
+                          <ul class="filter-accordion__list filter-list">
+                            <li class="filter-list__item">
+                              <a class="filter-list__btn" href="#">Мембранные</a>
+                            </li>
+                            <li class="filter-list__item">
+                              <a class="filter-list__btn" href="#">Треккинговые</a>
+                            </li>
+                            <li class="filter-list__item">
+                              <a class="filter-list__btn" href="#">Скалолазные</a>
+                            </li>
+                            <li class="filter-list__item">
+                              <a class="filter-list__btn" href="#">Флисовые</a>
+                            </li>
+                            <li class="filter-list__item">
+                              <a class="filter-list__btn" href="#">Утепленные</a>
+                            </li>
+                            <li class="filter-list__item">
+                              <a class="filter-list__btn" href="#">Беговые</a>
+                            </li>
+                            <li class="filter-list__item">
+                              <a class="filter-list__btn" href="#">Горнолыжные</a>
+                            </li>
+                            <li class="filter-list__item">
+                              <a class="filter-list__btn" href="#">Шорты и бриджи</a>
+                            </li>
+                            <li class="filter-list__item">
+                              <a class="filter-list__btn" href="#">Городские</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="filter-accordion__item">
+                        <span class="filter-accordion__header" id="heading8">
+                          <button class="filter-accordion__btn collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#filter8" aria-expanded="true" aria-controls="filter8">
+                            Дети
+                          </button>
+                        </span>
+                        <div id="filter8" class="filter-accordion__collapse collapse" data-bs-parent="#filter">
+                          <ul class="filter-accordion__list filter-list">
+                            <li class="filter-list__item">
+                              <a class="filter-list__btn" href="#">Мембранные</a>
+                            </li>
+                            <li class="filter-list__item">
+                              <a class="filter-list__btn" href="#">Треккинговые</a>
+                            </li>
+                            <li class="filter-list__item">
+                              <a class="filter-list__btn" href="#">Скалолазные</a>
+                            </li>
+                            <li class="filter-list__item">
+                              <a class="filter-list__btn" href="#">Флисовые</a>
+                            </li>
+                            <li class="filter-list__item">
+                              <a class="filter-list__btn" href="#">Утепленные</a>
+                            </li>
+                            <li class="filter-list__item">
+                              <a class="filter-list__btn" href="#">Беговые</a>
+                            </li>
+                            <li class="filter-list__item">
+                              <a class="filter-list__btn" href="#">Горнолыжные</a>
+                            </li>
+                            <li class="filter-list__item">
+                              <a class="filter-list__btn" href="#">Шорты и бриджи</a>
+                            </li>
+                            <li class="filter-list__item">
+                              <a class="filter-list__btn" href="#">Городские</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="filter-2">
+                      <h6 class="filter-accordion__title filter-accordion__title--2">Фильтры</h6>
+                      <div class="filter-accordion__item">
+                        <span class="filter-accordion__header" id="heading9">
+                          <button class="filter-accordion__btn collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#filter9" aria-expanded="true" aria-controls="filter9">
+                            Цена
+                          </button>
+                        </span>
+                        <div id="filter9" class="filter-accordion__collapse collapse" data-bs-parent="#filter">
+                          <ul class="filter-accordion__list filter-list">
+                            <li class="filter-list__item">
+                              <a class="filter-list__btn" href="#">Мембранные</a>
+                            </li>
+                            <li class="filter-list__item">
+                              <a class="filter-list__btn" href="#">Треккинговые</a>
+                            </li>
+                            <li class="filter-list__item">
+                              <a class="filter-list__btn" href="#">Скалолазные</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="filter-accordion__item">
+                        <span class="filter-accordion__header" id="heading10">
+                          <button class="filter-accordion__btn collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#filter10" aria-expanded="true" aria-controls="filter10">
+                            Новинка
+                          </button>
+                        </span>
+                        <div id="filter10" class="filter-accordion__collapse collapse" data-bs-parent="#filter">
+                          <ul class="filter-accordion__list filter-list">
+                            <li class="filter-list__item">
+                              <a class="filter-list__btn" href="#">Мембранные</a>
+                            </li>
+                            <li class="filter-list__item">
+                              <a class="filter-list__btn" href="#">Треккинговые</a>
+                            </li>
+                            <li class="filter-list__item">
+                              <a class="filter-list__btn" href="#">Скалолазные</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="filter-accordion__item">
+                        <span class="filter-accordion__header" id="heading11">
+                          <button class="filter-accordion__btn collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#filter11" aria-expanded="true" aria-controls="filter11">
+                            Наша подборка
+                          </button>
+                        </span>
+                        <div id="filter11" class="filter-accordion__collapse collapse" data-bs-parent="#filter">
+                          <ul class="filter-accordion__list filter-list">
+                            <li class="filter-list__item">
+                              <a class="filter-list__btn" href="#">Мембранные</a>
+                            </li>
+                            <li class="filter-list__item">
+                              <a class="filter-list__btn" href="#">Треккинговые</a>
+                            </li>
+                            <li class="filter-list__item">
+                              <a class="filter-list__btn" href="#">Скалолазные</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="filter-accordion__item">
+                        <span class="filter-accordion__header" id="heading12">
+                          <button class="filter-accordion__btn collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#filter12" aria-expanded="true" aria-controls="filter12">
+                            Бренд
+                          </button>
+                        </span>
+                        <div id="filter12" class="filter-accordion__collapse collapse" data-bs-parent="#filter">
+                          <ul class="filter-accordion__list filter-list">
+                            <li class="filter-list__item">
+                              <a class="filter-list__btn" href="#">Мембранные</a>
+                            </li>
+                            <li class="filter-list__item">
+                              <a class="filter-list__btn" href="#">Треккинговые</a>
+                            </li>
+                            <li class="filter-list__item">
+                              <a class="filter-list__btn" href="#">Скалолазные</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="filter-accordion__item">
+                        <span class="filter-accordion__header" id="heading13">
+                          <button class="filter-accordion__btn collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#filter13" aria-expanded="true" aria-controls="filter13">
+                            Процент скидки
+                          </button>
+                        </span>
+                        <div id="filter13" class="filter-accordion__collapse collapse" data-bs-parent="#filter">
+                          <ul class="filter-accordion__list filter-list">
+                            <li class="filter-list__item">
+                              <a class="filter-list__btn" href="#">Мембранные</a>
+                            </li>
+                            <li class="filter-list__item">
+                              <a class="filter-list__btn" href="#">Треккинговые</a>
+                            </li>
+                            <li class="filter-list__item">
+                              <a class="filter-list__btn" href="#">Скалолазные</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="filter-accordion__item">
+                        <span class="filter-accordion__header" id="heading14">
+                          <button class="filter-accordion__btn collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#filter14" aria-expanded="true" aria-controls="filter14">
+                            Пол
+                          </button>
+                        </span>
+                        <div id="filter14" class="filter-accordion__collapse collapse" data-bs-parent="#filter">
+                          <ul class="filter-accordion__list filter-list">
+                            <li class="filter-list__item">
+                              <a class="filter-list__btn" href="#">Мембранные</a>
+                            </li>
+                            <li class="filter-list__item">
+                              <a class="filter-list__btn" href="#">Треккинговые</a>
+                            </li>
+                            <li class="filter-list__item">
+                              <a class="filter-list__btn" href="#">Скалолазные</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="filter-accordion__item">
+                        <span class="filter-accordion__header" id="heading15">
+                          <button class="filter-accordion__btn collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#filter15" aria-expanded="true" aria-controls="filter15">
+                            Цвет
+                          </button>
+                        </span>
+                        <div id="filter15" class="filter-accordion__collapse collapse" data-bs-parent="#filter">
+                          <ul class="filter-accordion__list filter-list">
+                            <li class="filter-list__item">
+                              <a class="filter-list__btn" href="#">Мембранные</a>
+                            </li>
+                            <li class="filter-list__item">
+                              <a class="filter-list__btn" href="#">Треккинговые</a>
+                            </li>
+                            <li class="filter-list__item">
+                              <a class="filter-list__btn" href="#">Скалолазные</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="filter-accordion__item">
+                        <span class="filter-accordion__header" id="heading16">
+                          <button class="filter-accordion__btn collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#filter16" aria-expanded="true" aria-controls="filter16">
+                            Размер
+                          </button>
+                        </span>
+                        <div id="filter16" class="filter-accordion__collapse collapse" data-bs-parent="#filter">
+                          <ul class="filter-accordion__list filter-list">
+                            <li class="filter-list__item">
+                              <a class="filter-list__btn" href="#">Мембранные</a>
+                            </li>
+                            <li class="filter-list__item">
+                              <a class="filter-list__btn" href="#">Треккинговые</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="filter__btns">
+                      <button class="filter__btn btn">показать</button>
+                      <button class="filter__reset">Сбросить фильтры</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-8 col-lg-9">
+              <div class="product-cards product-catalog__product-cards">
+                <div class="breadcrumbs product-cards__breadcrumbs">
+                  <a class="breadcrumbs__link" href="#">Каталог</a>/
+                  <span class="breadcrumbs__span">Одежда</span>
+                </div>
+                <h3 class="product-cards__title">Одежда</h3>
+                <div class="product-cards__info">
+                  <div class="product-cards__amount">
+                    <span class="product-cards__amount-text">Товаров на странице:</span>
+                    <div class="product-cards__amount-item active">24</div>
+                    <div class="product-cards__amount-item">48</div>
+                    <div class="product-cards__amount-item">72</div>
+                  </div>
+                  <div class="product-cards__sort">
+                    <span class="product-cards__sort-text">Сортировать</span>
+                    <div class="product-cards__select-wrapper">
+                      <select class="product-cards__select">
+                        <option value="По новинкам">По новинкам</option>
+                        <option value="По цене">По цене</option>
+                      </select>
+                    </div>
+                  </div>
+                  <button class="product-cards__filter-btn btn btn--tr">
+                    Фильтры
+                  </button>
+                  <button class="product-cards__sort-btn btn btn--tr">
+                    Сортировка
+                  </button>
+                </div>
+                <div class="product-cards__catalog">
+                  <div class="row">
+                    <div class="col-6 col-sm-4 col-md-6 col-lg-4 product-cards__item">
+                      <div class="card product-cards__card">
+                        <div class="card__top">
+                          <div class="card__icons">
+                            <div class="card__floor">
+                              <img src="img/male.svg" alt="мужской">
+                            </div>
+                            <button class="card__favorit favorit-btn active">
+                              <svg width="24" height="22">
+                                <use href="img/svg/favorit.svg#favorit" />
+                              </svg>
+                            </button>
+                          </div>
+                          <a class="card__img" href="#">
+                            <img loading="lazy" src="img/products/5.png" alt="куртка">
+                          </a>
+                          <!-- <div class="card__new">new</div> -->
+                        </div>
+                        <div class="card__body">
+                          <div class="card__colors">
+                            <span class="card__color" style="background-color: #9C7A63;"></span>
+                            <span class="card__color" style="background-color: #3D6184;"></span>
+                          </div>
+                          <a class="card__text" href="#">
+                            Куртка SIVERA АМУЛЕТ
+                          </a>
+                          <div class="card__prices">
+                            <span class="card__price card__prices-item">37 750 ₽</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-6 col-lg-4 product-cards__item">
+                      <div class="card product-cards__card">
+                        <div class="card__top">
+                          <div class="card__icons">
+                            <div class="card__floor">
+                              <img src="img/male.svg" alt="мужской">
+                            </div>
+                            <button class="card__favorit favorit-btn">
+                              <svg width="24" height="22">
+                                <use href="img/svg/favorit.svg#favorit" />
+                              </svg>
+                            </button>
+                          </div>
+                          <a class="card__img" href="#">
+                            <img loading="lazy" src="img/products/5.png" alt="куртка">
+                          </a>
+                          <!-- <div class="card__new">new</div> -->
+                        </div>
+                        <div class="card__body">
+                          <div class="card__colors">
+                            <span class="card__color" style="background-color: #9C7A63;"></span>
+                            <span class="card__color" style="background-color: #3D6184;"></span>
+                          </div>
+                          <a class="card__text" href="#">
+                            Куртка SIVERA АМУЛЕТ
+                          </a>
+                          <div class="card__prices">
+                            <span class="card__price card__prices-item">37 750 ₽</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-6 col-lg-4 product-cards__item">
+                      <div class="card product-cards__card">
+                        <div class="card__top">
+                          <div class="card__icons">
+                            <div class="card__floor">
+                              <img src="img/male.svg" alt="мужской">
+                            </div>
+                            <button class="card__favorit favorit-btn active">
+                              <svg width="24" height="22">
+                                <use href="img/svg/favorit.svg#favorit" />
+                              </svg>
+                            </button>
+                          </div>
+                          <a class="card__img" href="#">
+                            <img loading="lazy" src="img/products/5.png" alt="куртка">
+                          </a>
+                          <!-- <div class="card__new">new</div> -->
+                        </div>
+                        <div class="card__body">
+                          <div class="card__colors">
+                            <span class="card__color" style="background-color: #9C7A63;"></span>
+                            <span class="card__color" style="background-color: #3D6184;"></span>
+                          </div>
+                          <a class="card__text" href="#">
+                            Куртка SIVERA АМУЛЕТ
+                          </a>
+                          <div class="card__prices">
+                            <span class="card__price card__prices-item">37 750 ₽</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-6 col-lg-4 product-cards__item">
+                      <div class="card product-cards__card">
+                        <div class="card__top">
+                          <div class="card__icons">
+                            <div class="card__floor">
+                              <img src="img/male.svg" alt="мужской">
+                            </div>
+                            <button class="card__favorit favorit-btn active">
+                              <svg width="24" height="22">
+                                <use href="img/svg/favorit.svg#favorit" />
+                              </svg>
+                            </button>
+                          </div>
+                          <a class="card__img" href="#">
+                            <img loading="lazy" src="img/products/5.png" alt="куртка">
+                          </a>
+                          <!-- <div class="card__new">new</div> -->
+                        </div>
+                        <div class="card__body">
+                          <div class="card__colors">
+                            <span class="card__color" style="background-color: #9C7A63;"></span>
+                            <span class="card__color" style="background-color: #3D6184;"></span>
+                          </div>
+                          <a class="card__text" href="#">
+                            Куртка SIVERA АМУЛЕТ
+                          </a>
+                          <div class="card__prices">
+                            <span class="card__price card__prices-item">37 750 ₽</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-6 col-lg-4 product-cards__item">
+                      <div class="card product-cards__card">
+                        <div class="card__top">
+                          <div class="card__icons">
+                            <div class="card__floor">
+                              <img src="img/male.svg" alt="мужской">
+                            </div>
+                            <button class="card__favorit favorit-btn">
+                              <svg width="24" height="22">
+                                <use href="img/svg/favorit.svg#favorit" />
+                              </svg>
+                            </button>
+                          </div>
+                          <a class="card__img" href="#">
+                            <img loading="lazy" src="img/products/5.png" alt="куртка">
+                          </a>
+                          <!-- <div class="card__new">new</div> -->
+                        </div>
+                        <div class="card__body">
+                          <div class="card__colors">
+                            <span class="card__color" style="background-color: #9C7A63;"></span>
+                            <span class="card__color" style="background-color: #3D6184;"></span>
+                          </div>
+                          <a class="card__text" href="#">
+                            Куртка SIVERA АМУЛЕТ
+                          </a>
+                          <div class="card__prices">
+                            <span class="card__price card__prices-item">37 750 ₽</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-6 col-lg-4 product-cards__item">
+                      <div class="card product-cards__card">
+                        <div class="card__top">
+                          <div class="card__icons">
+                            <div class="card__floor">
+                              <img src="img/male.svg" alt="мужской">
+                            </div>
+                            <button class="card__favorit favorit-btn">
+                              <svg width="24" height="22">
+                                <use href="img/svg/favorit.svg#favorit" />
+                              </svg>
+                            </button>
+                          </div>
+                          <a class="card__img" href="#">
+                            <img loading="lazy" src="img/products/5.png" alt="куртка">
+                          </a>
+                          <!-- <div class="card__new">new</div> -->
+                        </div>
+                        <div class="card__body">
+                          <div class="card__colors">
+                            <span class="card__color" style="background-color: #9C7A63;"></span>
+                            <span class="card__color" style="background-color: #3D6184;"></span>
+                          </div>
+                          <a class="card__text" href="#">
+                            Куртка SIVERA АМУЛЕТ
+                          </a>
+                          <div class="card__prices">
+                            <span class="card__price card__prices-item">37 750 ₽</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <nav class="product-cards__nav pagination">
+                  <a class="pagination__prev btn btn--tr" href="#">Назад</a>
+                  <ul class="pagination__list">
+                    <li class="pagination__item"><a class="pagination__link" href="#">1</a></li>
+                    <li class="pagination__item"><a class="pagination__link active" href="#">2</a></li>
+                    <li class="pagination__item"><a class="pagination__link" href="#">3</a></li>
+                    <li class="pagination__item"><a class="pagination__link" href="#">4</a></li>
+                    <li class="pagination__item"><a class="pagination__link" href="#">5</a></li>
+                    <li class="pagination__item"><a class="pagination__link" href="#">...</a></li>
+                  </ul>
+                  <a class="pagination__next btn" href="#">Вперед</a>
+                </nav>
+                <a class="product-cards__show-more btn btn--tr" href="#">Показать больше</a>
+              </div>
+            </div>
+            <div class="product-catalog__sort">
+              <div class="sort">
+                <div class="sort__wrapper">
+                  <h3 class="sort__title">Сортировка</h3>
+                  <button class="sort__close" type="button" aria-label="закрыть">
+                    <img src="img/filter-close.svg" alt="" aria-hidden="true">
+                  </button>
+                  <form class="sort__form">
+                    <label class="sort__item">
+                      <input type="radio" id="sort-radio1" name="contact" value="email">
+                      <span class="sort__radio"></span>
+                      <p class="sort__text">По цене, сначала недорогие</p>
+                    </label>
+                    <label class="sort__item">
+                      <input type="radio" id="sort-radio2" name="contact" value="email">
+                      <span class="sort__radio"></span>
+                      <p class="sort__text">По цене, сначала недорогие</p>
+                    </label>
+                    <label class="sort__item">
+                      <input type="radio" id="sort-radio3" name="contact" value="email">
+                      <span class="sort__radio"></span>
+                      <p class="sort__text">По цене, сначала недорогие</p>
+                    </label>
+                    <label class="sort__item">
+                      <input type="radio" id="sort-radio4" name="contact" value="email">
+                      <span class="sort__radio"></span>
+                      <p class="sort__text">По цене, сначала недорогие</p>
+                    </label>
+                    <button class="sort__btn btn" type="submit">показать</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <a class="footer__logo footer__logo--top">
+          <img src="img/footer-logo.svg" alt="логотип Tramontana">
+        </a>
+        <div class="footer__accordion footer-accordion" id="accordionExample">
+          <div class="row">
+            <div class="col-sm-6 col-md-3 gy-2 gy-sm-4">
+              <div class="footer-accordion__item">
+                <h5 class="footer-accordion__header" id="headingOne">
+                  <button class="footer-accordion__btn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Каталог товаров
+                  </button>
+                </h5>
+                <div id="collapseOne" class="footer-accordion__collapse collapse" data-bs-parent="#accordionExample">
+                  <ul class="footer-accordion__list footer-list">
+                    <li class="footer-list__item">
+                      <a class="footer-list__link" href="#">Для мужчин</a>
+                    </li>
+                    <li class="footer-list__item">
+                      <a class="footer-list__link" href="#">Для женщин</a>
+                    </li>
+                    <li class="footer-list__item">
+                      <a class="footer-list__link" href="#">Походное снаряжение</a>
+                    </li>
+                    <li class="footer-list__item">
+                      <a class="footer-list__link" href="#">Альпинизм</a>
+                    </li>
+                    <li class="footer-list__item">
+                      <a class="footer-list__link" href="#">Промышленный альпинизм</a>
+                    </li>
+                    <li class="footer-list__item">
+                      <a class="footer-list__link" href="#">Бренды</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-3 gy-2 gy-sm-4">
+              <div class="footer-accordion__item">
+                <h5 class="footer-accordion__header" id="headingTwo">
+                  <button class="footer-accordion__btn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                    Покупателям
+                  </button>
+                </h5>
+                <div id="collapseTwo" class="footer-accordion__collapse collapse" data-bs-parent="#accordionExample">
+                  <ul class="footer-accordion__list footer-list">
+                    <li class="footer-list__item">
+                      <a class="footer-list__link" href="#">Блог</a>
+                    </li>
+                    <li class="footer-list__item">
+                      <a class="footer-list__link" href="#">OUTDOOR центр</a>
+                    </li>
+                    <li class="footer-list__item">
+                      <a class="footer-list__link" href="#">Дисконтная программа</a>
+                    </li>
+                    <li class="footer-list__item">
+                      <a class="footer-list__link" href="#">Политика обработки персональных данных</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-3 gy-2 gy-sm-4">
+              <div class="footer-accordion__item">
+                <h5 class="footer-accordion__header" id="headingThree">
+                  <button class="footer-accordion__btn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                    Услуги и информация
+                  </button>
+                </h5>
+                <div id="collapseThree" class="footer-accordion__collapse collapse" data-bs-parent="#accordionExample">
+                  <ul class="footer-accordion__list footer-list">
+                    <li class="footer-list__item">
+                      <a class="footer-list__link" href="#">Скалодром</a>
+                    </li>
+                    <li class="footer-list__item">
+                      <a class="footer-list__link" href="#">Команда Трамонтаны</a>
+                    </li>
+                    <li class="footer-list__item">
+                      <a class="footer-list__link" href="#">Подписаться на новости</a>
+                    </li>
+                    <li class="footer-list__item">
+                      <a class="footer-list__link" href="#">Реквизиты</a>
+                    </li>
+                    <li class="footer-list__item">
+                      <a class="footer-list__link" href="#">Контакты</a>
+                    </li>
+                    <li class="footer-list__item">
+                      <a class="footer-list__link" href="#">Вакансии</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-3 gy-2 gy-sm-4">
+              <div class="footer-accordion__item">
+                <h5 class="footer-accordion__header" id="headingFour">
+                  <button class="footer-accordion__btn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                    Сервис и помощь
+                  </button>
+                </h5>
+                <div id="collapseFour" class="footer-accordion__collapse collapse" data-bs-parent="#accordionExample">
+                  <ul class="footer-accordion__list footer-list">
+                    <li class="footer-list__item">
+                      <a class="footer-list__link" href="#">Доставка</a>
+                    </li>
+                    <li class="footer-list__item">
+                      <a class="footer-list__link" href="#">Возврат</a>
+                    </li>
+                    <li class="footer-list__item">
+                      <a class="footer-list__link" href="#">Опт</a>
+                    </li>
+                    <li class="footer-list__item">
+                      <a class="footer-list__link" href="#">Товары исключения</a>
+                    </li>
+                    <li class="footer-list__item">
+                      <a class="footer-list__link" href="#">Промышленный альпинизм</a>
+                    </li>
+                    <li class="footer-list__item">
+                      <a class="footer-list__link" href="#">Бренды</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <ul class="socials footer__socials">
+            <li class="socials__item">
+              <a href="#" target="_blank">
+                <svg width="32" height="32">
+                  <use href="img/svg/vk.svg#vk" />
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a href="#" target="_blank">
+                <svg width="35" height="32">
+                  <use href="img/svg/twitter.svg#twitter" />
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a href="#" target="_blank">
+                <svg width="39" height="39">
+                  <use href="img/svg/telegram.svg#telegram" />
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a href="#" target="_blank">
+                <svg width="32" height="32">
+                  <use href="img/svg/youtube.svg#youtube" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <a class="footer__logo">
+            <img src="img/footer-logo.svg" alt="логотип Tramontana">
+          </a>
+          <p class="footer__copy">© Трамонтана 2022</p>
+        </div>
+      </div>
+    </footer>
+    <a class="chat" href="#">
+      <img class="chat__img" src="img/chat-bubble.svg" alt="чат">
+    </a>
+    <div class="mobile-menu">
+      <ul class="mobile-dropdown mobile-menu__dropdown main-mobile-dropdown">
+        <li>
+          <button class="mobile-dropdown__btn" type="button">Одежда</button>
+          <ul class="mobile-dropdown">
+            <li>
+              <button class="mobile-dropdown__back-btn" aria-label="назад">Одежда</button>
+            </li>
+            <li>
+              <a class="mobile-dropdown__btn mobile-dropdown__btn--link" href="#">Все походные снаряжения</a>
+            </li>
+            <li>
+              <button class="mobile-dropdown__btn" type="button">Рюкзаки</button>
+              <ul class="mobile-dropdown">
+                <li><button class="mobile-dropdown__back-btn" aria-label="назад">Рюкзаки</button></li>
+                <li><a class="mobile-dropdown__link" href="#">Все рюкзаки</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Детские и для переноски детей</a></li>
+                <li><a class="mobile-dropdown__link" href="#">До 20 литров</a></li>
+                <li><a class="mobile-dropdown__link" href="#">20-30 литров</a></li>
+                <li><a class="mobile-dropdown__link" href="#">30-50 литров</a></li>
+                <li><a class="mobile-dropdown__link" href="#">50-60 литров</a></li>
+                <li><a class="mobile-dropdown__link" href="#">60-80 литров</a></li>
+                <li><a class="mobile-dropdown__link" href="#">80-100 литров</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Сумки</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Баулы</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Поясные сумки</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Чехлы для телефонов и камер</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Кошельки. Косметички.</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Специальные</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Гермомешки</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Аксессуары</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Мешки для вещей</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Чехлы на рюкзаки</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Питьевые системы</a></li>
+              </ul>
+            </li>
+            <li>
+              <button class="mobile-dropdown__btn" type="button">Палатки</button>
+              <ul class="mobile-dropdown">
+                <li><button class="mobile-dropdown__back-btn">Палатки</button></li>
+                <li><a class="mobile-dropdown__link" href="#">Все палатки</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Одноместные и бивакзаки</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Двухместные</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Трехместные</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Четырехместные и кемпинговые</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Аксессуары</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <button class="mobile-dropdown__btn" type="button">Обувь</button>
+          <ul class="mobile-dropdown">
+            <li>
+              <button class="mobile-dropdown__back-btn" aria-label="назад">Обувь</button>
+            </li>
+            <li>
+              <a class="mobile-dropdown__btn mobile-dropdown__btn--link" href="#">Вся обувь</a>
+            </li>
+            <li>
+              <button class="mobile-dropdown__btn" type="button">Рюкзаки</button>
+              <ul class="mobile-dropdown">
+                <li><button class="mobile-dropdown__back-btn" aria-label="назад">Рюкзаки</button></li>
+                <li><a class="mobile-dropdown__link" href="#">Все рюкзаки</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Детские и для переноски детей</a></li>
+                <li><a class="mobile-dropdown__link" href="#">До 20 литров</a></li>
+                <li><a class="mobile-dropdown__link" href="#">20-30 литров</a></li>
+                <li><a class="mobile-dropdown__link" href="#">30-50 литров</a></li>
+                <li><a class="mobile-dropdown__link" href="#">50-60 литров</a></li>
+                <li><a class="mobile-dropdown__link" href="#">60-80 литров</a></li>
+                <li><a class="mobile-dropdown__link" href="#">80-100 литров</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Сумки</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Баулы</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Поясные сумки</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Чехлы для телефонов и камер</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Кошельки. Косметички.</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Специальные</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Гермомешки</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Аксессуары</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Мешки для вещей</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Чехлы на рюкзаки</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Питьевые системы</a></li>
+              </ul>
+            </li>
+            <li>
+              <button class="mobile-dropdown__btn" type="button">Палатки</button>
+              <ul class="mobile-dropdown">
+                <li><button class="mobile-dropdown__back-btn">Палатки</button></li>
+                <li><a class="mobile-dropdown__link" href="#">Все палатки</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Одноместные и бивакзаки</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Двухместные</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Трехместные</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Четырехместные и кемпинговые</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Аксессуары</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <button class="mobile-dropdown__btn" type="button">Походное снаряжение</button>
+          <ul class="mobile-dropdown">
+            <li>
+              <button class="mobile-dropdown__back-btn" aria-label="назад">Походное снаряжение</button>
+            </li>
+            <li>
+              <a class="mobile-dropdown__btn mobile-dropdown__btn--link" href="#">Все походные снаряжения</a>
+            </li>
+            <li>
+              <button class="mobile-dropdown__btn" type="button">Рюкзаки</button>
+              <ul class="mobile-dropdown">
+                <li><button class="mobile-dropdown__back-btn" aria-label="назад">Рюкзаки</button></li>
+                <li><a class="mobile-dropdown__link" href="#">Все рюкзаки</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Детские и для переноски детей</a></li>
+                <li><a class="mobile-dropdown__link" href="#">До 20 литров</a></li>
+                <li><a class="mobile-dropdown__link" href="#">20-30 литров</a></li>
+                <li><a class="mobile-dropdown__link" href="#">30-50 литров</a></li>
+                <li><a class="mobile-dropdown__link" href="#">50-60 литров</a></li>
+                <li><a class="mobile-dropdown__link" href="#">60-80 литров</a></li>
+                <li><a class="mobile-dropdown__link" href="#">80-100 литров</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Сумки</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Баулы</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Поясные сумки</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Чехлы для телефонов и камер</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Кошельки. Косметички.</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Специальные</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Гермомешки</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Аксессуары</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Мешки для вещей</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Чехлы на рюкзаки</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Питьевые системы</a></li>
+              </ul>
+            </li>
+            <li>
+              <button class="mobile-dropdown__btn" type="button">Палатки</button>
+              <ul class="mobile-dropdown">
+                <li><button class="mobile-dropdown__back-btn">Палатки</button></li>
+                <li><a class="mobile-dropdown__link" href="#">Все палатки</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Одноместные и бивакзаки</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Двухместные</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Трехместные</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Четырехместные и кемпинговые</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Аксессуары</a></li>
+              </ul>
+            </li>
+            <li>
+              <button class="mobile-dropdown__btn" type="button">Газовое оборудование</button>
+              <ul class="mobile-dropdown">
+                <li><button class="mobile-dropdown__back-btn" aria-label="назад">Газовое оборудование</button></li>
+                <li><a class="mobile-dropdown__link" href="#">Все газовое оборудование</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Баллоны газовые и жидкое топливо</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Жидкотопливные горелки</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Газовые горелки и плиты</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Лампы . Паяльные лампы</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Аксессуары</a></li>
+              </ul>
+            </li>
+            <li>
+              <button class="mobile-dropdown__btn" type="button">Инструмент</button>
+              <ul class="mobile-dropdown">
+                <li><button class="mobile-dropdown__back-btn" aria-label="назад">Инструмент</button></li>
+                <li><a class="mobile-dropdown__link" href="#">Все инструменты</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Пилы</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Топоры</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Компасы</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Мультиинструменты. Ножи</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Прочее</a></li>
+              </ul>
+            </li>
+            <li>
+              <button class="mobile-dropdown__btn" type="button">Коврики. Подушки. Полотенца</button>
+              <ul class="mobile-dropdown">
+                <li><button class="mobile-dropdown__back-btn" aria-label="назад">Коврики. Подушки. Полотенца</button>
+                </li>
+                <li><a class="mobile-dropdown__link" href="#">Все коврики, подушки, полотенца</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Аэроматы (Надувной коврик)</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Пенополиуретановые коврики (Туристический коврик)</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Сидушки</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Подушки. Полотенца</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Аксессуары</a></li>
+              </ul>
+            </li>
+            <li>
+              <button class="mobile-dropdown__btn" type="button">Спальные мешки</button>
+              <ul class="mobile-dropdown">
+                <li><button class="mobile-dropdown__back-btn" aria-label="назад">Спальные мешки</button></li>
+                <li><a class="mobile-dropdown__link" href="#">Все спальные мешки</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Аксессуары</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Пуховые</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Синтетические</a></li>
+              </ul>
+            </li>
+            <li>
+              <button class="mobile-dropdown__btn" type="button">Посуда</button>
+              <ul class="mobile-dropdown">
+                <li><button class="mobile-dropdown__back-btn" aria-label="назад">Посуда</button></li>
+                <li><a class="mobile-dropdown__link" href="#">Вся посуда</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Котлы. Кастрюли. Сковороды.</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Кружки</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Ложки. Вилки</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Миски</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Наборы посуды</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Термосы</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Фляжки. Бутылки. Канистры</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Чайники</a></li>
+              </ul>
+            </li>
+            <li><a class="mobile-dropdown__btn mobile-dropdown__btn--link" href="#">Мебель</a></li>
+            <li><a class="mobile-dropdown__btn mobile-dropdown__btn--link" href="#">Гамаки</a></li>
+            <li><a class="mobile-dropdown__btn mobile-dropdown__btn--link" href="#">Треккинговые палки</a></li>
+            <li><a class="mobile-dropdown__btn mobile-dropdown__btn--link" href="#">Фонари</a></li>
+            <li><a class="mobile-dropdown__btn mobile-dropdown__btn--link" href="#">Фильтры</a></li>
+            <li><a class="mobile-dropdown__btn mobile-dropdown__btn--link" href="#">Печатная продукция</a></li>
+            <li><a class="mobile-dropdown__btn mobile-dropdown__btn--link" href="#">Горнолыжное снаряжение</a></li>
+            <li><a class="mobile-dropdown__btn mobile-dropdown__btn--link" href="#">Nite Ize, Steelie</a></li>
+            <li><a class="mobile-dropdown__btn mobile-dropdown__btn--link" href="#">Слэклайны</a></li>
+            <li><a class="mobile-dropdown__btn mobile-dropdown__btn--link" href="#">Очки</a></li>
+            <li><a class="mobile-dropdown__btn mobile-dropdown__btn--link" href="#">Электроника</a></li>
+            <li><a class="mobile-dropdown__btn mobile-dropdown__btn--link" href="#">Подарочный сертификат</a></li>
+            <li><a class="mobile-dropdown__btn mobile-dropdown__btn--link" href="#">Все походные снаряжения</a></li>
+          </ul>
+        </li>
+        <li>
+          <button class="mobile-dropdown__btn" type="button">Промальп</button>
+          <ul class="mobile-dropdown">
+            <li>
+              <button class="mobile-dropdown__back-btn" aria-label="назад">Промальп</button>
+            </li>
+            <li>
+              <a class="mobile-dropdown__btn mobile-dropdown__btn--link" href="#">Все промальп</a>
+            </li>
+            <li>
+              <button class="mobile-dropdown__btn" type="button">Рюкзаки</button>
+              <ul class="mobile-dropdown">
+                <li><button class="mobile-dropdown__back-btn" aria-label="назад">Рюкзаки</button></li>
+                <li><a class="mobile-dropdown__link" href="#">Все рюкзаки</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Детские и для переноски детей</a></li>
+                <li><a class="mobile-dropdown__link" href="#">До 20 литров</a></li>
+                <li><a class="mobile-dropdown__link" href="#">20-30 литров</a></li>
+                <li><a class="mobile-dropdown__link" href="#">30-50 литров</a></li>
+                <li><a class="mobile-dropdown__link" href="#">50-60 литров</a></li>
+                <li><a class="mobile-dropdown__link" href="#">60-80 литров</a></li>
+                <li><a class="mobile-dropdown__link" href="#">80-100 литров</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Сумки</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Баулы</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Поясные сумки</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Чехлы для телефонов и камер</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Кошельки. Косметички.</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Специальные</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Гермомешки</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Аксессуары</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Мешки для вещей</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Чехлы на рюкзаки</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Питьевые системы</a></li>
+              </ul>
+            </li>
+            <li>
+              <button class="mobile-dropdown__btn" type="button">Палатки</button>
+              <ul class="mobile-dropdown">
+                <li><button class="mobile-dropdown__back-btn">Палатки</button></li>
+                <li><a class="mobile-dropdown__link" href="#">Все палатки</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Одноместные и бивакзаки</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Двухместные</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Трехместные</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Четырехместные и кемпинговые</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Аксессуары</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <button class="mobile-dropdown__btn" type="button">Альпинизм</button>
+          <ul class="mobile-dropdown">
+            <li>
+              <button class="mobile-dropdown__back-btn" aria-label="назад">Альпинизм</button>
+            </li>
+            <li>
+              <a class="mobile-dropdown__btn mobile-dropdown__btn--link" href="#">Все альпинизм</a>
+            </li>
+            <li>
+              <button class="mobile-dropdown__btn" type="button">Рюкзаки</button>
+              <ul class="mobile-dropdown">
+                <li><button class="mobile-dropdown__back-btn" aria-label="назад">Рюкзаки</button></li>
+                <li><a class="mobile-dropdown__link" href="#">Все рюкзаки</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Детские и для переноски детей</a></li>
+                <li><a class="mobile-dropdown__link" href="#">До 20 литров</a></li>
+                <li><a class="mobile-dropdown__link" href="#">20-30 литров</a></li>
+                <li><a class="mobile-dropdown__link" href="#">30-50 литров</a></li>
+                <li><a class="mobile-dropdown__link" href="#">50-60 литров</a></li>
+                <li><a class="mobile-dropdown__link" href="#">60-80 литров</a></li>
+                <li><a class="mobile-dropdown__link" href="#">80-100 литров</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Сумки</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Баулы</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Поясные сумки</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Чехлы для телефонов и камер</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Кошельки. Косметички.</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Специальные</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Гермомешки</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Аксессуары</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Мешки для вещей</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Чехлы на рюкзаки</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Питьевые системы</a></li>
+              </ul>
+            </li>
+            <li>
+              <button class="mobile-dropdown__btn" type="button">Палатки</button>
+              <ul class="mobile-dropdown">
+                <li><button class="mobile-dropdown__back-btn">Палатки</button></li>
+                <li><a class="mobile-dropdown__link" href="#">Все палатки</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Одноместные и бивакзаки</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Двухместные</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Трехместные</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Четырехместные и кемпинговые</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Аксессуары</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <button class="mobile-dropdown__btn" type="button">Подарки</button>
+          <ul class="mobile-dropdown">
+            <li>
+              <button class="mobile-dropdown__back-btn" aria-label="назад">Подарки</button>
+            </li>
+            <li>
+              <a class="mobile-dropdown__btn mobile-dropdown__btn--link" href="#">Все подарки</a>
+            </li>
+            <li>
+              <button class="mobile-dropdown__btn" type="button">Рюкзаки</button>
+              <ul class="mobile-dropdown">
+                <li><button class="mobile-dropdown__back-btn" aria-label="назад">Рюкзаки</button></li>
+                <li><a class="mobile-dropdown__link" href="#">Все рюкзаки</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Детские и для переноски детей</a></li>
+                <li><a class="mobile-dropdown__link" href="#">До 20 литров</a></li>
+                <li><a class="mobile-dropdown__link" href="#">20-30 литров</a></li>
+                <li><a class="mobile-dropdown__link" href="#">30-50 литров</a></li>
+                <li><a class="mobile-dropdown__link" href="#">50-60 литров</a></li>
+                <li><a class="mobile-dropdown__link" href="#">60-80 литров</a></li>
+                <li><a class="mobile-dropdown__link" href="#">80-100 литров</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Сумки</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Баулы</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Поясные сумки</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Чехлы для телефонов и камер</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Кошельки. Косметички.</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Специальные</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Гермомешки</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Аксессуары</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Мешки для вещей</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Чехлы на рюкзаки</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Питьевые системы</a></li>
+              </ul>
+            </li>
+            <li>
+              <button class="mobile-dropdown__btn" type="button">Палатки</button>
+              <ul class="mobile-dropdown">
+                <li><button class="mobile-dropdown__back-btn">Палатки</button></li>
+                <li><a class="mobile-dropdown__link" href="#">Все палатки</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Одноместные и бивакзаки</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Двухместные</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Трехместные</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Четырехместные и кемпинговые</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Аксессуары</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <button class="mobile-dropdown__btn" type="button">бренды</button>
+          <ul class="mobile-dropdown">
+            <li>
+              <button class="mobile-dropdown__back-btn" aria-label="назад">бренды</button>
+            </li>
+            <li>
+              <a class="mobile-dropdown__btn mobile-dropdown__btn--link" href="#">Все бренды</a>
+            </li>
+            <li>
+              <button class="mobile-dropdown__btn" type="button">Рюкзаки</button>
+              <ul class="mobile-dropdown">
+                <li><button class="mobile-dropdown__back-btn" aria-label="назад">Рюкзаки</button></li>
+                <li><a class="mobile-dropdown__link" href="#">Все рюкзаки</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Детские и для переноски детей</a></li>
+                <li><a class="mobile-dropdown__link" href="#">До 20 литров</a></li>
+                <li><a class="mobile-dropdown__link" href="#">20-30 литров</a></li>
+                <li><a class="mobile-dropdown__link" href="#">30-50 литров</a></li>
+                <li><a class="mobile-dropdown__link" href="#">50-60 литров</a></li>
+                <li><a class="mobile-dropdown__link" href="#">60-80 литров</a></li>
+                <li><a class="mobile-dropdown__link" href="#">80-100 литров</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Сумки</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Баулы</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Поясные сумки</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Чехлы для телефонов и камер</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Кошельки. Косметички.</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Специальные</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Гермомешки</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Аксессуары</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Мешки для вещей</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Чехлы на рюкзаки</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Питьевые системы</a></li>
+              </ul>
+            </li>
+            <li>
+              <button class="mobile-dropdown__btn" type="button">Палатки</button>
+              <ul class="mobile-dropdown">
+                <li><button class="mobile-dropdown__back-btn">Палатки</button></li>
+                <li><a class="mobile-dropdown__link" href="#">Все палатки</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Одноместные и бивакзаки</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Двухместные</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Трехместные</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Четырехместные и кемпинговые</a></li>
+                <li><a class="mobile-dropdown__link" href="#">Аксессуары</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a class="mobile-dropdown__btn mobile-dropdown__btn--link" href="#">Новинки</a>
+        </li>
+        <li>
+          <a class="mobile-dropdown__btn mobile-dropdown__btn--link" href="#">Скидки</a>
+        </li>
+      </ul>
+      <nav class="mobile-menu__nav mobile-menu-nav">
+        <ul class="mobile-menu-nav__list">
+          <li class="mobile-menu-nav__item"><a class="mobile-menu-nav__link" href="#">Доставка</a></li>
+          <li class="mobile-menu-nav__item"><a class="mobile-menu-nav__link" href="#">Возврат</a></li>
+          <li class="mobile-menu-nav__item"><a class="mobile-menu-nav__link" href="#">Оплата</a></li>
+          <li class="mobile-menu-nav__item"><a class="mobile-menu-nav__link" href="#">Опт</a></li>
+          <li class="mobile-menu-nav__item"><a class="mobile-menu-nav__link" href="#">Контакты</a></li>
+          <li class="mobile-menu-nav__item"><a class="mobile-menu-nav__link" href="#">Outdoor центер</a></li>
+          <li class="mobile-menu-nav__item"><a class="mobile-menu-nav__link" href="#">Скалодром</a></li>
+        </ul>
+      </nav>
+      <div class="mobile-menu__bottom">
+        <a href="tel:88005006208" class="mobile-menu__number">8 800 500-62-08</a>
+        <ul class="socials mobile-menu__socials">
+          <li class="socials__item">
+            <a href="#" target="_blank">
+              <svg width="24" height="24">
+                <use href="img/svg/vk.svg#vk" />
+              </svg>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a href="#" target="_blank">
+              <svg width="27" height="27">
+                <use href="img/svg/twitter.svg#twitter" />
+              </svg>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a href="#" target="_blank">
+              <svg width="30" height="30">
+                <use href="img/svg/telegram.svg#telegram" />
+              </svg>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a href="#" target="_blank">
+              <svg width="30" height="30">
+                <use href="img/svg/youtube.svg#youtube" />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <script src="js/libs/swiper-slider.min.js"></script>
+  <script src="js/libs/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
