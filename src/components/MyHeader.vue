@@ -15,7 +15,7 @@
       <nav class="menu">
         <ul class="menu__list">
           <li class="menu__item" v-for="item in menuItems" :key="item.path">
-            <a :href="item.path">{{ item.text }}</a>
+            <a :href="item.path" @click="menuOpen = !menuOpen">{{ item.text }}</a>
           </li>
         </ul>
       </nav>
@@ -31,6 +31,7 @@ export default {
   components: { MySocials },
   setup() {
     const menuOpen = ref(false);
+   
     return { menuOpen };
   },
 };
@@ -103,12 +104,12 @@ export default {
   @include desk() {
     width: 320px;
   }
-  @include lap(){
+  @include lap() {
     left: -320px;
     background: var(--color-5);
     box-shadow: 0 0 0 transparent !important;
   }
-  &.open{
+  &.open {
     left: 0;
     box-shadow: 0 0 82px var(--color-1) !important;
   }

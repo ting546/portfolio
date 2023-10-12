@@ -135,11 +135,15 @@ export default {
     };
     onMounted(() => {
       if (window.matchMedia) {
-        mode.value = !mode.value;
+        
         if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
           document.body.classList.remove("light");
+          console.log(mode.value);
+          mode.value = true;
         } else {
           document.body.classList.add("light");
+          console.log(mode.value);
+          mode.value = false;
         }
       }
       window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", (event) => {

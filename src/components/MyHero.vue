@@ -28,7 +28,7 @@ export default {
     const image2 = ref(null);
 
     onMounted(() => {
-      gsap.from([".hero__title", ".hero__title > span", ".hero__descr", ".hero__btn", ".hero__img"], { x: -100, duration: 0.3, opacity: 0, stagger: 0.3 });
+      gsap.from([".hero__title", ".hero__title > span", ".hero__descr", ".hero__btn", ".hero__img"], { x: -100, duration: 0.2, opacity: 0, stagger: 0.2 });
       const mouseMove = (event) => {
         const move = 40;
         const moveShadow = 12;
@@ -112,6 +112,9 @@ export default {
     @include desk() {
       --width: 1.3;
     }
+    @include mob() {
+      --width: 1.4;
+    }
 
     &--1 {
       top: 35%;
@@ -120,32 +123,49 @@ export default {
       @include lap() {
         left: 40%;
       }
+      @include mob(){
+        top: 50%;
+      }
     }
     &--2 {
       top: 10%;
       width: calc(350px / var(--width));
       left: 70%;
+      @include mob() {
+        top: 50%;
+        left: -4%;
+      }
     }
+
     &--3 {
       top: 70%;
-      left: 50%;
+      left: 5%;
       width: calc(150px / var(--width));
       @include lap() {
-        left: 30%;
+        left: 35%;
+      }
+      @include mob() {
+        top: 80%;
       }
     }
     &--4 {
-      top: 60%;
+      top: 70%;
       width: calc(200px / var(--width));
       left: 30%;
       @include lap() {
         left: 3%;
+      }
+      @include mob() {
+        top: 80%;
       }
     }
     &--5 {
       top: 70%;
       width: calc(200px / var(--width));
       left: 70%;
+      @include mob() {
+        top: 80%;
+      }
     }
 
     img {
