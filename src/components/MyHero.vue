@@ -32,13 +32,23 @@ export default {
       const mouseMove = (event) => {
         const move = 40;
         const moveShadow = 12;
+
         image.value.forEach((img, idx) => {
           const shadow = image2.value[idx];
           const rect = img.getBoundingClientRect();
           const halfHeight = rect.height / 2 + rect.top;
           const halfWidth = rect.width / 2 + rect.left;
-          const numX = event.clientY - halfHeight;
-          const numY = event.clientX - halfWidth;
+          let numX = null;
+          let numY = null;
+
+          if (event.type === "touchmove") {
+            numX = event.touches[0].clientY - halfHeight;
+            numY = event.touches[0].clientX - halfWidth;
+          } else {
+            numX = event.clientY - halfHeight;
+            numY = event.clientX - halfWidth;
+          }
+
           // Вычисляем угол поворота и применяем его к изображению
           gsap.to(img, {
             rotationX: -numX / move,
@@ -52,8 +62,6 @@ export default {
             translateY: -numX / moveShadow,
             duration: 0.7,
           });
-
-          
         });
       };
       window.addEventListener("mousemove", mouseMove);
@@ -126,7 +134,7 @@ export default {
       @include lap() {
         left: 40%;
       }
-      @include mob(){
+      @include mob() {
         top: 50%;
       }
     }

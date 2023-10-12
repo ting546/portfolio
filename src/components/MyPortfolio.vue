@@ -148,6 +148,7 @@ export default {
     z-index: 3;
     @include media(1400px) {
       width: 100%;
+      padding-right: 15px;
     }
   }
   &__item:hover {
