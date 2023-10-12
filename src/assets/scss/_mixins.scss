@@ -1,0 +1,44 @@
+@import "./vars";
+
+// ============= Шрифты
+@mixin fonf-face($fontName, $weight, $url) {
+  font-family: $fontName;
+  src: url("@/assets/fonts/#{$url}.woff2") format("woff2"),
+    url("@/assets/fonts/#{$url}.woff") format("woff");
+  font-weight: $weight;
+  font-display: swap;
+  font-style: normal;
+}
+
+// ============= Разрешения экрана
+@mixin medc() {
+  @media (max-width: $container) {
+    @content;
+  }
+}
+
+@mixin desk() {
+  @media (max-width: 1199px) {
+    @content;
+  }
+}
+@mixin lap() {
+  @media (max-width: 991px) {
+    @content;
+  }
+}
+@mixin table() {
+  @media (max-width: 767px) {
+    @content;
+  }
+}
+@mixin mob() {
+  @media (max-width: 479px) {
+    @content;
+  }
+}
+@mixin media($size) {
+  @media (max-width: $size) {
+    @content;
+  }
+}

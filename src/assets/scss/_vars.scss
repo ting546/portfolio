@@ -1,0 +1,53 @@
+$container: 1330px;
+
+:root {
+  /*============= Семейство шрифтов =============*/
+  --font-family: "Gilroy";
+  --font-family-igr: "igra";
+  /*============= Размеры шрифтов =============*/
+  // --fz-xxl: 40px;
+  // --fz-xl: 32px;
+  // --fz-xlg: 24px;
+  // --fz-lg: 20px;
+  // --fz-xmd: 18px;
+  // --fz-md: 16px;
+  // --fz-sm: 14px;
+
+  /*============= Цвета =============*/
+  --color-1: #000;
+  --color-2: #fff;
+  --color-3: #24c06a;
+  --color-4: #020024;
+  --color-5: #131313;
+  --link-color: #1a81e2;
+  --color-6: rgba(84, 84, 84, 0.7);
+  --color-rgba-1: rgba(0, 0, 0, 0.5);
+  --main-gradient: linear-gradient(90deg, var(--color-4), var(--color-3) 177%);
+  --btn-hover: #128646;
+}
+.light {
+  --color-1: #fff;
+  --color-2: #000;
+  --color-3: #4cff64;
+  --color-4: #3c378b;
+  --color-5: #b3b3b3;
+  --color-6: rgba(155, 155, 155, 0.7);
+  --color-rgba-1: rgba(252, 252, 252, 0.5);
+  --main-gradient: #fff;
+  --btn-hover: #1cc568;
+}
+@media (prefers-color-scheme: light) {
+  .light {
+    :root {
+      --color-1: #fff;
+      --color-2: #000;
+      --color-3: #4cff64;
+      --color-4: #3c378b;
+      --color-5: #b3b3b3;
+      --color-6: rgba(155, 155, 155, 0.7);
+      --color-rgba-1: rgba(252, 252, 252, 0.5);
+      --main-gradient: #fff;
+      --btn-hover: #1cc568;
+    }
+  }
+}

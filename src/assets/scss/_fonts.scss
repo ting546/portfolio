@@ -1,0 +1,14 @@
+// @mixin fonf-face($fontName, $weight)
+
+@font-face {
+  @include fonf-face("Igra", "normal", "IgraSans");
+}
+@font-face {
+  @include fonf-face("Gilroy", 400, "Gilroy-Regular");
+}
+@font-face {
+  @include fonf-face("Gilroy", 500, "Gilroy-Medium");
+}
+@font-face {
+  @include fonf-face("Gilroy", 700, "Gilroy-Bold");
+}
