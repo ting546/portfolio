@@ -138,11 +138,9 @@ export default {
         
         if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
           document.body.classList.remove("light");
-          console.log(mode.value);
           mode.value = true;
         } else {
           document.body.classList.add("light");
-          console.log(mode.value);
           mode.value = false;
         }
       }

@@ -25,13 +25,20 @@
 </template>
 <script>
 import MySocials from "@/components/MySocials.vue";
-import { ref } from "vue";
+import { ref, watch } from "vue";
 export default {
   props: ["menuItems", "mode"],
   components: { MySocials },
   setup() {
     const menuOpen = ref(false);
-   
+    watch(menuOpen, (newVal) => {
+      if (newVal) {
+        document.body.classList.add("lock");
+      } else {
+        document.body.classList.remove("lock");
+      }
+    });
+
     return { menuOpen };
   },
 };

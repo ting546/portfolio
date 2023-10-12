@@ -52,9 +52,12 @@ export default {
             translateY: -numX / moveShadow,
             duration: 0.7,
           });
+
+          
         });
       };
       window.addEventListener("mousemove", mouseMove);
+      window.addEventListener("touchmove", mouseMove);
     });
     return {
       image,
@@ -139,7 +142,7 @@ export default {
 
     &--3 {
       top: 70%;
-      left: 5%;
+      left: 50%;
       width: calc(150px / var(--width));
       @include lap() {
         left: 35%;
