@@ -6,19 +6,7 @@
     <MyAbout />
     <MySkills :skillsItems="skillsItems" :mode="mode" />
     <MyPortfolio />
-    <section class="cert offset" id="cert">
-      <div class="container">
-        <h2 class="title cert__title">Мои сертификаты</h2>
-        <div class="cert__items">
-          <div class="cert__item">
-            <img src="@/assets/img/cert/1.jpg" alt="" />
-          </div>
-          <div class="cert__item">
-            <img src="@/assets/img/cert/2.jpg" alt="" />
-          </div>
-        </div>
-      </div>
-    </section>
+    <MyCert/>
   </main>
   <footer class="footer offset" id="footer">
     <div class="container">
@@ -27,25 +15,25 @@
         <ul class="footer__items">
           <li class="footer__item">
             <h3 class="footer__sub-title">Telegram:</h3>
-            <a class="footer__link" href="">https://t.me/igor_beldanov</a>
+            <a class="footer__link" href="https://t.me/igor_beldanov" target="_blank">https://t.me/igor_beldanov</a>
           </li>
           <li class="footer__item">
             <h3 class="footer__sub-title">ВКонтакте:</h3>
-            <a class="footer__link" href="">https://m.vk.com/beldanovigor</a>
+            <a class="footer__link" href="https://m.vk.com/beldanovigor" target="_blank">https://m.vk.com/beldanovigor</a>
           </li>
           <li class="footer__item">
             <h3 class="footer__sub-title">Instagram:</h3>
-            <a class="footer__link" href="">https://www.instagram.com/beldanov_igor/</a>
+            <a class="footer__link" href="https://www.instagram.com/beldanov_igor" target="_blank">https://www.instagram.com/beldanov_igor/</a>
           </li>
         </ul>
         <div class="footer__sec-items">
           <div class="footer__sec-item">
             <h3 class="footer__sub-title">Почта:</h3>
-            <a class="footer__link" href="mailto:igorbeldanov62@gmail.com">igorbeldanov62@gmail.com</a>
+            <a class="footer__link" href="mailto:igorbeldanov62@gmail.com" target="_blank">igorbeldanov62@gmail.com</a>
           </div>
           <div class="footer__sec-item">
             <h3 class="footer__sub-title">GitHub:</h3>
-            <a class="footer__link" href="https://github.com/ting546">https://github.com/ting546</a>
+            <a class="footer__link" href="https://github.com/ting546" target="_blank">https://github.com/ting546</a>
           </div>
         </div>
       </div>
@@ -58,10 +46,11 @@ import MyHero from "@/components/MyHero.vue";
 import MySkills from "@/components/MySkills.vue";
 import MyAbout from "@/components/MyAbout.vue";
 import MyPortfolio from "@/components/MyPortfolio.vue";
+import MyCert from "@/components/MyCert.vue";
 import { ref, onMounted } from "vue";
 
 export default {
-  components: { MyHeader, MyHero, MySkills, MyAbout, MyPortfolio },
+  components: { MyHeader, MyHero, MySkills, MyAbout, MyPortfolio, MyCert },
   setup() {
     const mode = ref(false);
     const images = [
@@ -228,33 +217,6 @@ export default {
   }
 
   &__link {
-  }
-}
-
-.cert {
-  padding-top: 80px;
-  margin-top: -60px;
-  padding-bottom: 60px;
-  &__title {
-    margin-bottom: 30px;
-  }
-
-  &__items {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 -10px;
-    row-gap: 20px;
-    @include mob() {
-      flex-direction: column;
-    }
-  }
-
-  &__item {
-    width: 50%;
-    padding: 0 10px;
-    @include mob() {
-      width: 100%;
-    }
   }
 }
 

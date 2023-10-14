@@ -4,7 +4,9 @@ import vue from "@vitejs/plugin-vue";
 import vitePluginRequire from "vite-plugin-require";
 import { viteStaticCopy } from "vite-plugin-static-copy";
 
+
 export default defineConfig({
+  
   base: "/portfolio",
   plugins: [
     vue(),
