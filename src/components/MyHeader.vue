@@ -91,7 +91,16 @@ export default {
 }
 .light {
   .header {
+    background: var(--color-1);
     box-shadow: 0 0 82px var(--color-2);
+    @include lap() {
+      box-shadow: 0 0 0 transparent;
+    }
+    &.open {
+      @include lap() {
+        box-shadow: 0 0 82px var(--color-2);
+      }
+    }
   }
 }
 .header {
@@ -114,11 +123,11 @@ export default {
   @include lap() {
     left: -320px;
     background: var(--color-5);
-    box-shadow: 0 0 0 transparent !important;
+    box-shadow: 0 0 0 transparent;
   }
   &.open {
     left: 0;
-    box-shadow: 0 0 82px var(--color-1) !important;
+    box-shadow: 0 0 82px var(--color-1);
   }
   &__wrapper {
     width: 100%;

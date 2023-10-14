@@ -6,6 +6,7 @@
         <button class="portfolio__filter-btn active" data-filter="all" @click="porfolioFilter">Все</button>
         <button class="portfolio__filter-btn" data-filter="landing" @click="porfolioFilter">Лендинг</button>
         <button class="portfolio__filter-btn" data-filter="shop" @click="porfolioFilter">Магазин</button>
+        <button class="portfolio__filter-btn" data-filter="copr" @click="porfolioFilter">Корпоративный</button>
       </div>
       <TransitionGroup name="fade" tag="div" class="portfolio__items">
         <div class="portfolio__item" v-for="(item, index) in filterItems" :key="item.img">
@@ -15,10 +16,13 @@
               <p class="portfolio__item-descr">
                 {{ item.descr }}
               </p>
+              <p class="portfolio__item-price">
+                Цена: <span>{{ item.price ? item.price + "руб" : "не указано" }}</span>
+              </p>
               <a class="btn btn--sm portfolio__more-btn" :href="item.link">Смотреть больше</a>
             </div>
             <div class="portfolio__img">
-              <img  :src='item.img'  :alt="item.title" />
+              <img :src="item.img" :alt="item.title" />
             </div>
           </div>
         </div>
@@ -31,27 +35,85 @@ import { ref } from "vue";
 
 export default {
   setup() {
-   
     const items = [
       {
         title: "Сайт бизнес компании",
         descr: 'Сайт для бизнес компании "GLOBALTEAM". Нужно было реализовать красивый и анимированный сайт. На сайте было много элементов декора так же была использована библиотека "AOS" анимация.',
-        img: require("@/assets/img/portfolio/4.jpg") ,
+        price: "6.000",
+        img: require("@/assets/img/portfolio/4.jpg"),
         link: "project/GlobalTeam/index.html",
         site: "landing",
       },
       {
-        title: "Сайт интернет магазина одежды",
-        descr: "Сайт интернет магазина одежды.",
-        img:  require("@/assets/img/portfolio/9.jpg"),
+        title: "Сайт магазина одежды",
+        descr: 'Сайт для магазина одежды "Tramontana". Стояла задача обновить 3 страницы "Главная", "Карточка товара" и "Каталог". ',
+        price: "15.000",
+        img: require("@/assets/img/portfolio/9.jpg"),
         link: "project/Tramontana/index.html",
         site: "shop",
       },
       {
         title: "Сайт образовательной платформы",
-        descr: "Сайт образовательной платформы",
-        img:  require("@/assets/img/portfolio/10.jpg"),
+        descr: 'Сайт образовательной платформы "XOD". Нужно было сделать сайт адаптивным под все разрешения экранов что и было реализовано',
+        price: "5.000",
+        img: require("@/assets/img/portfolio/10.jpg"),
         link: "project/XOD/index.html",
+        site: "copr",
+      },
+      {
+        title: "Сайта знакомств",
+        descr: 'Сайта знакомств "Alastora". Основное требование нужно было реализовать слайдер на весь сайт',
+        price: "6.500",
+        img: require("@/assets/img/portfolio/1.jpg"),
+        link: "project/Alastora/index.html",
+        site: "landing",
+      },
+      {
+        title: "Сайт Баня Лукоморье",
+        descr: 'На сайте было реализовано 2 слайдера библиотека "Slick slider", 3 модальных окна на библиотеке "JQuery" также 5 аккордеонов.',
+        price: "4.000",
+        img: require("@/assets/img/portfolio/2.jpg"),
+        link: "project/bathouse/index.html",
+        site: "landing",
+      },
+      {
+        title: "Сайт по подбору мероприятий",
+        descr: 'Сайт по подбору мероприятий "Eventplace". Было сверстано 3 страницы "Главная", "Каталог" и "Личный кабинет" верстка велась использование библиотеки Bootstrap',
+        price: "6.000",
+        img: require("@/assets/img/portfolio/3.jpg"),
+        link: "project/eventplace/index.html",
+        site: "copr",
+      },
+      {
+        title: "Сайт магазина ковриков",
+        descr: 'Сайт магазина ковриков "EVADROM".  Было сверстано 7 страниц "Главная", "Каталог", "Каталог марок", "Карточка товара", "Корзина", "Оффер" и "Страница Спасибо за покупку".',
+        price: "22.000",
+        img: require("@/assets/img/portfolio/5.jpg"),
+        link: "project/MatStore/index.html",
+        site: "shop",
+      },
+      {
+        title: "Копия сайта Netflix",
+        descr: "Копия сайта Netflix",
+        price: "",
+        img: require("@/assets/img/portfolio/6.jpg"),
+        link: "project/XOD/index.html",
+        site: "landing",
+      },
+      {
+        title: "Cайт агенства недвижимости",
+        descr: 'Cайт агенства недвижимости  "Rizon". Было сверстано 2 страницы Главная" и "Форма". Главным условием было сделать анимации',
+        price: "5.500",
+        img: require("@/assets/img/portfolio/7.jpg"),
+        link: "project/rizon/index.html",
+        site: "landing",
+      },
+      {
+        title: "Сайт NFT токена",
+        descr: 'На сайте было реализован 1 слайдер библиотека "Slick slider" , была использована библиотека "AOS" анимация так же 4 аккордеона.',
+        price: "6.000",
+        img: require("@/assets/img/portfolio/8.jpg"),
+        link: "project/SpiderShiba/index.html",
         site: "landing",
       },
     ];
@@ -70,8 +132,8 @@ export default {
       console.log(filterItems.value);
     };
     const getImg = (path) => {
-      return `@/${path}`
-    }
+      return `@/${path}`;
+    };
 
     return { items, porfolioFilter, filterItems, getImg };
   },
@@ -114,6 +176,7 @@ export default {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 15px;
     margin-bottom: 30px;
   }
@@ -121,6 +184,9 @@ export default {
     font-size: 28px;
     &.active {
       color: var(--color-3);
+    }
+    @include table(){
+      font-size: 20px;
     }
   }
   &__items {
@@ -171,10 +237,15 @@ export default {
   }
 
   &__item-descr {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     transition: color 0.3s ease;
   }
-
+  &__item-price {
+    margin-bottom: 20px;
+    span {
+      color: var(--color-3);
+    }
+  }
   &__more-btn {
     transition: background 0.3s ease;
     color: var(--color-2);
