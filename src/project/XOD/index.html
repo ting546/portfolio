@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>XOD</title>
+  <link rel="shotcut icon" href="img/favicon.ico" type="image/x-icon">
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- libs -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+  <!-- style -->
+  <link rel="stylesheet" href="css/libs.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<noscript>Ваш браузер не поддерживает JavaScript!</noscript>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+  <div class="container header__container">
+    <a class="header__logo logo" href="#">
+      <svg class="logo__svg">
+        <use href="img/sprite.svg#logo"></use>
+      </svg>
+    </a>
+    <div class="burger-menu">
+      <div class="burger-menu__line">
+        <span></span>
+      </div>
+    </div>
+    <nav class="header__nav nav">
+      <ul class="nav__list">
+        <li class="nav__item nav__item--all-lessons">
+          <a class="nav__link" href="#">
+            <svg class="all-lessons">
+              <use href="img/sprite.svg#all-lessons"></use>
+            </svg>
+            <span>Все курсы</span>
+          </a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#"><span>Мероприятия</span></a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#"><span>Базы знаний</span></a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#"><span>Карьера</span></a>
+        </li>
+        <li class="nav__item nav__item--city">
+          <button class="nav__link">
+            <svg class="location">
+              <use href="img/sprite.svg#location"></use>
+              <use class="location-c" href="img/sprite.svg#location-c"></use>
+            </svg>
+            <span>Нижний Новгород</span>
+            <svg class="arrow-bottom">
+              <use href="img/sprite.svg#arrow-bottom"></use>
+            </svg>
+          </button>
+          <div class="nav__dropdown">
+            <div class="nav__dropdown-content">
+              <label class="nav__radio radio">
+                <input class="radio__input" type="radio" name="city">
+                <span class="radio__btn"></span>
+                <span class="radio__text">Дзержинск</span>
+              </label>
+              <label class="nav__radio radio">
+                <input checked class="radio__input" type="radio" name="city">
+                <span class="radio__btn"></span>
+                <span class="radio__text">Нижний Новгород</span>
+              </label>
+              <label class="nav__radio radio">
+                <input class="radio__input" type="radio" name="city">
+                <span class="radio__btn"></span>
+                <span class="radio__text">On-line</span>
+              </label>
+            </div>
+          </div>
+        </li>
+        <li class="nav__item nav__item--number">
+          <a class="nav__link" href="tel:88009503398"><span>8 800 950-33-98</span></a>
+        </li>
+        <li class="nav__item nav__item--login">
+          <a class="nav__link" href="#">
+            <svg class="user">
+              <use href="img/sprite.svg#user"></use>
+            </svg>
+            <span>Войти</span>
+          </a>
+        </li>
+      </ul>
+      <div class="contacts nav__contacts">
+        <a href="tel:88009503398" class="contacts__number">8 800 950-33-98 </a>
+        <p class="contacts__location">г. Москва, ул. Ленина, д. 50</p>
+        <a href="mailto:info@hodfutureacademy.ru" class="contacts__email">info@hodfutureacademy.ru</a>
+        <ul class="contacts__socials contacts__socials--header">
+          <li class="contacts__social">
+            <a class="contacts__social-link" href="#" target="_blank">
+              <svg class="contacts__social-svg contacts__social-svg--header">
+                <use href="img/sprite.svg#vk"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="contacts__social">
+            <a class="contacts__social-link" href="#" target="_blank">
+              <svg class="contacts__social-svg contacts__social-svg--header">
+                <use href="img/sprite.svg#inst"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="contacts__social">
+            <a class="contacts__social-link" href="#" target="_blank">
+              <svg class="contacts__social-svg contacts__social-svg--header">
+                <use href="img/sprite.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="contacts__social">
+            <a class="contacts__social-link" href="#" target="_blank">
+              <svg class="contacts__social-svg contacts__social-svg--header">
+                <use href="img/sprite.svg#youtube"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="contacts__social">
+            <a class="contacts__social-link" href="#" target="_blank">
+              <svg class="contacts__social-svg contacts__social-svg--header">
+                <use href="img/sprite.svg#tg"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</header>
+    <main class="main">
+      <section class="hero">
+        <img class="decor hero__decor1" src="img/decors/1.svg" alt="decor" aria-hidden="true">
+        <img class="decor hero__decor2" src="img/decors/2.svg" alt="decor" aria-hidden="true">
+        <img class="decor hero__decor3" src="img/decors/3.svg" alt="decor" aria-hidden="true">
+        <img class="decor hero__decor4" src="img/decors/4.svg" alt="decor" aria-hidden="true">
+        <picture>
+          <source media="(max-width: 767px)" srcset="img/decors/6-min.svg">
+          <img class="decor hero__decor5" src="img/decors/6.svg" alt="decor" aria-hidden="true">
+        </picture>
+        <img class="decor hero__decor6" src="img/decors/5.svg" alt="decor" aria-hidden="true">
+        <img class="decor hero__decor7" src="img/decors/1.svg" alt="decor" aria-hidden="true">
+        <img class="decor hero__decor8" src="img/decors/7.svg" alt="decor" aria-hidden="true">
+        <div class="hero__left">
+          <div class="hero__content">
+            <h1 class="hero__title title"><span class="hero__title-span1">Образовательная платформа</span> <span
+                class="hero__title-span2">ХОД Future Academy</span></h1>
+            <p class="hero__text">Актуальные знания для новичков и профессионалов</p>
+          </div>
+        </div>
+        <div class="hero__right">
+          <picture>
+            <source media="(max-width: 767px)" srcset="img/hero-gr2.jpg">
+            <img class="hero__right-img" src="img/hero-gr.jpg" alt="" aria-hidden="true">
+          </picture>
+        </div>
+      </section>
+      <section class="lessons">
+        <div class="container">
+          <div class="owl lessons__owl">
+            <p class="owl__text">
+              <span class="owl__text-title">Кем вы хотите стать?</span>
+              Пора найти себя
+              и выбрать подходящий курс :)
+              <span class="owl__good-luck">Удачи!</span>
+            </p>
+            <img class="owl__img" src="img/owl.svg" alt="owl" aria-hidden="true">
+          </div>
+          <div class="lessons__tabs">
+            <button class="lessons__tab active lessons__tab--children-1">
+              <p class="lessons__tab-text">
+                <span>Дети</span>
+                8 — 14 лет
+              </p>
+            </button>
+            <button class="lessons__tab lessons__tab--children-2">
+              <p class="lessons__tab-text">
+                <span>Подростки</span>
+                14 — 18 лет
+              </p>
+            </button>
+            <button class="lessons__tab lessons__tab--children-3">
+              <p class="lessons__tab-text">
+                <span>Взрослые</span>
+                18 — ∞
+              </p>
+            </button>
+          </div>
+          <div class="lessons__btns">
+            <a class="lessons__btn" href="#">Робототехника</a>
+            <a class="lessons__btn" href="#">Создание игр</a>
+            <a class="lessons__btn" href="#">Web-разработка</a>
+            <a class="lessons__btn" href="#">Мультимедиа</a>
+            <a class="lessons__btn" href="#">Шахматы</a>
+            <a class="lessons__btn" href="#">3D-моделирование и дизайн</a>
+            <a class="lessons__btn" href="#">Английский язык</a>
+            <a class="lessons__btn" href="#">Блогинг</a>
+            <a class="lessons__btn" href="#">Soft skills</a>
+          </div>
+          <div class="lessons__video">
+            <img class="decor lessons__decor1" src="img/decors/3.svg" alt="">
+            <img class="decor lessons__decor2" src="img/decors/7.svg" alt="">
+            <img class="decor lessons__decor3" src="img/decors/8.svg" alt="">
+            <img class="decor lessons__decor4" src="img/decors/1.svg" alt="">
+            <a class="lessons__video-btn" target="_blank" href="https://www.youtube.com/embed/dQw4w9WgXcQ">
+              <picture><source srcset="img/lessons/video-pr.webp" type="image/webp"><img class="lessons__video-pr" src="img/lessons/video-pr.jpg" alt="video"></picture>
+            </a>
+          </div>
+          <h3 class="lessons__title">
+            Актуальные знания от признанных экспертов рынка
+            для новичков и практикующих специалистов.
+          </h3>
+          <div class="lessons__statistics">
+            <div class="lessons__statistics-item">
+              <span class="lessons__statistics-number">600</span>
+              <span class="lessons__statistics-text">Курсов</span>
+            </div>
+            <div class="lessons__statistics-item">
+              <span class="lessons__statistics-number">82</span>
+              <span class="lessons__statistics-text">Ведущих <br> преподавателей</span>
+            </div>
+            <div class="lessons__statistics-item">
+              <span class="lessons__statistics-number">14 795</span>
+              <span class="lessons__statistics-text">Выпускников</span>
+            </div>
+          </div>
+          <div class="lessons__triggers triggers">
+            <div class="triggers__top">
+              <p class="triggers__top-date">
+                <span>25</span>
+                ноября
+              </p>
+              <div class="triggers__top-text-block">
+                <h2 class="triggers__top-title title">День открытых дверей</h2>
+                <p class="triggers__top-text">
+                  Приглашаем всех желающих на бесплатную экскурсию
+                  в мир востребованных профессий и полезных навыков
+                </p>
+              </div>
+              <a class="triggers-btn" href="#">
+                <span>
+                  Записаться
+                  <svg class="triggers-btn__arrow">
+                    <use href="img/sprite.svg#trigger-arrow"></use>
+                  </svg>
+                </span>
+              </a>
+            </div>
+            <div class="triggers__programm trigger">
+              <div class="triggers__img triggers__programm-img">
+                <picture><source srcset="img/lessons/1.webp" type="image/webp"><img src="img/lessons/1.png" alt="" aria-hidden="true"></picture>
+              </div>
+              <h4 class="triggers__programm-title triggers-title">Программы обучения</h4>
+              <p class="triggers__programm-text triggers-text">
+                В списке наших курсов вы сможете найти профессию и занятие по душе, изучить новое и получить
+                практические знания, которые помогут получить работу мечты.
+              </p>
+              <a class="triggers-btn triggers-btn--arrow-blue" href="#">
+                <span>Подробнее
+                  <svg class="triggers-btn__arrow">
+                    <use href="img/sprite.svg#trigger-arrow"></use>
+                  </svg>
+                </span>
+              </a>
+            </div>
+            <div class="triggers__block triggers__block--1 trigger">
+              <div class="triggers__img">
+                <picture><source srcset="img/lessons/2.webp" type="image/webp"><img src="img/lessons/2.png" alt="" aria-hidden="true"></picture>
+              </div>
+              <h4 class="triggers__block-title triggers-title">Новости Академии</h4>
+            </div>
+            <div class="triggers__block triggers__block--2 trigger">
+              <div class="triggers__img">
+                <picture><source srcset="img/lessons/3.webp" type="image/webp"><img src="img/lessons/3.png" alt="" aria-hidden="true"></picture>
+              </div>
+              <h4 class="triggers__block-title triggers-title">Мир IT</h4>
+            </div>
+            <div class="triggers__try trigger">
+              <picture><source srcset="img/lessons/4.webp" type="image/webp"><img class="triggers__try-img" src="img/lessons/4.png" alt="" aria-hidden="true"></picture>
+              <div class="triggers__try-decr">
+                <h4 class="triggers__try-title triggers-title">Попробуй!</h4>
+                <p class="triggers__try-text">Пройдите тест и узнайте свои способности
+                  в сфере информационных технологий</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="feedback">
+        <img class="decor feedback__decor1" src="img/decors/7.svg" alt="decor" aria-hidden="true">
+        <img class="decor feedback__decor2" src="img/decors/1.svg" alt="decor" aria-hidden="true">
+        <img class="decor feedback__decor3" src="img/decors/3.svg" alt="decor" aria-hidden="true">
+        <img class="decor feedback__decor4" src="img/decors/2.svg" alt="decor" aria-hidden="true">
+        <img class="decor feedback__decor5" src="img/decors/5.svg" alt="decor" aria-hidden="true">
+        <div class="container">
+          <h2 class="feedback__title title"><span>Отзывы наших студентов</span></h2>
+        </div>
+        <div class="feedback__slider">
+          <div class="swiper-wrapper feedback__slider-wrapper">
+            <div class="swiper-slide">
+              <div class="feedback__slide">
+                <div class="feedback__top">
+                  <picture><source srcset="img/user-1.webp" type="image/webp"><img class="feedback__logo" src="img/user-1.png" alt="user"></picture>
+                  <div class="feedback__user">
+                    <p class="feedback__name">Имя Фамилия</p>
+                    <p class="feedback__student">
+                      Студент курса «WEB-разработчик»
+                    </p>
+                  </div>
+                </div>
+                <p class="feedback__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut feugiat nisl at augue dapi Lorem ipsum
+                  dolor sit amet, consectetur adipiscing elit. Ut feugiat nisl at augue dapibus, id Lorem ipsum dolor
+                  sit amet, consectetur adipiscing elit. Ut feugiat nisl at augue dapibus, idbus, id
+                </p>
+                <p class="feedback__rating">
+                  4,87 / 5
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="feedback__slide">
+                <div class="feedback__top">
+                  <picture><source srcset="img/user-2.webp" type="image/webp"><img class="feedback__logo" src="img/user-2.png" alt="user"></picture>
+                  <div class="feedback__user">
+                    <p class="feedback__name">Имя Фамилия</p>
+                    <p class="feedback__student">
+                      Студент курса «WEB-разработчик»
+                    </p>
+                  </div>
+                </div>
+                <p class="feedback__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut feugiat nisl at augue dapibus, id
+                </p>
+                <p class="feedback__rating">
+                  4,87 / 5
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="feedback__slide">
+                <div class="feedback__top">
+                  <picture><source srcset="img/user-1.webp" type="image/webp"><img class="feedback__logo" src="img/user-1.png" alt="user"></picture>
+                  <div class="feedback__user">
+                    <p class="feedback__name">Имя Фамилия</p>
+                    <p class="feedback__student">
+                      Студент курса «WEB-разработчик»
+                    </p>
+                  </div>
+                </div>
+                <p class="feedback__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut feugiat nisl at augue dapibus, id
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut feugiat nisl at augue dapibus, id
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut feugiat nisl at augue dapibus, id
+                </p>
+                <p class="feedback__rating">
+                  4,87 / 5
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="feedback__slide">
+                <div class="feedback__top">
+                  <picture><source srcset="img/user-2.webp" type="image/webp"><img class="feedback__logo" src="img/user-2.png" alt="user"></picture>
+                  <div class="feedback__user">
+                    <p class="feedback__name">Имя Фамилия</p>
+                    <p class="feedback__student">
+                      Студент курса «WEB-разработчик»
+                    </p>
+                  </div>
+                </div>
+                <p class="feedback__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut feugiat nisl at augue dapibus, id
+                </p>
+                <p class="feedback__rating">
+                  4,87 / 5
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="feedback__slide">
+                <div class="feedback__top">
+                  <picture><source srcset="img/user-2.webp" type="image/webp"><img class="feedback__logo" src="img/user-2.png" alt="user"></picture>
+                  <div class="feedback__user">
+                    <p class="feedback__name">Имя Фамилия</p>
+                    <p class="feedback__student">
+                      Студент курса «WEB-разработчик»
+                    </p>
+                  </div>
+                </div>
+                <p class="feedback__text">
+                  Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                  feugiat nisl at augue dapibus, idadipiscing elit. Ut feugiat nisl at augue dapibus, id
+                </p>
+                <p class="feedback__rating">
+                  4,87 / 5
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="feedback__slide">
+                <div class="feedback__top">
+                  <picture><source srcset="img/user-2.webp" type="image/webp"><img class="feedback__logo" src="img/user-2.png" alt="user"></picture>
+                  <div class="feedback__user">
+                    <p class="feedback__name">Имя Фамилия</p>
+                    <p class="feedback__student">
+                      Студент курса «WEB-разработчик»
+                    </p>
+                  </div>
+                </div>
+                <p class="feedback__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut feugiat nisl at augue dapibus, id
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut feugiat nisl at augue dapibus, id
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut feugiat nisl at augue dapibus, id
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut feugiat nisl at augue dapibus, id
+                </p>
+                <p class="feedback__rating">
+                  4,87 / 5
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="feedback__slide">
+                <div class="feedback__top">
+                  <picture><source srcset="img/user-2.webp" type="image/webp"><img class="feedback__logo" src="img/user-2.png" alt="user"></picture>
+                  <div class="feedback__user">
+                    <p class="feedback__name">Имя Фамилия</p>
+                    <p class="feedback__student">
+                      Студент курса «WEB-разработчик»
+                    </p>
+                  </div>
+                </div>
+                <p class="feedback__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut feugiat nisl at augue dapibus, id
+                </p>
+                <p class="feedback__rating">
+                  4,87 / 5
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="feedback__slide">
+                <div class="feedback__top">
+                  <picture><source srcset="img/user-1.webp" type="image/webp"><img class="feedback__logo" src="img/user-1.png" alt="user"></picture>
+                  <div class="feedback__user">
+                    <p class="feedback__name">Имя Фамилия</p>
+                    <p class="feedback__student">
+                      Студент курса «WEB-разработчик»
+                    </p>
+                  </div>
+                </div>
+                <p class="feedback__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut feugiat nisl at augue dapibus, id
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut feugiat nisl at augue dapibus, id
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut feugiat nisl at augue dapibus, id
+                </p>
+                <p class="feedback__rating">
+                  4,87 / 5
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="feedback__slide">
+                <div class="feedback__top">
+                  <picture><source srcset="img/user-2.webp" type="image/webp"><img class="feedback__logo" src="img/user-2.png" alt="user"></picture>
+                  <div class="feedback__user">
+                    <p class="feedback__name">Имя Фамилия</p>
+                    <p class="feedback__student">
+                      Студент курса «WEB-разработчик»
+                    </p>
+                  </div>
+                </div>
+                <p class="feedback__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut feugiat nisl at augue dapibus, id
+                </p>
+                <p class="feedback__rating">
+                  4,87 / 5
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="feedback__slide">
+                <div class="feedback__top">
+                  <picture><source srcset="img/user-2.webp" type="image/webp"><img class="feedback__logo" src="img/user-2.png" alt="user"></picture>
+                  <div class="feedback__user">
+                    <p class="feedback__name">Имя Фамилия</p>
+                    <p class="feedback__student">
+                      Студент курса «WEB-разработчик»
+                    </p>
+                  </div>
+                </div>
+                <p class="feedback__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut feugiat nisl at augue dapibus, id
+                </p>
+                <p class="feedback__rating">
+                  4,87 / 5
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="container feedback__scrollbar-container">
+            <div class="feedback__scrollbar"></div>
+          </div>
+        </div>
+      </section>
+      <section class="welcom">
+        <div class="container">
+          <h2 class="welcom__title title">Добро пожаловать в Академию будущего ХОД</h2>
+          <ul class="welcom__items">
+            <li class="welcom__item">
+              <div class="welcom__img">
+                <img src="img/welcom/1.svg" alt="" aria-hidden="true">
+              </div>
+              <p class="welcom__text">Передовой подход
+                <br>к образовательному процессу
+              </p>
+            </li>
+            <li class="welcom__item">
+              <div class="welcom__img">
+                <img src="img/welcom/2.svg" alt="" aria-hidden="true">
+              </div>
+              <p class="welcom__text">Непрерывное усовершенствование
+                <br> и пополнение базы курсов
+              </p>
+            </li>
+            <li class="welcom__item">
+              <div class="welcom__img">
+                <img src="img/welcom/3.svg" alt="" aria-hidden="true">
+              </div>
+              <p class="welcom__text">Только практикующие преподаватели</p>
+            </li>
+            <li class="welcom__item">
+              <div class="welcom__img">
+                <img src="img/welcom/4.svg" alt="" aria-hidden="true">
+              </div>
+              <p class="welcom__text">Сопровождение на всех этапах. От начала обучения до трудоустройства</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+  <div class="container">
+    <div class="footer__form-block">
+      <div class="owl footer__owl">
+        <p class="owl__text owl__text--footer">
+          <span class="owl__text-title owl__text-title--footer">Помочь с выбором?</span>
+          Оставьте заявку и наши специалисты свяжутся с вами, ответят на все вопросы
+          и подберут подходящий вариант обучения.
+        </p>
+        <img class="owl__img owl__img--footer" src="img/owl.svg" alt="owl" aria-hidden="true">
+      </div>
+      <form class="footer__form form" action="#">
+        <div class="form__items">
+          <input type="text" required class="form__input form__input--name" placeholder="Ваше имя">
+          <input type="tel" required class="form__input form__input--phone" placeholder="Ваш телефон">
+          <input type="email" required class="form__input form__input--email" placeholder="Ваш e-mail">
+          <p class="form__text">
+            Нажимая на кнопку, я соглашаюсь
+            на обработку персональных данных
+            и с правилами пользования Платформой
+          </p>
+          <button class="form__btn" type="submit">Отправить</button>
+        </div>
+      </form>
+    </div>
+    <div class="footer__content">
+      <div class="footer__info">
+        <a class="footer__logo logo" href="#">
+          <svg class="logo__svg logo__svg--white">
+            <use href="img/sprite.svg#logo"></use>
+          </svg>
+        </a>
+        <div class="contacts footer__contacts">
+          <a href="tel:88009503398" class="contacts__number">8 800 950-33-98 </a>
+          <p class="contacts__location">г. Москва, ул. Ленина, д. 50</p>
+          <a href="mailto:info@hodfutureacademy.ru" class="contacts__email">info@hodfutureacademy.ru</a>
+          <ul class="contacts__socials">
+            <li class="contacts__social">
+              <a class="contacts__social-link" href="#" target="_blank">
+                <svg class="contacts__social-svg">
+                  <use href="img/sprite.svg#vk"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="contacts__social">
+              <a class="contacts__social-link" href="#" target="_blank">
+                <svg class="contacts__social-svg">
+                  <use href="img/sprite.svg#inst"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="contacts__social">
+              <a class="contacts__social-link" href="#" target="_blank">
+                <svg class="contacts__social-svg">
+                  <use href="img/sprite.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="contacts__social">
+              <a class="contacts__social-link" href="#" target="_blank">
+                <svg class="contacts__social-svg">
+                  <use href="img/sprite.svg#youtube"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="contacts__social">
+              <a class="contacts__social-link" href="#" target="_blank">
+                <svg class="contacts__social-svg">
+                  <use href="img/sprite.svg#tg"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <p class="footer__copy">© ХОД, Future Academy</p>
+      </div>
+      <ul class="footer__list">
+        <li class="footer__item footer__item--title">Детям</li>
+        <li class="footer__item"><a class="footer__link" href="#">Робототехника</a></li>
+        <li class="footer__item"><a class="footer__link" href="#">Создание игр</a></li>
+        <li class="footer__item"><a class="footer__link" href="#">Программирование</a></li>
+        <li class="footer__item"><a class="footer__link" href="#">Мультимедиа</a></li>
+        <li class="footer__item"><a class="footer__link" href="#">Soft skills</a></li>
+        <li class="footer__item"><a class="footer__link" href="#">Шахматы</a></li>
+        <li class="footer__item"><a class="footer__link" href="#">Блогинг</a></li>
+        <li class="footer__item"><a class="footer__link" href="#">Создание игр</a></li>
+        <li class="footer__item"><a class="footer__link" href="#">Программирование</a></li>
+        <li class="footer__item"><a class="footer__link" href="#">Мультимедиа</a></li>
+      </ul>
+      <ul class="footer__list">
+        <li class="footer__item footer__item--title">Подросткам</li>
+        <li class="footer__item"><a class="footer__link" href="#">Web-разработка</a></li>
+        <li class="footer__item"><a class="footer__link" href="#">Прикладное программирование</a></li>
+        <li class="footer__item"><a class="footer__link" href="#">Графическое моделирование</a></li>
+        <li class="footer__item"><a class="footer__link" href="#">Game Development</a></li>
+        <li class="footer__item"><a class="footer__link" href="#">Soft skills</a></li>
+        <li class="footer__item"><a class="footer__link" href="#">Разработчик мобильных приложений</a></li>
+        <li class="footer__item"><a class="footer__link" href="#">Блогинг</a></li>
+        <li class="footer__item"><a class="footer__link" href="#">Создание игр</a></li>
+        <li class="footer__item"><a class="footer__link" href="#">Программирование</a></li>
+        <li class="footer__item"><a class="footer__link" href="#">Мультимедиа</a></li>
+        <li class="footer__item"><a class="footer__link" href="#">Soft skills</a></li>
+      </ul>
+      <ul class="footer__list">
+        <li class="footer__item footer__item--title">Взрослым</li>
+        <li class="footer__item"><a class="footer__link" href="#">Разработчик игр на Unity</a></li>
+        <li class="footer__item"><a class="footer__link" href="#">Разработка ПО</a></li>
+        <li class="footer__item"><a class="footer__link" href="#">Графический Дизайн</a></li>
+        <li class="footer__item"><a class="footer__link" href="#">Тестировщик ПО</a></li>
+        <li class="footer__item"><a class="footer__link" href="#">Интернет Маркетинг</a></li>
+        <li class="footer__item"><a class="footer__link" href="#">Java-разработчик</a></li>
+        <li class="footer__item"><a class="footer__link" href="#">Python–разработчик</a></li>
+        <li class="footer__item"><a class="footer__link" href="#">IOS-разработчик</a></li>
+        <li class="footer__item"><a class="footer__link" href="#">Программирование</a></li>
+      </ul>
+      <ul class="footer__list">
+        <li class="footer__item footer__item--title">Информация</li>
+        <li class="footer__item"><a class="footer__link" href="#">Об академии</a></li>
+        <li class="footer__item"><a class="footer__link" href="#">Мероприятия</a></li>
+        <li class="footer__item"><a class="footer__link" href="#">Новости</a></li>
+        <li class="footer__item"><a class="footer__link" href="#">База знаний</a></li>
+        <li class="footer__item"><a class="footer__link" href="#">Карьера</a></li>
+        <li class="footer__item"><a class="footer__link" href="#">Контакты</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+  </div>
+  <!-- script -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script type="text/javascript" src="js/main.min.js"></script>
+</body>
+
+</html>

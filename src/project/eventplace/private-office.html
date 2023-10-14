@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eventplace</title>
+  <link rel="shortcut icon" href="img/user.jpg" type="image/x-icon">
+  <link rel="stylesheet" href="css/vendor.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="apple-touch-icon" href="img/logo.svg">
+  <!--  <<<<<<<<<<<<<<<< scripts >>>>>>>>>>>>>>>>>>>> -->
+  <script src="js/bootstrap.bundle.min.js" defer></script>
+  <script src="js/script.js" defer></script>
+</head>
+
+<body>
+  <header class="header py-2">
+    <div class="container">
+      <nav class="header__nav row">
+        <a href="index.html" class="header__logo col-auto"><img src="img/logo.svg" alt="logo"></a>
+        <div class="header__menu col-auto">
+          <a class="header__lang" href="#"><img src="img/land.png" alt="land"></a>
+          <div class="header__user">
+            <div class="dropdown">
+              <!-- dropdown btn -->
+              <button class="burger header__burger dropdown btn" type="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
+              <!-- dropdown-menu -->
+              <ul class="header__drop-menu dropdown-menu dropdown-menu-end">
+                <li>
+                  <button class="btn header__drop-menu-link dropdown-item" type="button" data-bs-toggle="modal"
+                    data-bs-target="#login">Войти</button>
+                </li>
+                <li>
+                  <button type="button" class="btn header__drop-menu-link dropdown-item" data-bs-toggle="modal"
+                    data-bs-target="#registration">Зарегистрироваться</button>
+                </li>
+                <li>
+                  <a class="header__drop-menu-link dropdown-item header__drop-menu-link--fw" href="#">Добавить
+                    площадку</a>
+                </li>
+
+              </ul>
+            </div>
+            <a href="private-office.html"><img class="header__user-img" src="img/user.jpg" alt="user"></a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main class="main">
+    <section class="office">
+      <div class="container">
+        <h1 class="office__title">Личный кабинет</h1>
+        <div class="office__content">
+          <div class="office__main row justify-content-between">
+            <div class="col-md-4 col-sm-6 office__user">
+              <div class="position-relative"> <img class="w-100" src="img/user-img.jpg" alt="user-img">
+                <div class="office__user-img-ctr d-flex justify-content-between align-items-center">
+                  <a href="#">Добавить</a>
+                  <a href="#">удалить</a>
+                </div>
+              </div>
+
+            </div>
+            <div class="col-md-4 col-sm-6 office__inputs pe-sm-0">
+              <label class="office__label" for="name"><span>Имя</span></label>
+              <input class="input w-100 py-2" type="text" id="name">
+              <label class="office__label" for="surname"><span>Фамилия</span></label>
+              <input class="input w-100 py-2" type="text" id="surname">
+              <label class="office__label" for=""><span>Электронная почта</span></label>
+              <input class="input w-100 py-2" type="email" id="email">
+              <label class="office__label" for="tel"><span>Номер телефона</span></label>
+              <input class="input w-100 py-2" type="tel" id="tel">
+            </div>
+            <div class="col-md-4 pe-sm-0">
+              <label class="office__label" for="about-me"><span>О себе</span></label>
+              <textarea class="h-100 w-100 input office__textarea" id="about-me"></textarea>
+            </div>
+          </div>
+          <div class="row office__body">
+            <div class="col-sm-8 col-12">
+              <p class="office__body-social-title">Прикрепленные аккаунты</p>
+              <div class="office__socials row">
+                <a class="office__socials-item col-6 col-md-4 office--twitter d-flex flex-column" href="#">
+                  <span class="office__social-name">Twitter</span>
+                  <span class="office__binding">Привязан</span>
+                </a>
+                <a class="office__socials-item col-6 col-md-4 office--telegram d-flex flex-column" href="#">
+                  <span class="office__social-name">Telegram</span>
+                  <span class="office__binding">Привязан</span>
+                </a>
+                <a class="office__socials-item col-6 col-md-4 office--facebook d-flex flex-column" href="#">
+                  <span class="office__social-name">Facebook</span>
+                  <span class="office__binding">Привязан</span>
+                </a>
+                <a class="office__socials-item col-6 col-md-4 office--instagram d-flex flex-column" href="#">
+                  <span class="office__social-name">Instagram</span>
+                  <span class="office__binding">Привязан</span>
+                </a>
+                <a class="office__socials-item col-6 col-md-4 office--google d-flex flex-column" href="#">
+                  <span class="office__social-name">Google</span>
+                  <span class="office__binding">Привязан</span>
+                </a>
+              </div>
+            </div>
+            <div class="col-sm-4 col-12 office-event office__event">
+              <p class="office-event__text1">Фотографии проведённых мероприятий</p>
+              <div class="row">
+                <a class="col-md-3 col-sm-4 col-3 px-1 px-xl-2" href="#">
+                  <img class="w-100" src="img/user-event/1.jpg" alt="">
+                </a>
+                <a class="col-md-3 col-sm-4 col-3 px-1 px-xl-2" href="#">
+                  <img class="w-100" src="img/user-event/1.jpg" alt="">
+                </a>
+                <a class="col-md-3 col-sm-4 col-3 px-1 px-xl-2" href="#">
+                  <div class="position-relative">
+                    <p class="office-event__last-item "><span>+ 2</span></p>
+                    <img class="w-100" src="img/user-event/1.jpg" alt="">
+                  </div>
+                </a>
+                <a class="col-md-3 col-sm-4 col-3 px-1 px-xl-2 d-flex justify-content-center align-items-center" href="#">
+                  <div class="office-event__create-btn">
+                    <img class="flex-shrink-0" src="img/plus.svg" alt="">
+                  </div>
+                </a>
+              </div>
+              <p class="office-event__text2">Добавьте дополнительные свои фотографии для увеличения доверия арендодателя
+              </p>
+            </div>
+          </div>
+          <div class="office__btns">
+            <button class="button office__btn">Сохранить</button>
+            <button class="button office__btn office__btn--border">Редактировать</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <div class="modal fade" id="registration" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><img src="img/close.png"
+              alt=""></button>
+          <h1 class="modal-title" id="exampleModalLabel">Регистрация</h1>
+        </div>
+        <div class="modal-body">
+          <h3 class="modal-body__title">Добро пожаловать в Eventplace </h3>
+          <form action="#" class="modal-form modal-body__form">
+            <input type="tel" class="modal-form__input input" placeholder="Номер телефона" required>
+            <input type="email" class="modal-form__input input" placeholder="Электронная почта" required>
+            <div class="modal-form__pass">
+              <input type="password" class="modal-form__input input" placeholder="Пароль" id="pass" required>
+              <a class="modal-form__eyes" href="#"><img src="img/eyes.png" alt=""></a>
+            </div>
+            <p class="modal-form__confirm">Мы отправим писмьо, чтобы подтвердить почту. </p>
+            <div class="modal-form__checkbox">
+              <input type="checkbox" id="chek1">
+              <label for="chek1">
+                Я хочу получать e-mail и sмs-рассылку с рекомендациями интересных событий, анонсами,
+                новостями, а также информационные сообщения
+              </label>
+            </div>
+            <div class="modal-form__checkbox">
+              <input type="checkbox" id="chek2">
+              <label for="chek2">
+                Я ознакомлен и принимаю условия <a class="modal-form__checkbox-link" href="#">пользовательского
+                  соглашения</a> и <a class="modal-form__checkbox-link" href="#">политики конфидециальности</a>
+              </label>
+            </div>
+            <button class="modal-form__btn button">Зарегистрироваться</button>
+          </form>
+          <p class="modal-body__entry">Уже есть аккаунт? <button class="modal-body__entry-link" type="button"
+              data-bs-toggle="modal" data-bs-target="#login">Войти</button></p>
+        </div>
+        <div class="modal-footer">
+          <a class="modal-footer__item" href="#">
+            <img class="modal-footer__img" src="img/google.png" alt="google">
+            <p class="modal-footer__text">С помощью Google</p>
+          </a>
+          <a class="modal-footer__item" href="#">
+            <img class="modal-footer__img" src="img/facebook.png" alt="google">
+            <p class="modal-footer__text">С помощью Facebook</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="login" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><img src="img/close.png"
+              alt=""></button>
+          <h1 class="modal-title" id="exampleModalLabel">Вход</h1>
+        </div>
+        <div class="modal-body">
+          <h3 class="modal-body__title">Добро пожаловать в Eventplace </h3>
+          <form action="#" class="modal-form modal-body__form">
+            <input type="email" class="modal-form__input input" placeholder="Электронная почта" required>
+            <div class="modal-form__pass">
+              <input type="password" class="modal-form__input input" placeholder="Пароль" id="pass" required>
+              <a class="modal-form__eyes" href="#"><img src="img/eyes.png" alt=""></a>
+            </div>
+            <div class="modal-form__lost-pass">
+              <a href="#">Забыли пароль?</a>
+            </div>
+            <button class="modal-form__btn button">Войти</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <a class="modal-footer__item" href="#">
+            <img class="modal-footer__img" src="img/google.png" alt="google">
+            <p class="modal-footer__text">С помощью Google</p>
+          </a>
+          <a class="modal-footer__item" href="#">
+            <img class="modal-footer__img" src="img/facebook.png" alt="google">
+            <p class="modal-footer__text">С помощью Facebook</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

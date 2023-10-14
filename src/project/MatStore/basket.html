@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shotcut icon" href="img/favicon.ico" type="image/x-icon">
+  <!--============= libs =============-->
+  <link rel="stylesheet" href="css/libs.min.css">
+  <!--============= style =============-->
+  <link rel="stylesheet" href="css/style.min.css">
+
+
+  <title>Name</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+  <div class="header__top">
+    <div class="container header__top-container">
+      <button class="burger-menu" type="button" aria-label="Открыть меню">
+        <span class="burger-menu__line">
+          <span></span>
+        </span>
+      </button>
+      <a class="logo header__logo" href="index.html">
+        <img src="img/logo.svg" alt="Логотип Евадром">
+      </a>
+      <div class="header__city">
+        <svg>
+          <use href="img/sprite.svg#location"></use>
+        </svg>
+        <span>Нижний Новогород</span>
+      </div>
+      <form class="search header__search" action="#">
+        <label class="search__input">
+          <input type="text" placeholder="Поиск по автомобилю">
+        </label>
+        <button class="search__btn" aria-label="Поиск">
+          <svg>
+            <use href="img/sprite.svg#search"></use>
+          </svg>
+        </button>
+      </form>
+      <div class="header__call">
+        <span class="header__call-text">Звонок по РФ бесплатный</span>
+        <a class="header__call-phone" href="tel:+88009999999">
+          <svg>
+            <use href="img/sprite.svg#phone"></use>
+          </svg>
+          <span>8 (800) 999-99-99</span>
+        </a>
+
+      </div>
+      <a class="header__call-btn btn btn--call" href="tel:+88009999999">
+        <svg>
+          <use href="img/sprite.svg#phone"></use>
+        </svg>
+        <span>Заказать звонок </span>
+      </a>
+    </div>
+  </div>
+  <div class="header__bottom">
+    <div class="container header__bottom-container">
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link nav__catalog" href="category.html">
+              <div>
+                <span></span>
+                <span></span>
+              </div>
+              каталог
+            </a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Доставка и оплата</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Обмен и возврат</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">О продукции</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Отзывы</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Статус заказа</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Оптовикам</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <a class="basket-btn" href="basket.html" aria-label="Корзина">
+        <svg>
+          <use href="img/sprite.svg#basket"></use>
+        </svg>
+        <span>8 шт</span>
+      </a>
+    </div>
+  </div>
+</header>
+    <main class="main">
+      <div class="container">
+        <div class="breadcrumbs">
+          <a class="breadcrumbs__link" href="index.html"
+            style="background-image: url(img/breadcrumbs-arrow.svg);">Главная</a>
+          <span class="breadcrumbs__current">Корзина</span>
+        </div>
+      </div>
+      <div class="container">
+
+        <div class="basket-top">
+          <a class="basket-top__return-btn" href="#">
+            <svg>
+              <use href="img/sprite.svg#return-arrow"></use>
+            </svg>
+            <span>Вернуться к товару</span>
+          </a>
+          <a class="basket-top__clear-btn" href="#">Очистить корзину</a>
+        </div>
+        <div class="steps steps--basket">
+          <h2 class="steps__title active">
+            <span class="steps__num">1</span>
+            <span class="steps__text">Корзина</span>
+          </h2>
+          <h2 class="steps__title">
+            <span class="steps__num">2</span>
+            <span class="steps__text">Данные покупателя</span>
+          </h2>
+          <h2 class="steps__title">
+            <span class="steps__num">3</span>
+            <span class="steps__text">Подтверждение</span>
+          </h2>
+        </div>
+        <div class="basket-block">
+          <div class="basket">
+            <div class="basket__top">
+              <span>Наименование</span>
+              <div class="basket__top-right">
+                <span>Кол-во</span>
+                <span>Стоимость</span>
+              </div>
+              <span class="basket__top-mob-text">Итого</span>
+            </div>
+            <div class="basket__content">
+              <!-- in-basket - товар в корзине 
+              -->
+              <div class="basket-item in-basket">
+                <div class="basket-item__product">
+                  <picture><source srcset="img/scheme.webp" type="image/webp"><img class="basket-item__img" src="img/scheme.png" alt="Коврик"></picture>
+                  <div class="basket-item__info">
+                    <p class="basket-item__name">
+                      Коврики в салон Toyota Celica VII (T231) 1999-2002 лифтбек 3 двери, правый руль
+                    </p>
+                    <p class="basket-item__descr">
+                      Комплектация: Комплект в салон<br>
+                      Структура материала: Ромб<br>
+                      Цвет ковриков: Черный<br>
+                      Цвет канта: Черный
+                    </p>
+                    <a class="basket-item__change-btn" href="#">Изменить</a>
+                  </div>
+                </div>
+                <div class="basket-item__right">
+                  <div class="basket-item__quantity">
+                    <div class="basket-item__quantity-controls">
+                      <button class="basket-item__minus" aria-label="Убавить"></button>
+                      <span class="basket-item__quantity-num">1</span>
+                      <button class="basket-item__plus" aria-label="Добавить"></button>
+                    </div>
+                    <span class="basket-item__one-price">190₽ / шт</span>
+                  </div>
+                  <div class="basket-item__prices">
+                    <div class="basket-item__prices-block">
+                      <span class="basket-item__old-price">2960₽</span>
+                      <span class="basket-item__price">3460₽</span>
+                    </div>
+                    <span class="basket-item__sale">Скидка 259₽</span>
+
+                    <button class="basket-item__remove-btn">Удалить</button>
+                  </div>
+                  <div class="basket-item__one-price-block">
+                    <span class="basket-item__one-price">190₽ / шт</span>
+                    <button class="basket-item__remove-btn">Удалить</button>
+                  </div>
+                  <button class="basket-item__btn btn btn--tr">Добавить к заказу</button>
+
+                </div>
+              </div>
+              <div class="basket-item">
+                <div class="basket-item__product">
+                  <picture><source srcset="img/basket-1.webp" type="image/webp"><img class="basket-item__img" src="img/basket-1.png" alt="Коврик"></picture>
+                  <div class="basket-item__info">
+                    <p class="basket-item__name">
+                      Шильдик Металлический
+                    </p>
+                    <p class="basket-item__descr">
+                      Вместительная сумка-органайзер для багажника из EVA материала поможет сохранить чистоту и порядок
+                    </p>
+                    <a class="basket-item__change-btn" href="#">Изменить</a>
+                  </div>
+                </div>
+                <div class="basket-item__right">
+                  <div class="basket-item__quantity">
+                    <div class="basket-item__quantity-controls">
+                      <button class="basket-item__minus" aria-label="Убавить"></button>
+                      <span class="basket-item__quantity-num">1</span>
+                      <button class="basket-item__plus" aria-label="Добавить"></button>
+                    </div>
+                    <span class="basket-item__one-price">190₽ / шт</span>
+                  </div>
+                  <div class="basket-item__prices">
+                    <div class="basket-item__prices-block">
+                      <span class="basket-item__old-price">2960₽</span>
+                      <span class="basket-item__price">3460₽</span>
+                    </div>
+                    <span class="basket-item__sale">Скидка 259₽</span>
+                    <button class="basket-item__remove-btn">Удалить</button>
+                  </div>
+                  <div class="basket-item__one-price-block">
+                    <span class="basket-item__one-price">190₽ / шт</span>
+                    <button class="basket-item__remove-btn">Удалить</button>
+                  </div>
+                  <button class="basket-item__btn btn btn--tr">Добавить к заказу</button>
+
+                </div>
+              </div>
+              <div class="basket-item">
+                <div class="basket-item__product">
+                  <picture><source srcset="img/basket-2.webp" type="image/webp"><img class="basket-item__img" src="img/basket-2.png" alt="Коврик"></picture>
+                  <div class="basket-item__info">
+                    <p class="basket-item__name">
+                      Коврики в салон Toyota Celica VII (T231) 1999-2002 лифтбек 3 двери, правый руль
+                    </p>
+                    <p class="basket-item__descr">
+                      Комплектация: Комплект в салон<br>
+                      Структура материала: Ромб<br>
+                      Цвет ковриков: Черный<br>
+                      Цвет канта: Черный
+                    </p>
+                    <a class="basket-item__change-btn" href="#">Изменить</a>
+                  </div>
+                </div>
+                <div class="basket-item__right">
+                  <div class="basket-item__quantity">
+                    <div class="basket-item__quantity-controls">
+                      <button class="basket-item__minus" aria-label="Убавить"></button>
+                      <span class="basket-item__quantity-num">1</span>
+                      <button class="basket-item__plus" aria-label="Добавить"></button>
+                    </div>
+                    <span class="basket-item__one-price">190₽ / шт</span>
+                  </div>
+                  <div class="basket-item__prices">
+                    <div class="basket-item__prices-block">
+                      <span class="basket-item__old-price">2960₽</span>
+                      <span class="basket-item__price">3460₽</span>
+                    </div>
+                    <span class="basket-item__sale">Скидка 259₽</span>
+
+                    <button class="basket-item__remove-btn">Удалить</button>
+                  </div>
+                  <div class="basket-item__one-price-block">
+                    <span class="basket-item__one-price">190₽ / шт</span>
+                    <button class="basket-item__remove-btn">Удалить</button>
+                  </div>
+                  <button class="basket-item__btn btn btn--tr">Добавить к заказу</button>
+
+                </div>
+              </div>
+              <div class="basket-item in-basket have-one-price">
+                <div class="basket-item__product">
+                  <picture><source srcset="img/basket-3.webp" type="image/webp"><img class="basket-item__img" src="img/basket-3.png" alt="Коврик"></picture>
+                  <div class="basket-item__info">
+                    <p class="basket-item__name">
+                      Подпятник Полимерный
+                    </p>
+                    <p class="basket-item__descr">
+                      Полимерный подпятник на водительский коврик увеличивает срок эксплуатации ковриков, защищая от
+                      износа и деформации
+                    </p>
+                    <select class="select basket-item__select">
+                      <option value="Черный">Черный</option>
+                      <option value="Белый">Белый</option>
+                      <option value="Серый">Серый</option>
+                    </select>
+                    <a class="basket-item__change-btn" href="#">Изменить</a>
+                  </div>
+                </div>
+                <div class="basket-item__right">
+                  <div class="basket-item__quantity">
+                    <div class="basket-item__quantity-controls">
+                      <button class="basket-item__minus" aria-label="Убавить"></button>
+                      <span class="basket-item__quantity-num">1</span>
+                      <button class="basket-item__plus" aria-label="Добавить"></button>
+                    </div>
+                    <span class="basket-item__one-price">190₽ / шт</span>
+                  </div>
+                  <div class="basket-item__prices">
+                    <div class="basket-item__prices-block">
+                      <span class="basket-item__old-price">2960₽</span>
+                      <span class="basket-item__price">3460₽</span>
+                    </div>
+                    <span class="basket-item__sale">Скидка 259₽</span>
+
+                    <button class="basket-item__remove-btn">Удалить</button>
+                  </div>
+                  <div class="basket-item__one-price-block">
+                    <span class="basket-item__one-price">190₽ / шт</span>
+                    <button class="basket-item__remove-btn">Удалить</button>
+                  </div>
+                  <button class="basket-item__btn btn btn--tr">Добавить к заказу</button>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="sum-block">
+            <div class="sum-block__promo-code">
+              <div class="sum-block__promo-code-text">Введите номер купона или промокод</div>
+              <div class="sum-block__promo-code-content">
+                <label class="input sum-block__promo-code-input">
+                  <input type="text" placeholder="Промокод">
+                </label>
+                <button class="sum-block__promo-code-btn btn" type="button">Применить</button>
+              </div>
+            </div>
+            <div class="sum-block__item">
+              <span class="sum-block__item-product">1 товар на сумму</span>
+              <span class="sum-block__item-price">4160₽</span>
+            </div>
+            <div class="sum-block__item">
+              <span class="sum-block__item-product">Скидка</span>
+              <span class="sum-block__sale">450₽</span>
+            </div>
+            <div class="sum-block__total">
+              <span class="sum-block__total-text">Итого с учётом скидки</span>
+              <span class="sum-block__sum">3 460₽</span>
+            </div>
+            <div class="sum-block__bottom">
+              <a class="sum-block__btn btn" href="offer.html">оформить заказ</a>
+              <div class="sum-block__timer">
+                <span class="sum-block__timer-num">29:59</span>
+                <span class="sum-block__timer-text">В вашей корзине товары по акции.Ваша скидка сгорит через</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+  <div class="container">
+    <div class="footer__content">
+      <div class="footer__logo-block">
+        <a class="logo footer__logo" href="#">
+          <img src="img/logo-white.svg" alt="Логотип Евадром">
+        </a>
+        <div class="footer__socials">
+          <span class="footer__socials-text">Свяжитесь с нами</span>
+          <ul class="footer__socials-list">
+            <li class="footer__socials-item">
+              <a class="footer__socials-link" href="t.me/Ting_00" aria-label="Вконтакте">
+                <svg>
+                  <use href="img/sprite.svg#vk"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__socials-item">
+              <a class="footer__socials-link" href="#" aria-label="Телеграм">
+                <svg>
+                  <use href="img/sprite.svg#telegram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__socials-item">
+              <a class="footer__socials-link" href="#" aria-label="Ватсапп">
+                <svg>
+                  <use href="img/sprite.svg#whatsapp"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-accordion">
+        <div class="ac">
+          <h3 class="ac-header">
+            <button type="button" class="ac-trigger">информация
+            </button>
+          </h3>
+          <div class="ac-panel">
+            <p></p>
+            <ul class="footer-accordion__list">
+              <li class="footer-accordion__item"><a class="footer-accordion__link" href="#">Доставка и оплата</a></li>
+              <li class="footer-accordion__item"><a class="footer-accordion__link" href="#">Обмен и возврат</a></li>
+              <li class="footer-accordion__item"><a class="footer-accordion__link" href="#">Статус заказа</a></li>
+              <li class="footer-accordion__item"><a class="footer-accordion__link" href="#">Оптовикам</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="ac">
+          <h3 class="ac-header">
+            <button type="button" class="ac-trigger">Компания
+            </button>
+          </h3>
+          <div class="ac-panel">
+            <ul class="footer-accordion__list">
+              <li class="footer-accordion__item"><a class="footer-accordion__link" href="#">О продукции</a></li>
+              <li class="footer-accordion__item"><a class="footer-accordion__link" href="#">Отзывы</a></li>
+              <li class="footer-accordion__item"><a class="footer-accordion__link" href="#">Контакты</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer__contact">
+        <div class="footer__contact-item">
+          <div class="footer__contact-phone">
+            <span>Звонок по РФ бесплатный</span>
+            <a href="tel:8899999999">8 (899) 99-99-99</a>
+          </div>
+        </div>
+        <div class="footer__contact-item">
+          <a href="tel:8899999999" class="footer__contact-btn btn btn--call btn--call-white">
+            <svg>
+              <use href="img/sprite.svg#phone"></use>
+            </svg>
+            <span>Заказать звонок </span>
+          </a>
+        </div>
+        <div class="footer__contact-item">
+          <a href="mailto:evadroom@gmail.com" class="footer__contact-email">evadroom@gmail.com</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <div class="container footer__bottom-container">
+      <p class="footer__copy">© EVADROM.RU - Все права защищены.</p>
+      <div class="footer__bottom-items">
+        <a class="footer__bottom-link" href="#">Политика конфиденциальности</a>
+        <a class="footer__bottom-link" href="#">Пользовательское соглашение</a>
+      </div>
+    </div>
+  </div>
+</footer>
+  </div>
+  <!--=============  script ============= -->
+  <script src="js/main.min.js"></script>
+</body>
+<!-- <label class="form-input pre-footer__input">
+  <span>Имя <span>*</span></span>
+  <input type="text" placeholder="Ваше имя *">
+</label> -->
+
+
+</html>

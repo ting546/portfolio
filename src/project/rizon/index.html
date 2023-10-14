@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rizon</title>
+  <link rel="shotcut icon" href="img/favicon.ico" type="image/x-icon">
+
+  <!-- style -->
+  <link rel="stylesheet" href="css/libs.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <noscript>Ваш браузер не поддерживает JavaScript!</noscript>
+  <div class="wrapper">
+    <header class="header">
+      <div class="container header__container">
+        <a class="header__logo logo" href="#">
+          <img class="logo__img" src="img/logo.svg" alt="Rizon">
+        </a>
+        <nav class="header__nav nav">
+          <ul class="nav__list">
+            <li class="nav__item"><a class="nav__link" href="#services">Услуги</a></li>
+            <li class="nav__item"><a class="nav__link" href="#about-us">О сервисе</a></li>
+            <li class="nav__item"><a class="nav__link" href="#scheme">Схема работы</a></li>
+            <li class="nav__item"><a class="nav__link" href="#tarif">Тарифы</a></li>
+            <li class="nav__item"><a class="nav__link" href="#team">Команда</a></li>
+            <li class="nav__item"><a class="nav__link" href="#zone">Зона покрытия</a></li>
+          </ul>
+          <ul class="socials header__socials">
+            <li class="socials__item">
+              <a class="socials__link" href="#">
+                <svg>
+                  <use href="img/sprite.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link" href="#">
+                <svg>
+                  <use href="img/sprite.svg#vk"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link" href="#">
+                <svg>
+                  <use href="img/sprite.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <button class="nav__back-btn">
+            <picture>
+              <source srcset="img/back.webp" type="image/webp"><img src="img/back.png" alt="закрыть">
+            </picture>
+          </button>
+        </nav>
+        <a href="tel:+74565473589" class="header__tel">+7 (456) 547-35-89</a>
+        <button class="burger-menu">
+          <span class="burger-menu__line">
+            <span></span>
+          </span>
+        </button>
+      </div>
+    </header>
+    <main class="main">
+      <section class="hero">
+        <div class="container hero__container">
+          <div class="hero__content">
+            <ul class="socials hero__socials">
+              <li class="socials__item">
+                <a class="socials__link" href="#" aria-label="Фейсбук">
+                  <svg>
+                    <use href="img/sprite.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials__item">
+                <a class="socials__link" href="#" aria-label="Вконтакте">
+                  <svg>
+                    <use href="img/sprite.svg#vk"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials__item">
+                <a class="socials__link" href="#">
+                  <svg>
+                    <use href="img/sprite.svg#instagram" aria-label="Инстаграм"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+            <div class="hero__img">
+              <picture>
+                <source srcset="img/hero/img.webp" type="image/webp"><img src="img/hero/img.jpg" alt=""
+                  aria-hidden="true" loading="lazy">
+              </picture>
+            </div>
+            <div class="hero__text">
+              <h1 class="hero__title"><span>Скидка до</span> 1 000 000 руб.</h1>
+              <p class="hero__desc"><span>Пользователям</span> сервиса предоставляется скидка <span>на покупку</span>
+                недвижимости </p>
+              <a class="hero__btn btn" href="form.html">Зарегистрироваться</a>
+            </div>
+          </div>
+          <div class="hero__slider hero-slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="hero-slider__slide">
+                  <div class="hero-slider__img">
+                    <picture>
+                      <source srcset="img/hero/1.webp" type="image/webp"><img src="img/hero/1.jpg" alt=""
+                        aria-hidden="true" loading="lazy">
+                    </picture>
+                  </div>
+                  <p class="hero-slider__text">
+                    <span>Наш сервис - бесплатно</span>
+                    Подписавшимся на наши аккаунты и получи бесплатный доступ к сервису на 3 дня
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="hero-slider__slide">
+                  <div class="hero-slider__img">
+                    <picture>
+                      <source srcset="img/hero/1.webp" type="image/webp"><img src="img/hero/1.jpg" alt=""
+                        aria-hidden="true" loading="lazy">
+                    </picture>
+                  </div>
+                  <p class="hero-slider__text">
+                    <span>Наш сервис - бесплатно</span>
+                    Подписавшимся на наши аккаунты и получи бесплатный доступ к сервису на 3 дня
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="hero-slider__controls slider-controls">
+              <button class="slider-arrow slider-arrow--left-hero"></button>
+              <button class="slider-arrow slider-arrow--right-hero slider-arrow--right"></button>
+              <div class="slider-controls__nums slider-controls__nums--hero">
+                <span class="slider-controls__num slider-controls__num--current"></span>
+                <span class="slider-controls__line"></span>
+                <span class="slider-controls__num slider-controls__num--total"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="about-us" id="about-us">
+        <div class="container">
+          <h2 class="about-us__title title">О сервисе</h2>
+          <div class="about-us__content">
+            <div class="about-us__content-left">
+              <p class="about-us__sub-text">От простых моментов до апартаментов!</p>
+              <p class="about-us__decr">«TurkService» предоставляет полный спектр услуг для комфортного пребывания в
+                Турции. Ваш надежный помощник всегда под рукой!</p>
+              <ul class="about-us__items">
+                <li class="about-us__item" data-aos="fade-right" data-aos-duration="700">Просто</li>
+                <li class="about-us__item" data-aos="fade-right" data-aos-duration="600">Выгодно</li>
+                <li class="about-us__item" data-aos="fade-right" data-aos-duration="500">Полезно</li>
+              </ul>
+            </div>
+            <div class="about-us__content-right">
+              <div class="about-us__pr">
+                <picture>
+                  <source srcset="img/about-us-img.webp" type="image/webp"><img class="about-us__pr-img"
+                    src="img/about-us-img.jpg" alt="" aria-hidden="true" loading="lazy">
+                </picture>
+                <a class="about-us__pr-btn" href="#" aria-label="Кнопка видео"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="services" id="services">
+        <div class="container">
+          <h2 class="services__title title">Услуги</h2>
+          <div class="services__content">
+            <div class="services__top">
+              <div class="services__item services__top-item services__top-item--1" data-aos="fade-right"
+                data-aos-duration="700" data-aos-anchor-placement="top-bottom">
+                <span class="services__item-num">1</span>
+                <p class="services__item-text">Услуги Турагентства</p>
+              </div>
+              <div class="services__item services__top-item services__top-item--2" data-aos="fade-right"
+                data-aos-duration="600">
+                <span class="services__item-num">2</span>
+                <p class="services__item-text">Услуги <br> трансфера</p>
+              </div>
+              <div class="services__item services__top-item services__top-item--3" data-aos="fade-right"
+                data-aos-duration="500">
+                <span class="services__item-num">3</span>
+                <p class="services__item-text">Организация досуга</p>
+              </div>
+              <div class="services__item services__top-item services__top-item--4" data-aos="fade-right"
+                data-aos-duration="400" data-aos-anchor-placement="top-bottom">
+                <span class="services__item-num">4</span>
+                <p class="services__item-text">Что? Где? <br> Почем?</p>
+              </div>
+            </div>
+            <div class="services__center">
+              <div class="services__center-logo">
+                <img src="img/logo-2.svg" alt="Логотип Rizon">
+              </div>
+              <p class="services__center-text">От простых моментов до апартаментов!</p>
+            </div>
+            <div class="services__bottom">
+              <div class="services__item services__bottom-item services__bottom-item--1" data-aos="fade-left"
+                data-aos-duration="400">
+                <span class="services__item-num">8</span>
+                <p class="services__item-text">Покупка, продажа и аренда </p>
+              </div>
+              <div class="services__item services__bottom-item services__bottom-item--2" data-aos="fade-left"
+                data-aos-duration="500" data-aos-anchor-placement="top-bottom">
+                <span class="services__item-num">7</span>
+                <p class="services__item-text">Получение ВНЖ и гражданства</p>
+              </div>
+              <div class="services__item services__bottom-item services__bottom-item--3" data-aos="fade-left"
+                data-aos-duration="600" data-aos-anchor-placement="top-bottom">
+                <span class="services__item-num">6</span>
+                <p class="services__item-text">Открытие <br> счета</p>
+              </div>
+              <div class="services__item services__bottom-item services__bottom-item--4" data-aos="fade-left"
+                data-aos-duration="700">
+                <span class="services__item-num">5</span>
+                <p class="services__item-text">Услуги переводчика</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="scheme" id="scheme">
+        <div class="container">
+          <h2 class="scheme__title title">Схема работы</h2>
+          <div class="scheme__content" data-aos="fade-up" data-aos-duration="10">
+            <div class="scheme__line-svg">
+              <svg class="scheme__line" width="1123" height="114" viewBox="0 0 1123 114" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M1 68.5L14.4586 64.4258C79.306 44.7953 111.73 34.98 145.238 32.5994C178.746 30.2187 212.231 35.3512 279.203 45.6163L422.239 67.5402C481.261 76.5868 510.771 81.11 540.516 81.2183C570.261 81.3265 599.804 77.0182 658.889 68.4015L835.348 42.6679C895.718 33.864 925.903 29.462 956.151 31.1722C986.399 32.8824 1015.9 40.6588 1074.89 56.2114L1121.5 68.5"
+                  stroke="#FD8958" stroke-width="4" />
+                <g class="scheme__circle-1">
+                  <circle r="14" transform="matrix(1 0 0 -1 150 32)" fill="#FD8958" />
+                </g>
+                <g class="scheme__circle-1" filter="url(#filter0_f_42_41)">
+                  <circle r="18.5" transform="matrix(1 0 0 -1 150 33)" stroke="#FD8958" stroke-width="7" />
+                </g>
+                <g class="scheme__circle-2" filter="url(#filter1_f_42_41)">
+                  <circle r="18.5" transform="matrix(1 0 0 -1 543.5 81)" stroke="#FD8958" stroke-width="7" />
+                </g>
+                <g class="scheme__circle-2">
+                  <circle r="14" transform="matrix(1 0 0 -1 543.5 81)" fill="#FD8958" />
+                </g>
+                <g class="scheme__circle-3">
+                  <circle r="14" transform="matrix(1 0 0 -1 959.5 32)" fill="#FD8958" />
+                </g>
+                <g class="scheme__circle-3" filter="url(#filter2_f_42_41)">
+                  <circle r="18.5" transform="matrix(1 0 0 -1 959.5 33)" stroke="#FD8958" stroke-width="7" />
+                </g>
+                <defs>
+                  <filter id="filter0_f_42_41" x="117" y="0" width="66" height="66" filterUnits="userSpaceOnUse"
+                    color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+                    <feGaussianBlur stdDeviation="5.5" result="effect1_foregroundBlur_42_41" />
+                  </filter>
+                  <filter id="filter1_f_42_41" x="510.5" y="48" width="66" height="66" filterUnits="userSpaceOnUse"
+                    color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+                    <feGaussianBlur stdDeviation="5.5" result="effect1_foregroundBlur_42_41" />
+                  </filter>
+                  <filter id="filter2_f_42_41" x="926.5" y="0" width="66" height="66" filterUnits="userSpaceOnUse"
+                    color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+                    <feGaussianBlur stdDeviation="5.5" result="effect1_foregroundBlur_42_41" />
+                  </filter>
+                </defs>
+              </svg>
+            </div>
+            <ul class="scheme__items">
+              <li class="scheme__item">
+                <h3 class="scheme__item-title">Регистрируетесь</h3>
+                <p class="scheme__item-text">«TurkService» предоставляет полный спектр услуг для</p>
+              </li>
+              <li class="scheme__item">
+                <h3 class="scheme__item-title">Оплачиваете</h3>
+                <p class="scheme__item-text">«TurkService» предоставляет полный спектр услуг для</p>
+              </li>
+              <li class="scheme__item">
+                <h3 class="scheme__item-title">Наслаждаетесь!</h3>
+                <p class="scheme__item-text">«TurkService» предоставляет полный спектр услуг для</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="tarif" id="tarif">
+        <div class="container">
+          <h2 class="tarif__title title">Тарифы</h2>
+          <ul class="tarif__items">
+            <li class="tarif__item tarif-item" data-aos="fade-down" data-aos-duration="500">
+              <h3 class="tarif-item__title tarif__title2">Минимальный</h3>
+              <p class="tarif-item__text">Использование сервиса в течение 1 календарного дня</p>
+              <div class="tarif-item__sum">
+                <span class="tarif-item__price">99 руб.</span>
+              </div>
+              <a href="#" class="tarif-item__btn btn">Присоединиться</a>
+            </li>
+            <li class="tarif__item tarif-item" data-aos="fade-down" data-aos-duration="700">
+              <h3 class="tarif-item__title tarif__title2">Средний</h3>
+              <p class="tarif-item__text">Использование сервиса в течение 7 календарных дней</p>
+              <div class="tarif-item__sum">
+                <span class="tarif-item__sale">693 руб.</span>
+                <span class="tarif-item__price">550 руб.</span>
+              </div>
+              <a href="#" class="tarif-item__btn btn">Присоединиться</a>
+            </li>
+            <li class="tarif__item tarif-item" data-aos="fade-down" data-aos-duration="900">
+              <h3 class="tarif-item__title tarif__title2">Полный</h3>
+              <p class="tarif-item__text">Иcпользование сервиса не менее 30 календарных дней</p>
+              <div class="tarif-item__sum">
+                <span class="tarif-item__price">1000 руб.</span>
+              </div>
+              <a href="#" class="tarif-item__btn btn">Присоединиться</a>
+            </li>
+          </ul>
+        </div>
+        <div class="tarif__bottom">
+          <div class="container">
+            <div class="tarif__bottom-content">
+              <h3 class="tarif__bottom--title tarif__title2">Готовы стать нашим клиентом?</h3>
+              <p class="tarif__bottom-text">Заполняя форму, Вы подтверждаете свое согласие на обработку персональных
+                данных</p>
+              <a href="form.html" class="tarif__bottom-btn btn">Присоединиться</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="team" id="team">
+        <div class="container">
+          <h2 class="team__title title">Команда</h2>
+          <div class="team__content">
+            <ul class="team__items">
+              <li class="team__item team-item">
+                <div class="team-item__img">
+                  <picture>
+                    <source srcset="img/team/1.webp" type="image/webp"><img src="img/team/1.jpg"
+                      alt="фото участника команды" loading="lazy">
+                  </picture>
+                </div>
+                <div class="team-item__block">
+                  <h4 class="team-item__name">Баранов Кирилл</h4>
+                  <p class="team-item__post"><span>Должность:</span> руководитель отдела рекламы</p>
+                </div>
+              </li>
+              <li class="team__item team-item">
+                <div class="team-item__img">
+                  <picture>
+                    <source srcset="img/team/2.webp" type="image/webp"><img src="img/team/2.jpg"
+                      alt="фото участника команды" loading="lazy">
+                  </picture>
+                </div>
+                <div class="team-item__block">
+                  <h4 class="team-item__name">Виктор Уткин</h4>
+                  <p class="team-item__post"><span>Должность:</span> руководитель отдела недвижимости</p>
+                </div>
+              </li>
+              <li class="team__item team-item">
+                <div class="team-item__img">
+                  <picture>
+                    <source srcset="img/team/3.webp" type="image/webp"><img src="img/team/3.jpg"
+                      alt="фото участника команды" loading="lazy">
+                  </picture>
+                </div>
+                <div class="team-item__block">
+                  <h4 class="team-item__name">Мищенко Михаил</h4>
+                  <p class="team-item__post"><span>Должность:</span> генеральный директор</p>
+                </div>
+              </li>
+            </ul>
+            <div class="team__slider-block">
+              <div class="team__slider team-slider">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="team-slider__slide">
+                      <picture>
+                        <source srcset="img/team/slider/1.webp" type="image/webp">
+                        <img class="team-slider__img" src="img/team/slider/1.jpg" alt="фото участника команды"
+                          loading="lazy">
+                      </picture>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="team-slider__slide">
+                      <picture>
+                        <source srcset="img/team/slider/2.webp" type="image/webp">
+                        <img class="team-slider__img" src="img/team/slider/2.jpg" alt="фото участника команды"
+                          loading="lazy">
+                      </picture>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="team-slider__slide">
+                      <picture>
+                        <source srcset="img/team/slider/3.webp" type="image/webp">
+                        <img class="team-slider__img" src="img/team/slider/3.jpg" alt="фото участника команды"
+                          loading="lazy">
+                      </picture>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="team__right">
+                <div class="team__descrs">
+                  <div class="team__descr team-descr active">
+                    <h3 class="team-descr__name">Баранов Кирилл</h3>
+                    <p class="team-descr__post"><span>Должность:</span> руководитель финансового отдела</p>
+                    <p class="team-descr__text">Место рождения: г. Санкт Петербург, 7 лет прожил в Израиле, закончил
+                      Санкт-Петербургский Государственный Университет по специальности «Юрист»</p>
+                  </div>
+                  <div class="team__descr team-descr">
+                    <h3 class="team-descr__name">Виктор Уткин</h3>
+                    <p class="team-descr__post"><span>Должность:</span> руководитель отдела недвижимости</p>
+                    <p class="team-descr__text">Место рождения: г. Санкт Петербург, 7 лет прожил в Израиле, закончил
+                      Санкт-Петербургский Государственный Университет по специальности «Юрист»</p>
+                  </div>
+                  <div class="team__descr team-descr">
+                    <h3 class="team-descr__name">Мищенко Михаил</h3>
+                    <p class="team-descr__post"><span>Должность:</span> генеральный директор</p>
+                    <p class="team-descr__text">Место рождения: г. Санкт Петербург, 7 лет прожил в Израиле, закончил
+                      Санкт-Петербургский Государственный Университет по специальности «Юрист»</p>
+                  </div>
+                </div>
+                <div class="team__controls slider-controls">
+                  <button class="slider-arrow slider-arrow--left-team"></button>
+                  <button class="slider-arrow slider-arrow--right-team slider-arrow--right"></button>
+                  <div class="slider-controls__nums slider-controls__nums--team">
+                    <span class="slider-controls__num slider-controls__num--current"></span>
+                    <span class="slider-controls__line"></span>
+                    <span class="slider-controls__num slider-controls__num--total"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="team__form team-form">
+          <div class="container">
+            <div class="team-form__content">
+              <div class="team-form__text-block">
+                <h3 class="team-form__title">Появились вопросы?</h3>
+                <p class="team-form__text">Напишите прямо сейчас и получите бесплатную и подробную информацию о нашем
+                  сервисе!</p>
+              </div>
+              <form class="team-form__form" action="#">
+                <input type="text" class="team-form__input" required placeholder="Имя">
+                <input type="tel" class="team-form__input" required placeholder="Телефон">
+                <button class="team-form__btn btn" type="submit">Перезвонить</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="zone" id="zone">
+        <div class="container">
+          <h2 class="zone__title title">Зона покрытия</h2>
+        </div>
+        <div class="zone__map">
+          <picture>
+            <source srcset="img/map.webp" type="image/webp"><img class="zone__img" src="img/map.jpg"
+              alt="карта покрытия">
+          </picture>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="footer__block footer-form">
+          <a class="logo footer-form__logo" href="#">
+            <img class="logo__img" src="img/logo.svg" alt="Rizon">
+          </a>
+          <p class="footer-form__text">Что бы быть в курсе акций </p>
+          <form action="#">
+            <input type="email" class="footer-form__input" placeholder="E-mail">
+            <input type="tel" class="footer-form__input" placeholder="Телефон">
+            <button class="footer-form__btn btn" type="submit">Подписаться</button>
+          </form>
+        </div>
+        <div class="footer__block footer-nav">
+          <h3 class="footer-nav__title footer__title">Полезное</h3>
+          <nav class="footer-nav__nav">
+            <ul class="footer-nav__list">
+              <li class="footer-nav__item">
+                <a class="footer-nav__link" href="#about-us">О сервисе</a>
+              </li>
+              <li class="footer-nav__item">
+                <a class="footer-nav__link" href="#services">Услуги</a>
+              </li>
+              <li class="footer-nav__item">
+                <a class="footer-nav__link" href="#scheme">Схема работы</a>
+              </li>
+              <li class="footer-nav__item">
+                <a class="footer-nav__link" href="#tarif">Тарифы</a>
+              </li>
+              <li class="footer-nav__item">
+                <a class="footer-nav__link" href="#team">Команда</a>
+              </li>
+              <li class="footer-nav__item">
+                <a class="footer-nav__link" href="#zone">Зона покрытия</a>
+              </li>
+            </ul>
+            <a class="footer-nav__link footer-nav__link--pf" href="#">Политика конфиденциальности</a>
+          </nav>
+        </div>
+        <div class="footer__block footer-contact">
+          <h3 class="footer-contact__title footer__title">Наши контактые данные</h3>
+          <div class="footer-contact__wrapper">
+            <div class="footer-contact__top">
+              <p class="footer-contact__time-work">Время работы:</p>
+              <p class="footer-contact__tel">Телефон:</p>
+            </div>
+            <div class="footer-contact__socials">
+              <p class="footer-contact__socials-text">Мы в соц.сетях</p>
+              <ul class="footer-contact__items">
+                <li class="footer-contact__item">
+                  <a href="#">
+                    <picture>
+                      <source srcset="img/whatsapp.webp" type="image/webp"><img src="img/whatsapp.png" alt="whatsapp">
+                    </picture>
+                  </a>
+                </li>
+                <li class="footer-contact__item">
+                  <a href="#">
+                    <picture>
+                      <source srcset="img/facebook.webp" type="image/webp"><img src="img/facebook.png" alt="facebook">
+                    </picture>
+                  </a>
+                </li>
+                <li class="footer-contact__item">
+                  <a href="#">
+                    <picture>
+                      <source srcset="img/inst.webp" type="image/webp"><img src="img/inst.png" alt="inst">
+                    </picture>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <!-- script -->
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
