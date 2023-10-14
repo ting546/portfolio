@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shotcut icon" href="img/favicon.ico" type="image/x-icon">
+  <!--============= libs =============-->
+  <link rel="stylesheet" href="css/libs.min.css">
+  <!--============= style =============-->
+  <link rel="stylesheet" href="css/style.min.css">
+
+
+  <title>Name</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+  <div class="header__top">
+    <div class="container header__top-container">
+      <button class="burger-menu" type="button" aria-label="Открыть меню">
+        <span class="burger-menu__line">
+          <span></span>
+        </span>
+      </button>
+      <a class="logo header__logo" href="index.html">
+        <img src="img/logo.svg" alt="Логотип Евадром">
+      </a>
+      <div class="header__city">
+        <svg>
+          <use href="img/sprite.svg#location"></use>
+        </svg>
+        <span>Нижний Новогород</span>
+      </div>
+      <form class="search header__search" action="#">
+        <label class="search__input">
+          <input type="text" placeholder="Поиск по автомобилю">
+        </label>
+        <button class="search__btn" aria-label="Поиск">
+          <svg>
+            <use href="img/sprite.svg#search"></use>
+          </svg>
+        </button>
+      </form>
+      <div class="header__call">
+        <span class="header__call-text">Звонок по РФ бесплатный</span>
+        <a class="header__call-phone" href="tel:+88009999999">
+          <svg>
+            <use href="img/sprite.svg#phone"></use>
+          </svg>
+          <span>8 (800) 999-99-99</span>
+        </a>
+
+      </div>
+      <a class="header__call-btn btn btn--call" href="tel:+88009999999">
+        <svg>
+          <use href="img/sprite.svg#phone"></use>
+        </svg>
+        <span>Заказать звонок </span>
+      </a>
+    </div>
+  </div>
+  <div class="header__bottom">
+    <div class="container header__bottom-container">
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link nav__catalog" href="category.html">
+              <div>
+                <span></span>
+                <span></span>
+              </div>
+              каталог
+            </a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Доставка и оплата</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Обмен и возврат</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">О продукции</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Отзывы</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Статус заказа</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Оптовикам</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <a class="basket-btn" href="basket.html" aria-label="Корзина">
+        <svg>
+          <use href="img/sprite.svg#basket"></use>
+        </svg>
+        <span>8 шт</span>
+      </a>
+    </div>
+  </div>
+</header>
+    <main class="main">
+      <div class="container">
+        <div class="breadcrumbs">
+          <a class="breadcrumbs__link" href="index.html"
+            style="background-image: url(img/breadcrumbs-arrow.svg);">Главная</a>
+          <span class="breadcrumbs__current">Корзина</span>
+        </div>
+      </div>
+      <div class="container">
+        <div class="basket-top">
+          <a class="basket-top__return-btn" href="#">
+            <svg>
+              <use href="img/sprite.svg#return-arrow"></use>
+            </svg>
+            <span>Вернуться в корзину</span>
+          </a>
+        </div>
+        <div class="steps steps--offer">
+          <h2 class="steps__title active">
+            <span class="steps__num">1</span>
+            <span class="steps__text">Корзина</span>
+          </h2>
+          <h2 class="steps__title active">
+            <span class="steps__num">2</span>
+            <span class="steps__text">Данные покупателя</span>
+          </h2>
+          <h2 class="steps__title">
+            <span class="steps__num">3</span>
+            <span class="steps__text">Подтверждение</span>
+          </h2>
+        </div>
+        <div class="buyer-data-content">
+          <form action="#" class="buyer-data">
+
+            <div class="ac">
+              <h3 class="ac-header">
+                <button type="button" class="ac-trigger">Контактные данные
+                </button>
+              </h3>
+              <div class="ac-panel">
+                <div class="buyer-data-contacts">
+                  <label class="input buyer-data-contacts__input">
+                    <span>Имя <span>*</span></span>
+                    <input required type="text" placeholder="Введите ваше имя">
+                  </label>
+                  <label class="input buyer-data-contacts__input">
+                    <span>Фамилия <span>*</span></span>
+                    <input type="text" placeholder="Введите вашу фамилию">
+                  </label>
+                  <label class="input buyer-data-contacts__input">
+                    <span>Телефон <span>*</span></span>
+                    <input type="tel" placeholder="+7 (___) ___-__-__">
+                  </label>
+                  <label class="input buyer-data-contacts__input">
+                    <span>Email ( не обязательно) <span>*</span></span>
+                    <input type="text" placeholder="Для информирования по заказу">
+                  </label>
+                  <label class="input buyer-data-contacts__input buyer-data-contacts__input--last">
+                    <span>Номер телефона привязанный к WhatsApp/Telegram</span>
+                    <input type="tel" placeholder="WhatsApp\Viber\Telegram">
+                    <a href="#">Скопировать номер</a>
+                  </label>
+                  <button type="button" class="btn buyer-data-contacts__btn next-ac-btn">продолжить
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="ac">
+              <h3 class="ac-header">
+                <button type="button" class="ac-trigger">Способ оплаты
+                </button>
+              </h3>
+              <div class="ac-panel">
+                <div class="buyer-data-order">
+                  <div class="buyer-data-order__top">
+                    <div class="buyer-data-order__city-block">
+                      <p class="buyer-data-order__city">г Нижний Новгород</p>
+                      <a class="buyer-data-order__change-btn" href="#">Изменить</a>
+                    </div>
+                    <p class="buyer-data-order__top-sub-text">Цена и доступные способы доставки могут зависеть от
+                      выбранного населенного пункта.</p>
+                  </div>
+                  <div class="buyer-data-order__radios">
+                    <label class="buyer-data-radio">
+                      <input checked type="radio" name="buyer-data-order">
+                      <div class="buyer-data-radio__content">
+                        <div class="buyer-data-radio__info">
+                          <p class="buyer-data-radio__info-text">Доставка курьером</p>
+                        </div>
+                        <span class="buyer-data-radio__price">460₽</span>
+                      </div>
+                    </label>
+                    <label class="buyer-data-radio">
+                      <input type="radio" name="buyer-data-order">
+                      <div class="buyer-data-radio__content">
+                        <div class="buyer-data-radio__info">
+                          <p class="buyer-data-radio__info-text">До офиса СДЭК</p>
+                          <p class="buyer-data-radio__info-term">срок доставки 2-3 дн.</p>
+                          <a class="buyer-data-radio__info-place" href="#">Выбрать пункт выдачи</a>
+                        </div>
+                        <span class="buyer-data-radio__price">560₽</span>
+                      </div>
+                    </label>
+                    <label class="buyer-data-radio">
+                      <input type="radio" name="buyer-data-order">
+                      <div class="buyer-data-radio__content">
+                        <div class="buyer-data-radio__info">
+                          <p class="buyer-data-radio__info-text">Почта России</p>
+                        </div>
+                        <span class="buyer-data-radio__price">260₽</span>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="buyer-data-order__address">
+                    <h4 class="buyer-data-order__address-title">Укажите адрес доставки</h4>
+                    <div class="buyer-data-order__address-inputs">
+                      <label class="input buyer-data-order__input">
+                        <span>Улица <span>*</span></span>
+                        <input type="text" placeholder="Название улицы">
+                      </label>
+                      <label class="input buyer-data-order__input">
+                        <span>Дом <span>*</span></span>
+                        <input type="text" placeholder="Номер дома">
+                      </label>
+                      <label class="input buyer-data-order__input">
+                        <span>Квартира</span>
+                        <input type="text" placeholder="Квартира или офис">
+                      </label>
+                    </div>
+                  </div>
+                  <button type="button" class="btn next-ac-btn">продолжить
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="ac">
+              <h3 class="ac-header">
+                <button type="button" class="ac-trigger">Способ доставки
+                </button>
+              </h3>
+              <div class="ac-panel">
+                <div class="buyer-data-payment">
+                  <label class="buyer-data-radio">
+                    <input checked type="radio" name="buyer-data-payment">
+                    <div class="buyer-data-radio__content">
+                      <div class="buyer-data-radio__info">
+                        <p class="buyer-data-radio__info-text">Оплата по счету</p>
+                      </div>
+                    </div>
+                  </label>
+                  <label class="input buyer-data-payment__input">
+                    <span>Вы можете добавить комментарий к своему заказу</span>
+                    <textarea placeholder="Пожелания, конструктивные особенности автомобиля"></textarea>
+                  </label>
+                  <label class="buyer-data-payment__agree">
+                    <label class="checkbox">
+                      <input type="checkbox">
+                      <span></span>
+                    </label>
+                    Я прочитал(-а) Условия соглашения и согласен(-на) с
+                    условиями
+                  </label>
+                  <a class="btn buyer-data-payment__btn" href="thanks.html">подтверждение заказа</a>
+                </div>
+              </div>
+            </div>
+
+          </form>
+          <div class="buyer-data-order-info">
+            <div class="buyer-data-order-info__item">
+              <h3 class="buyer-data-order-info__item-title">Ваш заказ (2)</h3>
+              <a class="buyer-data-order-info__change-btn" href="#">Изменить</a>
+            </div>
+            <div class="buyer-data-order-info__item">
+              <p class="buyer-data-order-info__item-text">1 товар на сумму</p>
+              <p class="buyer-data-order-info__item-price" href="#">4160₽</p>
+            </div>
+            <div class="buyer-data-order-info__item">
+              <p class="buyer-data-order-info__item-text">Доставка</p>
+              <a class="buyer-data-order-info__item-address" href="#">Укажите адрес</a>
+            </div>
+            <div class="buyer-data-order-info__bottom">
+              <div class="buyer-data-order-info__item">
+                <p class="buyer-data-order-info__bottom-item-text">Итого c учетом скидки</p>
+                <a class="buyer-data-order-info__total-price" href="#">4 160₽</a>
+              </div>
+              <p class="buyer-data-order-info__bottom-text">Наш менеджер перезвонит вам и оформит заказ за вас</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+  <div class="container">
+    <div class="footer__content">
+      <div class="footer__logo-block">
+        <a class="logo footer__logo" href="#">
+          <img src="img/logo-white.svg" alt="Логотип Евадром">
+        </a>
+        <div class="footer__socials">
+          <span class="footer__socials-text">Свяжитесь с нами</span>
+          <ul class="footer__socials-list">
+            <li class="footer__socials-item">
+              <a class="footer__socials-link" href="t.me/Ting_00" aria-label="Вконтакте">
+                <svg>
+                  <use href="img/sprite.svg#vk"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__socials-item">
+              <a class="footer__socials-link" href="#" aria-label="Телеграм">
+                <svg>
+                  <use href="img/sprite.svg#telegram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__socials-item">
+              <a class="footer__socials-link" href="#" aria-label="Ватсапп">
+                <svg>
+                  <use href="img/sprite.svg#whatsapp"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-accordion">
+        <div class="ac">
+          <h3 class="ac-header">
+            <button type="button" class="ac-trigger">информация
+            </button>
+          </h3>
+          <div class="ac-panel">
+            <p></p>
+            <ul class="footer-accordion__list">
+              <li class="footer-accordion__item"><a class="footer-accordion__link" href="#">Доставка и оплата</a></li>
+              <li class="footer-accordion__item"><a class="footer-accordion__link" href="#">Обмен и возврат</a></li>
+              <li class="footer-accordion__item"><a class="footer-accordion__link" href="#">Статус заказа</a></li>
+              <li class="footer-accordion__item"><a class="footer-accordion__link" href="#">Оптовикам</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="ac">
+          <h3 class="ac-header">
+            <button type="button" class="ac-trigger">Компания
+            </button>
+          </h3>
+          <div class="ac-panel">
+            <ul class="footer-accordion__list">
+              <li class="footer-accordion__item"><a class="footer-accordion__link" href="#">О продукции</a></li>
+              <li class="footer-accordion__item"><a class="footer-accordion__link" href="#">Отзывы</a></li>
+              <li class="footer-accordion__item"><a class="footer-accordion__link" href="#">Контакты</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer__contact">
+        <div class="footer__contact-item">
+          <div class="footer__contact-phone">
+            <span>Звонок по РФ бесплатный</span>
+            <a href="tel:8899999999">8 (899) 99-99-99</a>
+          </div>
+        </div>
+        <div class="footer__contact-item">
+          <a href="tel:8899999999" class="footer__contact-btn btn btn--call btn--call-white">
+            <svg>
+              <use href="img/sprite.svg#phone"></use>
+            </svg>
+            <span>Заказать звонок </span>
+          </a>
+        </div>
+        <div class="footer__contact-item">
+          <a href="mailto:evadroom@gmail.com" class="footer__contact-email">evadroom@gmail.com</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <div class="container footer__bottom-container">
+      <p class="footer__copy">© EVADROM.RU - Все права защищены.</p>
+      <div class="footer__bottom-items">
+        <a class="footer__bottom-link" href="#">Политика конфиденциальности</a>
+        <a class="footer__bottom-link" href="#">Пользовательское соглашение</a>
+      </div>
+    </div>
+  </div>
+</footer>
+  </div>
+  <!--=============  script ============= -->
+  <script src="js/main.min.js"></script>
+</body>
+
+
+
+</html>

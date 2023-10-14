@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shotcut icon" href="img/favicon.ico" type="image/x-icon">
+  <!--============= libs =============-->
+  <link rel="stylesheet" href="css/libs.min.css">
+  <!--============= style =============-->
+  <link rel="stylesheet" href="css/style.min.css">
+
+
+  <title>Name</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+  <div class="header__top">
+    <div class="container header__top-container">
+      <button class="burger-menu" type="button" aria-label="Открыть меню">
+        <span class="burger-menu__line">
+          <span></span>
+        </span>
+      </button>
+      <a class="logo header__logo" href="index.html">
+        <img src="img/logo.svg" alt="Логотип Евадром">
+      </a>
+      <div class="header__city">
+        <svg>
+          <use href="img/sprite.svg#location"></use>
+        </svg>
+        <span>Нижний Новогород</span>
+      </div>
+      <form class="search header__search" action="#">
+        <label class="search__input">
+          <input type="text" placeholder="Поиск по автомобилю">
+        </label>
+        <button class="search__btn" aria-label="Поиск">
+          <svg>
+            <use href="img/sprite.svg#search"></use>
+          </svg>
+        </button>
+      </form>
+      <div class="header__call">
+        <span class="header__call-text">Звонок по РФ бесплатный</span>
+        <a class="header__call-phone" href="tel:+88009999999">
+          <svg>
+            <use href="img/sprite.svg#phone"></use>
+          </svg>
+          <span>8 (800) 999-99-99</span>
+        </a>
+
+      </div>
+      <a class="header__call-btn btn btn--call" href="tel:+88009999999">
+        <svg>
+          <use href="img/sprite.svg#phone"></use>
+        </svg>
+        <span>Заказать звонок </span>
+      </a>
+    </div>
+  </div>
+  <div class="header__bottom">
+    <div class="container header__bottom-container">
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link nav__catalog" href="category.html">
+              <div>
+                <span></span>
+                <span></span>
+              </div>
+              каталог
+            </a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Доставка и оплата</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Обмен и возврат</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">О продукции</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Отзывы</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Статус заказа</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Оптовикам</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <a class="basket-btn" href="basket.html" aria-label="Корзина">
+        <svg>
+          <use href="img/sprite.svg#basket"></use>
+        </svg>
+        <span>8 шт</span>
+      </a>
+    </div>
+  </div>
+</header>
+    <main class="main">
+      <div class="container">
+        <div class="breadcrumbs">
+          <a class="breadcrumbs__link" href="index.html"
+            style="background-image: url(img/breadcrumbs-arrow.svg);">Главная</a>
+          <a class="breadcrumbs__link" href="category.html"
+            style="background-image: url(img/breadcrumbs-arrow.svg);">Каталог</a>
+          <a class="breadcrumbs__link" href="car.html"
+            style="background-image: url(img/breadcrumbs-arrow.svg);">Toyota</a>
+          <span class="breadcrumbs__current">Коврики в салон Toyota Celica VII (T231) 1999-2002 лифтбек 3 двери, правый
+            руль</span>
+        </div>
+      </div>
+      <section class="card">
+        <div class="container">
+          <h2 class="card__title title2 title2--left">Коврики в салон Toyota Celica VII (T231) 1999-2002 лифтбек 3
+            двери, правый руль</h2>
+          <div class="card__top">
+            <div class="card__rating">
+              <img src="img/star.svg" alt="" aria-hidden="true">
+              <img src="img/star.svg" alt="" aria-hidden="true">
+              <img src="img/star.svg" alt="" aria-hidden="true">
+              <img src="img/star.svg" alt="" aria-hidden="true">
+              <img src="img/star.svg" alt="Рейтинг 5 из 5">
+              <span>123 отзыва</span>
+            </div>
+            <a class="card__video-link" href="#">
+              <svg>
+                <use href="img/sprite.svg#video-icon"></use>
+              </svg>
+              <span>64 видео</span>
+            </a>
+            <a class="card__question-link" href="#">
+              <svg>
+                <use href="img/sprite.svg#question-icon"></use>
+              </svg>
+              <span>Вопросы от клиентов</span>
+            </a>
+            <div class="card__sale">
+              Скидка 22%
+            </div>
+            <div class="card__ordered">
+              Товар заказан: 1223 раз
+            </div>
+            <a class="card__share" href="#">
+              <svg>
+                <use href="img/sprite.svg#share-icon"></use>
+              </svg>
+              <span>Поделиться</span>
+            </a>
+          </div>
+          <div class="card__body">
+            <div class="card__sliders">
+              <div class="swiper card-slider">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <picture><source srcset="img/card/1.webp" type="image/webp"><img src="img/card/1.jpg" alt="Машина"></picture>
+                  </div>
+                  <div class="swiper-slide">
+                    <picture><source srcset="img/card/1.webp" type="image/webp"><img src="img/card/1.jpg" alt="Машина"></picture>
+                  </div>
+                  <div class="swiper-slide">
+                    <picture><source srcset="img/card/1.webp" type="image/webp"><img src="img/card/1.jpg" alt="Машина"></picture>
+                  </div>
+                  <div class="swiper-slide">
+                    <picture><source srcset="img/card/1.webp" type="image/webp"><img src="img/card/1.jpg" alt="Машина"></picture>
+                  </div>
+                  <div class="swiper-slide">
+                    <picture><source srcset="img/card/1.webp" type="image/webp"><img src="img/card/1.jpg" alt="Машина"></picture>
+                  </div>
+                  <div class="swiper-slide">
+                    <picture><source srcset="img/card/1.webp" type="image/webp"><img src="img/card/1.jpg" alt="Машина"></picture>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper card-thumbs">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <picture><source srcset="img/card/1.webp" type="image/webp"><img src="img/card/1.jpg" alt="Машина"></picture>
+                  </div>
+                  <div class="swiper-slide">
+                    <picture><source srcset="img/card/1.webp" type="image/webp"><img src="img/card/1.jpg" alt="Машина"></picture>
+                  </div>
+                  <div class="swiper-slide">
+                    <picture><source srcset="img/card/1.webp" type="image/webp"><img src="img/card/1.jpg" alt="Машина"></picture>
+                  </div>
+                  <div class="swiper-slide">
+                    <picture><source srcset="img/card/1.webp" type="image/webp"><img src="img/card/1.jpg" alt="Машина"></picture>
+                  </div>
+                  <div class="swiper-slide">
+                    <picture><source srcset="img/card/1.webp" type="image/webp"><img src="img/card/1.jpg" alt="Машина"></picture>
+                  </div>
+                  <div class="swiper-slide">
+                    <picture><source srcset="img/card/1.webp" type="image/webp"><img src="img/card/1.jpg" alt="Машина"></picture>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination card__sliders-pagination"></div>
+            </div>
+            <div class="card__pick card-pick">
+              <div class="card-pick__top">
+                <div class="card__presence">
+                  <img src="img/check-mark.svg" alt="" aria-hidden="true">
+                  <span>В наличии</span>
+                </div>
+                <div class="card__number">
+                  Код товара: 049055230585
+                </div>
+              </div>
+              <div class="card-pick__content">
+                <h3 class="card-pick__title card-title-num">
+                  <span class="card-title-num__num">1</span>
+                  <span class="card-title-num__text ">Выбрать цвет коврика и окантовки</span>
+                </h3>
+                <div class="card-pick__wrapper">
+                  <div class="card-pick__wrapper-top">
+                    <div class="card-pick__scheme">
+                      <div class="card-pick__scheme-text">Условная схема</div>
+                      <picture><source srcset="img/scheme.webp" type="image/webp"><img src="img/scheme.png" alt="Условная схема"></picture>
+                    </div>
+                    <div class="cell-form">
+                      <div class="card__question cell-form__title">Фактура(форма ячейки)</div>
+                      <div class="cell-form__btns">
+                        <button class="cell-form__btn">
+                          <picture><source srcset="img/constructor/cell-1.webp" type="image/webp"><img class="cell-form__img" src="img/constructor/cell-1.png" alt="Ромб"></picture>
+                          <span class="cell-form__name">Ромб</span>
+                        </button>
+                        <button class="cell-form__btn active">
+                          <picture><source srcset="img/constructor/cell-2.webp" type="image/webp"><img class="cell-form__img" src="img/constructor/cell-2.png" alt="Соты"></picture>
+                          <span class="cell-form__name">Соты</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-pick__wrapper-bottom">
+                    <div class="rug-color">
+                      <h3 class="rug-color__title">Цвет коврика</h3>
+                      <div class="rug-color__btns">
+                        <button class="rug-color__btn active" data-tippy-content="Серый">
+                          <picture><source srcset="img/constructor/color-1.webp" type="image/webp"><img src="img/constructor/color-1.png" alt="Серый"></picture>
+                        </button>
+                        <button class="rug-color__btn" data-tippy-content="Цвет">
+                          <picture><source srcset="img/constructor/color-2.webp" type="image/webp"><img src="img/constructor/color-2.png" alt="Цвет"></picture>
+                        </button>
+                        <button class="rug-color__btn" data-tippy-content="Цвет">
+                          <picture><source srcset="img/constructor/color-3.webp" type="image/webp"><img src="img/constructor/color-3.png" alt="Цвет"></picture>
+                        </button>
+                        <button class="rug-color__btn" data-tippy-content="Цвет">
+                          <picture><source srcset="img/constructor/color-4.webp" type="image/webp"><img src="img/constructor/color-4.png" alt="Цвет"></picture>
+                        </button>
+                        <button class="rug-color__btn" data-tippy-content="Цвет">
+                          <picture><source srcset="img/constructor/color-5.webp" type="image/webp"><img src="img/constructor/color-5.png" alt="Цвет"></picture>
+                        </button>
+                        <button class="rug-color__btn" data-tippy-content="Цвет">
+                          <picture><source srcset="img/constructor/color-6.webp" type="image/webp"><img src="img/constructor/color-6.png" alt="Цвет"></picture>
+                        </button>
+                        <button class="rug-color__btn" data-tippy-content="Цвет">
+                          <picture><source srcset="img/constructor/color-7.webp" type="image/webp"><img src="img/constructor/color-7.png" alt="Цвет"></picture>
+                        </button>
+                        <button class="rug-color__btn" data-tippy-content="Цвет">
+                          <picture><source srcset="img/constructor/color-8.webp" type="image/webp"><img src="img/constructor/color-8.png" alt="Цвет"></picture>
+                        </button>
+                        <button class="rug-color__btn" data-tippy-content="Цвет">
+                          <picture><source srcset="img/constructor/color-9.webp" type="image/webp"><img src="img/constructor/color-9.png" alt="Цвет"></picture>
+                        </button>
+                        <button class="rug-color__btn" data-tippy-content="Цвет">
+                          <picture><source srcset="img/constructor/color-10.webp" type="image/webp"><img src="img/constructor/color-10.png" alt="Цвет"></picture>
+                        </button>
+                        <button class="rug-color__btn" data-tippy-content="Цвет">
+                          <picture><source srcset="img/constructor/color-11.webp" type="image/webp"><img src="img/constructor/color-11.png" alt="Цвет"></picture>
+                        </button>
+                        <button class="rug-color__btn" data-tippy-content="Цвет">
+                          <picture><source srcset="img/constructor/color-12.webp" type="image/webp"><img src="img/constructor/color-12.png" alt="Цвет"></picture>
+                        </button>
+                        <button class="rug-color__btn" data-tippy-content="Цвет">
+                          <picture><source srcset="img/constructor/color-13.webp" type="image/webp"><img src="img/constructor/color-13.png" alt="Цвет"></picture>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="edging-color">
+                      <h3 class="edging-color__title">Цвет окантовки</h3>
+                      <div class="edging-color__btns">
+                        <button class="edging-color__btn" style="background-color: #7E7E7E;"></button>
+                        <button class="edging-color__btn" style="background-color: #6D787B;"></button>
+                        <button class="edging-color__btn" style="background-color: #0C1012;"></button>
+                        <button class="edging-color__btn" style="background-color: #D8370D;"></button>
+                        <button class="edging-color__btn" style="background-color: #7A201F;"></button>
+                        <button class="edging-color__btn" style="background-color: #5F3104;"></button>
+                        <button class="edging-color__btn" style="background-color: #CCA668;"></button>
+                        <button class="edging-color__btn" style="background-color: #FD8B40;"></button>
+                        <button class="edging-color__btn" style="background-color: #136D76;"></button>
+                        <button class="edging-color__btn" style="background-color: #36D6B9;"></button>
+                        <button class="edging-color__btn" style="background-color: #3557D7;"></button>
+                        <button class="edging-color__btn" style="background-color: #1933B7;"></button>
+                        <button class="edging-color__btn" style="background-color: #343E76;"></button>
+                        <button class="edging-color__btn" style="background-color: #730793;"></button>
+                        <button class="edging-color__btn" style="background-color: #CCBB32;"></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h3 class="card-title-num">
+            <span class="card-title-num__num">2</span>
+            <span class="card-title-num__text ">Выбрать необходимую комплектацию</span>
+            <img src="img/card-title-num-arrow.svg" alt="" aria-hidden="true" loading="lazy">
+          </h3>
+          <div class="card__choose">
+            <div class="card-choose">
+              <div class="card-choose__items">
+                <div class="card-choose__item">
+                  <button type="button" class="card__question card-choose__text"
+                    data-tippy-content="Стандартный комплект для легкового авто состоит из 5 ковриков (в т. ч. перемычка на тоннель, липучки и/или клипсы крепления).">Кузов</button>
+                  <div class="card-choose__control">
+                    <select class="card-choose__select select">
+                      <option disabled selected>Седан</option>
+                      <option value="Седан1">Седан1</option>
+                      <option value="Седан2">Седан2</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="card-choose__item">
+                  <button type="button" class="card__question card-choose__text"
+                    data-tippy-content="Стандартный комплект для легкового авто состоит из 5 ковриков (в т. ч. перемычка на тоннель, липучки и/или клипсы крепления).">Комплектация</button>
+                  <div class="card-choose__control">
+                    <select class="card-choose__select select">
+                      <option disabled selected>Комплект в салон</option>
+                      <option value="Комплект в салон1">Комплект в салон1</option>
+                      <option value="Комплект в салон2">Комплект в салон2</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="card-choose__item">
+                  <button type="button" class="card__question card-choose__text"
+                    data-tippy-content="Стандартный комплект для легкового авто состоит из 5 ковриков (в т. ч. перемычка на тоннель, липучки и/или клипсы крепления).">Материал</button>
+                  <div class="card-choose__control">
+                    <select class="card-choose__select select">
+                      <option disabled selected>Этиленвинилацетат</option>
+                      <option value="Этиленвинилацетат1">Этиленвинилацетат1</option>
+                      <option value="Этиленвинилацетат2">Этиленвинилацетат2</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="card-choose__item">
+                  <button type="button" class="card__question card-choose__text"
+                    data-tippy-content="Стандартный комплект для легкового авто состоит из 5 ковриков (в т. ч. перемычка на тоннель, липучки и/или клипсы крепления).">Кузов</button>
+                  <div class="card-choose__control">
+                    <select class="card-choose__select select">
+                      <option disabled selected>Седан</option>
+                      <option value="Седан1">Седан1</option>
+                      <option value="Седан2">Седан2</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="card-choose__item card-choose__item--checkbox">
+                  <button type="button" class="card__question card-choose__text"
+                    data-tippy-content="Стандартный комплект для легкового авто состоит из 5 ковриков (в т. ч. перемычка на тоннель, липучки и/или клипсы крепления).">3d
+                    лапа</button>
+                  <div class="card-choose__control">
+                    <label class="card__checkbox">
+                      <input type="checkbox">
+                      <span></span>
+                      <div></div>
+                    </label>
+                  </div>
+                </div>
+                <div class="card-choose__item card-choose__item--checkbox">
+                  <button type="button" class="card__question card-choose__text"
+                    data-tippy-content="Стандартный комплект для легкового авто состоит из 5 ковриков (в т. ч. перемычка на тоннель, липучки и/или клипсы крепления).">Коврики
+                    с бортиками</button>
+                  <div class="card-choose__control">
+                    <label class="card__checkbox">
+                      <input type="checkbox">
+                      <span></span>
+                      <div></div>
+                    </label>
+                    <span class="card-choose__item-price">+450₽</span>
+                  </div>
+                </div>
+                <div class="card-choose__item card-choose__item--checkbox">
+                  <button type="button" class="card__question card-choose__text"
+                    data-tippy-content="Стандартный комплект для легкового авто состоит из 5 ковриков (в т. ч. перемычка на тоннель, липучки и/или клипсы крепления).">Наличие
+                    штатного крепежа</button>
+                  <div class="card-choose__control">
+                    <label class="card__checkbox">
+                      <input type="checkbox">
+                      <span></span>
+                      <div></div>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="card-choose-adv">
+                <div class="card-choose-adv__item">
+                  <div class="card-choose-adv__img">
+                    <picture><source srcset="img/card/choose-img-1.webp" type="image/webp"><img src="img/card/choose-img-1.png" alt="" aria-hidden="true" loading="lazy"></picture>
+                    <span>30</span>
+                  </div>
+                  <p class="card-choose-adv__text">30 дней на тест</p>
+                </div>
+                <div class="card-choose-adv__item">
+                  <div class="card-choose-adv__img">
+                    <picture><source srcset="img/card/choose-img-2.webp" type="image/webp"><img src="img/card/choose-img-2.png" alt="" aria-hidden="true" loading="lazy"></picture>
+                    <span><img src="img/return-arrow.svg" alt="" aria-hidden="true" loading="lazy"></span>
+                  </div>
+                  <p class="card-choose-adv__text">У вас есть целый месяц,в течение которого вы можете вернуть или
+                    обменять свою покупку</p>
+                </div>
+                <div class="card-choose-adv__item">
+                  <div class="card-choose-adv__img">
+                    <picture><source srcset="img/card/choose-img-3.webp" type="image/webp"><img src="img/card/choose-img-3.png" alt="" aria-hidden="true" loading="lazy"></picture>
+                    <span><img src="img/ruble-icon.svg" alt="" aria-hidden="true" loading="lazy"></span>
+                  </div>
+                  <p class="card-choose-adv__text">100-300 руб. кэшбек за ОТЗЫВ</p>
+                </div>
+              </div>
+            </div>
+            <div class="sum-block">
+              <div class="sum-block__item">
+                <span class="sum-block__item-product">1 товар на сумму</span>
+                <span class="sum-block__item-price">4160₽</span>
+              </div>
+              <div class="sum-block__item">
+                <span class="sum-block__item-product">Скидка</span>
+                <span class="sum-block__sale">450₽</span>
+              </div>
+              <div class="sum-block__total">
+                <span class="sum-block__total-text">Итого с учётом скидки</span>
+                <span class="sum-block__sum">3 460₽</span>
+              </div>
+              <div class="sum-block__btns">
+                <button class="sum-block__btn btn" type="button">добавить в корзину</button>
+                <a href="#order-modal" class="sum-block__btn btn btn--tr" type="button">купить в один клик</a>
+              </div>
+              <p class="sum-block__text">Скидка действует до <span>8 сентября</span></p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="cars-category">
+        <div class="container">
+          <div class="cars-category__content">
+            <h3 class="cars-category__title">Другие авто из этой категории</h3>
+            <div class="cars-category__items">
+              <div class="car-item">
+  <a class="car-item__top" href="#">
+    <picture><source srcset="img/car.webp" type="image/webp"><img class="car-item__img" src="img/car.png" alt="Estima" loading="lazy"></picture>
+    <span class="car-item__name">Estima</span>
+  </a>
+  <p class="car-item__descr">
+    Коврики в салон Toyota Celica VII (T231) 1999-2002 лифтбек 3 двери, правый руль, 1990-1995
+  </p>
+</div>
+              <div class="car-item">
+  <a class="car-item__top" href="#">
+    <picture><source srcset="img/car.webp" type="image/webp"><img class="car-item__img" src="img/car.png" alt="Estima" loading="lazy"></picture>
+    <span class="car-item__name">Estima</span>
+  </a>
+  <p class="car-item__descr">
+    Коврики в салон Toyota Celica VII (T231) 1999-2002 лифтбек 3 двери, правый руль, 1990-1995
+  </p>
+</div>
+              <div class="car-item">
+  <a class="car-item__top" href="#">
+    <picture><source srcset="img/car.webp" type="image/webp"><img class="car-item__img" src="img/car.png" alt="Estima" loading="lazy"></picture>
+    <span class="car-item__name">Estima</span>
+  </a>
+  <p class="car-item__descr">
+    Коврики в салон Toyota Celica VII (T231) 1999-2002 лифтбек 3 двери, правый руль, 1990-1995
+  </p>
+</div>
+              <div class="car-item">
+  <a class="car-item__top" href="#">
+    <picture><source srcset="img/car.webp" type="image/webp"><img class="car-item__img" src="img/car.png" alt="Estima" loading="lazy"></picture>
+    <span class="car-item__name">Estima</span>
+  </a>
+  <p class="car-item__descr">
+    Коврики в салон Toyota Celica VII (T231) 1999-2002 лифтбек 3 двери, правый руль, 1990-1995
+  </p>
+</div>
+              <div class="car-item">
+  <a class="car-item__top" href="#">
+    <picture><source srcset="img/car.webp" type="image/webp"><img class="car-item__img" src="img/car.png" alt="Estima" loading="lazy"></picture>
+    <span class="car-item__name">Estima</span>
+  </a>
+  <p class="car-item__descr">
+    Коврики в салон Toyota Celica VII (T231) 1999-2002 лифтбек 3 двери, правый руль, 1990-1995
+  </p>
+</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="card-tabs">
+        <div class="container">
+          <div class="card-tabs__content" data-tabs="card-tab">
+            <ul class="card-tabs__nav tabs__nav">
+              <li class="card-tabs__item tabs__nav-item"><button
+                  class="card-tabs__btn tabs__nav-btn tabs__nav-btn--active">Описание</button>
+              </li>
+              <li class="card-tabs__item tabs__nav-item"><button
+                  class=" card-tabs__btn tabs__nav-btn">Характеристики</button>
+              </li>
+              <li class="card-tabs__item tabs__nav-item"><button
+                  class=" card-tabs__btn tabs__nav-btn">Совместимость</button>
+              </li>
+              <li class="card-tabs__item tabs__nav-item"><button class=" card-tabs__btn tabs__nav-btn">Отзывы</button>
+              </li>
+              <li class="card-tabs__item tabs__nav-item"><button class=" card-tabs__btn tabs__nav-btn">Видео</button>
+              </li>
+            </ul>
+            <div class="card-tabs__panels">
+              <div class="card-tabs__panel tabs__panel tabs__panel--active">
+                <h2 class="card-tabs__title">Описание</h2>
+                <p class="card-tabs__text">Автоковрики для Toyota Estima Emina I правый руль 7 мест (1990-2000) в салон
+                  и багажник изготовлены из инновационного материала EVA, особая ячеистая структура которого не
+                  позволяет пыли, снегу и воде распространяться по салону и багажнику. Попадая в ромбовидные ячейки, вся
+                  грязь блокируется и остается внутри. Чтобы избавиться от нее, достаточно вынуть коврик и несколько раз
+                  энергично встряхнуть его.
+                </p>
+                <p class="card-tabs__text">Коврики фиксируются на полу специальными креплениями, соответствующими Toyota
+                  Estima Emina I правый руль 7 мест (1990-2000), и не смещаются в процессе эксплуатации. Они закрывают
+                  максимальную поверхность пола в салоне.
+                </p>
+                <p class="card-tabs__text">Автомобильные коврики EVA устойчивы к низким температурам. Их эластичность не
+                  снижается даже при –50℃, что было неоднократно проверено на практике в условиях северных городов.
+                </p>
+                <p class="card-tabs__text">Широкая цветовая гамма позволит подобрать комплект автоковриков к любому
+                  интерьеру салона.</p>
+              </div>
+              <div class="card-tabs__panel tabs__panel tabs__panel--active">
+                <h2 class="card-tabs__title">Характеристики</h2>
+                <p class="card-tabs__text">Автоковрики для Toyota Estima Emina I правый руль 7 мест (1990-2000) в салон
+                  и багажник изготовлены из инновационного материала EVA, особая ячеистая структура которого не
+                  позволяет пыли, снегу и воде распространяться по салону и багажнику. Попадая в ромбовидные ячейки, вся
+                  грязь блокируется и остается внутри. Чтобы избавиться от нее, достаточно вынуть коврик и несколько раз
+                  энергично встряхнуть его.
+                </p>
+                <p class="card-tabs__text">Коврики фиксируются на полу специальными креплениями, соответствующими Toyota
+                  Estima Emina I правый руль 7 мест (1990-2000), и не смещаются в процессе эксплуатации. Они закрывают
+                  максимальную поверхность пола в салоне.
+                </p>
+                <p class="card-tabs__text">Широкая цветовая гамма позволит подобрать комплект автоковриков к любому
+                  интерьеру салона.</p>
+              </div>
+              <div class="card-tabs__panel tabs__panel tabs__panel--active">
+                <h2 class="card-tabs__title">Совместимость</h2>
+                <p class="card-tabs__text">Лада Веста, седан, 1 поколение, 2180 (06.2015 - н.в.)<br>
+                  Лада Веста, универсал, 1 поколение, 2181 (06.2017 - н.в.)<br>
+                  Лада Веста рестайлинг, седан, 1 поколение (02.2022 - н.в.)<br>
+                  Лада Веста рестайлинг, универсал, 1 поколение (02.2022 - н.в.)
+                </p>
+                <br>
+              </div>
+              <div class="card-tabs__panel tabs__panel tabs__panel--active">
+                <h2 class="card-tabs__title">Отзывы</h2>
+                <p class="card-tabs__text">Автоковрики для Toyota Estima Emina I правый руль 7 мест (1990-2000) в салон
+                  и багажник изготовлены из инновационного материала EVA, особая ячеистая структура которого не
+                  позволяет пыли, снегу и воде распространяться по салону и багажнику. Попадая в ромбовидные ячейки, вся
+                  грязь блокируется и остается внутри. Чтобы избавиться от нее, достаточно вынуть коврик и несколько раз
+                  энергично встряхнуть его.
+                </p>
+                <p class="card-tabs__text">Коврики фиксируются на полу специальными креплениями, соответствующими Toyota
+                  Estima Emina I правый руль 7 мест (1990-2000), и не смещаются в процессе эксплуатации. Они закрывают
+                  максимальную поверхность пола в салоне.
+                </p>
+                <p class="card-tabs__text">Автомобильные коврики EVA устойчивы к низким температурам. Их эластичность не
+                  снижается даже при –50℃, что было неоднократно проверено на практике в условиях северных городов.
+                </p>
+                <p class="card-tabs__text">Широкая цветовая гамма позволит подобрать комплект автоковриков к любому
+                  интерьеру салона.</p>
+              </div>
+              <div class="card-tabs__panel tabs__panel tabs__panel--active">
+                <h2 class="card-tabs__title">Видео</h2>
+                <p class="card-tabs__text">Автоковрики для Toyota Estima Emina I правый руль 7 мест (1990-2000) в салон
+                  и багажник изготовлены из инновационного материала EVA, особая ячеистая структура которого не
+                  позволяет пыли, снегу и воде распространяться по салону и багажнику. Попадая в ромбовидные ячейки, вся
+                  грязь блокируется и остается внутри. Чтобы избавиться от нее, достаточно вынуть коврик и несколько раз
+                  энергично встряхнуть его.
+                </p>
+                <p class="card-tabs__text">Коврики фиксируются на полу специальными креплениями, соответствующими Toyota
+                  Estima Emina I правый руль 7 мест (1990-2000), и не смещаются в процессе эксплуатации. Они закрывают
+                  максимальную поверхность пола в салоне.
+                </p>
+                <p class="card-tabs__text">Автомобильные коврики EVA устойчивы к низким температурам. Их эластичность не
+                  снижается даже при –50℃, что было неоднократно проверено на практике в условиях северных городов.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="question">
+        <div class="container">
+          <h2 class="question__title title">Часто задаваемые вопросы</h2>
+          <div class="question-accordion" id="question-accordion">
+            <div class="ac">
+              <h3 class="ac-header">
+                <button type="button" class="ac-trigger">Как моются
+                  коврики?
+                  <span></span>
+                </button>
+              </h3>
+              <div class="ac-panel">
+                <p class="ac-descr">Коврики можно мыть на мойке, так же как и обычные резиновые коврики.Иногда
+                  необходимость в мытье вовсе отсутствует в связи с тем, что коврик можно просто вытряхнуть переведя
+                  коврик в вертикальное положение и слегка хлопнув по нему,выбив накопившийся мусор и воду.</p>
+              </div>
+            </div>
+            <div class="ac">
+              <h3 class="ac-header">
+                <button type="button" class="ac-trigger">Что делать,
+                  если я не нашел свой автомобиль на сайте?
+                  <span></span>
+                </button>
+              </h3>
+              <div class="ac-panel">
+                <p class="ac-descr">Коврики можно мыть на мойке, так же как и обычные резиновые коврики.Иногда
+                  необходимость в мытье вовсе отсутствует в связи с тем, что коврик можно просто вытряхнуть переведя
+                  коврик в вертикальное положение и слегка хлопнув по нему,выбив накопившийся мусор и воду.</p>
+              </div>
+            </div>
+            <div class="ac">
+              <h3 class="ac-header">
+                <button type="button" class="ac-trigger">А они точно
+                  подойдут на мою машину?
+                  <span></span>
+                </button>
+              </h3>
+              <div class="ac-panel">
+                <p class="ac-descr">Коврики можно мыть на мойке, так же как и обычные резиновые коврики.Иногда
+                  необходимость в мытье вовсе отсутствует в связи с тем, что коврик можно просто вытряхнуть переведя
+                  коврик в вертикальное положение и слегка хлопнув по нему,выбив накопившийся мусор и воду.</p>
+              </div>
+            </div>
+            <div class="ac">
+              <h3 class="ac-header">
+                <button type="button" class="ac-trigger">Какой цвет
+                  ковриков/окантвоки выбрать?
+                  <span></span>
+                </button>
+              </h3>
+              <div class="ac-panel">
+                <p class="ac-descr">Коврики можно мыть на мойке, так же как и обычные резиновые коврики.Иногда
+                  необходимость в мытье вовсе отсутствует в связи с тем, что коврик можно просто вытряхнуть переведя
+                  коврик в вертикальное положение и слегка хлопнув по нему,выбив накопившийся мусор и воду.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="accessory">
+        <div class="container">
+          <h2 class="accessory__title">Дополнительные аксессуары</h2>
+          <div class="accessory__content">
+            <div class="accessory-card">
+  <picture><source srcset="img/accessory-card/1.webp" type="image/webp"><img class="accessory-card__img" src="img/accessory-card/1.png" alt="Накидка из алькантары"></picture>
+  <div class="accessory-card__body">
+    <p class="accessory-card__descr">Накидка из алькантары</p>
+    <p class="accessory-card__price">Цена: <span>1790 руб.</span></p>
+    <button class="accessory-card__btn btn" type="button">в корзину</button>
+  </div>
+</div>
+            <div class="accessory-card">
+  <picture><source srcset="img/accessory-card/2.webp" type="image/webp"><img class="accessory-card__img" src="img/accessory-card/2.png" alt="Подпятник Металлический (дюраль)"></picture>
+  <div class="accessory-card__body">
+    <p class="accessory-card__descr">Подпятник Металлический (дюраль)</p>
+    <p class="accessory-card__price">Цена: <span>650 руб.</span></p>
+    <button class="accessory-card__btn btn" type="button">в корзину</button>
+  </div>
+</div>
+            <div class="accessory-card">
+  <picture><source srcset="img/accessory-card/3.webp" type="image/webp"><img class="accessory-card__img" src="img/accessory-card/3.png" alt="Подпятник Полимерный"></picture>
+  <div class="accessory-card__body">
+    <p class="accessory-card__descr">Подпятник Полимерный</p>
+    <p class="accessory-card__price">Цена: <span>1190 руб.</span></p>
+    <button class="accessory-card__btn btn" type="button">в корзину</button>
+  </div>
+</div>
+            <div class="accessory-card">
+  <picture><source srcset="img/accessory-card/4.webp" type="image/webp"><img class="accessory-card__img" src="img/accessory-card/4.png" alt="Сумка в багажник"></picture>
+  <div class="accessory-card__body">
+    <p class="accessory-card__descr">Сумка в багажник</p>
+    <p class="accessory-card__price">Цена: <span>1190 руб.</span></p>
+    <button class="accessory-card__btn btn" type="button">в корзину</button>
+  </div>
+</div>
+            <div class="accessory-card">
+  <picture><source srcset="img/accessory-card/5.webp" type="image/webp"><img class="accessory-card__img" src="img/accessory-card/5.png" alt="Шильдик Металлический"></picture>
+  <div class="accessory-card__body">
+    <p class="accessory-card__descr">Шильдик Металлический</p>
+    <p class="accessory-card__price">Цена: <span>190 руб.</span></p>
+    <button class="accessory-card__btn btn" type="button">в корзину</button>
+  </div>
+</div>
+            <div class="accessory-card">
+  <picture><source srcset="img/accessory-card/6.webp" type="image/webp"><img class="accessory-card__img" src="img/accessory-card/6.png" alt="Бытовой коврик по вашему размеру"></picture>
+  <div class="accessory-card__body">
+    <p class="accessory-card__descr">Бытовой коврик по вашему размеру</p>
+    <p class="accessory-card__price">Цена: <span>190 руб.</span></p>
+    <button class="accessory-card__btn btn" type="button">в корзину</button>
+  </div>
+</div>
+          </div>
+          <div class="text-block">
+            <p>Фильтр трансмиссии MASUMA MFT1045 / Штрихкод: 4560117980009.
+            </p>
+            <p>Купить фильтр трансмиссии masuma (без маслозаборника) (sf320, jt494k) с прокладкой поддона, арт. mft-1045
+              в интернет-магазине фильтров трансмиссии Гиперавто. Цена на MASUMA MFT-1045, описание, характеристики и
+              фотографии.</p>
+            <p>Никаких подделок! В Гиперавто принята нулевая терпимость к контрафакту. Неважно, ищете вы заводской
+              «оригинал» или доступный аналог — все запчасти должны быть подлинными. Мы являемся официальной точкой
+              продаж фильтров трансмиссии MASUMA и получаем продукцию напрямую от производителя. Возможность столкнуться
+              с подделками, при покупке в Гиперавто, исключена.
+            </p>
+            <p class="text-block__green">Несколько фактов о Гиперавто:</p>
+            <ul>
+              <li>✔ №3 по размеру в России;</li>
+              <li>✔ №1 в Дальневосточном регионе;</li>
+              <li>✔ 15 городов присутствия;</li>
+              <li>✔ Более 15 000 человек посещают магазины ежедневно;</li>
+              <li>✔ Более 500 000 постоянных клиентов;</li>
+              <li>✔ Более 300 000 ежемесячная аудитория сайта Гиперавто.</li>
+            </ul>
+          </div>
+        </div>
+
+      </section>
+    </main>
+    <footer class="footer">
+  <div class="container">
+    <div class="footer__content">
+      <div class="footer__logo-block">
+        <a class="logo footer__logo" href="#">
+          <img src="img/logo-white.svg" alt="Логотип Евадром">
+        </a>
+        <div class="footer__socials">
+          <span class="footer__socials-text">Свяжитесь с нами</span>
+          <ul class="footer__socials-list">
+            <li class="footer__socials-item">
+              <a class="footer__socials-link" href="t.me/Ting_00" aria-label="Вконтакте">
+                <svg>
+                  <use href="img/sprite.svg#vk"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__socials-item">
+              <a class="footer__socials-link" href="#" aria-label="Телеграм">
+                <svg>
+                  <use href="img/sprite.svg#telegram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__socials-item">
+              <a class="footer__socials-link" href="#" aria-label="Ватсапп">
+                <svg>
+                  <use href="img/sprite.svg#whatsapp"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-accordion">
+        <div class="ac">
+          <h3 class="ac-header">
+            <button type="button" class="ac-trigger">информация
+            </button>
+          </h3>
+          <div class="ac-panel">
+            <p></p>
+            <ul class="footer-accordion__list">
+              <li class="footer-accordion__item"><a class="footer-accordion__link" href="#">Доставка и оплата</a></li>
+              <li class="footer-accordion__item"><a class="footer-accordion__link" href="#">Обмен и возврат</a></li>
+              <li class="footer-accordion__item"><a class="footer-accordion__link" href="#">Статус заказа</a></li>
+              <li class="footer-accordion__item"><a class="footer-accordion__link" href="#">Оптовикам</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="ac">
+          <h3 class="ac-header">
+            <button type="button" class="ac-trigger">Компания
+            </button>
+          </h3>
+          <div class="ac-panel">
+            <ul class="footer-accordion__list">
+              <li class="footer-accordion__item"><a class="footer-accordion__link" href="#">О продукции</a></li>
+              <li class="footer-accordion__item"><a class="footer-accordion__link" href="#">Отзывы</a></li>
+              <li class="footer-accordion__item"><a class="footer-accordion__link" href="#">Контакты</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer__contact">
+        <div class="footer__contact-item">
+          <div class="footer__contact-phone">
+            <span>Звонок по РФ бесплатный</span>
+            <a href="tel:8899999999">8 (899) 99-99-99</a>
+          </div>
+        </div>
+        <div class="footer__contact-item">
+          <a href="tel:8899999999" class="footer__contact-btn btn btn--call btn--call-white">
+            <svg>
+              <use href="img/sprite.svg#phone"></use>
+            </svg>
+            <span>Заказать звонок </span>
+          </a>
+        </div>
+        <div class="footer__contact-item">
+          <a href="mailto:evadroom@gmail.com" class="footer__contact-email">evadroom@gmail.com</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <div class="container footer__bottom-container">
+      <p class="footer__copy">© EVADROM.RU - Все права защищены.</p>
+      <div class="footer__bottom-items">
+        <a class="footer__bottom-link" href="#">Политика конфиденциальности</a>
+        <a class="footer__bottom-link" href="#">Пользовательское соглашение</a>
+      </div>
+    </div>
+  </div>
+</footer>
+  </div>
+  <div class="modal" id="order-modal">
+    <div class="order-modal">
+      <h2 class="order-modal__title">Быстрый заказ</h2>
+      <form action="#" class="order-modal__form">
+        <label class="input order-modal__input">
+          <span>Имя <span>*</span></span>
+          <input type="text" placeholder="Введите ваше имя">
+        </label>
+        <label class="input order-modal__input">
+          <span>Телефон <span>*</span></span>
+          <input type="tel" placeholder="+7 (___) ___-__-__">
+        </label>
+        <label class="input order-modal__input">
+          <span>Комментарий <span>*</span></span>
+          <textarea placeholder="Введите комментарий"></textarea>
+        </label>
+        <button class="btn order-modal__btn" type="submit">оформить заказ</button>
+      </form>
+      <button class="modal__close-btn"></button>
+    </div>
+  </div>
+  <!--=============  script ============= -->
+  <script src="js/main.min.js"></script>
+</body>
+
+
+
+</html>

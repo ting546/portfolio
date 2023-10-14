@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shotcut icon" href="img/favicon.ico" type="image/x-icon">
+  <!--============= libs =============-->
+  <link rel="stylesheet" href="css/libs.min.css">
+  <!--============= style =============-->
+  <link rel="stylesheet" href="css/style.min.css">
+
+
+  <title>Name</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+  <div class="header__top">
+    <div class="container header__top-container">
+      <button class="burger-menu" type="button" aria-label="Открыть меню">
+        <span class="burger-menu__line">
+          <span></span>
+        </span>
+      </button>
+      <a class="logo header__logo" href="index.html">
+        <img src="img/logo.svg" alt="Логотип Евадром">
+      </a>
+      <div class="header__city">
+        <svg>
+          <use href="img/sprite.svg#location"></use>
+        </svg>
+        <span>Нижний Новогород</span>
+      </div>
+      <form class="search header__search" action="#">
+        <label class="search__input">
+          <input type="text" placeholder="Поиск по автомобилю">
+        </label>
+        <button class="search__btn" aria-label="Поиск">
+          <svg>
+            <use href="img/sprite.svg#search"></use>
+          </svg>
+        </button>
+      </form>
+      <div class="header__call">
+        <span class="header__call-text">Звонок по РФ бесплатный</span>
+        <a class="header__call-phone" href="tel:+88009999999">
+          <svg>
+            <use href="img/sprite.svg#phone"></use>
+          </svg>
+          <span>8 (800) 999-99-99</span>
+        </a>
+
+      </div>
+      <a class="header__call-btn btn btn--call" href="tel:+88009999999">
+        <svg>
+          <use href="img/sprite.svg#phone"></use>
+        </svg>
+        <span>Заказать звонок </span>
+      </a>
+    </div>
+  </div>
+  <div class="header__bottom">
+    <div class="container header__bottom-container">
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link nav__catalog" href="category.html">
+              <div>
+                <span></span>
+                <span></span>
+              </div>
+              каталог
+            </a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Доставка и оплата</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Обмен и возврат</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">О продукции</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Отзывы</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Статус заказа</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Оптовикам</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <a class="basket-btn" href="basket.html" aria-label="Корзина">
+        <svg>
+          <use href="img/sprite.svg#basket"></use>
+        </svg>
+        <span>8 шт</span>
+      </a>
+    </div>
+  </div>
+</header>
+    <main class="main">
+      <div class="container">
+        <div class="breadcrumbs">
+          <a class="breadcrumbs__link" href="index.html"
+            style="background-image: url(img/breadcrumbs-arrow.svg);">Главная</a>
+          <span class="breadcrumbs__current">Каталог</span>
+        </div>
+      </div>
+      <section class="catalog catalog-page">
+        <div class="container">
+          <h2 class="catalog__title title2 title2--left">Выберите марку вашего автомобиля</h2>
+          <div class="cars-catalog catalog__cars">
+            <div class="car-models">
+              <a class="car-model" href="#">
+                <picture><source srcset="img/car-model/1.webp" type="image/webp"><img class="car-model__img" src="img/car-model/1.png" alt="Audi"></picture>
+                <span class="car-model__text">Audi</span>
+              </a>
+              <a class="car-model" href="#">
+                <picture><source srcset="img/car-model/2.webp" type="image/webp"><img class="car-model__img" src="img/car-model/2.png" alt="BMW"></picture>
+                <span class="car-model__text">BMW</span>
+              </a>
+              <a class="car-model" href="#">
+                <picture><source srcset="img/car-model/3.webp" type="image/webp"><img class="car-model__img" src="img/car-model/3.png" alt="Chevrolet"></picture>
+                <span class="car-model__text">Chevrolet</span>
+              </a>
+              <a class="car-model" href="#">
+                <picture><source srcset="img/car-model/4.webp" type="image/webp"><img class="car-model__img" src="img/car-model/4.png" alt="Ford"></picture>
+                <span class="car-model__text">Ford</span>
+              </a>
+              <a class="car-model" href="#">
+                <picture><source srcset="img/car-model/5.webp" type="image/webp"><img class="car-model__img" src="img/car-model/5.png" alt="Honda"></picture>
+                <span class="car-model__text">Honda</span>
+              </a>
+              <a class="car-model" href="#">
+                <picture><source srcset="img/car-model/6.webp" type="image/webp"><img class="car-model__img" src="img/car-model/6.png" alt="Hyundai"></picture>
+                <span class="car-model__text">Hyundai</span>
+              </a>
+              <a class="car-model" href="#">
+                <picture><source srcset="img/car-model/7.webp" type="image/webp"><img class="car-model__img" src="img/car-model/7.png" alt="KIA"></picture>
+                <span class="car-model__text">KIA</span>
+              </a>
+              <a class="car-model" href="#">
+                <picture><source srcset="img/car-model/8.webp" type="image/webp"><img class="car-model__img" src="img/car-model/8.png" alt="Lada"></picture>
+                <span class="car-model__text">Lada</span>
+              </a>
+              <a class="car-model" href="#">
+                <picture><source srcset="img/car-model/9.webp" type="image/webp"><img class="car-model__img" src="img/car-model/9.png" alt="Lexus"></picture>
+                <span class="car-model__text">Lexus</span>
+              </a>
+              <a class="car-model" href="#">
+                <picture><source srcset="img/car-model/10.webp" type="image/webp"><img class="car-model__img" src="img/car-model/10.png" alt="Mazda"></picture>
+                <span class="car-model__text">Mazda</span>
+              </a>
+              <a class="car-model" href="#">
+                <picture><source srcset="img/car-model/11.webp" type="image/webp"><img class="car-model__img" src="img/car-model/11.png" alt="Mercedes-Benz"></picture>
+                <span class="car-model__text">Mercedes-Benz</span>
+              </a>
+              <a class="car-model" href="#">
+                <picture><source srcset="img/car-model/12.webp" type="image/webp"><img class="car-model__img" src="img/car-model/12.png" alt="Mitsubishi"></picture>
+                <span class="car-model__text">Mitsubishi</span>
+              </a>
+              <a class="car-model" href="#">
+                <picture><source srcset="img/car-model/13.webp" type="image/webp"><img class="car-model__img" src="img/car-model/13.png" alt="Nissan"></picture>
+                <span class="car-model__text">Nissan</span>
+              </a>
+              <a class="car-model" href="#">
+                <picture><source srcset="img/car-model/14.webp" type="image/webp"><img class="car-model__img" src="img/car-model/14.png" alt="Opel"></picture>
+                <span class="car-model__text">Opel</span>
+              </a>
+              <a class="car-model" href="#">
+                <picture><source srcset="img/car-model/15.webp" type="image/webp"><img class="car-model__img" src="img/car-model/15.png" alt="Peugeot"></picture>
+                <span class="car-model__text">Peugeot</span>
+              </a>
+              <a class="car-model" href="#">
+                <picture><source srcset="img/car-model/16.webp" type="image/webp"><img class="car-model__img" src="img/car-model/16.png" alt="Renault"></picture>
+                <span class="car-model__text">Renault</span>
+              </a>
+              <a class="car-model" href="car.html">
+                <picture><source srcset="img/car-model/17.webp" type="image/webp"><img class="car-model__img" src="img/car-model/17.png" alt="Toyota"></picture>
+                <span class="car-model__text">Toyota</span>
+              </a>
+              <a class="car-model" href="#">
+                <picture><source srcset="img/car-model/18.webp" type="image/webp"><img class="car-model__img" src="img/car-model/18.png" alt="Volkswagen"></picture>
+                <span class="car-model__text">Volkswagen</span>
+              </a>
+            </div>
+            <div class="car-marks">
+              <ul class="car-marks__catalog">
+                <li class="car-marks__mark"><span>A</span><a class="car-marks__mark-link" href="#">Acura</a>
+                <li class="car-marks__mark"><a class="car-marks__mark-link" href="#">Alfa Romeo</a></li>
+                <li class="car-marks__mark"><a class="car-marks__mark-link" href="#">Aston Martin</a></li>
+                <li class="car-marks__mark"><a class="car-marks__mark-link" href="#">Audi</a></li>
+                <li class="car-marks__mark"><a class="car-marks__mark-link" href="#">AZLK</a></li>
+                <li class="car-marks__mark"><a class="car-marks__mark-link" href="#">Alfa Romeo</a></li><br>
+                <li class="car-marks__mark"><span>B</span><a class="car-marks__mark-link" href="#">Bentley</a></li>
+                <li class="car-marks__mark"><a class="car-marks__mark-link" href="#">Briliance</a></li>
+                <li class="car-marks__mark"><a class="car-marks__mark-link" href="#">BYD</a></li>
+                <li class="car-marks__mark"><a class="car-marks__mark-link" href="#">BMW</a></li><br>
+                <li class="car-marks__mark"><span>C</span><a class="car-marks__mark-link" href="#">Cadillac</a></li>
+                <li class="car-marks__mark"><a class="car-marks__mark-link" href="#">Changan</a></li>
+                <li class="car-marks__mark"><a class="car-marks__mark-link" href="#">Chery</a></li>
+                <li class="car-marks__mark"><a class="car-marks__mark-link" href="#">Chevrolet</a></li>
+                <li class="car-marks__mark"><a class="car-marks__mark-link" href="#">Chrysler</a></li>
+                <li class="car-marks__mark"><a class="car-marks__mark-link" href="#">Citroen</a></li><br>
+                <li class="car-marks__mark"><span>D</span><a class="car-marks__mark-link" href="#">Daewoo</a></li>
+                <li class="car-marks__mark"><a class="car-marks__mark-link" href="#">Daihatsu</a></li>
+                <li class="car-marks__mark"><a class="car-marks__mark-link" href="#">Datsun</a></li>
+                <li class="car-marks__mark"><a class="car-marks__mark-link" href="#">Dodge</a></li>
+                <li class="car-marks__mark"><a class="car-marks__mark-link" href="#">DongFeng</a></li><br>
+                <li class="car-marks__mark"><span>E</span><a class="car-marks__mark-link" href="#">EXEED</a></li><br>
+                <li class="car-marks__mark"><span>F</span><a class="car-marks__mark-link" href="#">FAW</a></li>
+                <li class="car-marks__mark"><a class="car-marks__mark-link" href="#">Fiat</a></li>
+                <li class="car-marks__mark"><a class="car-marks__mark-link" href="#">Ford</a></li><br>
+                <li class="car-marks__mark"><span>G</span><a class="car-marks__mark-link" href="#">Gaz</a>
+                <li class="car-marks__mark"><a class="car-marks__mark-link" href="#">Geely</a></li>
+                <li class="car-marks__mark"><a class="car-marks__mark-link" href="#">Great Wall</a></li>
+                <li class="car-marks__mark"><a class="car-marks__mark-link" href="#">Great Wall</a></li><br>
+                <li class="car-marks__mark"><span>H</span><a class="car-marks__mark-link" href="#">HAIMA</a></li>
+                <li class="car-marks__mark"><a class="car-marks__mark-link" href="#">HAVAL</a></li>
+                <li class="car-marks__mark"><a class="car-marks__mark-link" href="#">HINO</a></li>
+                <li class="car-marks__mark"><a class="car-marks__mark-link" href="#">Honda</a></li>
+                <li class="car-marks__mark"><a class="car-marks__mark-link" href="#">Hummer</a></li>
+                <li class="car-marks__mark"><a class="car-marks__mark-link" href="#">Hyundai</a></li><br>
+                <li class="car-marks__mark"><span>I</span><a class="car-marks__mark-link" href="#">Infiniti</a></li>
+                <li class="car-marks__mark"><a class="car-marks__mark-link" href="#">Iran</a></li>
+                <li class="car-marks__mark"><a class="car-marks__mark-link" href="#">Iran Khodro</a></li>
+                <li class="car-marks__mark"><a class="car-marks__mark-link" href="#">Isuzu</a></li><br>
+                <li class="car-marks__mark"><span>J</span><a class="car-marks__mark-link" href="#">Jac</a></li>
+                <li class="car-marks__mark"><a class="car-marks__mark-link" href="#">Jaguar</a></li>
+                <li class="car-marks__mark"><a class="car-marks__mark-link" href="#">Jeep</a></li><br>
+                <li class="car-marks__mark"><span>K</span><a class="car-marks__mark-link" href="#">KIA</a></li>
+                <li class="car-marks__mark"><a class="car-marks__mark-link" href="#">Kamaz</a></li><br>
+                <li class="car-marks__mark"><span>L</span><a class="car-marks__mark-link" href="#">Lada</a></li>
+                <li class="car-marks__mark"><a class="car-marks__mark-link" href="#">Land Rover</a></li>
+                <li class="car-marks__mark"><a class="car-marks__mark-link" href="#">Lexus</a></li>
+                <li class="car-marks__mark"><a class="car-marks__mark-link" href="#">Lifan</a></li>
+                <li class="car-marks__mark"><a class="car-marks__mark-link" href="#">Lincoln</a></li><br>
+                <li class="car-marks__mark"><span>M</span><a class="car-marks__mark-link" href="#">MAN</a>
+                <li class="car-marks__mark"><a class="car-marks__mark-link" href="#">Mazda</a></li>
+                <li class="car-marks__mark"><a class="car-marks__mark-link" href="#">Mercedes-Benz</a></li>
+                <li class="car-marks__mark"><a class="car-marks__mark-link" href="#">Mini</a></li>
+                <li class="car-marks__mark"><a class="car-marks__mark-link" href="#">Mitsubishi</a></li><br>
+                <li class="car-marks__mark"><span>N</span><a class="car-marks__mark-link" href="#">Nissan</a></li><br>
+                <li class="car-marks__mark"><span>O</span><a class="car-marks__mark-link" href="#">Opel</a></li><br>
+                <li class="car-marks__mark"><span>P</span><a class="car-marks__mark-link" href="#">Peugeot</a></li>
+                <li class="car-marks__mark"><a class="car-marks__mark-link" href="#">Pontiac</a></li>
+                <li class="car-marks__mark"><a class="car-marks__mark-link" href="#">Porsche</a></li><br>
+                <li class="car-marks__mark"><span>R</span><a class="car-marks__mark-link" href="#">Ravon</a></li>
+                <li class="car-marks__mark"><a class="car-marks__mark-link" href="#">Renault</a></li>
+                <li class="car-marks__mark"><a class="car-marks__mark-link" href="#">Robinson</a></li>
+                <li class="car-marks__mark"><a class="car-marks__mark-link" href="#">Rover</a></li><br>
+                <li class="car-marks__mark"><span>S</span><a class="car-marks__mark-link" href="#">Saab</a></li>
+                <li class="car-marks__mark"><a class="car-marks__mark-link" href="#">Scania</a></li>
+                <li class="car-marks__mark"><a class="car-marks__mark-link" href="#">Scion</a></li>
+                <li class="car-marks__mark"><a class="car-marks__mark-link" href="#">Seat</a></li>
+                <li class="car-marks__mark"><a class="car-marks__mark-link" href="#">Skoda</a></li>
+                <li class="car-marks__mark"><a class="car-marks__mark-link" href="#">Smart</a></li>
+                <li class="car-marks__mark"><a class="car-marks__mark-link" href="#">Ssang Yong</a></li>
+                <li class="car-marks__mark"><a class="car-marks__mark-link" href="#">Subaru</a></li>
+                <li class="car-marks__mark"><a class="car-marks__mark-link" href="#">Suzuki</a></li><br>
+                <li class="car-marks__mark"><span>T</span><a class="car-marks__mark-link" href="#">Tesla</a>
+                <li class="car-marks__mark"><a class="car-marks__mark-link" href="#">Toyota</a></li><br>
+                <li class="car-marks__mark"><span>U</span><a class="car-marks__mark-link" href="#">UAZ</a></li><br>
+                <li class="car-marks__mark"><span>V</span><a class="car-marks__mark-link" href="#">Volkswagen</a></li>
+                <li class="car-marks__mark"><a class="car-marks__mark-link" href="#">Volvo</a></li><br>
+                <li class="car-marks__mark"><span>Z</span><a class="car-marks__mark-link" href="#">Zaz</a></li>
+                <li class="car-marks__mark"><a class="car-marks__mark-link" href="#">Zotye</a></li>
+                <li class="car-marks__mark"><a class="car-marks__mark-link" href="#">ZX</a></li><br>
+                <li class="car-marks__mark"><span>Ъ</span><a class="car-marks__mark-link" href="#">ВАЗ</a></li>
+                <li class="car-marks__mark"><a class="car-marks__mark-link" href="#">Вектор</a></li>
+                <li class="car-marks__mark"><a class="car-marks__mark-link" href="#">ГавариПром</a></li>
+                <li class="car-marks__mark"><a class="car-marks__mark-link" href="#">Газ</a></li>
+                <li class="car-marks__mark"><a class="car-marks__mark-link" href="#">Гигиена</a></li>
+                <li class="car-marks__mark"><a class="car-marks__mark-link" href="#">Жанетт</a></li>
+                <li class="car-marks__mark"><a class="car-marks__mark-link" href="#">Лада</a></li>
+                <li class="car-marks__mark"><a class="car-marks__mark-link" href="#">Лайт-Компани</a></li>
+                <li class="car-marks__mark"><a class="car-marks__mark-link" href="#">ЛуАЗ</a></li>
+                <li class="car-marks__mark"><a class="car-marks__mark-link" href="#">МАЗ</a></li>
+                <li class="car-marks__mark"><a class="car-marks__mark-link" href="#">Москвич</a></li>
+                <li class="car-marks__mark"><a class="car-marks__mark-link" href="#">Омыватели</a></li>
+                <li class="car-marks__mark"><a class="car-marks__mark-link" href="#">Рeugeot</a></li>
+                <li class="car-marks__mark"><a class="car-marks__mark-link" href="#">Сумки в багажник</a></li>
+                <li class="car-marks__mark"><a class="car-marks__mark-link" href="#">ТагАЗ</a></li>
+                <li class="car-marks__mark"><a class="car-marks__mark-link" href="#">УАЗ</a></li>
+                <li class="car-marks__mark"><a class="car-marks__mark-link" href="#">ЭВА</a></li>
+              </ul>
+
+
+            </div>
+          </div>
+          <div class="text-block">
+            <p>Купить автомобильные коврики EVA в Москве в интернет-магазине Evadrom
+              для Toyota с курьерской доставкой до двери или самовывозом из пунка выдачи. <br>
+              Вам не нужно приезжать для замеров - у нас есть лекала (шаблоны) ковриков для всех моделей Тойота, которые
+              добавлены на сайт. <br>
+              При заказе можно выбрать цвет коврика, цвет окантовки, а так же фактуру (рисунок) на коврике - соты или
+              ромб. <br>
+              Заказ можно оформить в один клик, без регистрации на сайте. <br>
+              Все остальные детали по заказу будут согласованы с Вами по телефону. <br>
+            </p>
+            <p>
+              Ищете где купить оригинальные ева коврики в Москве от производителя? Мы являемся официальным
+              производителем ковриков ЕВА<br>
+              Все коврики производятся только из качественных материалов Российского производства.<br>
+              Заказать можно как полный комплект ковриков в салон и багажник, так и один коврик. <br>
+              При заказе комплектации салон+багажник на багажник действует скидка 10%
+            </p>
+            <p>Заказать качественные коврики в салон и багажник с гарантией 2 года на
+              официальном сайте Eva</p>
+            <p>Пункты выдачи в Московской области:
+              <a href="#">Апрелевка,</a>
+              <a href="#">Балашиха,</a>
+              <a href="#">Бронницы,</a>
+              <a href="#">Видное,</a>
+              <a href="#">ВНИИССОК,</a>
+              <a href="#">Волоколамск,</a>
+              <a href="#">Воскресенск,</a>
+              <a href="#">Дзержинский,</a>
+              <a href="#">Дмитров,</a>
+              <a href="#">Долгопрудный,</a>
+              <a href="#">Домодедово</a>
+              <a href="#">Дубна,</a>
+              <a href="#">Егорьевск,</a>
+              <a href="#">Железнодорожный округ Балашиха,</a>
+              <a href="#">Жуковский,</a>
+              <a href="#">Звенигород,</a>
+              <a href="#">Зеленоград,</a>
+              <a href="#">Ивантеевка,</a>
+              <a href="#">Истра,</a>
+              <a href="#">Кашира,</a>
+              <a href="#">Климовск,</a>
+              <a href="#">Клин,</a>
+              <a href="#">Коломна Коммунарка,</a>
+              <a href="#">Королев,</a>
+              <a href="#">Котельники,</a>
+              <a href="#">Красногорск,</a>
+              <a href="#">Лобня,</a>
+              <a href="#">Луховицы,</a>
+              <a href="#">Люберцы,</a>
+              <a href="#">Малаховка,</a>
+              <a href="#">Можайск,</a>
+              <a href="#">Монино,</a>
+              <a href="#">Московский,</a>
+              <a href="#">Мосрентген,</a>
+              <a href="#">Мытищи,</a>
+              <a href="#">Наро-Фоминск,</a>
+              <a href="#">Нахабино,</a>
+              <a href="#">Некрасовка,</a>
+              <a href="#">Ново-Переделкино,</a>
+              <a href="#">Ногинск,</a>
+              <a href="#">Обухово,</a>
+              <a href="#">Одинцово,</a>
+              <a href="#">Орехово-Зуево,</a>
+              <a href="#">Островцы,</a>
+              <a href="#">Павловский Посад,</a>
+              <a href="#">Подольск,</a>
+              <a href="#">Протвино,</a>
+              <a href="#">Пушкино,</a>
+              <a href="#">Раменское,</a>
+              <a href="#">Реутов,</a>
+              <a href="#">Руза,</a>
+              <a href="#">Румянцево (поселение Московский),</a>
+              <a href="#">Северный (Москва),</a>
+              <a href="#">Сергиев Посад,</a>
+              <a href="#">Серпухов,</a>
+              <a href="#">Солнечногорск,</a>
+              <a href="#">Солнцево,</a>
+              <a href="#">Ступино,</a>
+              <a href="#">Сходня,</a>
+              <a href="#">Тарасково,</a>
+              <a href="#">Троицк,</a>
+              <a href="#">Успенское,</a>
+              <a href="#">Фрязино,</a>
+              <a href="#">Химки,</a>
+              <a href="#">Химки Новые,</a>
+              <a href="#">Чехов,</a>
+              <a href="#">Шатура,</a>
+              <a href="#">Щелково,</a>
+              <a href="#">Щербинка,</a>
+              <a href="#">Электрогорск,</a>
+              <a href="#">Электросталь,</a>
+              <a href="#">Электроугли,</a>
+              <a href="#">Юбилейный</a>
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+  <div class="container">
+    <div class="footer__content">
+      <div class="footer__logo-block">
+        <a class="logo footer__logo" href="#">
+          <img src="img/logo-white.svg" alt="Логотип Евадром">
+        </a>
+        <div class="footer__socials">
+          <span class="footer__socials-text">Свяжитесь с нами</span>
+          <ul class="footer__socials-list">
+            <li class="footer__socials-item">
+              <a class="footer__socials-link" href="t.me/Ting_00" aria-label="Вконтакте">
+                <svg>
+                  <use href="img/sprite.svg#vk"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__socials-item">
+              <a class="footer__socials-link" href="#" aria-label="Телеграм">
+                <svg>
+                  <use href="img/sprite.svg#telegram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__socials-item">
+              <a class="footer__socials-link" href="#" aria-label="Ватсапп">
+                <svg>
+                  <use href="img/sprite.svg#whatsapp"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-accordion">
+        <div class="ac">
+          <h3 class="ac-header">
+            <button type="button" class="ac-trigger">информация
+            </button>
+          </h3>
+          <div class="ac-panel">
+            <p></p>
+            <ul class="footer-accordion__list">
+              <li class="footer-accordion__item"><a class="footer-accordion__link" href="#">Доставка и оплата</a></li>
+              <li class="footer-accordion__item"><a class="footer-accordion__link" href="#">Обмен и возврат</a></li>
+              <li class="footer-accordion__item"><a class="footer-accordion__link" href="#">Статус заказа</a></li>
+              <li class="footer-accordion__item"><a class="footer-accordion__link" href="#">Оптовикам</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="ac">
+          <h3 class="ac-header">
+            <button type="button" class="ac-trigger">Компания
+            </button>
+          </h3>
+          <div class="ac-panel">
+            <ul class="footer-accordion__list">
+              <li class="footer-accordion__item"><a class="footer-accordion__link" href="#">О продукции</a></li>
+              <li class="footer-accordion__item"><a class="footer-accordion__link" href="#">Отзывы</a></li>
+              <li class="footer-accordion__item"><a class="footer-accordion__link" href="#">Контакты</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer__contact">
+        <div class="footer__contact-item">
+          <div class="footer__contact-phone">
+            <span>Звонок по РФ бесплатный</span>
+            <a href="tel:8899999999">8 (899) 99-99-99</a>
+          </div>
+        </div>
+        <div class="footer__contact-item">
+          <a href="tel:8899999999" class="footer__contact-btn btn btn--call btn--call-white">
+            <svg>
+              <use href="img/sprite.svg#phone"></use>
+            </svg>
+            <span>Заказать звонок </span>
+          </a>
+        </div>
+        <div class="footer__contact-item">
+          <a href="mailto:evadroom@gmail.com" class="footer__contact-email">evadroom@gmail.com</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <div class="container footer__bottom-container">
+      <p class="footer__copy">© EVADROM.RU - Все права защищены.</p>
+      <div class="footer__bottom-items">
+        <a class="footer__bottom-link" href="#">Политика конфиденциальности</a>
+        <a class="footer__bottom-link" href="#">Пользовательское соглашение</a>
+      </div>
+    </div>
+  </div>
+</footer>
+  </div>
+  <!--=============  script ============= -->
+  <script src="js/main.min.js"></script>
+</body>
+
+
+
+</html>
