@@ -97,7 +97,7 @@ export default {
         descr: "Копия сайта Netflix",
         price: "",
         img: require("@/assets/img/portfolio/6.jpg"),
-        link: "project/XOD/index.html",
+        link: "project/Netflix/index.html",
         site: "landing",
       },
       {
