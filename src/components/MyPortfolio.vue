@@ -73,7 +73,7 @@ export default {
         descr: 'На сайте было реализовано 2 слайдера библиотека "Slick slider", 3 модальных окна на библиотеке "JQuery" также 5 аккордеонов.',
         price: "4.000",
         img: require("@/assets/img/portfolio/2.jpg"),
-        link: "project/bathouse/index.html",
+        link: "project/bathhouse/index.html",
         site: "landing",
       },
       {
