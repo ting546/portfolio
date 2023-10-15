@@ -1,7 +1,25 @@
-# Vue 3 + Vite
+# Здесь вы можете посмотреть мое портфолио
+# Занимаюсь АДАПТИВНОЙ, ОТЗЫВЧИВОЙ версткой сайтов🧐
+LANDING PAGE
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Сайт визитка
 
-## Recommended IDE Setup
+Корпоративные сайты
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+Промо сайты
+
+Небольшие Интернет магазины
+
+Персональный блог
+
+Сайт Портфолио:👇
+
+https://ting546.github.io/portfolio *Браузер может ругатся. Сайт полностью безопасный!
+
+КОНТАКТЫ:💬
+
+Telegram: https://t.me/Ting_00
+
+VK: https://m.vk.com/beldanovigor
+
+Instagram: https://www.instagram.com/beldanov_igor/
