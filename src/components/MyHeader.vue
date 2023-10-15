@@ -15,7 +15,7 @@
       <nav class="menu">
         <ul class="menu__list">
           <li class="menu__item" v-for="item in menuItems" :key="item.path">
-            <a :href="item.path" @click="menuOpen = !menuOpen">{{ item.text }}</a>
+            <a :href="item.path" @click="menuClose">{{ item.text }}</a>
           </li>
         </ul>
       </nav>
@@ -31,6 +31,12 @@ export default {
   components: { MySocials },
   setup() {
     const menuOpen = ref(false);
+    const menuClose = () => {
+      if (window.matchMedia("(max-width: 991px)").matches){
+        menuOpen.value = !menuOpen.value 
+      }
+      
+    }
     watch(menuOpen, (newVal) => {
       if (newVal) {
         document.body.classList.add("lock");
@@ -39,7 +45,7 @@ export default {
       }
     });
 
-    return { menuOpen };
+    return { menuOpen, menuClose };
   },
 };
 </script>

@@ -3,15 +3,7 @@ import { fileURLToPath, URL } from "url";
 import vue from "@vitejs/plugin-vue";
 import vitePluginRequire from "vite-plugin-require";
 import { viteStaticCopy } from "vite-plugin-static-copy";
-console.log(process.env.NODE_ENV);
 
-// if (process.env.NODE_ENV === 'development') {
-//   // Код, который будет выполняться только в режиме разработки
-//   console.log('Вы находитесь в режиме разработки (dev mode)');
-// } else {
-//   // Код, который будет выполняться в других режимах (например, production)
-//   console.log('Вы находитесь в другом режиме');
-// }
 
 export default defineConfig({
   
