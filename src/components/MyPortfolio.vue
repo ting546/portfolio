@@ -140,7 +140,7 @@ export default {
 };
 </script>
 <style lang="scss">
-.fade-move, /* apply transition to moving elements */
+.fade-move, 
 .fade-enter-active,
 .fade-leave-active {
   transition: all 1s ease;
@@ -155,8 +155,6 @@ export default {
   transform: translateX(-100%);
 }
 
-/* ensure leaving items are taken out of layout flow so that moving
-   animations can be calculated correctly. */
 .fade-leave-active {
   position: absolute;
 }
