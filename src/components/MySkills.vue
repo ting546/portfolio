@@ -112,7 +112,6 @@ export default {
   &__items {
     display: flex;
     flex-wrap: wrap;
-    align-self: center;
     margin: 0 -10px;
     row-gap: 20px;
     margin-bottom: 30px;
