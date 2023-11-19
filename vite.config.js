@@ -7,7 +7,7 @@ import { viteStaticCopy } from "vite-plugin-static-copy"
 
 export default defineConfig({
   
-  // base: "/portfolio",
+  base: "/portfolio",
   plugins: [
     vue(),
     vitePluginRequire.default(),

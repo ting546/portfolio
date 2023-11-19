@@ -7,7 +7,8 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist",
+    "build-all": "npm run build && git add . && git commit -m \"bug fixes\" && git push && npm run deploy"
   },
   "browserslist": [
     "last 1 version",
