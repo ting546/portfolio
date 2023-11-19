@@ -93,6 +93,14 @@ export default {
         site: "shop",
       },
       {
+        title: "Сайт магазина мебели",
+        descr: 'Сайт магазина мебели "ADORABLE". Было сверстано 22 страницы. Интернет магазин сверстаный с нуля',
+        price: "50.000",
+        img: require("@/assets/img/portfolio/11.jpg"),
+        link: "project/adorable-mebel/index.html",
+        site: "shop",
+      },
+      {
         title: "Копия сайта Netflix",
         descr: "Копия сайта Netflix",
         price: "",
@@ -140,7 +148,7 @@ export default {
 };
 </script>
 <style lang="scss">
-.fade-move, 
+.fade-move,
 .fade-enter-active,
 .fade-leave-active {
   transition: all 1s ease;
@@ -183,7 +191,7 @@ export default {
     &.active {
       color: var(--color-3);
     }
-    @include table(){
+    @include table() {
       font-size: 20px;
     }
   }

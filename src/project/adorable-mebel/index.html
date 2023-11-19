@@ -1,0 +1,1512 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shotcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <!-- style -->
+    <link rel="stylesheet" href="css/style.min.css" />
+    <title>Adorable mebel</title>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <!-- <picture><source srcset="@img" type="image/webp"><img src="@img" alt=""></picture>  -->
+<header class="header">
+  <div class="header__top header-top">
+    <div class="container">
+      <nav class="header-top__nav">
+        <ul class="header-top__items">
+          <li class="header-top__item header-top__item--city"><button data-fancybox data-src="#city-dialog">Санкт-Петербург</button></li>
+          <li class="header-top__item"><a href="#">Салоны</a></li>
+          <li class="header-top__item"><a href="about.html">О компании</a></li>
+          <li class="header-top__item"><a href="delivery.html">Доставка и оплата</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="header__body header-body">
+    <div class="container header-body__cols">
+      <div class="header-body__col" id="header-body-col-1">
+        <button class="burger-menu burger-menu--mob" aria-label="Открыть меню">
+          <span class="burger-menu__line">
+            <span></span>
+          </span>
+        </button>
+        <form class="header-body__search-form search-form" action="#">
+          <label class="search-form__label input">
+            <input type="text" name="search" placeholder="Поиск по каталогу" />
+          </label>
+          <button class="search-form__button" aria-label="Поиск"></button>
+        </form>
+      </div>
+      <div class="header-body__col" id="header-body-col-2">
+        <div class="logo header-body__logo">
+          <a href="index.html"> Adorable mebel </a>
+        </div>
+      </div>
+      <div class="header-body__col" id="header-body-col-3">
+        <div class="header-body__inner">
+          <a class="header-body__tel" href="tel:89999999999">8 (999) 999 99 99</a>
+          <ul class="header-body__items">
+            <li class="header-body__item">
+              <a href="profile.html" aria-label="Профиль" id="user">
+                <img src="img/user.svg" alt="user" />
+              </a>
+            </li>
+            <li class="header-body__item">
+              <a href="favorite.html" aria-label="Избранное" id="liked">
+                <svg>
+                  <use href="img/sprite.svg#favorite"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="header-body__item header-body__item--bag">
+              <button data-fancybox data-src="#bag" aria-label="Корзина">
+                <img src="img/bag.svg" alt="bag" />
+                <span>1</span>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="header__bottom header-bottom">
+    <div class="container">
+      <a class="btn header-bottom__btn" href="catalog.html">
+        <div class="burger-menu" aria-label="Открыть меню">
+          <span class="burger-menu__line">
+            <span></span>
+          </span>
+        </div>
+        <span>КАТАЛОГ</span>
+      </a>
+      <div class="header-bottom__menu">
+        <div class="header-bottom__menu-wrap">
+          <button class="header-bottom__menu-close-btn close-btn"></button>
+          <ul class="header-bottom__items">
+            <li class="header-bottom__item">
+              <a class="have-arrow" href="category.html">Комоды</a>
+              <div class="header-dropdown">
+                <div class="header-dropdown__inner">
+                  <div class="header-dropdown__items">
+                    <a class="header-dropdown__item" href="product.html">
+                      <picture><source srcset="img/header-dropdown-1.webp" type="image/webp"><img src="img/header-dropdown-1.jpg" alt="стол" /></picture>
+                    </a>
+                    <a class="header-dropdown__item" href="product.html">
+                      <picture><source srcset="img/header-dropdown-1.webp" type="image/webp"><img src="img/header-dropdown-1.jpg" alt="стол" /></picture>
+                    </a>
+                    <a class="header-dropdown__item" href="product.html">
+                      <picture><source srcset="img/header-dropdown-1.webp" type="image/webp"><img src="img/header-dropdown-1.jpg" alt="стол" /></picture>
+                    </a>
+                  </div>
+                  <a class="header-dropdown__link" href="category.html">Посмотреть всю категорию</a>
+                </div>
+              </div>
+            </li>
+            <li class="header-bottom__item">
+              <a class="have-arrow" href="category.html">Подвесные тумбы</a>
+              <div class="header-dropdown">
+                <div class="header-dropdown__inner">
+                  <div class="header-dropdown__items">
+                    <a class="header-dropdown__item" href="product.html">
+                      <picture><source srcset="img/header-dropdown-1.webp" type="image/webp"><img src="img/header-dropdown-1.jpg" alt="стол" /></picture>
+                    </a>
+                    <a class="header-dropdown__item" href="product.html">
+                      <picture><source srcset="img/header-dropdown-2.webp" type="image/webp"><img src="img/header-dropdown-2.png" alt="стол" /></picture>
+                    </a>
+                    <a class="header-dropdown__item" href="product.html">
+                      <picture><source srcset="img/header-dropdown-1.webp" type="image/webp"><img src="img/header-dropdown-1.jpg" alt="стол" /></picture>
+                    </a>
+                  </div>
+                  <a class="header-dropdown__link" href="category.html">Посмотреть всю категорию</a>
+                </div>
+              </div>
+            </li>
+            <li class="header-bottom__item">
+              <a class="have-arrow" href="category.html">Прикроватные тумбы</a>
+              <div class="header-dropdown">
+                <div class="header-dropdown__inner">
+                  <div class="header-dropdown__items">
+                    <a class="header-dropdown__item" href="product.html">
+                      <picture><source srcset="img/header-dropdown-1.webp" type="image/webp"><img src="img/header-dropdown-1.jpg" alt="стол" /></picture>
+                    </a>
+                    <a class="header-dropdown__item" href="product.html">
+                      <picture><source srcset="img/header-dropdown-1.webp" type="image/webp"><img src="img/header-dropdown-1.jpg" alt="стол" /></picture>
+                    </a>
+                    <a class="header-dropdown__item" href="product.html">
+                      <picture><source srcset="img/header-dropdown-1.webp" type="image/webp"><img src="img/header-dropdown-1.jpg" alt="стол" /></picture>
+                    </a>
+                  </div>
+                  <a class="header-dropdown__link" href="category.html">Посмотреть всю категорию</a>
+                </div>
+              </div>
+            </li>
+            <li class="header-bottom__item">
+              <a class="have-arrow" href="category.html">ТВ-тумбы</a>
+              <div class="header-dropdown">
+                <div class="header-dropdown__inner">
+                  <div class="header-dropdown__items">
+                    <a class="header-dropdown__item" href="product.html">
+                      <picture><source srcset="img/header-dropdown-1.webp" type="image/webp"><img src="img/header-dropdown-1.jpg" alt="стол" /></picture>
+                    </a>
+                    <a class="header-dropdown__item" href="product.html">
+                      <picture><source srcset="img/header-dropdown-2.webp" type="image/webp"><img src="img/header-dropdown-2.png" alt="стол" /></picture>
+                    </a>
+                    <a class="header-dropdown__item" href="product.html">
+                      <picture><source srcset="img/header-dropdown-1.webp" type="image/webp"><img src="img/header-dropdown-1.jpg" alt="стол" /></picture>
+                    </a>
+                  </div>
+                  <a class="header-dropdown__link" href="category.html">Посмотреть всю категорию</a>
+                </div>
+              </div>
+            </li>
+            <li class="header-bottom__item">
+              <a class="have-arrow" href="category.html">Тумбы</a>
+              <div class="header-dropdown">
+                <div class="header-dropdown__inner">
+                  <div class="header-dropdown__items">
+                    <a class="header-dropdown__item" href="product.html">
+                      <picture><source srcset="img/header-dropdown-1.webp" type="image/webp"><img src="img/header-dropdown-1.jpg" alt="стол" /></picture>
+                    </a>
+                    <a class="header-dropdown__item" href="product.html">
+                      <picture><source srcset="img/header-dropdown-1.webp" type="image/webp"><img src="img/header-dropdown-1.jpg" alt="стол" /></picture>
+                    </a>
+                    <a class="header-dropdown__item" href="product.html">
+                      <picture><source srcset="img/header-dropdown-1.webp" type="image/webp"><img src="img/header-dropdown-1.jpg" alt="стол" /></picture>
+                    </a>
+                  </div>
+                  <a class="header-dropdown__link" href="category.html">Посмотреть всю категорию</a>
+                </div>
+              </div>
+            </li>
+            <li class="header-bottom__item active">
+              <a class="have-arrow" href="action-catalog.html">Акции</a>
+              <div class="header-dropdown">
+                <div class="header-dropdown__inner">
+                  <div class="header-dropdown__items">
+                    <a class="header-dropdown__item" href="action.html">
+                      <picture><source srcset="img/header-dropdown-1.webp" type="image/webp"><img src="img/header-dropdown-1.jpg" alt="стол" /></picture>
+                    </a>
+                    <a class="header-dropdown__item" href="action.html">
+                      <picture><source srcset="img/header-dropdown-2.webp" type="image/webp"><img src="img/header-dropdown-2.png" alt="стол" /></picture>
+                    </a>
+                    <a class="header-dropdown__item" href="action.html">
+                      <picture><source srcset="img/header-dropdown-1.webp" type="image/webp"><img src="img/header-dropdown-1.jpg" alt="стол" /></picture>
+                    </a>
+                  </div>
+                  <a class="header-dropdown__link" href="category.html">Посмотреть всю категорию</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <div class="header-mob">
+            <a class="header-mob__tel" href="tel:89999999999">8 (999) 999 99 99</a>
+            <ul class="header-mob__items header-accordion">
+              <li class="header-mob__item">
+                <button class="header-mob__item-btn have-arrow" data-fancybox data-src="#city-dialog" type="button">Выберете ваш город</button>
+              </li>
+              <li class="header-mob__item ac">
+                <div class="ac-header">
+                  <button class="header-mob__item-btn ac-trigger have-arrow" type="button">Салоны</button>
+                </div>
+                <div class="ac-panel header-mob-panel">
+                  <div class="header-mob-panel__content">
+                    <ul class="header-mob-panel__items">
+                      <li class="header-mob-panel__item">
+                        <a href="#">Салоны</a>
+                      </li>
+                      <li class="header-mob-panel__item">
+                        <a href="#">Салоны</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="header-mob__item ac">
+                <div class="ac-header">
+                  <button class="header-mob__item-btn ac-trigger have-arrow" type="button">Полезная информация</button>
+                </div>
+                <div class="ac-panel header-mob-panel">
+                  <div class="header-mob-panel__content">
+                    <ul class="header-mob-panel__items">
+                      <li class="header-mob-panel__item">
+                        <a href="about.html">О компании</a>
+                      </li>
+                      <li class="header-mob-panel__item">
+                        <a href="delivery.html">Доставка и оплата</a>
+                      </li>
+                      <li class="header-mob-panel__item">
+                        <a href="instructions.html">Инструкции по сборке</a>
+                      </li>
+                      <li class="header-mob-panel__item">
+                        <a href="return.html">Возврат товара</a>
+                      </li>
+                      <li class="header-mob-panel__item">
+                        <a href="vacancy.html">Вакансии</a>
+                      </li>
+                      <li class="header-mob-panel__item">
+                        <a href="awards.html">Награды</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="header-mob__item ac">
+                <div class="ac-header">
+                  <button class="header-mob__item-btn ac-trigger have-arrow" type="button">Профиль</button>
+                </div>
+                <div class="ac-panel header-mob-panel">
+                  <div class="header-mob-panel__content">
+                    <ul class="header-mob-panel__items">
+                      <li class="header-mob-panel__item">
+                        <a href="profile.html">Профиль</a>
+                      </li>
+                      <li class="header-mob-panel__item">
+                        <a href="orders.html">Заказы</a>
+                      </li>
+                      <li class="header-mob-panel__item">
+                        <a href="bonus.html">Бонусы</a>
+                      </li>
+                      <li class="header-mob-panel__item">
+                        <a href="#">Выйти</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <main class="main">
+        <section class="hero">
+          <div class="container">
+            <div class="hero-slider">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide hero-slide" style="background-image: url(./img/hero-img.jpg)">
+                  <div class="hero-slide__wrap">
+                    <h2 class="hero-slide__title">
+                      Мы создаём комфорт <br />
+                      в вашем доме
+                    </h2>
+                    <div class="hero-slide__info">
+                      <div class="hero-slide__name">Тумба “Тутанхомон”</div>
+                      <div class="hero-slide__price">390 999 Р</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide hero-slide" style="background-image: url(./img/hero-img.jpg)">
+                  <div class="hero-slide__wrap">
+                    <h2 class="hero-slide__title">
+                      Мы создаём комфорт <br />
+                      в вашем доме
+                    </h2>
+                    <div class="hero-slide__info">
+                      <div class="hero-slide__name">Тумба “Тутанхомон”</div>
+                      <div class="hero-slide__price">390 999 Р</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide hero-slide" style="background-image: url(./img/hero-img.jpg)">
+                  <div class="hero-slide__wrap">
+                    <h2 class="hero-slide__title">
+                      Мы создаём комфорт <br />
+                      в вашем доме
+                    </h2>
+                    <div class="hero-slide__info">
+                      <div class="hero-slide__name">Тумба “Тутанхомон”</div>
+                      <div class="hero-slide__price">390 999 Р</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="hero-pagination slider-pagination"></div>
+
+              <div class="hero-button-prev"></div>
+              <div class="hero-button-next"></div>
+            </div>
+          </div>
+        </section>
+        <section class="cat-section">
+          <div class="container">
+            <div class="cat-section__wrap">
+              <h2 class="cat-section__title title">Каталог</h2>
+              <div class="cat-section__block-1">
+                <a class="cat-section-item" style="background-image: url(./img/cat-section/1.jpg)" href="#">
+                  <h3 class="cat-section-item__title title">Комоды</h3>
+                </a>
+                <a class="cat-section-item" style="background-image: url(./img/cat-section/2.jpg)" href="#">
+                  <h3 class="cat-section-item__title title">Тумбы</h3>
+                </a>
+                <a class="cat-section-item" style="background-image: url(./img/cat-section/3.jpg)" href="#">
+                  <h3 class="cat-section-item__title title">Прикроватные тумбы</h3>
+                </a>
+              </div>
+              <p class="cat-section__sub-text">До той степени часто, что решились на отчаянный шаг — делать подобную мебель самостоятельно. Стиль в простоте.</p>
+              <div class="cat-section__block-2">
+                <a class="cat-section-item" style="background-image: url(./img/cat-section/4.jpg)" href="#">
+                  <h3 class="cat-section-item__title title">Подвесные тумбы</h3>
+                  <p class="cat-section-item__descr">
+                    И все оказалось максимально просто — не надо делать <br />
+                    ярких цветов и сложных форм.
+                  </p>
+                </a>
+                <a class="cat-section-item" style="background-image: url(./img/cat-section/5.jpg)" href="#">
+                  <h3 class="cat-section-item__title title">Тумбы</h3>
+                </a>
+                <a class="cat-section-item" style="background-image: url(./img/cat-section/5.jpg)" href="#">
+                  <h3 class="cat-section-item__title title">ТВ-тумбы</h3>
+                </a>
+              </div>
+              <div class="cat-section__mob-slider">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <a class="cat-section-item" style="background-image: url(./img/cat-section/1.jpg)" href="#">
+                      <h3 class="cat-section-item__title title">Комоды</h3>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a class="cat-section-item" style="background-image: url(./img/cat-section/2.jpg)" href="#">
+                      <h3 class="cat-section-item__title title">ТВ-тумба</h3>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a class="cat-section-item" style="background-image: url(./img/cat-section/3.jpg)" href="#">
+                      <h3 class="cat-section-item__title title">Тумбы</h3>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="popular slider-block">
+          <div class="container">
+            <h2 class="slider-block__title title">Хиты продаж</h2>
+            <div class="cat-section-tab">
+              <div class="slider-block__tabs tabs">
+                <div class="slider-block__tabs-content">
+                  <button class="slider-block__tabs-btn tab tab-active">Все идеи</button>
+                  <button class="slider-block__tabs-btn tab">Гостиная</button>
+                  <button class="slider-block__tabs-btn tab">Детская комната</button>
+                  <button class="slider-block__tabs-btn tab">Спальня</button>
+                  <button class="slider-block__tabs-btn tab">Студия</button>
+                </div>
+              </div>
+              <div class="tab-panes">
+                <div class="slider-block__slider tab-pane tab-active slider-block-slider">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="slider-block-slider__slide">
+                        <div class="card">
+                          <div class="card__top">
+                            <button class="card__favorite">
+                              <svg>
+                                <use href="img/sprite.svg#favorite"></use>
+                              </svg>
+                            </button>
+                            <a class="card__img" href="product.html">
+                              <picture><source srcset="./img/cards/1.webp" type="image/webp"><img src="./img/cards/1.png" alt="Прикроватная тумба Рамзес Великий" /></picture>
+                            </a>
+                          </div>
+                          <div class="card__body">
+                            <a class="card__name" href="product.html">Прикроватная тумба Рамзес Великий</a>
+                            <div class="card__descr">Коричневый/белый, 50 х 40 х 48 см</div>
+                            <div class="card__type">Коллекция Амон Ра</div>
+                            <div class="card__price">110 000 ₽</div>
+                            <div class="card__delivery">Доставка 29 января</div>
+                            <button class="card__btn btn"><span>В корзину</span></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="slider-block-slider__slide">
+                        <div class="card">
+                          <div class="card__top">
+                            <button class="card__favorite">
+                              <svg>
+                                <use href="img/sprite.svg#favorite"></use>
+                              </svg>
+                            </button>
+                            <a class="card__img" href="product.html">
+                              <picture><source srcset="./img/cards/2.webp" type="image/webp"><img src="./img/cards/2.png" alt="Прикроватная тумба Рамзес Великий" /></picture>
+                            </a>
+                          </div>
+                          <div class="card__body">
+                            <a class="card__name" href="product.html">Комод Рамзес Великий</a>
+                            <div class="card__descr">Коричневый/белый, 50 х 40 х 48 см</div>
+                            <div class="card__type">Коллекция Амон Ра</div>
+                            <div class="card__price">110 000 ₽</div>
+                            <div class="card__delivery">Доставка 29 января</div>
+                            <button class="card__btn btn"><span>В корзину</span></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="slider-block-slider__slide">
+                        <div class="card">
+                          <div class="card__top">
+                            <button class="card__favorite">
+                              <svg>
+                                <use href="img/sprite.svg#favorite"></use>
+                              </svg>
+                            </button>
+                            <a class="card__img" href="product.html">
+                              <picture><source srcset="./img/header-dropdown-1.webp" type="image/webp"><img src="./img/header-dropdown-1.jpg" alt="ТВ-тумба Рамзес Великий " /></picture>
+                            </a>
+                          </div>
+                          <div class="card__body">
+                            <a class="card__name" href="product.html">ТВ-тумба Рамзес Великий</a>
+                            <div class="card__descr">Коричневый/белый, 50 х 40 х 48 см</div>
+                            <div class="card__type">Коллекция Амон Ра</div>
+                            <div class="card__price">110 000 ₽</div>
+                            <div class="card__delivery">Доставка 29 января</div>
+                            <button class="card__btn btn"><span>В корзину</span></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="slider-block-slider__slide">
+                        <div class="card">
+                          <div class="card__top">
+                            <button class="card__favorite">
+                              <svg>
+                                <use href="img/sprite.svg#favorite"></use>
+                              </svg>
+                            </button>
+                            <a class="card__img" href="product.html">
+                              <picture><source srcset="./img/cards/1.webp" type="image/webp"><img src="./img/cards/1.png" alt="Прикроватная тумба Рамзес Великий" /></picture>
+                            </a>
+                          </div>
+                          <div class="card__body">
+                            <a class="card__name" href="product.html">Прикроватная тумба Рамзес Великий</a>
+                            <div class="card__descr">Коричневый/белый, 50 х 40 х 48 см</div>
+                            <div class="card__type">Коллекция Амон Ра</div>
+                            <div class="card__price">110 000 ₽</div>
+                            <div class="card__delivery">Доставка 29 января</div>
+                            <button class="card__btn btn"><span>В корзину</span></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="slider-block-slider__slide">
+                        <div class="card">
+                          <div class="card__top">
+                            <button class="card__favorite">
+                              <svg>
+                                <use href="img/sprite.svg#favorite"></use>
+                              </svg>
+                            </button>
+                            <div class="card__img">
+                              <picture><source srcset="./img/cards/1.webp" type="image/webp"><img src="./img/cards/1.png" alt="Прикроватная тумба Рамзес Великий" /></picture>
+                            </div>
+                          </div>
+                          <div class="card__body">
+                            <div class="card__name">Прикроватная тумба Рамзес Великий</div>
+                            <div class="card__descr">Коричневый/белый, 50 х 40 х 48 см</div>
+                            <div class="card__type">Коллекция Амон Ра</div>
+                            <div class="card__price">110 000 ₽</div>
+                            <div class="card__delivery">Доставка 29 января</div>
+                            <button class="card__btn btn"><span>В корзину</span></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slider-arrows">
+                    <button class="slider-block-swiper-button-prev slider-arrow-prev"></button>
+                    <button class="slider-block-swiper-button-next slider-arrow-next"></button>
+                  </div>
+
+                  <div class="slider-block-swiper-scrollbar slider-scrollbar"></div>
+                </div>
+                <div class="slider-block__slider tab-pane slider-block-slider">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="slider-block-slider__slide">
+                        <div class="card">
+                          <div class="card__top">
+                            <button class="card__favorite">
+                              <svg>
+                                <use href="img/sprite.svg#favorite"></use>
+                              </svg>
+                            </button>
+                            <a class="card__img" href="product.html">
+                              <picture><source srcset="./img/cards/2.webp" type="image/webp"><img src="./img/cards/2.png" alt="Прикроватная тумба Рамзес Великий" /></picture>
+                            </a>
+                          </div>
+                          <div class="card__body">
+                            <a class="card__name" href="product.html">Прикроватная тумба Рамзес Великий</a>
+                            <div class="card__descr">Коричневый/белый, 50 х 40 х 48 см</div>
+                            <div class="card__type">Коллекция Амон Ра</div>
+                            <div class="card__price">110 000 ₽</div>
+                            <div class="card__delivery">Доставка 29 января</div>
+                            <button class="card__btn btn"><span>В корзину</span></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="slider-block-slider__slide">
+                        <div class="card">
+                          <div class="card__top">
+                            <button class="card__favorite">
+                              <svg>
+                                <use href="img/sprite.svg#favorite"></use>
+                              </svg>
+                            </button>
+                            <a class="card__img" href="product.html">
+                              <picture><source srcset="./img/cards/1.webp" type="image/webp"><img src="./img/cards/1.png" alt="Прикроватная тумба Рамзес Великий" /></picture>
+                            </a>
+                          </div>
+                          <div class="card__body">
+                            <a class="card__name" href="product.html">Комод Рамзес Великий</a>
+                            <div class="card__descr">Коричневый/белый, 50 х 40 х 48 см</div>
+                            <div class="card__type">Коллекция Амон Ра</div>
+                            <div class="card__price">110 000 ₽</div>
+                            <div class="card__delivery">Доставка 29 января</div>
+                            <button class="card__btn btn"><span>В корзину</span></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="slider-block-slider__slide">
+                        <div class="card">
+                          <div class="card__top">
+                            <button class="card__favorite">
+                              <svg>
+                                <use href="img/sprite.svg#favorite"></use>
+                              </svg>
+                            </button>
+                            <a class="card__img" href="product.html">
+                              <picture><source srcset="./img/header-dropdown-1.webp" type="image/webp"><img src="./img/header-dropdown-1.jpg" alt="ТВ-тумба Рамзес Великий " /></picture>
+                            </a>
+                          </div>
+                          <div class="card__body">
+                            <a class="card__name" href="product.html">ТВ-тумба Рамзес Великий</a>
+                            <div class="card__descr">Коричневый/белый, 50 х 40 х 48 см</div>
+                            <div class="card__type">Коллекция Амон Ра</div>
+                            <div class="card__price">110 000 ₽</div>
+                            <div class="card__delivery">Доставка 29 января</div>
+                            <button class="card__btn btn"><span>В корзину</span></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="slider-block-slider__slide">
+                        <div class="card">
+                          <div class="card__top">
+                            <button class="card__favorite">
+                              <svg>
+                                <use href="img/sprite.svg#favorite"></use>
+                              </svg>
+                            </button>
+                            <a class="card__img" href="product.html">
+                              <picture><source srcset="./img/cards/1.webp" type="image/webp"><img src="./img/cards/1.png" alt="Прикроватная тумба Рамзес Великий" /></picture>
+                            </a>
+                          </div>
+                          <div class="card__body">
+                            <a class="card__name" href="product.html">Прикроватная тумба Рамзес Великий</a>
+                            <div class="card__descr">Коричневый/белый, 50 х 40 х 48 см</div>
+                            <div class="card__type">Коллекция Амон Ра</div>
+                            <div class="card__price">110 000 ₽</div>
+                            <div class="card__delivery">Доставка 29 января</div>
+                            <button class="card__btn btn"><span>В корзину</span></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="slider-block-slider__slide">
+                        <div class="card">
+                          <div class="card__top">
+                            <button class="card__favorite">
+                              <svg>
+                                <use href="img/sprite.svg#favorite"></use>
+                              </svg>
+                            </button>
+                            <div class="card__img">
+                              <picture><source srcset="./img/cards/1.webp" type="image/webp"><img src="./img/cards/1.png" alt="Прикроватная тумба Рамзес Великий" /></picture>
+                            </div>
+                          </div>
+                          <div class="card__body">
+                            <div class="card__name">Прикроватная тумба Рамзес Великий</div>
+                            <div class="card__descr">Коричневый/белый, 50 х 40 х 48 см</div>
+                            <div class="card__type">Коллекция Амон Ра</div>
+                            <div class="card__price">110 000 ₽</div>
+                            <div class="card__delivery">Доставка 29 января</div>
+                            <button class="card__btn btn"><span>В корзину</span></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slider-arrows">
+                    <button class="slider-block-swiper-button-prev slider-arrow-prev"></button>
+                    <button class="slider-block-swiper-button-next slider-arrow-next"></button>
+                  </div>
+
+                  <div class="slider-block-swiper-scrollbar slider-scrollbar"></div>
+                </div>
+                <div class="slider-block__slider tab-pane slider-block-slider">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="slider-block-slider__slide">
+                        <div class="card">
+                          <div class="card__top">
+                            <button class="card__favorite">
+                              <svg>
+                                <use href="img/sprite.svg#favorite"></use>
+                              </svg>
+                            </button>
+                            <a class="card__img" href="product.html">
+                              <picture><source srcset="./img/cards/1.webp" type="image/webp"><img src="./img/cards/1.png" alt="Прикроватная тумба Рамзес Великий" /></picture>
+                            </a>
+                          </div>
+                          <div class="card__body">
+                            <a class="card__name" href="product.html">Прикроватная тумба Рамзес Великий</a>
+                            <div class="card__descr">Коричневый/белый, 50 х 40 х 48 см</div>
+                            <div class="card__type">Коллекция Амон Ра</div>
+                            <div class="card__price">110 000 ₽</div>
+                            <div class="card__delivery">Доставка 29 января</div>
+                            <button class="card__btn btn"><span>В корзину</span></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="slider-block-slider__slide">
+                        <div class="card">
+                          <div class="card__top">
+                            <button class="card__favorite">
+                              <svg>
+                                <use href="img/sprite.svg#favorite"></use>
+                              </svg>
+                            </button>
+                            <a class="card__img" href="product.html">
+                              <picture><source srcset="./img/cards/2.webp" type="image/webp"><img src="./img/cards/2.png" alt="Прикроватная тумба Рамзес Великий" /></picture>
+                            </a>
+                          </div>
+                          <div class="card__body">
+                            <a class="card__name" href="product.html">Комод Рамзес Великий</a>
+                            <div class="card__descr">Коричневый/белый, 50 х 40 х 48 см</div>
+                            <div class="card__type">Коллекция Амон Ра</div>
+                            <div class="card__price">110 000 ₽</div>
+                            <div class="card__delivery">Доставка 29 января</div>
+                            <button class="card__btn btn"><span>В корзину</span></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="slider-block-slider__slide">
+                        <div class="card">
+                          <div class="card__top">
+                            <button class="card__favorite">
+                              <svg>
+                                <use href="img/sprite.svg#favorite"></use>
+                              </svg>
+                            </button>
+                            <a class="card__img" href="product.html">
+                              <picture><source srcset="./img/header-dropdown-1.webp" type="image/webp"><img src="./img/header-dropdown-1.jpg" alt="ТВ-тумба Рамзес Великий " /></picture>
+                            </a>
+                          </div>
+                          <div class="card__body">
+                            <a class="card__name" href="product.html">ТВ-тумба Рамзес Великий</a>
+                            <div class="card__descr">Коричневый/белый, 50 х 40 х 48 см</div>
+                            <div class="card__type">Коллекция Амон Ра</div>
+                            <div class="card__price">110 000 ₽</div>
+                            <div class="card__delivery">Доставка 29 января</div>
+                            <button class="card__btn btn"><span>В корзину</span></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="slider-block-slider__slide">
+                        <div class="card">
+                          <div class="card__top">
+                            <button class="card__favorite">
+                              <svg>
+                                <use href="img/sprite.svg#favorite"></use>
+                              </svg>
+                            </button>
+                            <a class="card__img" href="product.html">
+                              <picture><source srcset="./img/cards/1.webp" type="image/webp"><img src="./img/cards/1.png" alt="Прикроватная тумба Рамзес Великий" /></picture>
+                            </a>
+                          </div>
+                          <div class="card__body">
+                            <a class="card__name" href="product.html">Прикроватная тумба Рамзес Великий</a>
+                            <div class="card__descr">Коричневый/белый, 50 х 40 х 48 см</div>
+                            <div class="card__type">Коллекция Амон Ра</div>
+                            <div class="card__price">110 000 ₽</div>
+                            <div class="card__delivery">Доставка 29 января</div>
+                            <button class="card__btn btn"><span>В корзину</span></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="slider-block-slider__slide">
+                        <div class="card">
+                          <div class="card__top">
+                            <button class="card__favorite">
+                              <svg>
+                                <use href="img/sprite.svg#favorite"></use>
+                              </svg>
+                            </button>
+                            <div class="card__img">
+                              <picture><source srcset="./img/cards/1.webp" type="image/webp"><img src="./img/cards/1.png" alt="Прикроватная тумба Рамзес Великий" /></picture>
+                            </div>
+                          </div>
+                          <div class="card__body">
+                            <div class="card__name">Прикроватная тумба Рамзес Великий</div>
+                            <div class="card__descr">Коричневый/белый, 50 х 40 х 48 см</div>
+                            <div class="card__type">Коллекция Амон Ра</div>
+                            <div class="card__price">110 000 ₽</div>
+                            <div class="card__delivery">Доставка 29 января</div>
+                            <button class="card__btn btn"><span>В корзину</span></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slider-arrows">
+                    <button class="slider-block-swiper-button-prev slider-arrow-prev"></button>
+                    <button class="slider-block-swiper-button-next slider-arrow-next"></button>
+                  </div>
+
+                  <div class="slider-block-swiper-scrollbar slider-scrollbar"></div>
+                </div>
+                <div class="slider-block__slider tab-pane slider-block-slider">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="slider-block-slider__slide">
+                        <div class="card">
+                          <div class="card__top">
+                            <button class="card__favorite">
+                              <svg>
+                                <use href="img/sprite.svg#favorite"></use>
+                              </svg>
+                            </button>
+                            <a class="card__img" href="product.html">
+                              <picture><source srcset="./img/cards/2.webp" type="image/webp"><img src="./img/cards/2.png" alt="Прикроватная тумба Рамзес Великий" /></picture>
+                            </a>
+                          </div>
+                          <div class="card__body">
+                            <a class="card__name" href="product.html">Прикроватная тумба Рамзес Великий</a>
+                            <div class="card__descr">Коричневый/белый, 50 х 40 х 48 см</div>
+                            <div class="card__type">Коллекция Амон Ра</div>
+                            <div class="card__price">110 000 ₽</div>
+                            <div class="card__delivery">Доставка 29 января</div>
+                            <button class="card__btn btn"><span>В корзину</span></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="slider-block-slider__slide">
+                        <div class="card">
+                          <div class="card__top">
+                            <button class="card__favorite">
+                              <svg>
+                                <use href="img/sprite.svg#favorite"></use>
+                              </svg>
+                            </button>
+                            <a class="card__img" href="product.html">
+                              <picture><source srcset="./img/cards/1.webp" type="image/webp"><img src="./img/cards/1.png" alt="Прикроватная тумба Рамзес Великий" /></picture>
+                            </a>
+                          </div>
+                          <div class="card__body">
+                            <a class="card__name" href="product.html">Комод Рамзес Великий</a>
+                            <div class="card__descr">Коричневый/белый, 50 х 40 х 48 см</div>
+                            <div class="card__type">Коллекция Амон Ра</div>
+                            <div class="card__price">110 000 ₽</div>
+                            <div class="card__delivery">Доставка 29 января</div>
+                            <button class="card__btn btn"><span>В корзину</span></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="slider-block-slider__slide">
+                        <div class="card">
+                          <div class="card__top">
+                            <button class="card__favorite">
+                              <svg>
+                                <use href="img/sprite.svg#favorite"></use>
+                              </svg>
+                            </button>
+                            <a class="card__img" href="product.html">
+                              <picture><source srcset="./img/header-dropdown-1.webp" type="image/webp"><img src="./img/header-dropdown-1.jpg" alt="ТВ-тумба Рамзес Великий " /></picture>
+                            </a>
+                          </div>
+                          <div class="card__body">
+                            <a class="card__name" href="product.html">ТВ-тумба Рамзес Великий</a>
+                            <div class="card__descr">Коричневый/белый, 50 х 40 х 48 см</div>
+                            <div class="card__type">Коллекция Амон Ра</div>
+                            <div class="card__price">110 000 ₽</div>
+                            <div class="card__delivery">Доставка 29 января</div>
+                            <button class="card__btn btn"><span>В корзину</span></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="slider-block-slider__slide">
+                        <div class="card">
+                          <div class="card__top">
+                            <button class="card__favorite">
+                              <svg>
+                                <use href="img/sprite.svg#favorite"></use>
+                              </svg>
+                            </button>
+                            <a class="card__img" href="product.html">
+                              <picture><source srcset="./img/cards/1.webp" type="image/webp"><img src="./img/cards/1.png" alt="Прикроватная тумба Рамзес Великий" /></picture>
+                            </a>
+                          </div>
+                          <div class="card__body">
+                            <a class="card__name" href="product.html">Прикроватная тумба Рамзес Великий</a>
+                            <div class="card__descr">Коричневый/белый, 50 х 40 х 48 см</div>
+                            <div class="card__type">Коллекция Амон Ра</div>
+                            <div class="card__price">110 000 ₽</div>
+                            <div class="card__delivery">Доставка 29 января</div>
+                            <button class="card__btn btn"><span>В корзину</span></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="slider-block-slider__slide">
+                        <div class="card">
+                          <div class="card__top">
+                            <button class="card__favorite">
+                              <svg>
+                                <use href="img/sprite.svg#favorite"></use>
+                              </svg>
+                            </button>
+                            <div class="card__img">
+                              <picture><source srcset="./img/cards/1.webp" type="image/webp"><img src="./img/cards/1.png" alt="Прикроватная тумба Рамзес Великий" /></picture>
+                            </div>
+                          </div>
+                          <div class="card__body">
+                            <div class="card__name">Прикроватная тумба Рамзес Великий</div>
+                            <div class="card__descr">Коричневый/белый, 50 х 40 х 48 см</div>
+                            <div class="card__type">Коллекция Амон Ра</div>
+                            <div class="card__price">110 000 ₽</div>
+                            <div class="card__delivery">Доставка 29 января</div>
+                            <button class="card__btn btn"><span>В корзину</span></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slider-arrows">
+                    <button class="slider-block-swiper-button-prev slider-arrow-prev"></button>
+                    <button class="slider-block-swiper-button-next slider-arrow-next"></button>
+                  </div>
+
+                  <div class="slider-block-swiper-scrollbar slider-scrollbar"></div>
+                </div>
+                <div class="slider-block__slider tab-pane slider-block-slider">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="slider-block-slider__slide">
+                        <div class="card">
+                          <div class="card__top">
+                            <button class="card__favorite">
+                              <svg>
+                                <use href="img/sprite.svg#favorite"></use>
+                              </svg>
+                            </button>
+                            <a class="card__img" href="product.html">
+                              <picture><source srcset="./img/cards/1.webp" type="image/webp"><img src="./img/cards/1.png" alt="Прикроватная тумба Рамзес Великий" /></picture>
+                            </a>
+                          </div>
+                          <div class="card__body">
+                            <a class="card__name" href="product.html">Прикроватная тумба Рамзес Великий</a>
+                            <div class="card__descr">Коричневый/белый, 50 х 40 х 48 см</div>
+                            <div class="card__type">Коллекция Амон Ра</div>
+                            <div class="card__price">110 000 ₽</div>
+                            <div class="card__delivery">Доставка 29 января</div>
+                            <button class="card__btn btn"><span>В корзину</span></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="slider-block-slider__slide">
+                        <div class="card">
+                          <div class="card__top">
+                            <button class="card__favorite">
+                              <svg>
+                                <use href="img/sprite.svg#favorite"></use>
+                              </svg>
+                            </button>
+                            <a class="card__img" href="product.html">
+                              <picture><source srcset="./img/cards/2.webp" type="image/webp"><img src="./img/cards/2.png" alt="Прикроватная тумба Рамзес Великий" /></picture>
+                            </a>
+                          </div>
+                          <div class="card__body">
+                            <a class="card__name" href="product.html">Комод Рамзес Великий</a>
+                            <div class="card__descr">Коричневый/белый, 50 х 40 х 48 см</div>
+                            <div class="card__type">Коллекция Амон Ра</div>
+                            <div class="card__price">110 000 ₽</div>
+                            <div class="card__delivery">Доставка 29 января</div>
+                            <button class="card__btn btn"><span>В корзину</span></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="slider-block-slider__slide">
+                        <div class="card">
+                          <div class="card__top">
+                            <button class="card__favorite">
+                              <svg>
+                                <use href="img/sprite.svg#favorite"></use>
+                              </svg>
+                            </button>
+                            <a class="card__img" href="product.html">
+                              <picture><source srcset="./img/header-dropdown-1.webp" type="image/webp"><img src="./img/header-dropdown-1.jpg" alt="ТВ-тумба Рамзес Великий " /></picture>
+                            </a>
+                          </div>
+                          <div class="card__body">
+                            <a class="card__name" href="product.html">ТВ-тумба Рамзес Великий</a>
+                            <div class="card__descr">Коричневый/белый, 50 х 40 х 48 см</div>
+                            <div class="card__type">Коллекция Амон Ра</div>
+                            <div class="card__price">110 000 ₽</div>
+                            <div class="card__delivery">Доставка 29 января</div>
+                            <button class="card__btn btn"><span>В корзину</span></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="slider-block-slider__slide">
+                        <div class="card">
+                          <div class="card__top">
+                            <button class="card__favorite">
+                              <svg>
+                                <use href="img/sprite.svg#favorite"></use>
+                              </svg>
+                            </button>
+                            <a class="card__img" href="product.html">
+                              <picture><source srcset="./img/cards/1.webp" type="image/webp"><img src="./img/cards/1.png" alt="Прикроватная тумба Рамзес Великий" /></picture>
+                            </a>
+                          </div>
+                          <div class="card__body">
+                            <a class="card__name" href="product.html">Прикроватная тумба Рамзес Великий</a>
+                            <div class="card__descr">Коричневый/белый, 50 х 40 х 48 см</div>
+                            <div class="card__type">Коллекция Амон Ра</div>
+                            <div class="card__price">110 000 ₽</div>
+                            <div class="card__delivery">Доставка 29 января</div>
+                            <button class="card__btn btn"><span>В корзину</span></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="slider-block-slider__slide">
+                        <div class="card">
+                          <div class="card__top">
+                            <button class="card__favorite">
+                              <svg>
+                                <use href="img/sprite.svg#favorite"></use>
+                              </svg>
+                            </button>
+                            <div class="card__img">
+                              <picture><source srcset="./img/cards/1.webp" type="image/webp"><img src="./img/cards/1.png" alt="Прикроватная тумба Рамзес Великий" /></picture>
+                            </div>
+                          </div>
+                          <div class="card__body">
+                            <div class="card__name">Прикроватная тумба Рамзес Великий</div>
+                            <div class="card__descr">Коричневый/белый, 50 х 40 х 48 см</div>
+                            <div class="card__type">Коллекция Амон Ра</div>
+                            <div class="card__price">110 000 ₽</div>
+                            <div class="card__delivery">Доставка 29 января</div>
+                            <button class="card__btn btn"><span>В корзину</span></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slider-arrows">
+                    <button class="slider-block-swiper-button-prev slider-arrow-prev"></button>
+                    <button class="slider-block-swiper-button-next slider-arrow-next"></button>
+                  </div>
+
+                  <div class="slider-block-swiper-scrollbar slider-scrollbar"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="new">
+          <div class="container">
+            <h2 class="new__title title">Новинки</h2>
+            <div class="new__items">
+              <div class="new__big-card" style="background-image: url(./img/new/1.jpg)">
+                <h3 class="new__big-card-title">Тумба “Ахилес”</h3>
+                <a class="new__big-card-link" href="product.html">перейти к товару</a>
+              </div>
+              <div class="card new__card">
+                <div class="card__top">
+                  <button class="card__favorite">
+                    <svg>
+                      <use href="img/sprite.svg#favorite"></use>
+                    </svg>
+                  </button>
+                  <a class="card__img" href="product.html">
+                    <picture><source srcset="./img/new/2.webp" type="image/webp"><img src="./img/new/2.jpg" alt="Тумба “Ахилес”" /></picture>
+                  </a>
+                </div>
+                <div class="card__body">
+                  <a class="card__name" href="product.html">Тумба “Ахилес”</a>
+                  <div class="card__descr">Коричневый/белый, 50 х 40 х 48 см</div>
+                  <div class="card__type">Коллекция Амон Ра</div>
+                  <div class="card__price">11 234 ₽</div>
+                  <div class="card__delivery">Доставка 29 января</div>
+                  <button class="card__btn btn"><span>В корзину</span></button>
+                </div>
+              </div>
+              <div class="card new__card">
+                <div class="card__top">
+                  <button class="card__favorite">
+                    <svg>
+                      <use href="img/sprite.svg#favorite"></use>
+                    </svg>
+                  </button>
+                  <a class="card__img" href="product.html">
+                    <picture><source srcset="./img/new/3.webp" type="image/webp"><img src="./img/new/3.jpg" alt="Тумба “Ахилес”" /></picture>
+                  </a>
+                </div>
+                <div class="card__body">
+                  <a class="card__name" href="product.html">Тумба “Ахилес”</a>
+                  <div class="card__descr">Коричневый/белый, 50 х 40 х 48 см</div>
+                  <div class="card__type">Коллекция Амон Ра</div>
+                  <div class="card__price">11 234 ₽</div>
+                  <div class="card__delivery">Доставка 29 января</div>
+                  <button class="card__btn btn"><span>В корзину</span></button>
+                </div>
+              </div>
+              <div class="card new__card">
+                <div class="card__top">
+                  <button class="card__favorite">
+                    <svg>
+                      <use href="img/sprite.svg#favorite"></use>
+                    </svg>
+                  </button>
+                  <a class="card__img" href="product.html">
+                    <picture><source srcset="./img/new/4.webp" type="image/webp"><img src="./img/new/4.jpg" alt="Тумба “Ахилес”" /></picture>
+                  </a>
+                </div>
+                <div class="card__body">
+                  <a class="card__name" href="product.html">Тумба “Ахилес”</a>
+                  <div class="card__descr">Коричневый/белый, 50 х 40 х 48 см</div>
+                  <div class="card__type">Коллекция Амон Ра</div>
+                  <div class="card__price">11 234 ₽</div>
+                  <div class="card__delivery">Доставка 29 января</div>
+                  <button class="card__btn btn"><span>В корзину</span></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="collection-block common-section">
+          <div class="container">
+            <h2 class="common-section__title title">Наши коллекции</h2>
+            <div class="common-section__items">
+              <a class="common-section__item common-section-item" href="collection-category.html" style="background-image: url(./img/collection/1.jpg)">
+                <h3 class="common-section__item-title">Коллекция Аласия</h3>
+              </a>
+              <a class="common-section__item common-section-item" href="collection-category.html" style="background-image: url(./img/collection/2.jpg)">
+                <h3 class="common-section__item-title">Коллеция Скандинавия</h3>
+              </a>
+              <a class="common-section__item common-section-item" href="collection-category.html" style="background-image: url(./img/collection/3.jpg)">
+                <h3 class="common-section__item-title">Коллекция Греция</h3>
+              </a>
+              <a class="common-section__item common-section-item" href="collection-category.html" style="background-image: url(./img/collection/4.jpg)">
+                <h3 class="common-section__item-title">Коллекция Рим</h3>
+              </a>
+              <a class="common-section__item common-section-item" href="collection-category.html" style="background-image: url(./img/collection/5.jpg)">
+                <h3 class="common-section__item-title">Коллекция Египет</h3>
+              </a>
+            </div>
+          </div>
+        </section>
+        <section class="reviews">
+          <div class="container">
+            <h2 class="reviews__title title">Отзывы</h2>
+            <div class="reviews__slider reviews-slider">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="reviews-slide">
+                    <div class="reviews-slide__top">
+                      <div class="reviews-slide__name">Анастасия</div>
+                      <div class="reviews-slide__rating">
+                        <img src="./img/star.svg" alt="" aria-hidden="true" />
+                        <img src="./img/star.svg" alt="" aria-hidden="true" />
+                        <img src="./img/star.svg" alt="" aria-hidden="true" />
+                        <img src="./img/star.svg" alt="" aria-hidden="true" />
+                        <img src="./img/star-outline.svg" alt="рейтинг 4" />
+                      </div>
+                    </div>
+                    <p class="reviews-slide__text">Спасибо большое за ваш продукт, купила тумбу и очень довольна покупкой. Понятная инструкция.</p>
+                    <p class="reviews-slide__date">25.12.2022</p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="reviews-slide">
+                    <div class="reviews-slide__top">
+                      <div class="reviews-slide__name">Анастасия</div>
+                      <div class="reviews-slide__rating">
+                        <img src="./img/star.svg" alt="" aria-hidden="true" />
+                        <img src="./img/star.svg" alt="" aria-hidden="true" />
+                        <img src="./img/star.svg" alt="" aria-hidden="true" />
+                        <img src="./img/star.svg" alt="" aria-hidden="true" />
+                        <img src="./img/star-outline.svg" alt="рейтинг 4" />
+                      </div>
+                    </div>
+                    <p class="reviews-slide__text">Спасибо большое за ваш продукт, купила тумбу и очень довольна покупкой. Понятная инструкция.</p>
+                    <p class="reviews-slide__date">25.12.2022</p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="reviews-slide">
+                    <div class="reviews-slide__top">
+                      <div class="reviews-slide__name">Анастасия</div>
+                      <div class="reviews-slide__rating">
+                        <img src="./img/star.svg" alt="" aria-hidden="true" />
+                        <img src="./img/star.svg" alt="" aria-hidden="true" />
+                        <img src="./img/star.svg" alt="" aria-hidden="true" />
+                        <img src="./img/star.svg" alt="" aria-hidden="true" />
+                        <img src="./img/star-outline.svg" alt="рейтинг 4" />
+                      </div>
+                    </div>
+                    <p class="reviews-slide__text">Спасибо большое за ваш продукт, купила тумбу и очень довольна покупкой. Понятная инструкция.</p>
+                    <p class="reviews-slide__date">25.12.2022</p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="reviews-slide">
+                    <div class="reviews-slide__top">
+                      <div class="reviews-slide__name">Анастасия</div>
+                      <div class="reviews-slide__rating">
+                        <img src="./img/star.svg" alt="" aria-hidden="true" />
+                        <img src="./img/star.svg" alt="" aria-hidden="true" />
+                        <img src="./img/star.svg" alt="" aria-hidden="true" />
+                        <img src="./img/star.svg" alt="" aria-hidden="true" />
+                        <img src="./img/star-outline.svg" alt="рейтинг 4" />
+                      </div>
+                    </div>
+                    <p class="reviews-slide__text">Спасибо большое за ваш продукт, купила тумбу и очень довольна покупкой. Понятная инструкция.</p>
+                    <p class="reviews-slide__date">25.12.2022</p>
+                  </div>
+                </div>
+              </div>
+              <div class="slider-arrows">
+                <button class="reviews-swiper-button-prev slider-arrow-prev"></button>
+                <button class="reviews-swiper-button-next slider-arrow-next"></button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="about">
+          <div class="container">
+            <h2 class="about__title title">О компании</h2>
+            <div class="about__texts">
+              <p>
+                Как часто вы&nbsp;смотрите на&nbsp;тумбочку и&nbsp;у&nbsp;вас возникает мысль, что вы&nbsp;хотели&nbsp;бы такую&nbsp;же, но&nbsp;с&nbsp;&laquo;перламутровыми пуговицами&raquo;, чтобы
+                по&nbsp;стилю она подошла&nbsp;бы к&nbsp;Вашему шкафу или кровати? Мы&nbsp;&mdash; очень часто. До&nbsp;той степени часто, что решились на&nbsp;отчаянный шаг&nbsp;&mdash; делать
+                подобную мебель самостоятельно.
+              </p>
+              <p>
+                У&nbsp;нас нет вензелей и&nbsp;блестящих ручек, нет сложных рисунков на&nbsp;фасадах и&nbsp;ярких кричащих цветов. Мы&nbsp;очень хотели сделать мебель, которую можно поставить
+                в&nbsp;спальню рядом с&nbsp;кроватью, а&nbsp;через год передвинуть её&nbsp;в&nbsp;гостиную и&nbsp;пристроить рядом с&nbsp;телевизором. И&nbsp;нам очень хотелось, чтобы на&nbsp;любом
+                месте и&nbsp;в&nbsp;любой комнате наша мебель гармонично встроилась&nbsp;бы в&nbsp;интерьер.
+                <a href="about.html">Подробнее</a>
+              </p>
+              <p>
+                И&nbsp;у&nbsp;нас это получилось. И&nbsp;все оказалось максимально просто&nbsp;&mdash; не&nbsp;надо делать ярких цветов и&nbsp;сложных форм. Стиль в&nbsp;простоте. Берём обычную
+                кубическую форму, собираем её&nbsp;из&nbsp;качественных материалов в&nbsp;спокойных цветах, затем берём стильный фасад в&nbsp;контрастном цвете. И&nbsp;идеальная тумба готова. Осталось
+                только поставить её&nbsp;на&nbsp;надёжные ножки и&nbsp;оборудовать качественными петлями, чтобы от&nbsp;хлопка дверцы не&nbsp;просыпались соседи. И&nbsp;вот он&nbsp;идеальный рецепт
+                идеальной тумбы для любого назначения и&nbsp;любой комнаты.
+              </p>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+  <div class="container">
+    <div class="footer__cols">
+      <div class="footer__col">
+        <div class="logo footer__logo">
+          <a href="index.html">Adorable mebel</a>
+        </div>
+      </div>
+      <div class="footer__col">
+        <h2 class="footer__entry-title">Каталог</h2>
+        <ul class="footer__items">
+          <li class="footer__item">
+            <a class="footer__link" href="catalog.html">Комоды</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="catalog.html">Тумбы</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="catalog.html">Прикроватные тумбы</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="catalog.html">ТВ-тумбы</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="catalog.html">Стеллажи</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="catalog.html">Подвесные тумбы</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h2 class="footer__entry-title">Коллекции</h2>
+        <ul class="footer__items">
+          <li class="footer__item">
+            <a class="footer__link" href="collection.html">Один</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="collection.html">Амон Ра</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="collection.html">Тутенштейн</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="collection.html">Анубис</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="collection.html">Гор</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h2 class="footer__entry-title">Информация</h2>
+        <ul class="footer__items">
+          <li class="footer__item">
+            <a class="footer__link" href="delivery.html">Доставка и оплата</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="return.html">Возврат товаров</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="catalog.html">Шоурумы</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="about.html">О компании</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="action-catalog.html">Акции</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h2 class="footer__entry-title">Контакты</h2>
+        <ul class="footer__items">
+          <li class="footer__item">
+            <address class="footer__address">ул. Ленина д.22 офис 04</address>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="tel:89999999999">8 (999) 999 99 99</a>
+          </li>
+
+          <li class="footer__item">
+            <div class="footer__socials">
+              <a href="#">
+                <img src="img/vk.svg" alt="" />
+              </a>
+              <a href="#">
+                <img src="img/odnoklassniki.svg" alt="" />
+              </a>
+              <a href="#">
+                <img src="img/telegram.svg" alt="" />
+              </a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <ul class="footer__pays">
+      <li class="footer__pay">
+        <img src="img/pays/1.svg" alt="Оплата картой Мир" />
+      </li>
+      <li class="footer__pay">
+        <img src="img/pays/2.svg" alt="Оплата картой Мастер Карт" />
+      </li>
+      <li class="footer__pay">
+        <img src="img/pays/3.svg" alt="Оплата картой Виза" />
+      </li>
+    </ul>
+  </div>
+</footer>
+
+    </div>
+    <div class="city-modal modal" id="city-dialog" style="display: none">
+  <div class="modal__content">
+    <div class="modal__top">
+      <h2 class="modal__title">Укажите свой город</h2>
+      <form class="modal__search-form search-form" action="#">
+        <label class="search-form__label input">
+          <input type="text" name="search" placeholder="Поиск города" />
+        </label>
+        <button class="search-form__button" aria-label="Поиск"></button>
+      </form>
+    </div>
+    <div class="modal__inner">
+      <ul class="modal__list">
+        <li class="modal__list-item"><button>Сант-Петербург</button></li>
+        <li class="modal__list-item"><button>Москва</button></li>
+        <li class="modal__list-item"><button>Краснодар</button></li>
+        <li class="modal__list-item"><button>Благовещенск</button></li>
+        <li class="modal__list-item"><button>Владимир</button></li>
+        <li class="modal__list-item"><button>Белгород</button></li>
+        <li class="modal__list-item"><button>Волгоград</button></li>
+        <li class="modal__list-item"><button>Екатеринбург</button></li>
+        <li class="modal__list-item"><button>Ижевск</button></li>
+        <li class="modal__list-item"><button>Казань</button></li>
+        <li class="modal__list-item"><button>Сант-Петербург</button></li>
+        <li class="modal__list-item"><button>Москва</button></li>
+        <li class="modal__list-item"><button>Краснодар</button></li>
+        <li class="modal__list-item"><button>Благовещенск</button></li>
+        <li class="modal__list-item"><button>Владимир</button></li>
+        <li class="modal__list-item"><button>Белгород</button></li>
+        <li class="modal__list-item"><button>Волгоград</button></li>
+        <li class="modal__list-item"><button>Екатеринбург</button></li>
+        <li class="modal__list-item"><button>Ижевск</button></li>
+        <li class="modal__list-item"><button>Казань</button></li>
+        <li class="modal__list-item"><button>Сант-Петербург</button></li>
+        <li class="modal__list-item"><button>Москва</button></li>
+        <li class="modal__list-item"><button>Краснодар</button></li>
+        <li class="modal__list-item"><button>Благовещенск</button></li>
+        <li class="modal__list-item"><button>Владимир</button></li>
+        <li class="modal__list-item"><button>Белгород</button></li>
+        <li class="modal__list-item"><button>Волгоград</button></li>
+        <li class="modal__list-item"><button>Екатеринбург</button></li>
+        <li class="modal__list-item"><button>Ижевск</button></li>
+        <li class="modal__list-item"><button>Казань</button></li>
+      </ul>
+    </div>
+    
+  </div>
+</div> <div class="bag" id="bag">
+  <div class="bag__content">
+    <div class="bag__top">
+      <h2 class="bag__title title">Корзина</h2>
+    </div>
+    <div class="bag__inner">
+     
+      <ul class="bag__items">
+        <li class="bag__item bag-card bag-card--sm">
+          <div class="bag-card__img">
+            <picture><source srcset="img/cards/1.webp" type="image/webp"><img src="img/cards/1.png" alt="Тумба “Ахилес”" /></picture>
+          </div>
+
+          <div class="bag-card__texts">
+            <h2 class="bag-card__name">Тумба “Ахилес”</h2>
+            <div class="bag-card__descr">Коричневый/белый, 50 х 40 х 48 см</div>
+            <div class="bag-card__type">Коллекция Амон Ра</div>
+          </div>
+          <div class="bag-card__operate">
+            <div class="bag-card__quantity-control quantity-control">
+              <button class="quantity-control__minus">-</button>
+              <span class="quantity-control__count">1</span>
+              <button class="quantity-control__plus">+</button>
+            </div>
+            <div class="bag-card__price">200 000 ₽</div>
+            <button class="bag-card__delete-btn delete-btn">Удалить</button>
+          </div>
+        </li>
+        <li class="bag__item bag-card bag-card--sm">
+          <div class="bag-card__img">
+            <picture><source srcset="img/cards/1.webp" type="image/webp"><img src="img/cards/1.png" alt="Тумба “Ахилес”" /></picture>
+          </div>
+
+          <div class="bag-card__texts">
+            <h2 class="bag-card__name">Тумба “Ахилес”</h2>
+            <div class="bag-card__descr">Коричневый/белый, 50 х 40 х 48 см</div>
+            <div class="bag-card__type">Коллекция Амон Ра</div>
+          </div>
+          <div class="bag-card__operate">
+            <div class="bag-card__quantity-control quantity-control">
+              <button class="quantity-control__minus">-</button>
+              <span class="quantity-control__count">1</span>
+              <button class="quantity-control__plus">+</button>
+            </div>
+            <div class="bag-card__price">200 000 ₽</div>
+            <button class="bag-card__delete-btn delete-btn">Удалить</button>
+          </div>
+        </li>
+        <li class="bag__item bag-card bag-card--sm">
+          <div class="bag-card__img">
+            <picture><source srcset="img/cards/1.webp" type="image/webp"><img src="img/cards/1.png" alt="Тумба “Ахилес”" /></picture>
+          </div>
+
+          <div class="bag-card__texts">
+            <h2 class="bag-card__name">Тумба “Ахилес”</h2>
+            <div class="bag-card__descr">Коричневый/белый, 50 х 40 х 48 см</div>
+            <div class="bag-card__type">Коллекция Амон Ра</div>
+          </div>
+          <div class="bag-card__operate">
+            <div class="bag-card__quantity-control quantity-control">
+              <button class="quantity-control__minus">-</button>
+              <span class="quantity-control__count">1</span>
+              <button class="quantity-control__plus">+</button>
+            </div>
+            <div class="bag-card__price">200 000 ₽</div>
+            <button class="bag-card__delete-btn delete-btn">Удалить</button>
+          </div>
+        </li>
+        <li class="bag__item bag-card bag-card--sm">
+          <div class="bag-card__img">
+            <picture><source srcset="img/cards/1.webp" type="image/webp"><img src="img/cards/1.png" alt="Тумба “Ахилес”" /></picture>
+          </div>
+
+          <div class="bag-card__texts">
+            <h2 class="bag-card__name">Тумба “Ахилес”</h2>
+            <div class="bag-card__descr">Коричневый/белый, 50 х 40 х 48 см</div>
+            <div class="bag-card__type">Коллекция Амон Ра</div>
+          </div>
+          <div class="bag-card__operate">
+            <div class="bag-card__quantity-control quantity-control">
+              <button class="quantity-control__minus">-</button>
+              <span class="quantity-control__count">1</span>
+              <button class="quantity-control__plus">+</button>
+            </div>
+            <div class="bag-card__price">200 000 ₽</div>
+            <button class="bag-card__delete-btn delete-btn">Удалить</button>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="bag__bottom">
+      <p class="bag__bottom-text">4 товара на 800 000 ₽</p>
+      <a class="btn bag__link" href="order.html">Оформить заказ</a>
+    </div>
+  </div>
+</div>
+
+    <!-- script -->
+    <script src="js/main.min.js"></script>
+  </body>
+</html>
