@@ -13,8 +13,7 @@
           <div class="portfolio__item-wrap">
             <div class="portfolio__item-block">
               <h3 class="portfolio__item-title">{{ item.title }}</h3>
-              <p class="portfolio__item-descr">
-                {{ item.descr }}
+              <p class="portfolio__item-descr" v-html="item.descr">
               </p>
               <p class="portfolio__item-price">
                 Цена: <span>{{ item.price ? item.price + "руб" : "не указано" }}</span>
@@ -46,7 +45,7 @@ export default {
       },
       {
         title: "Сайт магазина одежды",
-        descr: 'Сайт для магазина одежды "Tramontana". Стояла задача обновить 3 страницы "Главная", "Карточка товара" и "Каталог". ',
+        descr: 'Сайт для магазина одежды "Tramontana". Стояла задача обновить 3 страницы <a href="project/Tramontana/index.html">Главная,</a> <a href="project/Tramontana/card-page.html">Карточка товара</a> и <a href="project/Tramontana/catalog.html">Каталог</a>',
         price: "15.000",
         img: require("@/assets/img/portfolio/9.jpg"),
         link: "project/Tramontana/index.html",
@@ -78,7 +77,7 @@ export default {
       },
       {
         title: "Сайт по подбору мероприятий",
-        descr: 'Сайт по подбору мероприятий "Eventplace". Было сверстано 3 страницы "Главная", "Каталог" и "Личный кабинет" верстка велась использование библиотеки Bootstrap',
+        descr: 'Сайт по подбору мероприятий "Eventplace". Было сверстано 3 страницы <a href="project/eventplace/index.html">Главная,</a> <a href="project/eventplace/catalog/1.html">Каталог</a> и <a href="project/eventplace/private-office.html">Личный кабинет</a> верстка велась использование библиотеки Bootstrap',
         price: "6.000",
         img: require("@/assets/img/portfolio/3.jpg"),
         link: "project/eventplace/index.html",
@@ -86,7 +85,7 @@ export default {
       },
       {
         title: "Сайт магазина ковриков",
-        descr: 'Сайт магазина ковриков "EVADROM".  Было сверстано 7 страниц "Главная", "Каталог", "Каталог марок", "Карточка товара", "Корзина", "Оффер" и "Страница Спасибо за покупку".',
+        descr: 'Сайт магазина ковриков "EVADROM".  Было сверстано 7 страниц <a href="project/MatStore/index.html">Главная,</a> <a href="project/MatStore/category.html">Каталог,</a> <a href="project/MatStore/car.html">Каталог марок,</a> <a href="project/MatStore/card.html">Карточка товара,</a> <a href="project/MatStore/basket.html">Корзина,</a> <a href="project/MatStore/offer.html">Оффер</a> и <a href="project/MatStore/thanks.html">Страница Спасибо за покупку</a>',
         price: "22.000",
         img: require("@/assets/img/portfolio/5.jpg"),
         link: "project/MatStore/index.html",
@@ -156,18 +155,18 @@ export default {
 
 .fade-leave-to {
   opacity: 0;
-  transform: translateX(100%);
+  transform: translateY(100%);
 }
 .fade-enter-from {
   opacity: 0;
-  transform: translateX(-100%);
+  transform: translateY(-100%);
 }
 
 .fade-leave-active {
   position: absolute;
 }
 .portfolio {
-  padding-bottom: 80px;
+  padding-bottom: 50px;
   margin-top: -60px;
   padding-top: 60px;
   &__container {
@@ -184,7 +183,8 @@ export default {
     justify-content: center;
     flex-wrap: wrap;
     gap: 15px;
-    margin-bottom: 30px;
+    padding: 0 15px;
+    
   }
   &__filter-btn {
     font-size: 28px;
@@ -194,12 +194,20 @@ export default {
     @include table() {
       font-size: 20px;
     }
+    @include mob(){
+      font-size: 17px;
+    }
   }
   &__items {
+   padding-top: 30px;
+   padding-bottom: 30px;
+    overflow: hidden;
   }
 
   &__item:not(:last-child) {
+    padding-bottom: 30px;
     margin-bottom: 30px;
+    border-bottom: 1px solid var( --color-3);
   }
 
   &__item-wrap {
@@ -208,7 +216,7 @@ export default {
     align-items: center;
     gap: 20px;
     padding-left: max(15px, calc((100% - 1330px) / 2));
-    overflow: hidden;
+    // overflow: hidden;
     transition: box-shadow 0.3s ease;
     @include media(1400px) {
       flex-direction: column;
@@ -224,11 +232,12 @@ export default {
     }
   }
   &__item:hover {
+   
+   
     .portfolio__img {
-      img {
-        transform: scale(1.1);
-        transition: transform 15s ease;
-      }
+      transform: translateY(-10px);
+      box-shadow: 0px 10px 20px var(--color-3);
+
     }
   }
 
@@ -245,11 +254,19 @@ export default {
   &__item-descr {
     margin-bottom: 15px;
     transition: color 0.3s ease;
+    a{
+      text-decoration: underline;
+      color: var(--link-color);
+      &:hover{
+        color: var(--color-3);
+      }
+    }
   }
   &__item-price {
     margin-bottom: 20px;
     span {
-      color: var(--color-3);
+      font-weight: 600;
+     
     }
   }
   &__more-btn {
@@ -263,6 +280,7 @@ export default {
     overflow: hidden;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
+    transition: box-shadow 0.3s ease, transform 0.4s ease;
     @include media(1400px) {
       width: 100%;
     }
