@@ -10,7 +10,7 @@ export default [
   {
     title: "Сайт магазина одежды",
     descr:
-      'Сайт для магазина одежды "Tramontana". Стояла задача обновить 3 страницы <a href="project/Tramontana/index.html">Главная,</a> <a href="project/Tramontana/card-page.html">Карточка товара</a> и <a href="project/Tramontana/catalog.html">Каталог</a>',
+      'Сайт для магазина одежды "Tramontana". Стояла задача обновить 3 страницы <a href="project/Tramontana/index.html">Главная,</a> <a href="project/Tramontana/card-page.html">Карточка товара</a> и <a href="project/Tramontana/catalog.html">Каталог</a>.',
     price: "15.000",
     img: require("@/assets/img/portfolio/9.jpg"),
     link: "project/Tramontana/index.html",
@@ -18,15 +18,15 @@ export default [
   },
   {
     title: "Сайт образовательной платформы",
-    descr: 'Сайт образовательной платформы "XOD". Нужно было сделать сайт адаптивным под все разрешения экранов что и было реализовано',
+    descr: 'Сайт образовательной платформы "XOD". Нужно было сделать сайт адаптивным под все разрешения экранов что и было реализовано.',
     price: "5.000",
     img: require("@/assets/img/portfolio/10.jpg"),
     link: "project/XOD/index.html",
-    site: "copr",
+    site: "corp",
   },
   {
     title: "Сайта знакомств",
-    descr: 'Сайта знакомств "Alastora". Основное требование нужно было реализовать слайдер на весь сайт',
+    descr: 'Сайта знакомств "Alastora". Основное требование нужно было реализовать слайдер на весь сайт.',
     price: "6.500",
     img: require("@/assets/img/portfolio/1.jpg"),
     link: "project/Alastora/index.html",
@@ -43,16 +43,25 @@ export default [
   {
     title: "Сайт по подбору мероприятий",
     descr:
-      'Сайт по подбору мероприятий "Eventplace". Было сверстано 3 страницы <a href="project/eventplace/index.html">Главная,</a> <a href="project/eventplace/catalog/1.html">Каталог</a> и <a href="project/eventplace/private-office.html">Личный кабинет</a> верстка велась использование библиотеки Bootstrap',
+      'Сайт по подбору мероприятий "Eventplace". Было сверстано 3 страницы <a href="project/eventplace/index.html">Главная,</a> <a href="project/eventplace/catalog/1.html">Каталог</a> и <a href="project/eventplace/private-office.html">Личный кабинет</a> верстка велась использование библиотеки Bootstrap.',
     price: "6.000",
     img: require("@/assets/img/portfolio/3.jpg"),
     link: "project/eventplace/index.html",
-    site: "copr",
+    site: "corp",
+  },
+  {
+    title: "Сайт платформы анализа",
+    descr:
+      'Сайт платформы анализа "Neurometrix". Было сверстано 6 страниц и натянуто на Wordpress для удобного управления сайтом. Особенностью сайта было то что надо было написать кастомный калькулятор.',
+    price: "35.700",
+    img: require("@/assets/img/portfolio/14.jpg"),
+    link: "https://neurometrix.ai/",
+    site: "corp",
   },
   {
     title: "Сайт магазина ковриков",
     descr:
-      'Сайт магазина ковриков "EVADROM".  Было сверстано 7 страниц <a href="project/MatStore/index.html">Главная,</a> <a href="project/MatStore/category.html">Каталог,</a> <a href="project/MatStore/car.html">Каталог марок,</a> <a href="project/MatStore/card.html">Карточка товара,</a> <a href="project/MatStore/basket.html">Корзина,</a> <a href="project/MatStore/offer.html">Оффер</a> и <a href="project/MatStore/thanks.html">Страница Спасибо за покупку</a>',
+      'Сайт магазина ковриков "EVADROM".  Было сверстано 7 страниц <a href="project/MatStore/index.html">Главная,</a> <a href="project/MatStore/category.html">Каталог,</a> <a href="project/MatStore/car.html">Каталог марок,</a> <a href="project/MatStore/card.html">Карточка товара,</a> <a href="project/MatStore/basket.html">Корзина,</a> <a href="project/MatStore/offer.html">Оффер</a> и <a href="project/MatStore/thanks.html">Страница Спасибо за покупку</a>.',
     price: "22.000",
     img: require("@/assets/img/portfolio/5.jpg"),
     link: "project/MatStore/index.html",
@@ -60,12 +69,37 @@ export default [
   },
   {
     title: "Сайт магазина мебели",
-    descr: 'Сайт магазина мебели "ADORABLE". Было сверстано 22 страницы. Интернет магазин сверстаный с нуля',
+    descr: 'Сайт магазина мебели "ADORABLE". Было сверстано 22 страницы. Интернет магазин сверстаный с нуля.',
     price: "50.000",
     img: require("@/assets/img/portfolio/11.jpg"),
     link: "project/adorable-mebel/index.html",
     site: "shop",
   },
+  {
+    title: "Сайт магазина стали",
+    descr: 'Сайт магазина стали "Стали Китая". Было сверстано 7 страниц и натянуто на Wordpress для удобного управления сайтом.',
+    price: "32.000",
+    img: require("@/assets/img/portfolio/12.jpg"),
+    link: "https://china-steel.ru/",
+    site: "shop",
+  },
+  {
+    title: "Сайт заказа премиум авто",
+    descr: 'Сайт заказа премиум авто "Bt one". Стояла задача обновить старый дизайн сайта.',
+    price: "11.000",
+    img: require("@/assets/img/portfolio/13.jpg"),
+    link: "https://bt-one.ru/",
+    site: "corp",
+  },
+  {
+    title: "Сайт платформы управления",
+    descr: 'Сайт платформы управления "Teamstorm". Стояла задача сверстать блог и натянуть на Wordpress. Было сверстано 3 страницы.',
+    price: "13.000",
+    img: require("@/assets/img/portfolio/15.jpg"),
+    link: "https://blog.teamstorm.io/",
+    site: "corp",
+  },
+
   {
     title: "Копия сайта Netflix",
     descr: "Копия сайта Netflix",
@@ -76,7 +110,7 @@ export default [
   },
   {
     title: "Cайт агенства недвижимости",
-    descr: 'Cайт агенства недвижимости  "Rizon". Было сверстано 2 страницы Главная" и "Форма". Главным условием было сделать анимации',
+    descr: 'Cайт агенства недвижимости  "Rizon". Было сверстано 2 страницы Главная" и "Форма". Главным условием было сделать анимации.',
     price: "5.500",
     img: require("@/assets/img/portfolio/7.jpg"),
     link: "project/rizon/index.html",

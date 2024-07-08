@@ -6,7 +6,7 @@
         <button class="portfolio__filter-btn active" data-filter="all" @click="porfolioFilter">Все</button>
         <button class="portfolio__filter-btn" data-filter="landing" @click="porfolioFilter">Лендинг</button>
         <button class="portfolio__filter-btn" data-filter="shop" @click="porfolioFilter">Магазин</button>
-        <button class="portfolio__filter-btn" data-filter="copr" @click="porfolioFilter">Корпоративный</button>
+        <button class="portfolio__filter-btn" data-filter="corp" @click="porfolioFilter">Корпоративный</button>
       </div>
       <TransitionGroup name="fade" tag="div" class="portfolio__items">
         <div class="portfolio__item" v-for="(item, index) in filterItems" :key="item.img">
@@ -17,7 +17,7 @@
               <p class="portfolio__item-price">
                 Цена: <span>{{ item.price ? item.price + "руб" : "не указано" }}</span>
               </p>
-              <a class="btn btn--sm portfolio__more-btn" :href="item.link">Смотреть больше</a>
+              <a class="btn btn--sm portfolio__more-btn" target="_blank" :href="item.link">Смотреть больше</a>
             </div>
             <div class="portfolio__img">
               <img :src="item.img" :alt="item.title" />
