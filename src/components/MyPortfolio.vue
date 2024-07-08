@@ -13,8 +13,7 @@
           <div class="portfolio__item-wrap">
             <div class="portfolio__item-block">
               <h3 class="portfolio__item-title">{{ item.title }}</h3>
-              <p class="portfolio__item-descr" v-html="item.descr">
-              </p>
+              <p class="portfolio__item-descr" v-html="item.descr"></p>
               <p class="portfolio__item-price">
                 Цена: <span>{{ item.price ? item.price + "руб" : "не указано" }}</span>
               </p>
@@ -31,104 +30,15 @@
 </template>
 <script>
 import { ref } from "vue";
-
+import dataPortfolio from "@/dataPortfolio.js";
 export default {
   setup() {
-    const items = [
-      {
-        title: "Сайт бизнес компании",
-        descr: 'Сайт для бизнес компании "GLOBALTEAM". Нужно было реализовать красивый и анимированный сайт. На сайте было много элементов декора так же была использована библиотека "AOS" анимация.',
-        price: "6.000",
-        img: require("@/assets/img/portfolio/4.jpg"),
-        link: "project/GlobalTeam/index.html",
-        site: "landing",
-      },
-      {
-        title: "Сайт магазина одежды",
-        descr: 'Сайт для магазина одежды "Tramontana". Стояла задача обновить 3 страницы <a href="project/Tramontana/index.html">Главная,</a> <a href="project/Tramontana/card-page.html">Карточка товара</a> и <a href="project/Tramontana/catalog.html">Каталог</a>',
-        price: "15.000",
-        img: require("@/assets/img/portfolio/9.jpg"),
-        link: "project/Tramontana/index.html",
-        site: "shop",
-      },
-      {
-        title: "Сайт образовательной платформы",
-        descr: 'Сайт образовательной платформы "XOD". Нужно было сделать сайт адаптивным под все разрешения экранов что и было реализовано',
-        price: "5.000",
-        img: require("@/assets/img/portfolio/10.jpg"),
-        link: "project/XOD/index.html",
-        site: "copr",
-      },
-      {
-        title: "Сайта знакомств",
-        descr: 'Сайта знакомств "Alastora". Основное требование нужно было реализовать слайдер на весь сайт',
-        price: "6.500",
-        img: require("@/assets/img/portfolio/1.jpg"),
-        link: "project/Alastora/index.html",
-        site: "landing",
-      },
-      {
-        title: "Сайт Баня Лукоморье",
-        descr: 'На сайте было реализовано 2 слайдера библиотека "Slick slider", 3 модальных окна на библиотеке "JQuery" также 5 аккордеонов.',
-        price: "4.000",
-        img: require("@/assets/img/portfolio/2.jpg"),
-        link: "project/bathhouse/index.html",
-        site: "landing",
-      },
-      {
-        title: "Сайт по подбору мероприятий",
-        descr: 'Сайт по подбору мероприятий "Eventplace". Было сверстано 3 страницы <a href="project/eventplace/index.html">Главная,</a> <a href="project/eventplace/catalog/1.html">Каталог</a> и <a href="project/eventplace/private-office.html">Личный кабинет</a> верстка велась использование библиотеки Bootstrap',
-        price: "6.000",
-        img: require("@/assets/img/portfolio/3.jpg"),
-        link: "project/eventplace/index.html",
-        site: "copr",
-      },
-      {
-        title: "Сайт магазина ковриков",
-        descr: 'Сайт магазина ковриков "EVADROM".  Было сверстано 7 страниц <a href="project/MatStore/index.html">Главная,</a> <a href="project/MatStore/category.html">Каталог,</a> <a href="project/MatStore/car.html">Каталог марок,</a> <a href="project/MatStore/card.html">Карточка товара,</a> <a href="project/MatStore/basket.html">Корзина,</a> <a href="project/MatStore/offer.html">Оффер</a> и <a href="project/MatStore/thanks.html">Страница Спасибо за покупку</a>',
-        price: "22.000",
-        img: require("@/assets/img/portfolio/5.jpg"),
-        link: "project/MatStore/index.html",
-        site: "shop",
-      },
-      {
-        title: "Сайт магазина мебели",
-        descr: 'Сайт магазина мебели "ADORABLE". Было сверстано 22 страницы. Интернет магазин сверстаный с нуля',
-        price: "50.000",
-        img: require("@/assets/img/portfolio/11.jpg"),
-        link: "project/adorable-mebel/index.html",
-        site: "shop",
-      },
-      {
-        title: "Копия сайта Netflix",
-        descr: "Копия сайта Netflix",
-        price: "",
-        img: require("@/assets/img/portfolio/6.jpg"),
-        link: "project/Netflix/index.html",
-        site: "landing",
-      },
-      {
-        title: "Cайт агенства недвижимости",
-        descr: 'Cайт агенства недвижимости  "Rizon". Было сверстано 2 страницы Главная" и "Форма". Главным условием было сделать анимации',
-        price: "5.500",
-        img: require("@/assets/img/portfolio/7.jpg"),
-        link: "project/rizon/index.html",
-        site: "landing",
-      },
-      {
-        title: "Сайт NFT токена",
-        descr: 'На сайте было реализован 1 слайдер библиотека "Slick slider" , была использована библиотека "AOS" анимация так же 4 аккордеона.',
-        price: "6.000",
-        img: require("@/assets/img/portfolio/8.jpg"),
-        link: "project/SpiderShiba/index.html",
-        site: "landing",
-      },
-    ];
-    let filterItems = ref(items);
+  
+    let filterItems = ref(dataPortfolio);
     const porfolioFilter = (e) => {
       document.querySelectorAll(".portfolio__filter-btn").forEach((item) => item.classList.remove("active"));
       e.target.classList.add("active");
-      filterItems.value = [...items].filter((val) => {
+      filterItems.value = [...dataPortfolio].filter((val) => {
         if (val.site === e.target.dataset.filter) {
           return true;
         }
@@ -136,13 +46,12 @@ export default {
           return true;
         }
       });
-      console.log(filterItems.value);
     };
     const getImg = (path) => {
       return `@/${path}`;
     };
 
-    return { items, porfolioFilter, filterItems, getImg };
+    return { dataPortfolio, porfolioFilter, filterItems, getImg };
   },
 };
 </script>
@@ -184,7 +93,6 @@ export default {
     flex-wrap: wrap;
     gap: 15px;
     padding: 0 15px;
-    
   }
   &__filter-btn {
     font-size: 28px;
@@ -194,20 +102,20 @@ export default {
     @include table() {
       font-size: 20px;
     }
-    @include mob(){
+    @include mob() {
       font-size: 17px;
     }
   }
   &__items {
-   padding-top: 30px;
-   padding-bottom: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     overflow: hidden;
   }
 
   &__item:not(:last-child) {
     padding-bottom: 30px;
     margin-bottom: 30px;
-    border-bottom: 1px solid var( --color-3);
+    border-bottom: 1px solid var(--color-3);
   }
 
   &__item-wrap {
@@ -232,12 +140,9 @@ export default {
     }
   }
   &__item:hover {
-   
-   
     .portfolio__img {
       transform: translateY(-10px);
       box-shadow: 0px 10px 20px var(--color-3);
-
     }
   }
 
@@ -254,10 +159,10 @@ export default {
   &__item-descr {
     margin-bottom: 15px;
     transition: color 0.3s ease;
-    a{
+    a {
       text-decoration: underline;
       color: var(--link-color);
-      &:hover{
+      &:hover {
         color: var(--color-3);
       }
     }
@@ -266,7 +171,6 @@ export default {
     margin-bottom: 20px;
     span {
       font-weight: 600;
-     
     }
   }
   &__more-btn {
